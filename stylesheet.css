@@ -23,7 +23,15 @@ header,
 nav,
 section {
   display: block;
+  background-color: rgb(255, 247, 249)
 }
+
+footer {
+  position:absolute;
+  bottom:0;
+}
+
+
 
 /** Correct the font size and margin on `h1` elements within `section` and `article` contexts in Chrome, Firefox, and Safari. */
 h1 {
@@ -287,7 +295,7 @@ html {
 
 body {
   background: #fff;
-  color: #3b4351;
+  color: #000000;
   font-family: 'ABeeZee', sans-serif;
   font-size: .8rem;
   overflow-x: hidden;
@@ -295,25 +303,30 @@ body {
 }
 
 a {
-  color: #5755d9;
+  color: #911e44;
   outline: none;
   text-decoration: none;
+
 }
 
 a:focus {
-  box-shadow: 0 0 0 .1rem rgba(87, 85, 217, .2);
+  box-shadow: 0;
+  color: #e2155a;
+  text-decoration: none;
+  font-weight: bold;
 }
 
 a:focus,
 a:hover,
 a:active,
 a.active {
-  color: #302ecd;
-  text-decoration: underline;
+  color: #e2155a;
+  text-decoration: none;
+  font-weight: bold;
 }
 
 a:visited {
-  color: #807fe2;
+  color: #6a5a7c;
 }
 
 h1,
@@ -325,8 +338,7 @@ h6 {
   color: inherit;
   font-weight: 500;
   line-height: 1.2;
-  margin-bottom: .5em;
-  margin-top: 0;
+  margin: .5em 0;
   font-family: 'Sulphur Point', sans-serif;
 
 }
@@ -342,7 +354,7 @@ h6 {
 
 h1,
 .h1 {
-  font-size: 2rem;
+  font-size: 3rem;
 }
 
 h2,
@@ -579,7 +591,7 @@ html:lang(ko),
 }
 
 .btn:focus {
-  box-shadow: 0 0 0 .1rem rgba(87, 85, 217, .2);
+  box-shadow: 0
 }
 
 .btn:focus,
@@ -697,7 +709,7 @@ html:lang(ko),
 .btn.btn-link {
   background: transparent;
   border-color: transparent;
-  color: #0e0d0d;
+  color: #1d1717;
 }
 
 .btn.btn-link:focus,
@@ -2006,7 +2018,7 @@ video.video-responsive::before {
 }
 
 .navbar {
-  align-items: stretch;
+  align-items: flex-start;
   display: flex;
   display: -ms-flexbox;
   -ms-flex-align: stretch;
@@ -2014,7 +2026,6 @@ video.video-responsive::before {
   -ms-flex-wrap: wrap;
   flex-wrap: wrap;
   justify-content: space-between;
-  background-color: #FFF7F8
 }
 
 .navbar .navbar-section {
@@ -2222,7 +2233,7 @@ summary.accordion-header::-webkit-details-marker {
 }
 
 .breadcrumb .breadcrumb-item {
-  color: #66758c;
+  color: #911e44;
   display: inline-block;
   margin: 0;
   padding: .2rem 0;
@@ -2233,12 +2244,12 @@ summary.accordion-header::-webkit-details-marker {
 }
 
 .breadcrumb .breadcrumb-item:not(:last-child) a {
-  color: #66758c;
+  color: #911e44;
 }
 
 .breadcrumb .breadcrumb-item:not(:first-child)::before {
-  color: #66758c;
-  content: "/";
+  color: #911e44;
+  content: "||";
   padding-right: .4rem;
 }
 

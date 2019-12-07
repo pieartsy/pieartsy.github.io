@@ -1,27 +1,54 @@
 <!DOCTYPE html>
 <html>
-    <head>
-        <meta charset="utf-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1">
-        <title>
+<head>
+    <!--uses unicode characters-->
+    <meta charset="utf-8">
+    <!--makes it responsive-->
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>
             Aster Fialla Portfolio
-        </title>
-        <link rel="stylesheet" type="text/css" href="stylesheet.css">
-        <link href="https://fonts.googleapis.com/css?family=Sulphur+Point&display=swap" rel="stylesheet">
-        <link href="https://fonts.googleapis.com/css?family=ABeeZee&display=swap" rel="stylesheet">
-    </head>
-    <body>
-        <header class="navbar">
+    </title>
+    <link rel="stylesheet" type="text/css" href="stylesheet.css">
+    <!--font for headers and special text-->
+    <link href="https://fonts.googleapis.com/css?family=Sulphur+Point&display=swap" rel="stylesheet">
+    <!--font for body text-->
+    <link href="https://fonts.googleapis.com/css?family=ABeeZee&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!--Top bar with email and social media links, as well as breadcrumb (navigation) menu-->
+    <!--note to self, try to figure out why they're on separate lines-->
+    <header class="navbar">
+        <!--spectre.css grid that makes the page not run up against the edges of the screen for the header-->
+        <div class="col-10 col-mx-auto">
+            <!--Email on one side-->
             <section class="navbar-section">
                 <a href="mailto:asterfialla@gmail.com" class="btn btn-link">asterfialla@gmail.com</a>
             </section>
-            <section class="navbar-section">
+            <!--breadcrumb (nav menu)-->
+            <section class= "navbar-section">
+                <ul class="breadcrumb">
+                    <li class="breadcrumb-item">
+                        <a href="index.html">Home</a>
+                    </li>
+                    <li class="breadcrumb-item">
+                        <a href="art.html">Art</a>
+                    </li>
+                    <li class="breadcrumb-item">
+                        <a href="code.html">Code</a>
+                    </li>
+                    <li class="breadcrumb-item">
+                        <a href="poetry.html">Poetry</a>
+                    </li>
+                </ul>
+            </section>
+            <!--new section for social media links-->
+            <section class= "navbar-section">
                 <a href="https://github.com/pieartsy" class="btn btn-link">
                     <img src="github.png" alt="github link" height="25" width="25">
                 </a>
                 <a href="https://pieartsy.itch.io/" class="btn btn-link">
                     <img src="itchio.png" alt="itch.io link" height="25" width="25">
-                 </a>
+                </a>
                 <a href="https://twitter.com/pieartsy" class="btn btn-link">
                     <img src="twitter.png" alt="twitter link" height="25" width="25">
                 </a>
@@ -30,18 +57,25 @@
                 </a>
                 <a href="https://pieartsy.tumblr.com" class="btn btn-link">
                     <img src="tumblr.png" alt="tumblr link" height="25" width="18">
-                </a>
+                </a>    
             </section>
-        </header>
-        <ul class="nav">
-            <li class="nav-item">
-                <a href="#">Home</a>
-            </li>
+        </div>
+    </header>
+    <!--same spectre.css grid as before, this time for the rest of the body-->
+    <div class="col-10 col-mx-auto">
+        <!--title and info-->
         <h1>
             Aster Fialla
         </h1>
         <p>
-            Queer illustrator, coder, and sundry-other-things-doer living in New York City.
+            Queer illustrator, coder, poet, and sundry-other-things-doer living in New York City. This portfolio hosts samples of all three.
+
+            You can find me in multiple other places online, so check out my social media links at the top of the webpage!
         </p>
-    </body>
+    <!--copyright-->
+    <footer>
+        &copy Aster Fialla 2019
+    </footer>
+    </div>
+</body>
 </html>
