@@ -16,10 +16,9 @@
 </head>
 <body>
     <!--Top bar with email and social media links, as well as breadcrumb (navigation) menu-->
-    <!--note to self, try to figure out why they're on separate lines-->
     <header class="navbar">
         <!--spectre.css grid that makes the page not run up against the edges of the screen for the header-->
-        <div class="col-10 col-mx-auto">
+        <div class="columns col-10 col-mx-auto">
             <!--Email on one side-->
             <section class="navbar-section">
                 <a href="mailto:asterfialla@gmail.com" class="btn btn-link">asterfialla@gmail.com</a>
@@ -43,6 +42,9 @@
             </section>
             <!--new section for social media links-->
             <section class= "navbar-section">
+                <a href="https://www.linkedin.com/in/aster-fialla/" class="btn btn-link">
+                    <img src="linkedin.png" alt="linkedin link" height="25" width="25">
+                </a>
                 <a href="https://github.com/pieartsy" class="btn btn-link">
                     <img src="github.png" alt="github link" height="25" width="25">
                 </a>
@@ -62,17 +64,49 @@
         </div>
     </header>
     <!--same spectre.css grid as before, this time for the rest of the body-->
-    <div class="col-10 col-mx-auto">
+    <div class="columns col-10 col-mx-auto">
         <!--title and info-->
         <h1>
             Aster Fialla
         </h1>
         <p>
-            Queer illustrator, coder, poet, and sundry-other-things-doer living in New York City. This portfolio hosts samples of all three.
+            Queer illustrator, coder, poet, and sundry-other-things-doer living in New York City. This portfolio hosts examples of all three.<br><br>
 
-            You can find me in multiple other places online, so check out my social media links at the top of the webpage!
+            On this homepage you'll find small samples of each. There's more examples in the skills' respective pages of course, so be sure to check out whichever ones interest you!<br><br>
+
+            You can find me in multiple other places online. My social media links are at the top of the website!
         </p>
+        <div class="col-4 mx-auto">
+            <a href=#artsample class="btn btn-link">
+                Art samples
+            </a>
+        </div>
+        <div id="artsample" class="column card col-8 mx-auto">
+            <div class="card-image">
+                <img class="img-responsive mySlides" src="aasimar azemar.png">
+                <img class="img-responsive mySlides" src="hand crusher_001.png">
+                <img class="img-responsive mySlides" src="grimm.png">
+            </div>
+            <script>
+                var myIndex = 0;
+                carousel();
+                
+                function carousel() {
+                    var i;
+                    var x = document.getElementsByClassName("mySlides");
+                        for (i = 0; i < x.length; i++) {
+                            x[i].style.display = "none";  
+                        }
+                    myIndex++;
+                    if (myIndex > x.length) {myIndex = 1}    
+                    x[myIndex-1].style.display = "block";  
+                    setTimeout(carousel, 4000); // Change image every 2 seconds
+                    }
+            </script>                    
+        </div>
+    </div>
     <!--copyright-->
+    <div class="columns col-10 col-mx-auto">
     <footer>
         &copy Aster Fialla 2019
     </footer>
