@@ -23,15 +23,13 @@ header,
 nav,
 section {
   display: block;
-  background-color: rgb(255, 247, 249)
+  background-color: rgb(250, 231, 235);
 }
 
 footer {
-  position:absolute;
-  bottom:0;
+  padding: .5rem;
+  background-color: rgb(250, 231, 235);
 }
-
-
 
 /** Correct the font size and margin on `h1` elements within `section` and `article` contexts in Chrome, Firefox, and Safari. */
 h1 {
@@ -303,7 +301,7 @@ body {
 }
 
 a {
-  color: #911e44;
+  color: #c42057;
   outline: none;
   text-decoration: none;
 
@@ -311,22 +309,22 @@ a {
 
 a:focus {
   box-shadow: 0;
-  color: #e2155a;
-  text-decoration: none;
-  font-weight: bold;
+  color: #fa3878;
+  text-decoration: underline;
+  font-weight: bolder;
 }
 
 a:focus,
 a:hover,
 a:active,
 a.active {
-  color: #e2155a;
-  text-decoration: none;
+  color: #fa3878;
+  text-decoration: underline;
   font-weight: bolder;
 }
 
 a:visited {
-  color: #6a5a7c;
+  color: #8f31fa;
 }
 
 h1,
@@ -335,12 +333,11 @@ h3,
 h4,
 h5,
 h6 {
-  color: inherit;
+  color: #D54455;
   font-weight: 500;
   line-height: 1.2;
   margin: .5em 0;
   font-family: 'Sulphur Point', sans-serif;
-
 }
 
 .h1,
@@ -707,9 +704,12 @@ html:lang(ko),
 }
 
 .btn.btn-link {
-  background: transparent;
+  background: rgb(250, 231, 235);
   border-color: transparent;
   color: #1d1717;
+  -moz-border-radius: 40px;
+  -webkit-border-radius: 40px;
+  border-radius: 40px;
 }
 
 .btn.btn-link:focus,
@@ -2233,7 +2233,6 @@ summary.accordion-header::-webkit-details-marker {
 }
 
 .breadcrumb .breadcrumb-item {
-  color: #911e44;
   display: inline-block;
   margin: 0;
   padding: .2rem 0;
@@ -2243,12 +2242,7 @@ summary.accordion-header::-webkit-details-marker {
   margin-right: .2rem;
 }
 
-.breadcrumb .breadcrumb-item:not(:last-child) a {
-  color: #911e44;
-}
-
 .breadcrumb .breadcrumb-item:not(:first-child)::before {
-  color: #911e44;
   content: "||";
   padding-right: .4rem;
 }
@@ -2330,8 +2324,8 @@ summary.accordion-header::-webkit-details-marker {
 
 .card {
   background: #fff;
-  border: .05rem solid #dadee4;
-  border-radius: .1rem;
+  border: .05rem solid rgb(250, 231, 235);;
+  border-radius: 40px;
   display: flex;
   display: -ms-flexbox;
   -ms-flex-direction: column;
@@ -2357,7 +2351,7 @@ summary.accordion-header::-webkit-details-marker {
 }
 
 .card .card-image {
-  padding-top: .8rem;
+  margin: 2rem;
 }
 
 .card .card-image:first-child {
@@ -3729,4 +3723,53 @@ a.text-error:visited {
   hyphens: auto;
   word-break: break-word;
   word-wrap: break-word;
+}
+
+/*=========Custom IDs and classes==========*/
+
+/* ids to make sure that footer stays at bottom*/
+#wrapper {
+  min-height:100%;
+  position:relative;
+}
+
+#content {
+  padding-bottom: 60px;
+}
+
+#footer {
+  position:absolute;
+  bottom:0;
+  width:100%;
+  margin-top: 10px;
+}
+
+/* container for sections of homepage */
+
+#artsample {
+  padding: 2.5em;
+  background-color: #f18da6;
+}
+
+#codesample {
+  padding: 2.5em;
+  background-color: #eba1b2;
+
+}
+
+#poetrysample {
+  padding: 2.5em;
+  background-color: #ffceda;
+}
+/*art slideshow on homepage*/
+.mySlides {
+  height: 600px;
+  width: 600px;
+  object-fit: cover;
+  border-radius: 40px;
+}
+
+/*anchor buttons' formatting*/
+.anchorbutton {
+  margin: 10px 30px;
 }
