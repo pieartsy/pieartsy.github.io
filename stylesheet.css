@@ -356,7 +356,8 @@ h1,
 
 h2,
 .h2 {
-  font-size: 1.6rem;
+  font-size: 3rem;
+  text-align: center;
 }
 
 h3,
@@ -3746,30 +3747,53 @@ a.text-error:visited {
 
 /* container for sections of homepage */
 
-#artsample {
+#art {
   padding: 2.5em;
   background-color: #f18da6;
 }
 
-#codesample {
+#code {
   padding: 2.5em;
   background-color: #eba1b2;
-
 }
 
-#poetrysample {
+#poetry {
   padding: 2.5em;
   background-color: #ffceda;
 }
 /*art slideshow on homepage*/
 .mySlides {
-  height: 600px;
-  width: 600px;
-  object-fit: cover;
   border-radius: 40px;
 }
 
-/*anchor buttons' formatting*/
-.anchorbutton {
-  margin: 10px 30px;
+#profilepic {
+	background: url('imgs/artsprite.png') no-repeat -5603px -1px;
+	width: 468px;
+	height: 469px;
+  border-radius: 40px;
+  margin: 1.5em;
+}
+
+#strive {
+	background: url('imgs/artsprite.png') no-repeat -2104px 0;
+	width: 1063px;
+	height: 599px;
+}
+
+#hangedman {
+	background: url('imgs/artsprite.png') no-repeat -4783px -2px;
+	width: 348px;
+  height: 598px;
+}
+
+#roses {
+  background: url('imgs/artsprite.png') no-repeat -4178px 0;
+	width: 599px;
+	height: 599px;
+}
+
+#sorrel {
+	background: url('imgs/artsprite.png') no-repeat -5134px -2px;
+	width: 460px;
+	height: 598px;
 }
