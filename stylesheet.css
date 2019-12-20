@@ -711,6 +711,7 @@ html:lang(ko),
   -moz-border-radius: 40px;
   -webkit-border-radius: 40px;
   border-radius: 40px;
+  margin: .2rem;
 }
 
 .btn.btn-link:focus,
@@ -3735,14 +3736,14 @@ a.text-error:visited {
 }
 
 #content {
-  padding-bottom: 60px;
+  padding-bottom: .5rem;
+  padding-top: 2.5rem;
 }
 
 #footer {
   position:absolute;
   bottom:0;
   width:100%;
-  margin-top: 10px;
 }
 
 /* container for sections of homepage */
@@ -3764,6 +3765,8 @@ a.text-error:visited {
 /*art slideshow on homepage*/
 .mySlides {
   border-radius: 40px;
+  -moz-border-radius: 40px;
+  -webkit-border-radius: 40px;
 }
 
 #profilepic {
@@ -3771,6 +3774,8 @@ a.text-error:visited {
 	width: 468px;
 	height: 469px;
   border-radius: 40px;
+  -moz-border-radius: 40px;
+  -webkit-border-radius: 40px;
   margin: 1.5em;
 }
 

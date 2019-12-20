@@ -15,32 +15,23 @@
     <link href="https://fonts.googleapis.com/css?family=ABeeZee&display=swap" rel="stylesheet">
 </head>
 <body>
-    <!--wrapper wraps the entirety of the page-->
-    <div id="wrapper">
+<!--wrapper wraps the entirety of the page-->
+<div id="wrapper">
     <!--Top bar with email and social media links, as well as breadcrumb (navigation) menu-->
     <header class="navbar">
-        <!--spectre.css grid that makes the page not run up against the edges of the screen for the header-->
-        <div class="columns col-10 col-mx-auto">
+        <!--spectre.css grid that makes the header not run up against the edges of the screen-->
+        <div class="columns col-12 col-mx-auto" style="position:fixed;">
+            <div class="columns col-10 col-mx-auto">
             <!--Email on one side-->
             <section class="navbar-section">
                 <a href="mailto:asterfialla@gmail.com" class="btn btn-link">asterfialla@gmail.com</a>
             </section>
             <!--breadcrumb (nav menu)-->
             <section class= "navbar-center">
-                <ul class="breadcrumb">
-                    <li class="breadcrumb-item">
-                        <a href="#info">Home</a>
-                    </li>
-                    <li class="breadcrumb-item">
-                        <a href="#art">Art</a>
-                    </li>
-                    <li class="breadcrumb-item">
-                        <a href="#code">Code</a>
-                    </li>
-                    <li class="breadcrumb-item">
-                        <a href="#poetry">Poetry</a>
-                    </li>
-                </ul>
+                <a href="#content" class="btn btn-link">Home</a>
+                <a href="#art" class="btn btn-link">Art</a>
+                <a href="#code" class="btn btn-link">Code</a>
+                <a href="#poetry" class="btn btn-link">Poetry</a>
             </section>
             <!--new section for social media links-->
             <section class= "navbar-section">
@@ -64,6 +55,7 @@
                 </a>    
             </section>
         </div>
+        </div>
     </header>
     <!--same spectre.css grid as before, this time for the rest of the body-->
     <div id="content">
@@ -75,9 +67,9 @@
             <div class="column">
             <h1>Aster Fialla</h1>
             <p>
-                Queer illustrator, coder, poet, and sundry-other-things-doer living in New York City. This portfolio hosts examples of all three skills.<br><br>
+                Queer illustrator, coder, poet, and sundry-other-things-doer living in New York City. This portfolio hosts examples of all three skills. Click the top center buttons to jump to whichever one interests you!<br><br>
 
-                You can find me in multiple other places online. My social media links are at the top of the website!
+                You can find me in multiple other places online. My social media links are at the top right of the website!
             </p>
             </div>
         </div>
@@ -113,12 +105,15 @@
                 }
             </script>             
         </div>
-        <div id="codesample">
+        <div id="code">
+            <h2>Code</h2>
             <div class="flex-centered columns col-8 col-mx-auto">
                 <img class="img-responsive" src="imgs/palettes.png" style="border-radius:40px">
             </div>
         </div>
-        <div id="poetrysample" class="flex-centered">
+        <div id="poetry">
+            <h2>Poetry</h2>
+            <div class="flex-centered">
                 <p>
                     <strong>My Name</strong><br><br>
                     Like the flower.<br>
@@ -146,19 +141,15 @@
                     so let it blossom:<br>
                     say it again.
                 </p>
-        </div>
-        <div class="flex-centered column col-8 col-mx-auto" style="padding:.5em">
-            <a href=#info class="anchorbutton btn btn-link">
-                Top
-            </a>
+            </div>
         </div>
     </div>
     <!--copyright-->
-    <div id="footer" class="columns col-10 col-mx-auto">
-    <footer id="footer">
-        &copy Aster Fialla 2019
-    </footer>
+    <div id="footer">
+        <footer id="footer" class="flex-centered columns col-10 col-mx-auto">
+            &copy Aster Fialla 2019
+        </footer>
     </div>
-    </div>
+</div>
 </body>
 </html>
