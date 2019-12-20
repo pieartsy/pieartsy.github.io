@@ -16,7 +16,7 @@
 </head>
 <body>
 <!--wrapper wraps the entirety of the page-->
-<div id="wrapper">
+<div id="wrapper" class="columns col-md-12">
     <!--Top bar with email and social media links, as well as breadcrumb (navigation) menu-->
     <header class="navbar">
         <!--spectre.css grid that makes the header not run up against the edges of the screen-->
@@ -74,14 +74,12 @@
             </div>
         </div>
         <div id="art">
-            <h2>Art</h2>
-            <div class="flex-centered columns col-12 col-mx-auto">
-                <img class="img-responsive mySlides" id="strive">
-                <img class="img-responsive mySlides" id="hangedman">
-                <img class="img-responsive mySlides" id="roses">
-                <img class="img-responsive mySlides" id="sorrel">
-            </div>
-            <div class= "flex-centered columns col-12 col-mx-auto">
+            <h2>Art</h2>      
+            <div class="card flex-centered columns col-10 col-mx-auto">
+                <img class="mySlides" id="strive">
+                <img class="mySlides" id="hangedman">
+                <img class="mySlides" id="roses">
+                <img class="mySlides" id="sorrel">
                 <button class="btn btn-link" onclick="plusDivs(-1)">&#10094;</button>
                 <button class="btn btn-link" onclick="plusDivs(1)">&#10095;</button>
             </div>

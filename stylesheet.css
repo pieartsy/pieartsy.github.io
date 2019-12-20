@@ -2325,13 +2325,14 @@ summary.accordion-header::-webkit-details-marker {
 }
 
 .card {
-  background: #fff;
+  background: rgb(250, 231, 235);;
   border: .05rem solid rgb(250, 231, 235);;
   border-radius: 40px;
   display: flex;
   display: -ms-flexbox;
   -ms-flex-direction: column;
   flex-direction: column;
+  padding: 1.5rem;
 }
 
 .card .card-header,
@@ -3747,7 +3748,6 @@ a.text-error:visited {
 }
 
 /* container for sections of homepage */
-
 #art {
   padding: 2.5em;
   background-color: #f18da6;
@@ -3767,10 +3767,13 @@ a.text-error:visited {
   border-radius: 40px;
   -moz-border-radius: 40px;
   -webkit-border-radius: 40px;
+  display: block;
+  height: auto;
+  max-width: 100%;
 }
 
 #profilepic {
-	background: url('imgs/artsprite.png') no-repeat -5603px -1px;
+	background: url('imgs/artsprite.png') no-repeat 97.715% 0.763%;
 	width: 468px;
 	height: 469px;
   border-radius: 40px;
@@ -3780,25 +3783,25 @@ a.text-error:visited {
 }
 
 #strive {
-	background: url('imgs/artsprite.png') no-repeat -2104px 0;
+	background: url('imgs/artsprite.png') no-repeat 40.942% 0;
 	width: 1063px;
 	height: 599px;
 }
 
 #hangedman {
-	background: url('imgs/artsprite.png') no-repeat -4783px -2px;
+	background: url('imgs/artsprite.png') no-repeat 81.705% 100%;
 	width: 348px;
   height: 598px;
 }
 
 #roses {
-  background: url('imgs/artsprite.png') no-repeat -4178px 0;
+  background: url('imgs/artsprite.png') no-repeat 74.567% 0;
 	width: 599px;
 	height: 599px;
 }
 
 #sorrel {
-	background: url('imgs/artsprite.png') no-repeat -5134px -2px;
+	background: url('imgs/artsprite.png') no-repeat 89.411% 100%;
 	width: 460px;
 	height: 598px;
 }
