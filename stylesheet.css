@@ -3772,6 +3772,32 @@ a.text-error:visited {
   max-width: 100%;
 }
 
+.container {
+  position: relative;
+}
+
+/* Container for image text */
+.caption-container {
+  text-align: center;
+  background-color: rgb(250, 231, 235);
+  padding: 2px 16px;
+  color: rgb(0, 0, 0);
+}
+
+.next {
+  right: 0;
+  position: absolute;
+  padding-top: 20%;
+  padding-bottom: 20%;
+}
+
+.prev  {
+  left: 0;
+  position: absolute;
+  padding-top: 20%;
+  padding-bottom: 20%;
+}
+
 #profilepic {
 	background: url('imgs/artsprite.png') no-repeat 97.715% 0.763%;
 	width: 468px;
