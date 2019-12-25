@@ -3737,14 +3737,14 @@ a.text-error:visited {
 }
 
 #content {
-  padding-bottom: .5rem;
   padding-top: 2.5rem;
 }
 
 #footer {
-  position:absolute;
+  position:relative;
   bottom:0;
-  width:100%;
+  padding-left: 0;
+  padding-right: 0;
 }
 
 /* container for sections of homepage */
@@ -3772,16 +3772,8 @@ a.text-error:visited {
   max-width: 100%;
 }
 
-.container {
+.contain {
   position: relative;
-}
-
-/* Container for image text */
-.caption-container {
-  text-align: center;
-  background-color: rgb(250, 231, 235);
-  padding: 2px 16px;
-  color: rgb(0, 0, 0);
 }
 
 .next {
@@ -3799,9 +3791,9 @@ a.text-error:visited {
 }
 
 #profilepic {
-	background: url('imgs/artsprite.png') no-repeat 97.715% 0.763%;
-	width: 468px;
-	height: 469px;
+	background: url('imgs/artsprite.png') no-repeat 97.941% 1.818%;
+	width: 440px;
+	height: 440px;
   border-radius: 40px;
   -moz-border-radius: 40px;
   -webkit-border-radius: 40px;
@@ -3809,25 +3801,31 @@ a.text-error:visited {
 }
 
 #strive {
-	background: url('imgs/artsprite.png') no-repeat 40.942% 0;
-	width: 1063px;
-	height: 599px;
+	background: url('imgs/artsprite.png') no-repeat 40.951% 33.333%;
+	width: 973px;
+	height: 547px;
 }
 
 #hangedman {
-	background: url('imgs/artsprite.png') no-repeat 81.705% 100%;
-	width: 348px;
-  height: 598px;
+	background: url('imgs/artsprite.png') no-repeat 81.691% 100%;
+	width: 317px;
+	height: 547px;
+}
+
+#flirt {
+    background: url('imgs/artsprite.png') no-repeat 56.598% 33.333%;
+    width: 548px;
+    height: 547px;
 }
 
 #roses {
-  background: url('imgs/artsprite.png') no-repeat 74.567% 0;
-	width: 599px;
-	height: 599px;
+  background: url('imgs/artsprite.png') no-repeat 74.562% 33.333%;
+	width: 548px;
+	height: 547px;
 }
 
 #sorrel {
-	background: url('imgs/artsprite.png') no-repeat 89.411% 100%;
-	width: 460px;
-	height: 598px;
+	background: url('imgs/artsprite.png') no-repeat 89.402% 100%;
+	width: 421px;
+	height: 548px;
 }

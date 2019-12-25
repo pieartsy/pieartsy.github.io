@@ -16,12 +16,11 @@
 </head>
 <body>
 <!--wrapper wraps the entirety of the page-->
-<div id="wrapper" class="columns col-md-12">
+<div id="wrapper">
     <!--Top bar with email and social media links, as well as breadcrumb (navigation) menu-->
     <header class="navbar">
         <!--spectre.css grid that makes the header not run up against the edges of the screen-->
-        <div class="columns col-12 col-mx-auto" style="position:fixed;">
-            <div class="columns col-10 col-mx-auto">
+        <div class="columns col-12 col-mx-auto" style="position:fixed;z-index: 1000;">
             <!--Email on one side-->
             <section class="navbar-section">
                 <a href="mailto:asterfialla@gmail.com" class="btn btn-link">asterfialla@gmail.com</a>
@@ -55,14 +54,13 @@
                 </a>    
             </section>
         </div>
-        </div>
     </header>
     <!--same spectre.css grid as before, this time for the rest of the body-->
     <div id="content">
-        <div id="info" class="columns col-10 col-mx-auto">
+        <div id="info" class="columns col-xs-12 col-10 col-mx-auto">
             <!--title and info-->
             <div class="column">
-                <img id="profilepic">
+                <img id="profilepic" class="img-responsive">
             </div>
             <div class="column">
             <h1>Aster Fialla</h1>
@@ -74,15 +72,19 @@
             </div>
         </div>
         <div id="art">
+            <!--card with slideshow-->
             <h2>Art</h2>      
-            <div class="card flex-centered columns col-10 col-mx-auto container">
-                <img class="mySlides" id="strive">
-                <img class="mySlides" id="hangedman">
-                <img class="mySlides" id="roses">
-                <img class="mySlides" id="sorrel">
+            <div class="card flex-centered columns col-10 col-mx-auto contain">
+                <img class="mySlides img-responsive" id="strive">
+                <img class="mySlides img-responsive" id="hangedman">
+                <img class="mySlides img-responsive" id="roses">
+                <img class="mySlides img-responsive" id="flirt">
+                <img class="mySlides img-responsive" id="sorrel">
+                <!--buttons for slides-->
                 <button class="btn btn-link prev" onclick="plusDivs(-1)">&#10094;</button>
                 <button class="btn btn-link next" onclick="plusDivs(1)">&#10095;</button>
             </div>
+            <!--script for slideshow-->
             <script>
                 var slideIndex = 1;
                 showDivs(slideIndex);
@@ -143,8 +145,8 @@
         </div>
     </div>
     <!--copyright-->
-    <div id="footer">
-        <footer id="footer" class="flex-centered columns col-10 col-mx-auto">
+    <div id="footer" class="column col-12">
+        <footer id="footer" class="flex-centered columns col-12 col-mx-auto">
             &copy Aster Fialla 2019
         </footer>
     </div>
