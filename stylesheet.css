@@ -3754,18 +3754,18 @@ details > summary {
   display: block;
 }
 
-/*container for sections of art page*/
-#illustrations {
+/*container for sections of pages*/
+.section1 {
   padding: 2.5em;
   background-color: #f18da6;
 }
 
-#comics {
+.section2 {
   padding: 2.5em;
   background-color: #eba1b2;
 }
 
-#commissioninfo {
+.section3 {
   padding: 2.5em;
   background-color: #ffceda;
 }
@@ -3889,7 +3889,20 @@ details > summary {
 }
 
 #commission2 {
-	background: url('imgs/artsprite2.png') no-repeat 100% 0;
+	background: url('imgs/artsprite2.png') no-repeat 38.178% 0;
 	width: 899px;
 	height: 482px;
+}
+
+#palettes {
+	background: url('imgs/artsprite2.png') no-repeat 71.243% 0;
+	width: 724px;
+	height: 479px;
+}
+
+
+#prompts {
+	background: url('imgs/artsprite2.png') no-repeat 100% 0;
+	width: 723px;
+	height: 480px;
 }
