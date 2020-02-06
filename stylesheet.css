@@ -13,6 +13,8 @@ html {
 /** Remove the margin in all browsers (opinionated). */
 body {
   margin: 0;
+  display: flex;
+  flex-direction: column;
 }
 
 /** Add the correct display in IE 9-. */
@@ -35,6 +37,7 @@ footer {
 h1 {
   font-size: 2em;
   margin: .67em 0;
+  text-align: center;
 }
 
 /* Grouping content ========================================================================== */
@@ -3731,22 +3734,13 @@ a.text-error:visited {
 /*=========Custom IDs and classes==========*/
 
 /* ids to make sure that footer stays at bottom*/
-#wrapper {
-  min-height:100%;
-  height: 100%;
-  position:relative;
-}
 
 #content {
   padding-top: 2.5rem;
-  padding-bottom:50px;
+  min-height: calc(100vh - 50px);
 }
 
 #footer {
-  position:relative;
-  bottom:0;
-  padding-left: 0;
-  padding-right: 0;
   height: 50px;
 }
 
@@ -3760,7 +3754,7 @@ details > summary {
   display: block;
 }
 
-/* container for sections of homepage */
+/* container for sections of homepage 
 #art {
   padding: 2.5em;
   background-color: #f18da6;
@@ -3774,8 +3768,9 @@ details > summary {
 #poetry {
   padding: 2.5em;
   background-color: #ffceda;
-}
-/*art slideshow on homepage
+}*/
+
+/*comics slideshow on art page*/
 .mySlides {
   border-radius: 40px;
   -moz-border-radius: 40px;
@@ -3801,7 +3796,7 @@ details > summary {
   position: absolute;
   padding-top: 20%;
   padding-bottom: 20%;
-}*/
+}
 .img-round {
   border-radius: 40px;
   -moz-border-radius: 40px;
@@ -3827,7 +3822,7 @@ details > summary {
 	height: 547px;
 }
 
-#flirt {
+#holywar {
     background: url('imgs/artsprite.png') no-repeat 56.598% 33.333%;
     width: 548px;
     height: 547px;
@@ -3843,4 +3838,29 @@ details > summary {
 	background: url('imgs/artsprite.png') no-repeat 89.402% 100%;
 	width: 421px;
 	height: 548px;
+}
+
+#autumn1 {
+	background: url('imgs/artsprite.png') no-repeat 0 0;
+	width: 383px;
+	height: 546px;
+}
+
+.sprite {
+	background: url('imgs/artsprite.png') no-repeat 7.341% 0;
+	width: 387px;
+	height: 546px;
+}
+
+.sprite {
+	background: url('imgs/artsprite.png') no-repeat 14.72% 0;
+	width: 387px;
+	height: 546px;
+}
+
+
+.sprite {
+	background: url('imgs/artsprite.png') no-repeat 22.08% 0;
+	width: 387px;
+	height: 546px;
 }
