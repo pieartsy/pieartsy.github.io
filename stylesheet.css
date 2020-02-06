@@ -3754,24 +3754,24 @@ details > summary {
   display: block;
 }
 
-/* container for sections of homepage 
-#art {
+/*container for sections of homepage*/
+#illustrations {
   padding: 2.5em;
   background-color: #f18da6;
 }
 
-#code {
+#comics {
   padding: 2.5em;
   background-color: #eba1b2;
 }
 
-#poetry {
+#commissioninfo {
   padding: 2.5em;
   background-color: #ffceda;
-}*/
+}
 
 /*comics slideshow on art page*/
-.mySlides {
+.mySlides1 {
   border-radius: 40px;
   -moz-border-radius: 40px;
   -webkit-border-radius: 40px;
@@ -3779,6 +3779,16 @@ details > summary {
   height: auto;
   max-width: 100%;
 }
+
+.mySlides2 {
+  border-radius: 40px;
+  -moz-border-radius: 40px;
+  -webkit-border-radius: 40px;
+  display: block;
+  height: auto;
+  max-width: 100%;
+}
+
 
 .contain {
   position: relative;
@@ -3803,6 +3813,8 @@ details > summary {
   -webkit-border-radius: 40px;
   margin: .5em;
 }
+
+/*spritesheet images*/
 
 #profilepic {
 	background: url('imgs/artsprite.png') no-repeat 97.941% 1.818%;
@@ -3846,21 +3858,45 @@ details > summary {
 	height: 546px;
 }
 
-.sprite {
+#autumn2{
 	background: url('imgs/artsprite.png') no-repeat 7.341% 0;
 	width: 387px;
 	height: 546px;
 }
 
-.sprite {
+#autumn3 {
 	background: url('imgs/artsprite.png') no-repeat 14.72% 0;
 	width: 387px;
 	height: 546px;
 }
 
 
-.sprite {
+#autumn4 {
 	background: url('imgs/artsprite.png') no-repeat 22.08% 0;
 	width: 387px;
 	height: 546px;
+}
+
+#handcrusher1 {
+	background: url('imgs/artsprite.png') no-repeat 29.331% 0;
+	width: 364px;
+	height: 545px;
+}
+
+#handcrusher2 {
+	background: url('imgs/artsprite.png') no-repeat 65.019% 33.333%;
+	width: 366px;
+	height: 547px;
+}
+
+#commission1 {
+	background: url('imgs/artsprite2.png') no-repeat 0 0;
+	width: 899px;
+	height: 482px;
+}
+
+#commission2 {
+	background: url('imgs/artsprite2.png') no-repeat 100% 0;
+	width: 899px;
+	height: 482px;
 }

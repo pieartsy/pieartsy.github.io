@@ -55,11 +55,11 @@
 </header>
 <!--content wrapper for everything except footer-->
 <div id="content">
-    <div class="columns col-xs-12 col-10 col-mx-auto">
+    <div class="flex-centered columns col-xs-12 col-10 col-mx-auto">
         <h1>Art</h1>
         I'm a self-taught digital illustrator and comic creator, primarily focused on character art. My work has been published in several zines, and I do commissions.
 
-        <div class="flex-centered column col-8 col-mx-auto" style="padding:1em">
+        <div class="flex-centered column col-8 col-mx-auto" style="padding:1em;padding-bottom:2em;">
             <a href=#illustrations class="anchorbutton btn btn-link">
                 Illustrations
             </a>
@@ -71,14 +71,95 @@
             </a>
         </div>
     </div>
-    <div id="illustrations" class="flex-centered columns col-10 col-mx-auto">
-        <image id="hangedman" class="img-round"></image>
-        <image id="holywar" class="img-round"></image>
-        <image id="sorrel" class="img-round"></image>
-        <image id="roses" class="img-round"></image>
-        <image id="strive" class="img-round"></image>
+    <div id="illustrations">
+        <h2>Illustrations</h2>
+        <div class="flex-centered columns col-10 col-mx-auto">
+            <image id="hangedman" class="img-round"></image>
+            <image id="holywar" class="img-round"></image>
+            <image id="sorrel" class="img-round"></image>
+            <image id="roses" class="img-round"></image>
+            <image id="strive" class="img-round"></image>
+        </div>
+        <div class="flex-centered column col-8 col-mx-auto" style="padding-top:1em">
+            <a href=#content class="anchorbutton btn btn-link">
+                Top
+            </a>
+            <a href=#illustrations class="anchorbutton btn btn-link">
+                Illustrations
+            </a>
+            <a href=#comics class="anchorbutton btn btn-link">
+                Comics
+            </a>
+            <a href=#commissioninfo class="anchorbutton btn btn-link">
+                Commission Info
+            </a>
+        </div>
     </div>
-    <div id="comics" class="flex-centered columns col-10 col-mx-auto">
+    <div id="comics">
+        <h2>Comics</h2>
+        <div class="flex-centered columns col-10 col-mx-auto">
+        <div class="flex-centered column col-5 col-mx-auto contain">
+            <button class="btn btn-link prev" onclick="plusDivs(-1, 0)">&#10094;</button>
+            <img class="mySlides1" id="autumn1">
+            <img class="mySlides1" id="autumn2">
+            <img class="mySlides1" id="autumn3">
+            <img class="mySlides1" id="autumn4">
+            <button class="btn btn-link next" onclick="plusDivs(1, 0)">&#10095;</button>
+        </div>
+        <div class="flex-centered column col-5 col-mx-auto contain">
+            <button class="btn btn-link prev" onclick="plusDivs(-1, 1)">&#10094;</button>
+            <img class="mySlides2" id="handcrusher1">
+            <img class="mySlides2" id="handcrusher2">
+            <button class="btn btn-link next" onclick="plusDivs(1, 1)">&#10095;</button>
+        </div>
+        </div>
+        <script>
+            var slideIndex = [1,1];
+            var slideId = ["mySlides1", "mySlides2"]
+            showDivs(1, 0);
+            showDivs(1, 1);
+            
+            function plusDivs(n, no) {
+              showDivs(slideIndex[no] += n, no);
+            }
+            
+            function showDivs(n, no) {
+              var i;
+              var x = document.getElementsByClassName(slideId[no]);
+              if (n > x.length) {slideIndex[no] = 1}
+              if (n < 1) {slideIndex[no] = x.length}
+              for (i = 0; i < x.length; i++) {
+                x[i].style.display = "none";  
+              }
+              x[slideIndex[no]-1].style.display = "block";  
+            }
+        </script>
+        <div class="flex-centered column col-8 col-mx-auto" style="padding-top:2em">
+            <a href=#content class="anchorbutton btn btn-link">
+                Top
+            </a>
+            <a href=#illustrations class="anchorbutton btn btn-link">
+                Illustrations
+            </a>
+            <a href=#comics class="anchorbutton btn btn-link">
+                Comics
+            </a>
+            <a href=#commissioninfo class="anchorbutton btn btn-link">
+                Commission Info
+            </a>
+        </div>
+    </div>
+    <div id="commissioninfo">
+        <h2>Commission Info</h2>
+        <div class="flex-centered columns col-mx-auto">
+            <image id="commission1" class="img-round"></image>
+            <image id="commission2" class="img-round"></image>
+        </div>
+        <div class="flex-centered column col-8 col-mx-auto" style="padding-bottom:1em">
+            <a href=#content class="anchorbutton btn btn-link">
+                Top
+            </a>
+        </div>
     </div>
 </div>
 <!--copyright-->
