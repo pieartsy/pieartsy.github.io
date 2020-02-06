@@ -3754,7 +3754,7 @@ details > summary {
   display: block;
 }
 
-/*container for sections of homepage*/
+/*container for sections of art page*/
 #illustrations {
   padding: 2.5em;
   background-color: #f18da6;
@@ -3775,20 +3775,13 @@ details > summary {
   border-radius: 40px;
   -moz-border-radius: 40px;
   -webkit-border-radius: 40px;
-  display: block;
-  height: auto;
-  max-width: 100%;
 }
 
 .mySlides2 {
   border-radius: 40px;
   -moz-border-radius: 40px;
   -webkit-border-radius: 40px;
-  display: block;
-  height: auto;
-  max-width: 100%;
 }
-
 
 .contain {
   position: relative;
