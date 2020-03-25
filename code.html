@@ -19,7 +19,7 @@
 <!--header for email, other pages, and social media links-->
 <header class="navbar">
     <!--spectre.css grid that makes the header not run up against the edges of the screen-->
-    <div class="columns col-12 col-mx-auto" style="position:fixed;z-index: 1000;">
+    <div class="columns col-12 col-mx-auto content-desktop" style="position:fixed;z-index: 1000;">
         <!--Email on one side-->
         <section class="navbar-section">
             <a href="mailto:asterfialla@gmail.com" class="btn btn-link">asterfialla@gmail.com</a>
@@ -50,6 +50,59 @@
             <a href="https://pieartsy.tumblr.com" class="btn btn-link">
                 <img src="imgs/tumblr.png" alt="tumblr link" height="25" width="17">
             </a>    
+        </section>
+    </div>
+    <div class="columns col-12 col-mx-auto content-mobile" style="position:fixed;z-index: 1000;">
+        <section class= "navbar-section">
+            <a href="index.html" class="btn btn-link">Home</a>
+            <a href="art.html" class="btn btn-link">Art</a>
+            <a href="code.html" class="btn btn-link">Code</a>
+        </section>
+        <section class="navbar-section">
+            <div class="dropdown dropdown-right">
+                <a href="#" class="btn btn-link dropdown-toggle" tabindex="0">
+                  Contact<i class="icon icon-caret"></i>
+                </a>
+                <!-- menu component -->
+                <ul class="menu">
+                    <li class="menu-item">
+                        <a href="mailto:asterfialla@gmail.com" class="btn btn-link">
+                            <img src="imgs/email.png" alt="email link" height="30" width="30">
+                        </a>
+                    </li>
+                    <li class="menu-item">
+                        <a href="https://www.linkedin.com/in/aster-fialla/" class="btn btn-link">
+                            <img src="imgs/linkedin.png" alt="linkedin link" height="25" width="25">
+                        </a>
+                    </li>
+                    <li class="menu-item">
+                        <a href="https://github.com/pieartsy" class="btn btn-link">
+                            <img src="imgs/github.png" alt="github link" height="25" width="25">
+                        </a>
+                    </li>
+                    <li class="menu-item">
+                        <a href="https://pieartsy.itch.io/" class="btn btn-link">
+                            <img src="imgs/itchio.png" alt="itch.io link" height="25" width="25">
+                        </a>
+                    </li>
+                    <li class="menu-item">
+                        <a href="https://twitter.com/pieartsy" class="btn btn-link">
+                            <img src="imgs/twitter.png" alt="twitter link" height="25" width="25">
+                        </a>
+                    </li>
+                    <li class="menu-item">
+                        <a href="https://instagram.com/pieartsy" class="btn btn-link">
+                            <img src="imgs/insta.png" alt="instagram link" height="25" width="25">
+                        </a>
+                    </li>
+                    <li class="menu-item">
+                        <a href="https://pieartsy.tumblr.com" class="btn btn-link">
+                            <img src="imgs/tumblr.png" alt="tumblr link" height="25" width="17">
+                        </a>
+                    </li>  
+                </ul>
+              </div>
+            </div>
         </section>
     </div>
 </header>
