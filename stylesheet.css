@@ -2588,7 +2588,7 @@ summary.accordion-header::-webkit-details-marker {
 }
 
 .modal-container {
-  background: #eba1b2;;
+  background: #ffceda;;
   box-shadow: 0 .2rem .5rem #eba1b2;
   border-radius: 40px;
   display: flex;
@@ -2601,17 +2601,14 @@ summary.accordion-header::-webkit-details-marker {
   width: 95%; /* Could be more or less, depending on screen size */
 }
 
-.modal-container.modal-fullheight {
-  max-height: 100vh;
-}
-
 .modal-container .modal-header {
-  color: #000000;
+  color: #D54455
 }
 
 .modal-container .modal-body {
   overflow: auto;
   position: relative;
+  border-radius: 40px;
 }
 
 .modal-container .modal-footer {
@@ -3774,6 +3771,39 @@ details > summary {
   grid-template-columns: repeat(3, 1fr);
 }
 
+/*overlay for thumbnails*/
+.container {
+  position: relative;
+}
+
+.container:hover .overlay {
+  opacity: 1;
+}
+
+.overlay {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  height: 100%;
+  width: 92.5%;
+  opacity: 0;
+  background-color: rgba(250, 231, 235, 0.75);
+  border-radius: 40px;
+}
+
+.text {
+  color: #D54455;
+  font-size: 20px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  text-align: center;
+}
+
 /*comics slideshow on art page*/
 .mySlides1 {
   border-radius: 40px;
@@ -3811,7 +3841,7 @@ details > summary {
   margin: .5em;
 }
 
-spritesheet images
+/*spritesheet images
 
 #strive {
 	background: url('imgs/artsprite.png') no-repeat 100% 0;
@@ -3847,7 +3877,7 @@ spritesheet images
 	background: url('imgs/artsprite.png') 13.691% 0;
 	width: 826px;
 	height: 1080px;
-}
+}*/
 
 #autumn1 {
 	background: url('imgs/artsprite.png') no-repeat 0 0;
