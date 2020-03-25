@@ -3772,11 +3772,11 @@ details > summary {
 }
 
 /*overlay for thumbnails*/
-.container {
+.thumbnail {
   position: relative;
 }
 
-.container:hover .overlay {
+.thumbnail:hover .overlay {
   opacity: 1;
 }
 
@@ -3785,16 +3785,16 @@ details > summary {
   top: 0;
   bottom: 0;
   right: 0;
-  height: 100%;
-  width: 92.5%;
+  left: 0;
   opacity: 0;
+  object-fit: fill;
   background-color: rgba(250, 231, 235, 0.75);
   border-radius: 40px;
 }
 
 .text {
   color: #D54455;
-  font-size: 20px;
+  font-size: 2vw;
   position: absolute;
   top: 50%;
   left: 50%;
