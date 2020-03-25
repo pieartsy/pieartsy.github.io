@@ -3769,6 +3769,7 @@ details > summary {
 .thumbnailgrid {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
+  grid-gap: 10px;
 }
 
 /*overlay for thumbnails*/
@@ -3838,7 +3839,6 @@ details > summary {
   border-radius: 40px;
   -moz-border-radius: 40px;
   -webkit-border-radius: 40px;
-  margin: .5em;
 }
 
 /*spritesheet images
