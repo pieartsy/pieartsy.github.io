@@ -2597,7 +2597,7 @@ summary.accordion-header::-webkit-details-marker {
   flex-direction: column;
   margin: 15% auto; /* 15% from the top and centered */
   padding: 20px;
-  height: 95%;
+  height: auto;
   width: 95%; /* Could be more or less, depending on screen size */
 }
 
