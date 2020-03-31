@@ -340,6 +340,7 @@ h6 {
   line-height: 1.2;
   margin: .5em 0;
   font-family: 'Sulphur Point', sans-serif;
+  overflow-wrap: anywhere;
 }
 
 .h1,
@@ -364,7 +365,7 @@ h2,
 
 h3,
 .h3 {
-  font-size: 1.4rem;
+  font-size: 2rem;
 }
 
 h4,
@@ -535,7 +536,11 @@ html:lang(ko),
 }
 
 .table.table-striped tbody tr:nth-of-type(odd) {
-  background: #f7f8f9;
+  background: #ffceda;
+}
+
+.table.table-striped tbody tr:nth-of-type(even) {
+  background: #ffffff;;
 }
 
 .table tbody tr.active,
@@ -556,7 +561,7 @@ html:lang(ko),
 
 .table td,
 .table th {
-  border-bottom: .05rem solid #dadee4;
+  border-bottom: .05rem solid #D54455;
   padding: .6rem .4rem;
 }
 
