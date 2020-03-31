@@ -37,7 +37,6 @@ footer {
 h1 {
   font-size: 2em;
   margin: .67em 0;
-  text-align: center;
 }
 
 /* Grouping content ========================================================================== */
@@ -355,6 +354,7 @@ h6 {
 h1,
 .h1 {
   font-size: 4rem;
+  text-align: center;
 }
 
 h2,
