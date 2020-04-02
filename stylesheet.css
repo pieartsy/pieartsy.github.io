@@ -297,7 +297,6 @@ body {
   background: #fff;
   color: #000000;
   font-family: 'ABeeZee', sans-serif;
-  font-size: .8rem;
   overflow-x: hidden;
   text-rendering: optimizeLegibility;
 }
@@ -305,13 +304,13 @@ body {
 a {
   color: #D54455;
   outline: none;
+  text-decoration: underline;
 
 }
 
 a:focus {
   box-shadow: 0;
   color: #fa3878;
-  text-decoration: underline;
   font-weight: bolder;
 }
 
@@ -320,7 +319,6 @@ a:hover,
 a:active,
 a.active {
   color: #fa3878;
-  text-decoration: underline;
   font-weight: bolder;
 }
 
@@ -551,7 +549,9 @@ html:lang(ko),
 }
 
 .table.table-hover tbody tr:hover {
-  background: #eef0f3;
+  background: #f18da6;
+  text-decoration: underline;
+
 }
 
 .table.table-scroll {
@@ -581,7 +581,6 @@ html:lang(ko),
   color: #5755d9;
   cursor: pointer;
   display: inline-block;
-  font-size: .8rem;
   height: 1.8rem;
   line-height: 1.2rem;
   outline: none;
@@ -728,6 +727,8 @@ html:lang(ko),
 .btn.btn-link:active,
 .btn.btn-link.active {
   background-color: #D54455;
+  border-color: black;
+  border-width: 2px;
 }
 
 .btn.btn-sm {
