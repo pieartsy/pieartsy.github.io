@@ -630,23 +630,25 @@ html:lang(ko),
 }
 
 .btn.btn-primary {
-  background: #5755d9;
-  border-color: #4b48d6;
+  background: #D54455;
+  border-color: #D54455;
   color: #fff;
 }
 
 .btn.btn-primary:focus,
 .btn.btn-primary:hover {
-  background: #4240d4;
-  border-color: #3634d2;
+  background: #fa3878;
   color: #fff;
+  border-color: black;
+  border-width: 2px;
+
 }
 
 .btn.btn-primary:active,
 .btn.btn-primary.active {
-  background: #3a38d2;
-  border-color: #302ecd;
-  color: #fff;
+  background: #fa3878;;
+  border-color: black;
+  border-width: 2px;
 }
 
 .btn.btn-primary.loading::after {
@@ -3861,19 +3863,4 @@ details > summary {
   border-radius: 40px;
   -moz-border-radius: 40px;
   -webkit-border-radius: 40px;
-}
-
-/*Custom styles for price calculator on art page*/
-.row {
-	display:flex;
-	flex-wrap:wrap;
-	flex-direction: row;
-	margin:25px 0;
-}
-
-.row .item{
-	flex:0 0 47%;
-}
-.row .col4{
-	flex: 0 0 25%;
 }

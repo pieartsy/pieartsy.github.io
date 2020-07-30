@@ -11,23 +11,9 @@
     
         document.getElementById('price_calculator').addEventListener('submit', calculatePrice);
     
-        var v_btn_calculate = document.getElementById('btn_estimate');
+        var v_btn_calculate = document.getElementById('btn_calculate');
     
-        v_btn_calculate.disabled = true;
-    
-    
-        state.addEventListener('change', function(){
-    
-            if(state.value === ''){
-                v_btn_calculate.disabled = true;
-                console.log("True");
-            }
-            else{
-                v_btn_calculate.disabled = false;
-                console.log("False");
-            }
-    
-        });
+        v_btn_calculate.enabled = true;
     
     });
     
@@ -54,54 +40,112 @@
         var size_index = size.value;
 
     
-        var background = document.querySelector('input[name=ship]:checked').value || '';
+        var background = document.getElementById("background").checked;
+        
+        console.log(background);
+
+        var levelsizeprice,
+            total;
             
-        var backgroundCostPer,
-            totalbackgroundCost, 
-            taxFactor = 1,
-            totalItemPrice, 
-            estimate;
-        
-        var t_quantity = charas + jersey + supple + water;
-        totalItemPrice = (charas * 90 ) + (jersey * 25) + (supple * 30) + (water * 4);
-    
-        if (state.value === 'CA'){
-            taxFactor = 1.075;
-        }
-        else if(state.value ==='WA'){
-            taxFactor = 1.065;	
-        }
-    
-        switch(background){
-            case 'us':
-                backgroundCostPer = 2;
+        switch(level_index) {
+            case "sketch":
+                switch(size_index) {
+                    case "Half": levelsizeprice=20; break;
+                    case "Full": levelsizeprice=30; break;
+                }
                 break;
-            case 'ups':
-                backgroundCostPer = 3;	
+            case "lineart":
+                switch(size_index) {
+                    case "Half": levelsizeprice=50; break;
+                    case "Full": levelsizeprice=60; break;
+                }
                 break;
-            default :
-                backgroundCostPer = 0;
+            case "color":
+                switch(size_index) {
+                    case "Half": levelsizeprice=70; break;
+                    case "Full": levelsizeprice=80; break;
+                }
+                break;
+            case "shading":
+                switch(size_index) {
+                    case "Half": levelsizeprice=80; break;
+                    case "Full": levelsizeprice=90; break;
+                }
+                break;
+            case "complex":
+                switch(size_index) {
+                    case "Half": levelsizeprice=100; break;
+                    case "Full": levelsizeprice=130; break;
+                }
                 break;
         }
-    
-        totalbackgroundCost = backgroundCostPer * t_quantity;
         
-        estimate = '$' +((totalItemPrice * taxFactor ) + totalbackgroundCost).toFixed(2);
+        var charaprice = charas * levelsizeprice * 0.5;
         
-        document.getElementById('total_estimate').value=estimate;
+        console.log(charaprice);
+
+        var total,
+            backgroundprice
+
+        switch(level_index) {
+            case "sketch":
+                switch(background) {
+                    case true: 
+                        backgroundprice = 30;break;
+                    default: backgroundprice = 0;
+                }
+                break;
+            case "lineart":
+                switch(background) {
+                    case true: 
+                        backgroundprice = 60;break;
+                    default: backgroundprice = 0;
+                }
+                break;
+            case "color":
+                switch(background) {
+                    case true:
+                        backgroundprice = 80;break;
+                    default: backgroundprice = 0;
+                }
+                break;
+            case "shading":
+                switch(background) {
+                    case true: 
+                        backgroundprice = 90; break;
+                    default: backgroundprice = 0;
+                }
+                break;
+            case "complex":
+                switch(background) {
+                    case true: 
+                        backgroundprice = 130; break;
+                    default: backgroundprice = 0;
+                }
+                break;
+        }
+
+        total = levelsizeprice + charaprice + backgroundprice;
+        
+        console.log(backgroundprice);
+        console.log(total);
+            
+        calculated_price = '$' +(total).toFixed(2);
+        
+        document.getElementById('calculated_price').value=calculated_price;
     
         var result_html = document.getElementById('results');
     
-        result_html.innerHTML = 'Total Item: ' + t_quantity + '<br>';
-        result_html.innerHTML +='Total background: $' + totalbackgroundCost.toFixed(2) + '<br>';
-        result_html.innerHTML +='Tax:' + (( taxFactor - 1 )*100).toFixed(2) + '%';
+        result_html.innerHTML = size_index + ' ' + level_index + ': $' + levelsizeprice + '<br>';
         
-        result_html.innerHTML +='(State:'  + level_index + ')';
+        if (charas > 0) {
+        result_html.innerHTML +='Additional characters: '  + charas + '<br>';
+        result_html.innerHTML +='Additional characters price: '  + '$' + levelsizeprice + ' * ' + charas + ' * 50% = $' + charaprice + '<br>';
+        }
         
-    
-    
-        
-    
+        if (background) {
+            result_html.innerHTML +='Background price: '  + '$' + backgroundprice; 
+        }
     }
     
-    })();
+})();
