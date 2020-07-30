@@ -1058,21 +1058,21 @@ textarea.form-input.input-sm {
 .form-checkbox input:focus + .form-icon,
 .form-radio input:focus + .form-icon,
 .form-switch input:focus + .form-icon {
-  border-color: #5755d9; 
+  border-color: #f18da6; 
   box-shadow: 0 0 0 .1rem rgba(87, 85, 217, .2);
 }
 
 .form-checkbox input:checked + .form-icon,
 .form-radio input:checked + .form-icon,
 .form-switch input:checked + .form-icon {
-  background: #5755d9;
-  border-color: #5755d9;
+  background: #D54455;
+  border-color: #D54455;
 }
 
 .form-checkbox .form-icon,
 .form-radio .form-icon,
 .form-switch .form-icon {
-  border: .05rem solid #bcc3ce;
+  border: .05rem solid rgb(250, 231, 235);;
   cursor: pointer;
   display: inline-block;
   position: absolute;
@@ -1396,6 +1396,7 @@ input.disabled + .form-icon {
   display: inline-block; 
   line-height: 1.25;
   padding: .1rem .2rem;
+  font-size: 1.2rem;
 }
 
 .label.label-rounded {
@@ -3860,4 +3861,19 @@ details > summary {
   border-radius: 40px;
   -moz-border-radius: 40px;
   -webkit-border-radius: 40px;
+}
+
+/*Custom styles for price calculator on art page*/
+.row {
+	display:flex;
+	flex-wrap:wrap;
+	flex-direction: row;
+	margin:25px 0;
+}
+
+.row .item{
+	flex:0 0 47%;
+}
+.row .col4{
+	flex: 0 0 25%;
 }

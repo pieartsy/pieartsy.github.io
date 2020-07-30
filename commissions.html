@@ -79,7 +79,7 @@
             <div id="prices" class="col col-12 col-mx-auto">
                 <h2>Prices</h2>
                 <image src="imgs/commissions.png" alt="Image detailing prices as in table below" class="img-round img-responsive"></image>
-            </div>
+
                 <table class="table table-striped table-scroll table-hover">
                     <thead>
                         <tr style="background:#fff">
@@ -88,7 +88,7 @@
                             <th>Lineart</th>
                             <th>Color</th>
                             <th>Shaded</th>
-                            <th>Complex</th>
+                            <th>Complex*</th>
                         </tr>
                     </thead>
                     <tbody>
@@ -127,6 +127,70 @@
                     </tbody> 
                 </table>
 
+                <p>* What counts as <b>Complex</b> includes: intricate style mimicry, multi-tone painting as opposed to cel-shading, and considerably detailed backgrounds. I will discuss this with you, but ultimately it's up to my disgression.</p>
+
+                <h3>Price Calculator</h3>
+                
+                <form class="form-horizontal" id="price_calculator">
+                    <div class="form-group">
+                        <div class="col-3 col-sm-12">
+                            <label class="form-label" for="level">Drawing Complexity Level (required):</label>
+                        </div>
+                        <div class="col-3 col-sm-12">
+                            <select class="form-select" id="id_level" name="level" required>
+                                <option value="">select one</option>
+                                <option value="sketch">Sketch</option>
+                                <option value="lineart">Lineart</option>
+                                <option value="color">Color</option>
+                                <option value="shading">Shading</option>
+                                <option value="complex">Complex</option>
+                            </select>
+                        </div>
+                    </div>
+
+                    <div class="form-group">
+                        <div class="col-3 col-sm-12">
+                            <label class="form-label" for="size">Body Size (required):</label>
+                        </div>
+                        <div class="col-3 col-sm-12">
+                        <select class="form-select" id="id_size" name="size" required>
+                            <option value="">select one</option>
+                            <option value="half">Half Body</option>
+                            <option value="full">Full body</option>
+                        </select>
+                        </div>
+                    </div>
+
+                    <div class="form-group">
+                        <div class="col-3 col-sm-12">
+                            <label class="form-label" for="p_charas">Additional characters:</label>
+                        </div>
+                        <div class="col-3 col-sm-12">
+                            <input class="form-input" type="number" name="p_charas" id="p_charas" min="0" placeholder="0" size="3" >
+                        </div>
+                    </div>
+
+                    <div class="form-group">
+                        <div class="col-6 col-sm-12">
+                            <label class="form-switch">
+                                <input type="checkbox" name="background" id="background" value="background">
+                                <i class="form-icon"></i>Has a background
+                            </label><br>
+                        </div>
+                    </div>
+
+                    <div class="form-group">
+                        <div class="col-6 col-sm-12">
+                            <button type="submit" class="btn btn-primary input-group-btn" id="btn_calculate">Calculate Price</button>
+                            <input id="calculated_price" disabled="true" type="text" name="price">
+                            <div id="results">
+                                
+                            </div>
+                        </div>
+                    </div>
+                </form>
+                
+            </div>
                 <div class="flex-centered column col-8 col-mx-auto" style="padding-top:2em">
                     <a href=#content class="anchorbutton btn btn-link">
                         Top
@@ -225,5 +289,6 @@
     <footer id="footer" class="flex-centered columns col-12 col-mx-auto">
     &copy Aster Fialla 2019
     </footer>
+    <script src="pricecalculator.js"></script>
 </body>
 </html>
