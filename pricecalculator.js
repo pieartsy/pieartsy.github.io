@@ -130,7 +130,7 @@
         console.log(backgroundprice);
         console.log(total);
             
-        calculated_price = '$' +(total).toFixed(2);
+        var calculated_price = '$' + (total);
         
         document.getElementById('calculated_price').value=calculated_price;
     
