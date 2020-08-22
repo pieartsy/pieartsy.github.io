@@ -1,0 +1,281 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!--uses unicode characters-->
+    <meta charset="utf-8">
+    <!--makes it responsive-->
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>
+            Aster Fialla Portfolio
+    </title>
+    <link rel="stylesheet" type="text/css" href="stylesheet.css">
+    <link rel="stylesheet" href="spectre-icons.css">
+    <!--font for headers and special text-->
+    <link href="https://fonts.googleapis.com/css?family=Sulphur+Point&display=swap" rel="stylesheet">
+    <!--font for body text-->
+    <link href="https://fonts.googleapis.com/css?family=ABeeZee&display=swap" rel="stylesheet">
+</head>
+<body>
+<!--header for email, other pages, and social media links-->
+<header class="navbar">
+    <!--spectre.css grid that makes the header not run up against the edges of the screen-->
+    <div class="columns col-12 col-mx-auto content-desktop" style="position:fixed;z-index: 100;">
+        <!--Email on one side-->
+        <section class="navbar-section">
+            <a href="mailto:asterfialla@gmail.com" class="btn btn-link">asterfialla@gmail.com</a>
+        </section>
+        <!--breadcrumb (nav menu)-->
+        <section class= "navbar-center">
+            <a href="index.html" class="btn btn-link">Home</a>
+            <a href="art.html" class="btn btn-link">Art</a>
+            <a href="poems.html" class="btn btn-link">Poems</a>
+        </section>
+        <!--new section for social media links-->
+        <section class= "navbar-section">
+            <a href="https://www.linkedin.com/in/aster-fialla/" class="btn btn-link">
+                <img src="imgs/linkedin.png" alt="linkedin link" height="25" width="25">
+            </a>
+            <a href="https://github.com/pieartsy" class="btn btn-link">
+                <img src="imgs/github.png" alt="github link" height="25" width="25">
+            </a>
+            <a href="https://pieartsy.itch.io/" class="btn btn-link">
+                <img src="imgs/itchio.png" alt="itch.io link" height="25" width="25">
+            </a>
+            <a href="https://twitter.com/pieartsy" class="btn btn-link">
+                <img src="imgs/twitter.png" alt="twitter link" height="25" width="25">
+            </a>
+            <a href="https://instagram.com/pieartsy" class="btn btn-link">
+                <img src="imgs/insta.png" alt="instagram link" height="25" width="25">
+            </a>
+            <a href="https://pieartsy.tumblr.com" class="btn btn-link">
+                <img src="imgs/tumblr.png" alt="tumblr link" height="25" width="25">
+            </a>    
+        </section>
+    </div>
+    <div class="columns col-12 col-mx-auto content-mobile" style="position:fixed;z-index: 1000;">
+        <section class= "navbar-section">
+            <a href="index.html" class="btn btn-link">Home</a>
+            <a href="art.html" class="btn btn-link">Art</a>
+            <a href="poems.html" class="btn btn-link">Poems</a>
+        </section>
+        <section class="navbar-section">
+            <div class="dropdown dropdown-right">
+                <a href="#" class="btn btn-link dropdown-toggle" tabindex="0">
+                  Contact<i class="icon icon-caret"></i>
+                </a>
+                <!-- menu component -->
+                <ul class="menu">
+                    <li class="menu-item">
+                        <a href="mailto:asterfialla@gmail.com" class="btn btn-link">
+                            <img src="imgs/email.png" alt="email link" height="25" width="25">
+                        </a>
+                    </li>
+                    <li class="menu-item">
+                        <a href="https://www.linkedin.com/in/aster-fialla/" class="btn btn-link">
+                            <img src="imgs/linkedin.png" alt="linkedin link" height="25" width="25">
+                        </a>
+                    </li>
+                    <li class="menu-item">
+                        <a href="https://github.com/pieartsy" class="btn btn-link">
+                            <img src="imgs/github.png" alt="github link" height="25" width="25">
+                        </a>
+                    </li>
+                    <li class="menu-item">
+                        <a href="https://pieartsy.itch.io/" class="btn btn-link">
+                            <img src="imgs/itchio.png" alt="itch.io link" height="25" width="25">
+                        </a>
+                    </li>
+                    <li class="menu-item">
+                        <a href="https://twitter.com/pieartsy" class="btn btn-link">
+                            <img src="imgs/twitter.png" alt="twitter link" height="25" width="25">
+                        </a>
+                    </li>
+                    <li class="menu-item">
+                        <a href="https://instagram.com/pieartsy" class="btn btn-link">
+                            <img src="imgs/insta.png" alt="instagram link" height="25" width="25">
+                        </a>
+                    </li>
+                    <li class="menu-item">
+                        <a href="https://pieartsy.tumblr.com" class="btn btn-link">
+                            <img src="imgs/tumblr.png" alt="tumblr link" height="25" width="25">
+                        </a>
+                    </li>  
+                </ul>
+              </div>
+            </div>
+        </section>
+    </div>
+</header>
+<!--same spectre.css grid as before, this time for the rest of the body-->
+<!--content wrapper for everything except footer-->
+<div id="content">
+    <div class="columns col-xs-11 col-10 col-mx-auto">
+        <div class="column col-12 flex-centered"><h1>Poems</h1></div>
+        </p>I'm a poet, and I have done several poem commissions. I'm working on an introspective chapbook. I primarily work in freeverse but I am an eternal lover of rhyme. I often post my prettied-up poems on my instagram, so you can check them out at this link, collected in my Poems Highlight: <a href="https://instagram.com/pieartsy">Instagram</a>!</p>
+
+        <div class="column col-12 col-mx-auto"><h1>Select Poems</h1>
+        <p>Click the poem title to see the full poem!</p>
+        <!--How to Fall in Love-->
+        <p><a href="#love-modal">How to Fall in Love</a></p>
+            <div class="modal modal-lg" id="love-modal">
+                <a href="#back" class="modal-overlay" aria-label="Close"></a>
+                <div class="modal-container">
+                        <div class="modal-header">
+                            <a href="#back" class="btn btn-clear float-right" aria-label="Close"></a>
+                        </div>
+                        <div class="modal-body">
+                            <div class="content" style="padding-left: 50px;">
+                                <h3>How to Fall in Love</h3>
+                                First, stop all<br>
+                                the clocks in your mind<br>
+                                with hands that point accusingly<br>
+                                at all the time you're wasting<br>
+                                doing stupid things like<br>
+                                reading romances, massaged by soap bubbles<br>
+                                or lighting candles to melt in their scent.<br>
+                                Aren't there more important things,<br>
+                                they shriek in alarm,<br>
+                                than the breeze that dances through your hair,<br>
+                                or cherries kissing your lips?<br>
+                                You must<br>
+                                fend off the tocks and ticks<br>
+                                that jab and prick, stabbing<br>
+                                at every smile and sigh slipping out.<br>
+                                How can you love, when<br>
+                                wound and wounded so?<br>
+                                <br>
+                                Second, spit out<br>
+                                the thick sludge spoonfed<br>
+                                into your lungs, roiling with<br>
+                                sticky poison; the dreck and dregs of<br>
+                                hatred; acid-burning the bronchi<br>
+                                until you can only cough out,<br>
+                                <i>Unlovable, unlovable</i>;<br>
+                                until all you exhale<br>
+                                is chemical smoke,<br>
+                                doubling over as you drown in<br>
+                                its toxic message.<br>
+                                You must<br>
+                                cut them off, these plastic words<br>
+                                that tighten round your neck like soda rings.<br>
+                                How can you love, when<br>
+                                choking on the very idea?<br>
+                                <br>
+                                Third, pry off<br>
+                                the burs and brambles that snag you,<br>
+                                the dry leaves that leave you<br>
+                                caught in sleep, buried beneath sheets<br>
+                                like a cadaver.<br>
+                                The mud and soil that lie heavy on your limbs<br>
+                                lie and tell you there is nothing more<br>
+                                to want or make or do;<br>
+                                let you lie there, sinking into the frozen earth<br>
+                                until you forget what growing means.<br>
+                                You must<br>
+                                shake off the dirt<br>
+                                that grinds in your joints and reminds<br>
+                                you just how hard moving is.<br>
+                                How can you love, when<br>
+                                It only gathers dust?<br>
+                                <br>
+                                Last,<br>
+                                once you have healed in silence,<br>
+                                once you have breathed in peace,<br>
+                                once you have awakened in light,<br>
+                                it's quite easy to fall freely<br>
+                                into the arms of love.<br>
+                                Just remember to catch yourself<br>
+                                when you do.
+                            </div>
+                        </div>
+                </div>
+            </div>
+        <!--My Name-->
+        <p><a href="#name-modal">My Name</a></p>
+            <div class="modal modal-lg" id="name-modal">
+                <a href="#back" class="modal-overlay" aria-label="Close"></a>
+                <div class="modal-container">
+                    <div class="modal-header">
+                        <a href="#back" class="btn btn-clear float-right" aria-label="Close"></a>
+                    </div>
+                    <div class="modal-body">
+                                    <div class="content" style="padding-left: 50px;">
+                                        <h3>My Name</h3>
+                                        Like the flower.<br>
+                                        Like the Latin nominative, <i>star</i>, one I plucked<br>
+                                        from the silent soil of night<br>
+                                        and pressed to paper<br>
+                                        with a scrawl.<br>
+                                        Thin petals of light twinkle in my eye,<br>
+                                        and seeds of smiles sprout<br>
+                                        when the bloom of it<br>
+                                        beams upon your lips:<br>
+                                        <br>
+                                        <i>"Aster."</i><br>
+                                        <br>
+                                        Say it again,<br>
+                                        let its sound powder over me;<br>
+                                        sprinkle my ears with stardust;<br>
+                                        I've flower-crowned myself with<br>
+                                        the power of choosing<br>
+                                        so every utterance is an honoring;<br>
+                                        each inscription glitters and glows.<br>
+                                        It grows from the discarded husk of<br>
+                                        <i>unchosen,</i><br>
+                                        a cultivated choice<br>
+                                        rooting in the firmament<br>
+                                        of my being,<br>
+                                        so let it blossom:<br>
+                                        say it again.
+                                    </div>
+                    </div>
+                </div>
+            </div>
+        <!--Anima-->
+        <p><a href="#anima-modal">Anima</a></p>
+            <div class="modal modal-lg" id="anima-modal">
+            <a href="#back" class="modal-overlay" aria-label="Close"></a>
+            <div class="modal-container">
+                <div class="modal-header">
+                    <a href="#back" class="btn btn-clear float-right" aria-label="Close"></a>
+                </div>
+                <div class="modal-body">
+                    <div class="content" style="padding-left: 50px;">
+                        <h3>Anima</h3>
+                        I’m too much for human nature,<br>
+                        Larger than the lives of men;<br>
+                        Have grown too great for love or hate<br>
+                        Or that which lies in mortal ken.<br>
+                        <br>
+                        Tired of my earthly form,<br>
+                        I'll shift my frame to shape unknown;<br>
+                        Slough off my skin, again begin;<br>
+                        Become a being not my own.<br>
+                        <br>
+                        My eyes will penetrate the stars;<br>
+                        My body, over death, shall tower;<br>
+                        As fire reigns within my veins,<br>
+                        My chest shall thrum with lightning's power.<br>
+                        <br>
+                        The world will whisper of my presence,<br>
+                        I, who walk above the earth.<br>
+                        They’ll murmur low of where I go,<br>
+                        And of my dying and rebirth.
+                    </div>
+                </div>
+            </div>
+            </div>
+        </div>
+    </div>
+</div>
+    <!--copyright-->
+    <footer id="footer" class="flex-centered columns col-12 col-mx-auto">
+        <div class="content-mobile column col-1 col-mr-auto">
+            <a href="mailto:asterfialla@gmail.com" class="btn btn-link">
+                <img src="imgs/email.png" alt="email link" height="25" width="25">
+            </a>
+        </div>
+        &copy Aster Fialla 2019
+    </footer>
+</body>
+</html>
