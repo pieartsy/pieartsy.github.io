@@ -1,6 +1,12 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script> 
+        $(function(){
+          $("footer").load("footer.html"); 
+        });
+    </script> 
     <!--uses unicode characters-->
     <meta charset="utf-8">
     <!--makes it responsive-->
@@ -466,13 +472,6 @@
     </div>
 </div>
 <!--copyright-->
-<footer id="footer" class="flex-centered columns col-12 col-mx-auto">
-    <div class="content-mobile column col-1 col-mr-auto">
-        <a href="mailto:asterfialla@gmail.com" class="btn btn-link">
-            <img src="imgs/email.png" alt="email link" height="25" width="25">
-        </a>
-    </div>
-    &copy Aster Fialla 2019
-</footer>
+<?php include 'footer.html';?>
 </body>
 </html>
