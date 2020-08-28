@@ -3483,6 +3483,8 @@ a.text-error:visited {
   display: -ms-flexbox;
   -ms-flex-align: center;
   -ms-flex-pack: center;
+  justify-self: center;
+  justify-content: center;
 }
 
 .m-0 {
