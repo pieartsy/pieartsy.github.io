@@ -3483,7 +3483,6 @@ a.text-error:visited {
   display: -ms-flexbox;
   -ms-flex-align: center;
   -ms-flex-pack: center;
-  justify-content: center;
 }
 
 .m-0 {
@@ -3872,4 +3871,8 @@ details > summary {
   border-radius: 40px;
   -moz-border-radius: 40px;
   -webkit-border-radius: 40px;
+}
+/*calculated price on commissions*/
+#calculated_price {
+  color: black;
 }
