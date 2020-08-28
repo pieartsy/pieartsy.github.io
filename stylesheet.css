@@ -3844,6 +3844,12 @@ details > summary {
   -webkit-border-radius: 40px;
 }
 
+.mySlides3 {
+  border-radius: 40px;
+  -moz-border-radius: 40px;
+  -webkit-border-radius: 40px;
+}
+
 .contain {
   position: relative;
 }

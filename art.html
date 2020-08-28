@@ -16,6 +16,9 @@
         $(document).ready(function(){
             $("#header").load("jquery/header.html");
             $("#footer").load("jquery/footer.html");
+            $("#artbuttons1").load("jquery/artbuttons.html");
+            $("#artbuttons2").load("jquery/artbuttons.html");
+            $("#artbuttons3").load("jquery/artbuttons.html");
         });
     </script>
     <!--font for headers and special text-->
@@ -37,17 +40,7 @@
     <div class="flex-centered columns col-xs-11 col-10 col-mx-auto">
         <p>I'm a self-taught digital illustrator and comic creator, primarily focused on character art. My work has been published in several zines, and I do commissions. I usually post on instagram, so check the rest of my work out at this link: <a href="https://instagram.com/pieartsy">Instagram</a>!</p>
 
-        <div class="flex-centered column col-8 col-mx-auto" style="padding:1em;padding-bottom:2em;">
-            <a href=#illustrations class="anchorbutton btn btn-link">
-                Illustrations
-            </a>
-            <a href=#comics class="anchorbutton btn btn-link">
-                Comics
-            </a>
-            <a href=#commissioninfo class="anchorbutton btn btn-link">
-                Commission Info
-            </a>
-        </div>
+        <div id="artbuttons1"></div>
     </div>
     <div id="illustrations" class="section1">
         <h2>Illustrations</h2>
@@ -265,20 +258,20 @@
     <div id="comics" class="section2">
         <h2>Comics</h2>
         <div class="flex-centered columns col-10 col-mx-auto">
-        <div class="flex-centered column col-5 col-sm-12 col-mx-auto contain" style="margin:1rem">
-            <button class="btn btn-link prev" onclick="plusDivs(-1, 0)">&#10094;</button>
-            <img class="mySlides1 img-responsive" alt="autumn comic page 1" src="imgs/maddie - autumn - rgb 1.png">
-            <img class="mySlides1 img-responsive" alt="autumn comic page 2" src="imgs/maddie - autumn - rgb 2.png">
-            <img class="mySlides1 img-responsive" alt="autumn comic page 3" src="imgs/maddie - autumn - rgb 3.png">
-            <img class="mySlides1 img-responsive" alt="autumn comic page 4" src="imgs/maddie - autumn - rgb 4.png">
-            <button class="btn btn-link next" onclick="plusDivs(1, 0)">&#10095;</button>
-        </div>
-        <div class="flex-centered column col-5 col-sm-12 col-mx-auto contain" style="margin:1rem">
-            <button class="btn btn-link prev" onclick="plusDivs(-1, 1)">&#10094;</button>
-            <img class="mySlides2 img-responsive" alt="handcrusher comic page 1" src="imgs/hand crusher_001.png">
-            <img class="mySlides2 img-responsive" alt="handcrusher comic page 2" src="imgs/hand crusher.png">
-            <button class="btn btn-link next" onclick="plusDivs(1, 1)">&#10095;</button>
-        </div>
+            <div class="flex-centered column col-5 col-sm-12 col-mx-auto contain" style="margin:1rem">
+                <button class="btn btn-link prev" onclick="plusDivs(-1, 0)">&#10094;</button>
+                <img class="mySlides1 img-responsive" alt="autumn comic page 1" src="imgs/maddie - autumn - rgb 1.png">
+                <img class="mySlides1 img-responsive" alt="autumn comic page 2" src="imgs/maddie - autumn - rgb 2.png">
+                <img class="mySlides1 img-responsive" alt="autumn comic page 3" src="imgs/maddie - autumn - rgb 3.png">
+                <img class="mySlides1 img-responsive" alt="autumn comic page 4" src="imgs/maddie - autumn - rgb 4.png">
+                <button class="btn btn-link next" onclick="plusDivs(1, 0)">&#10095;</button>
+            </div>
+            <div class="flex-centered column col-5 col-sm-12 col-mx-auto contain" style="margin:1rem">
+                <button class="btn btn-link prev" onclick="plusDivs(-1, 1)">&#10094;</button>
+                <img class="mySlides2 img-responsive" alt="handcrusher comic page 1" src="imgs/hand crusher_001.png">
+                <img class="mySlides2 img-responsive" alt="handcrusher comic page 2" src="imgs/hand crusher.png">
+                <button class="btn btn-link next" onclick="plusDivs(1, 1)">&#10095;</button>
+            </div>
         </div>
         <script>
             var slideIndex = [1,1];
@@ -301,20 +294,8 @@
               x[slideIndex[no]-1].style.display = "block";  
             }
         </script>
-        <div class="flex-centered column col-8 col-mx-auto" style="padding-top:2em">
-            <a href=#content class="anchorbutton btn btn-link">
-                Top
-            </a>
-            <a href=#illustrations class="anchorbutton btn btn-link">
-                Illustrations
-            </a>
-            <a href=#comics class="anchorbutton btn btn-link">
-                Comics
-            </a>
-            <a href=#commissioninfo class="anchorbutton btn btn-link">
-                Commission Info
-            </a>
-        </div>
+        <div id="artbuttons2"></div>
+
     </div>
     <div id="commissioninfo" class="section3">
         <h2>Commission Info</h2>
@@ -374,20 +355,7 @@
                 <p>My full commissions policy can be found at this link: <a href="commissions.html">Commissions</a>.</p>
             </div>
         </div>
-        <div class="flex-centered column col-8 col-mx-auto" style="padding-top:2em">
-            <a href=#content class="anchorbutton btn btn-link">
-                Top
-            </a>
-            <a href=#illustrations class="anchorbutton btn btn-link">
-                Illustrations
-            </a>
-            <a href=#comics class="anchorbutton btn btn-link">
-                Comics
-            </a>
-            <a href=#commissioninfo class="anchorbutton btn btn-link">
-                Commission Info
-            </a>
-        </div>
+        <div id="artbuttons3"></div>
     </div>
 </div>
 <!--copyright-->
