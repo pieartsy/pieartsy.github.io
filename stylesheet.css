@@ -3769,17 +3769,17 @@ details > summary {
 
 /*container for sections of pages*/
 .section1 {
-  padding: 2.5em;
+  padding: 2.5em 0;
   background-color: #f18da6;
 }
 
 .section2 {
-  padding: 2.5em;
+  padding: 2.5em 0;
   background-color: #eba1b2;
 }
 
 .section3 {
-  padding: 2.5em;
+  padding: 2.5em 0;
   background-color: #ffceda;
 }
 
