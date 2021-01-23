@@ -2344,7 +2344,7 @@ summary.accordion-header::-webkit-details-marker {
   background: rgb(250, 231, 235);;
   border: .05rem solid rgb(250, 231, 235);;
   border-radius: 40px;
-  margin: 1rem;
+  margin: 1rem .2rem;
   display: flex;
   display: -ms-flexbox;
   -ms-flex-direction: column;
