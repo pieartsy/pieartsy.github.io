@@ -719,7 +719,8 @@ html:lang(ko),
 
 .btn.btn-link {
   background: rgb(250, 231, 235);
-  border-color: transparent;
+  border-color: #D54455;
+  border-width: 2px;
   color: #1d1717;
   -moz-border-radius: 40px;
   -webkit-border-radius: 40px;
@@ -733,7 +734,8 @@ html:lang(ko),
 .btn.btn-link.active {
   background-color: #D54455;
   border-color: black;
-  border-width: 2px;
+  border-width: 3px;
+  font-weight: bold;
 }
 
 .btn.btn-sm {
@@ -3361,7 +3363,7 @@ a.text-error:visited {
 }
 
 .divider {
-  border-top: .05rem solid #f1f3f5;
+  border-top: .1rem solid #D54455;
   height: .05rem;
   margin: .4rem 0;
 }
@@ -3783,6 +3785,11 @@ details > summary {
   background-color: #ffceda;
 }
 
+.section4 {
+  padding: 2.5em 0;
+  background-color: rgb(250, 231, 235)
+}
+
 /*thumbnail grid on art page*/
 .thumbnailgrid {
   display: grid;
@@ -3868,4 +3875,11 @@ details > summary {
 /*calculated price on commissions*/
 #calculated_price {
   color: black;
+}
+
+/*table of contents for trope a day*/
+#tableofcontents {
+  top: 2.5rem;
+  position:sticky;
+  padding-left: 20%;
 }
