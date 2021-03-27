@@ -16,7 +16,15 @@
             $("#footer").load("jquery/footer.html");
         });
     </script>
-    <script src="disqus.js"></script>
+    <!--inline discussion disqus thingy-->
+    <script src="inlineDisqussions.js"></script>
+    <link rel="stylesheet" type="text/css" href="inlineDisqussions.css" />
+    <script>
+        disqus_shortname = 'asterfialla';
+        jQuery(document).ready(function() {
+          jQuery(".card-footer").inlineDisqussions();
+        });
+      </script>
     <!--font for headers and special text-->
     <link href="https://fonts.googleapis.com/css?family=Sulphur+Point&display=swap" rel="stylesheet">
     <!--font for body text-->
@@ -60,7 +68,7 @@
                       May 1, 2021
                   </div>
                 </div>
-                <div class="card-body" style="display:none">
+                <div class="card-body" >
                     <p>Here's where it all starts.</p>
 
                     <p>Orientalism as an oppressive tool (as opposed to simply an area of academic study, or any depiction of Asian countries) was most prominently defined in Edward Said's book, Orientalism, in 1978. In a nutshell, it is “the way that the West perceives of — and thereby defines — the East".</p>
@@ -72,16 +80,15 @@
                     <p>Orientalism is 'the Chinese Virus'. Orientalism is Weeaboos. Orientalism is the Day Spa Shootings. Orientalism is Avatar: the Last Airbender. It can be obvious hate crimes, but it can also be dressed up as adoration, idealization, cultural appreciation. Regardless, it is a manifestation of White supremacy.</p>
                 </div>
                 <div class="card-footer">
-                    <button class="btn btn-link" onclick="reset('orientalism', 'https://asterfialla.com/tropeaday#orientalism', 'Orientalism', 'en')">Load Comments</button>
+                    <p></p>
                 </div>
             </div>
-
-            <div id="test"><button class="btn btn-link" onclick="reset('test', 'https://asterfialla.com/tropeaday#test', 'Test', 'en')">Load Comments</button></div>
         </div>
     </div>
 </div>
     <!--copyright-->
     <footer id="footer" class="flex-centered columns col-12 col-mx-auto">
     </footer>
+<script id="dsq-count-scr" src="//asterfialla.disqus.com/count.js" async></script>
 </body>
 </html>

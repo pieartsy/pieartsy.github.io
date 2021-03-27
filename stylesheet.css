@@ -7,7 +7,7 @@
 @import url('https://fonts.googleapis.com/css2?family=ABeeZee&family=Sulphur+Point&display=swap');
 
 html {
-  font-family:'ABeeZee', sans-serif;; /* 1 */
+  font-family:'ABeeZee', sans-serif; /* 1 */
   -webkit-text-size-adjust: 100%; /* 3 */ 
   -ms-text-size-adjust: 100%; /* 3 */
 }
@@ -719,9 +719,8 @@ html:lang(ko),
 
 .btn.btn-link {
   background: rgb(250, 231, 235);
-  border-color: #D54455;
-  border-width: 2px;
-  color: #1d1717;
+  border-color:transparent;
+  color: black;
   -moz-border-radius: 40px;
   -webkit-border-radius: 40px;
   border-radius: 40px;
