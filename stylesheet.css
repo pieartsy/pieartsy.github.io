@@ -3883,3 +3883,8 @@ details > summary {
   position:sticky;
   padding-left: 20%;
 }
+
+/*password spoof*/
+.none {
+  display: none;
+}

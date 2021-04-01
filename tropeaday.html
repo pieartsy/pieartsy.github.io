@@ -1,20 +1,4 @@
-<?php
-session_start();
-
-if(isset($_POST['submit_pass']) && $_POST['pass'])
-{
- $pass=$_POST['pass'];
- if($pass=="stopasianhate")
- {
-  $_SESSION['password']=$pass;
- }
- else
- {
-  $error="Incorrect Password";
- }
-}
-?>
-
+<!DOCTYPE html>
 <html lang="en">
 <head>
     <!--uses unicode characters-->
@@ -28,19 +12,20 @@ if(isset($_POST['submit_pass']) && $_POST['pass'])
     <link rel="stylesheet" href="spectre-icons.css">
     <script src="jquery/jquery.min.js"></script>
     <script>
-        $(document).ready(function(){
+        $(document).ready(function(){          
             $("#footer").load("jquery/footer.html");
         });
     </script>
+    <script src="passwordspoof.js"></script>
     <!--inline discussion disqus thingy-->
     <script src="inlineDisqussions.js"></script>
     <link rel="stylesheet" type="text/css" href="inlineDisqussions.css" />
-    <!--<script>
+    <script>
         disqus_shortname = 'asterfialla';
         jQuery(document).ready(function() {
           jQuery(".card-footer").inlineDisqussions();
         });
-      </script>-->
+      </script>
     <!--font for headers and special text-->
     <link href="https://fonts.googleapis.com/css?family=Sulphur+Point&display=swap" rel="stylesheet">
     <!--font for body text-->
@@ -51,11 +36,9 @@ if(isset($_POST['submit_pass']) && $_POST['pass'])
     <link rel="manifest" href="site.webmanifest">
 </head>
 <body>
+<!--same spectre.css grid as before, this time for the rest of the body-->
+<!--content wrapper for everything except footer-->
 <div id="content" style="padding-top:0">
-<?php
-if($_SESSION['password']=="stopasianhate")
-{
-?>
     <div class="section3">
         <h1>Asian Trope-a-Day</h1>
         <h2><a href="https://asterfialla.com">Aster Fialla</a></h2>
@@ -63,7 +46,15 @@ if($_SESSION['password']=="stopasianhate")
             <p>A series of posts examining Asian stereotypes in media, one per day of May 2021.</p>
         </div>
     </div>
-    <div class="columns" style="display:none">
+    <div class="col-xs-11 col-10 col-mx-auto" id="secret">
+        <form id="form" onSubmit="checkPswd()" style="padding: 1rem;text-align:center">
+                <label for="pswd"><h2>This section is secret.</h2></label>
+                <input style="text-align:center" type="password" id="pswd">
+                <input class="btn btn-link" style="text-align:center" type="submit" value="Submit">
+                <div id="wrong"></div>
+        </form>
+    </div>
+    <div id="tropes" class="columns none">
         <!-- LEFT COLUMN -->
         <div class="column col-3 col-md-12 float-right section4">
             <div id="tableofcontents">
@@ -103,22 +94,6 @@ if($_SESSION['password']=="stopasianhate")
             </div>
         </div>
     </div>
-<?php
-}
-else
-{
- ?>
-     <div class="columns col-xs-11 col-10 col-mx-auto">
-        <form style="text-align:center" method="post" action="" id="login_form">
-        <h2>This section is password protected.</h2>
-        <input type="password" name="pass" placeholder="*******">
-        <input class="btn btn-link" type="submit" name="submit_pass" value="SUBMIT">
-        <p><font style="color:red;"><?php echo $error;?></font></p>
-        </form>
-    </div>
-    <?php
-}
-?>
 </div>
     <!--copyright-->
     <footer id="footer" class="flex-centered columns col-12 col-mx-auto">
