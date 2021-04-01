@@ -1,4 +1,20 @@
-<!DOCTYPE html>
+<?php
+session_start();
+
+if(isset($_POST['submit_pass']) && $_POST['pass'])
+{
+ $pass=$_POST['pass'];
+ if($pass=="stopasianhate")
+ {
+  $_SESSION['password']=$pass;
+ }
+ else
+ {
+  $error="Incorrect Password";
+ }
+}
+?>
+
 <html lang="en">
 <head>
     <!--uses unicode characters-->
@@ -6,7 +22,7 @@
     <!--makes it responsive-->
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>
-            Orientalist Trope-a-Day
+            Asian Trope-a-Day
     </title>
     <link rel="stylesheet" type="text/css" href="stylesheet.css">
     <link rel="stylesheet" href="spectre-icons.css">
@@ -35,18 +51,17 @@
     <link rel="manifest" href="site.webmanifest">
 </head>
 <body>
-<!--same spectre.css grid as before, this time for the rest of the body-->
-<!--content wrapper for everything except footer-->
 <div id="content" style="padding-top:0">
+<?php
+if($_SESSION['password']=="stopasianhate")
+{
+?>
     <div class="section3">
-        <h1>Orientalist Trope-a-Day</h1>
+        <h1>Asian Trope-a-Day</h1>
         <h2><a href="https://asterfialla.com">Aster Fialla</a></h2>
         <div class="flex-centered columns col-sm-11 col-10 col-mx-auto">
             <p>A series of posts examining Asian stereotypes in media, one per day of May 2021.</p>
         </div>
-    </div>
-    <div>
-        <h1>COMING SOON</h1>
     </div>
     <div class="columns" style="display:none">
         <!-- LEFT COLUMN -->
@@ -88,6 +103,22 @@
             </div>
         </div>
     </div>
+<?php
+}
+else
+{
+ ?>
+     <div class="columns col-xs-11 col-10 col-mx-auto">
+        <form style="text-align:center" method="post" action="" id="login_form">
+        <h2>This section is password protected.</h2>
+        <input type="password" name="pass" placeholder="*******">
+        <input class="btn btn-link" type="submit" name="submit_pass" value="SUBMIT">
+        <p><font style="color:red;"><?php echo $error;?></font></p>
+        </form>
+    </div>
+    <?php
+}
+?>
 </div>
     <!--copyright-->
     <footer id="footer" class="flex-centered columns col-12 col-mx-auto">
