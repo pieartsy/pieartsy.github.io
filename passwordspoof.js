@@ -8,4 +8,5 @@ function checkPswd() {
     else{
         document.getElementById("wrong").innerHTML = "Good guess :("
     }
+    return false
 }
