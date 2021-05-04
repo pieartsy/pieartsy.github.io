@@ -10,13 +10,13 @@
     </title>
     <link rel="stylesheet" type="text/css" href="stylesheet.css">
     <link rel="stylesheet" href="spectre-icons.css">
+    <!--jquery load-->
     <script src="jquery/jquery.min.js"></script>
     <script>
-        $(document).load(function(){          
+        $(document).ready(function(){
             $("#footer").load("jquery/footer.html");
         });
     </script>
-    <script src="passwordspoof.js"></script>
     <!--inline discussion disqus thingy-->
     <script src="inlineDisqussions.js"></script>
     <link rel="stylesheet" type="text/css" href="inlineDisqussions.css" />
@@ -240,9 +240,10 @@
                 </div>
             </div>
         </div>
-    </div>
+    </div>    
 </div>
     <!--copyright-->
+    <div id="thanks" class="section4">With thanks to Sereia McDaniel for compiling a lot of this research. Hire them at <a href="mailto:sereia.mcdaniel@gmail.com">sereia.mcdaniel@gmail.com</a>.</div>
     <footer id="footer" class="flex-centered columns col-12 col-mx-auto">
     </footer>
 </body>

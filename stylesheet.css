@@ -3882,9 +3882,12 @@ details > summary {
   top: 2.5rem;
   position:sticky;
   padding-left: 20%;
+  min-height: 90vh;
 }
 
-/*password spoof*/
-.none {
-  display: none;
+#thanks {
+  bottom:0;
+  display: block;
+  text-align: center;
+  padding: .5rem;
 }
