@@ -45,9 +45,6 @@ var disqus_url;
       if ($('#disqus_thread').length === 0) {
         $('<div id="disqus_thread"></div>').appendTo('#disqussions_wrapper');
       }
-      else {
-        mainThreadHandler();
-      }
       if (settings.highlighted) {
         $('<div id="disqussions_overlay"></div>').appendTo($('body'));
       }
@@ -64,7 +61,7 @@ var disqus_url;
 
       // Hide the discussion.
       $('html').click(function(event) {
-        if($(event.target).parents('#disqussions_wrapper, .main-disqussion-link-wrp').length === 0) {
+        if($(event.target).parents('#disqussions_wrapper').length === 0) {
           hideDisqussion();
         }
       });
@@ -120,37 +117,6 @@ var disqus_url;
 
   };
 
-  var mainThreadHandler = function() {
-
-    // Create the discussion note.
-    if ($('a.main-disqussion-link').length === 0) {
-
-      var a = $('<a class="main-disqussion-link" />')
-        .attr('href', window.location.pathname + '#disqus_thread')
-        .text('Comments')
-        .wrap('<h2 class="main-disqussion-link-wrp" />')
-        .parent()
-        .insertBefore('#disqus_thread');
-
-      // Load the relative discussion.
-      a.delegate('a.main-disqussion-link', "click", function(e) {
-        e.preventDefault();
-
-        if ($(this).is('.active')) {
-          e.stopPropagation();
-        }
-        else {
-          loadDisqus($(this), function(source) {
-            relocateDisqussion(source, true);
-          });
-        }
-
-      });
-
-    }
-
-  };
-
   var loadDisqus = function(source, callback) {
 
     disqus_identifier = source.attr('data-disqus-identifier');
@@ -178,7 +144,7 @@ var disqus_url;
     }
 
     // Add 'active' class.
-    $('a.disqussion-link, a.main-disqussion-link').removeClass('active').filter(source).addClass('active');
+    $('a.disqussion-link').removeClass('active').filter(source).addClass('active');
 
     // Highlight
     if (source.is('.disqussion-highlight')) {
@@ -220,23 +186,14 @@ var disqus_url;
 
   };
 
-  var relocateDisqussion = function(el, main) {
+  var relocateDisqussion = function(el) {
 
     // Move the discussion to the right position.
     var css = {};
-    if (main === true) {
-      $('#disqus_thread').removeClass("positioned");
-      css = {
-        'position': 'static',
-        'width': 'auto'
-      };
-    }
-    else {
       $('#disqus_thread').addClass("positioned");
       css = {
         'position': 'absolute'
       };
-    }
     css.backgroundColor = settings.background;
 
     var animate = {};
