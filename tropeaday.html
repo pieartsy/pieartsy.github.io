@@ -17,6 +17,16 @@
             $("#footer").load("jquery/footer.html");
         });
     </script>
+    <!--inline discussion disqus thingy-->
+    <script src="inlineDisqussions.js"></script>
+    <link rel="stylesheet" type="text/css" href="inlineDisqussions.css" />
+    <script>
+        disqus_shortname = 'asterfialla';
+        jQuery(document).ready(function() {
+          jQuery(".card-footer p").inlineDisqussions();
+        });
+    </script>
+    
     <!--font for headers and special text-->
     <link href="https://fonts.googleapis.com/css?family=Sulphur+Point&display=swap" rel="stylesheet">
     <!--font for body text-->
@@ -391,7 +401,7 @@
                     </div>
 
                     <p>The Magical Asian is the the Mystical Orient packaged and shipped to a protagonist near you. He is a a tool to learn from first and foremost; being a person is optional.</p>
-                    </div>
+                </div>
                 <div class="card-footer">
                         <p></p>
                 </div>
@@ -512,14 +522,5 @@
     <div id="thanks" class="section4">With thanks to Sereia McDaniel for compiling a lot of this research. Hire them at <a href="mailto:sereia.mcdaniel@gmail.com">sereia.mcdaniel@gmail.com</a>.</div>
     <footer id="footer" class="flex-centered columns col-12 col-mx-auto">
     </footer>
-    <!--inline discussion disqus thingy-->
-    <script src="inlineDisqussions.js"></script>
-    <link rel="stylesheet" type="text/css" href="inlineDisqussions.css" />
-    <script>
-        disqus_shortname = 'asterfialla';
-        jQuery(document).ready(function() {
-          jQuery(".card-footer p").inlineDisqussions();
-        });
-      </script>
 </body>
 </html>
