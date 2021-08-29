@@ -51,31 +51,31 @@
             case "sketch":
                 switch(size_index) {
                     case "Half": levelsizeprice=20; break;
-                    case "Full": levelsizeprice=30; break;
+                    case "Full": levelsizeprice=40; break;
                 }
                 break;
             case "lineart":
                 switch(size_index) {
                     case "Half": levelsizeprice=50; break;
-                    case "Full": levelsizeprice=60; break;
+                    case "Full": levelsizeprice=70; break;
                 }
                 break;
             case "color":
                 switch(size_index) {
                     case "Half": levelsizeprice=70; break;
-                    case "Full": levelsizeprice=80; break;
+                    case "Full": levelsizeprice=90; break;
                 }
                 break;
             case "shading":
                 switch(size_index) {
                     case "Half": levelsizeprice=80; break;
-                    case "Full": levelsizeprice=90; break;
+                    case "Full": levelsizeprice=100; break;
                 }
                 break;
             case "complex":
                 switch(size_index) {
                     case "Half": levelsizeprice=100; break;
-                    case "Full": levelsizeprice=130; break;
+                    case "Full": levelsizeprice=150; break;
                 }
                 break;
         }
@@ -91,35 +91,35 @@
             case "sketch":
                 switch(background) {
                     case true: 
-                        backgroundprice = 30;break;
+                        backgroundprice = 40;break;
                     default: backgroundprice = 0;
                 }
                 break;
             case "lineart":
                 switch(background) {
                     case true: 
-                        backgroundprice = 60;break;
+                        backgroundprice = 70;break;
                     default: backgroundprice = 0;
                 }
                 break;
             case "color":
                 switch(background) {
                     case true:
-                        backgroundprice = 80;break;
+                        backgroundprice = 90;break;
                     default: backgroundprice = 0;
                 }
                 break;
             case "shading":
                 switch(background) {
                     case true: 
-                        backgroundprice = 90; break;
+                        backgroundprice = 100; break;
                     default: backgroundprice = 0;
                 }
                 break;
             case "complex":
                 switch(background) {
                     case true: 
-                        backgroundprice = 130; break;
+                        backgroundprice = 150; break;
                     default: backgroundprice = 0;
                 }
                 break;
