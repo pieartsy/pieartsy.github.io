@@ -2559,7 +2559,7 @@ summary.accordion-header::-webkit-details-marker {
   display: flex;
   display: -ms-flexbox;
   opacity: 1;
-  z-index: 400;
+  z-index: 1000;
 }
 
 .modal:target .modal-overlay,
