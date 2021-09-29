@@ -778,7 +778,7 @@ html:lang(ko),
   margin-left: .2rem;
   margin-right: -2px;
   opacity: 1;
-  padding: .1rem;
+  padding: 1rem;
   text-decoration: none;
   width: 1rem;
 }
@@ -1483,6 +1483,8 @@ code {
 
 .img-fit-contain {
   object-fit: contain;
+  display: block;
+  max-height: 85vh;
 }
 
 .video-responsive {
@@ -2600,20 +2602,19 @@ summary.accordion-header::-webkit-details-marker {
   display: -ms-flexbox;
   -ms-flex-direction: column;
   flex-direction: column;
-  margin: 15% auto; /* 15% from the top and centered */
-  padding: 20px;
-  height: fit-content;
-  width: 95%; /* Could be more or less, depending on screen size */
+  width: auto; /* Could be more or less, depending on screen size */
 }
 
 .modal-container .modal-header {
-  color: #D54455
+  color: #D54455;
+  padding: 5px 1.5em;
 }
 
 .modal-container .modal-body {
   overflow: auto;
   position: relative;
-  border-radius: 40px;
+  display: flex;
+  justify-content: center;
 }
 
 .modal-container .modal-footer {
@@ -3820,7 +3821,7 @@ details > summary {
 
 .text {
   color: #D54455;
-  font-size: 2vw;
+  font-size: 3.5vh;
   position: absolute;
   top: 50%;
   left: 50%;
