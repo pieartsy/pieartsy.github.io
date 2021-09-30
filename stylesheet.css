@@ -773,14 +773,8 @@ html:lang(ko),
   background: transparent;
   border: 0;
   color: currentColor;
-  height: 1rem;
-  line-height: .8rem;
-  margin-left: .2rem;
-  margin-right: -2px;
   opacity: 1;
-  padding: 1rem;
   text-decoration: none;
-  width: 1rem;
 }
 
 .btn.btn-clear:focus,
@@ -1485,6 +1479,7 @@ code {
   object-fit: contain;
   display: block;
   max-height: 85vh;
+  max-width: 95vw;
 }
 
 .video-responsive {
@@ -2551,7 +2546,7 @@ summary.accordion-header::-webkit-details-marker {
   right: 0;
   top: 0;
   width: 100%; /* Full width */
-  height: 100%; /* Full height */
+  height: 100%;
 }
 
 .modal:target,
@@ -2597,7 +2592,7 @@ summary.accordion-header::-webkit-details-marker {
 .modal-container {
   background: #ffceda;;
   box-shadow: 0 .2rem .5rem #eba1b2;
-  border-radius: 40px;
+  border-radius: 20px;
   display: flex;
   display: -ms-flexbox;
   -ms-flex-direction: column;
