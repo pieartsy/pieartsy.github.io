@@ -1,0 +1,9 @@
+<div class="flex-centered columns col-8 col-mx-auto" style="padding:1em;padding-top:2em">
+    <a href=#content class="anchorbutton btn btn-link">
+        Top
+    </a>
+    {% for item in site.data.buttons %}
+    <a href="#{{ item.commlink }}" class="anchorbutton btn btn-link">
+        {{ item.commname }}
+    </a>
+</div>

@@ -1,0 +1,26 @@
+- artlink: digital
+  artname: Digital
+- artlink: trad
+  artname: Traditional
+- artlink: comics
+  artname: Comics
+- artlink: projects
+  artname: Projects
+
+- commlink: slots
+  commname: Slots
+- commlink: prices
+  commname: Prices
+- commlink: cans
+  commname: Cans & Can'ts
+- commlink: policy
+  commname: Policy
+
+- poemlink: love
+  poemname: How to Fall in Love
+- poemlink: name
+  poemname: My Name
+- poemlink: anima
+  poemname: Anima
+- poemlink: gallery
+  poemname: Poems Gallery
