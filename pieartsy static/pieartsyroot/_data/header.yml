@@ -1,27 +1,29 @@
-- name: Home
-  link: /
-- name: Art
-  link: /art.html
-- name: Commissions
-  link: /commissions.html
-- name: Poems
-  link: /poems.html
+nav:
+  - name: Home
+    link: /
+  - name: Art
+    link: /art.html
+  - name: Commissions
+    link: /commissions.html
+  - name: Poems
+    link: /poems.html
 
-- socialmedia: https://www.linkedin.com/in/aster-fialla/
-  socialmediaimg: imgs/linkedin.png
-  socialmediaalt: linkedin link
-- socialmedia: https://github.com/pieartsy
-  socialmediaimg: imgs/github.png
-  socialmediaalt: github link
-- socialmedia: https://pieartsy.itch.io/
-  socialmediaimg: imgs/itchio.png
-  socialmediaalt: itch.io link
-- socialmedia: https://twitter.com/pieartsy
-  socialmediaimg: imgs/twitter.png
-  socialmediaalt: twitter link
-- socialmedia: https://instagram.com/pieartsy
-  socialmediaimg: imgs/instagram.png
-  socialmediaalt: instagram link
-- socialmedia: https://pieartsy.tumblr.com
-  socialmediaimg: imgs/tumblr.png
-  socialmediaalt: tumblr link
+sm:
+  - socialmedia: https://www.linkedin.com/in/aster-fialla/
+    socialmediaimg: assets/images/linkedin.png
+    socialmediaalt: linkedin link
+  - socialmedia: https://github.com/pieartsy
+    socialmediaimg: assets/images/github.png
+    socialmediaalt: github link
+  - socialmedia: https://pieartsy.itch.io/
+    socialmediaimg: assets/images/itchio.png
+    socialmediaalt: itch.io link
+  - socialmedia: https://twitter.com/pieartsy
+    socialmediaimg: assets/images/twitter.png
+    socialmediaalt: twitter link
+  - socialmedia: https://instagram.com/pieartsy
+    socialmediaimg: assets/images/insta.png
+    socialmediaalt: instagram link
+  - socialmedia: https://pieartsy.tumblr.com
+    socialmediaimg: assets/images/tumblr.png
+    socialmediaalt: tumblr link

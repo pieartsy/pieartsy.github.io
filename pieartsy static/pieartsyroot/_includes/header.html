@@ -6,13 +6,13 @@
         </section>
         <!--breadcrumb (nav menu)-->
         <section class= "navbar-center">
-            {% for item in site.data.header %}
+            {% for item in site.data.header.nav %}
                 <a href= "{{ item.link }}" class="btn btn-link">{{ item.name }}</a>
             {% endfor %}
         </section>
         <!--new section for social media links-->
         <section class= "navbar-section">
-            {% for item in site.data.header %}
+            {% for item in site.data.header.sm %}
                 <a href= "{{ item.socialmedia }}" class="btn btn-link">
                     <img src="{{ item.socialmediaimg }}" alt="{{ item.socialmediaalt }}" height="25" width="25">
                 </a>
@@ -21,7 +21,7 @@
     </div>
     <div class="columns col-12 col-mx-auto content-mobile" style="position:fixed;z-index: 1000;">
         <section class= "navbar-section">
-            {% for item in site.data.header %}
+            {% for item in site.data.header.nav %}
                 <a href= "{{ item.link }}" class="btn btn-link">{{ item.name }}</a>
             {% endfor %}        </section>
         <section class="navbar-section">
@@ -31,7 +31,7 @@
                 </a>
                 <!-- menu component -->
                 <ul class="menu">
-                    {% for item in site.data.header %}
+                    {% for item in site.data.header.sm %}
                     <li class="menu-item">
                         <a href= "{{ item.socialmedia }}" class="btn btn-link">
                             <img src="{{ item.socialmediaimg }}" alt="{{ item.socialmediaalt }}" height="25" width="25">
