@@ -1,0 +1,56 @@
+illos:
+  - illo: assets/images/worst girl.png
+    illoalt: worst girl full image
+    illothumb: assets/images/worst girl thumb.png
+    illothumbalt: worst girl thumbnail
+    illotitle: Worst Girl's Diner Date (2022)
+    illoid: worstgirl
+
+  - illo: assets/images/motw.png
+    illoalt: monster of the week full image
+    illothumb: assets/images/motw thumb.png
+    illothumbalt: monster of the week thumbnail
+    illotitle: Monster of the Week (2021)
+    illoid: motw
+
+  - illo: assets/images/asher.png
+    illoalt: asher art nouveau full image
+    illothumb: assets/images/asher thumb.png
+    illothumbalt: asher art nouveau thumbnail
+    illotitle: Asher Art Nouveau (2020)
+    illoid: asher
+
+  - illo: assets/images/gitfr.png
+    illoalt: get in the fucking robot full image
+    illothumb: assets/images/gitfr thumb.png
+    illothumbalt: get in the fucking robot thumbnail
+    illotitle: Get in the Fucking Robot (2021)
+    illoid: gitfr
+
+  - illo: assets/images/zephyr.png
+    illoalt: zephyr full image
+    illothumb: assets/images/zephyr thumb.png
+    illothumbalt: zephyr thumbnail
+    illotitle: Zephyr (2021)
+    illoid: zephyr
+
+  - illo: assets/images/strahd.png
+    illoalt: lady strahd full image
+    illothumb: assets/images/strahd thumb.png
+    illothumbalt: lady strahd thumbnail
+    illotitle: Lady Strahd (2021)
+    illoid: strahd
+
+  - illo: assets/images/half light.png
+    illoalt: half light full image
+    illothumb: assets/images/half light thumb.png
+    illothumbalt: half light thumbnail
+    illotitle: Half Light (2021)
+    illoid: halflight
+
+  - illo: assets/images/bret.png
+    illoalt: bret d&d full image
+    illothumb: assets/images/bret thumb.png
+    illothumbalt: bret d&d thumbnail
+    illotitle: Bret D&D (2020)
+    illoid: bret

@@ -1,0 +1,556 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!--uses unicode characters-->
+    <meta charset="utf-8">
+    <!--makes it responsive-->
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>
+            Aster Fialla Art
+    </title>
+    <link rel="stylesheet" type="text/css" href="/assets/css/stylesheet.css">
+    <!--font for headers and special text-->
+    <link href="https://fonts.googleapis.com/css?family=Sulphur+Point&display=swap" rel="stylesheet">
+    <!--font for body text-->
+    <link href="https://fonts.googleapis.com/css?family=ABeeZee&display=swap" rel="stylesheet">
+    <link rel="apple-touch-icon" sizes="180x180" href="assets/images/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="assets/images/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="assets/images/favicon-16x16.png">
+    <link rel="manifest" href="site.webmanifest">
+</head>
+<body>
+<!--header for email, other pages, and social media links-->
+<header id="header" class="navbar">
+        <!--spectre.css grid that makes the header not run up against the edges of the screen-->
+    <div class="columns col-12 col-mx-auto content-desktop" style="position:fixed;z-index: 100;">
+        <!--Email on one side-->
+        <section class="navbar-section">
+            <a href="mailto:asterfialla@gmail.com" class="btn btn-link">asterfialla@gmail.com</a>
+        </section>
+        <!--breadcrumb (nav menu)-->
+        <section class= "navbar-center">
+            
+                <a href= "/" class="btn btn-link">Home</a>
+            
+                <a href= "/art.html" class="btn btn-link">Art</a>
+            
+                <a href= "/commissions.html" class="btn btn-link">Commissions</a>
+            
+                <a href= "/poems.html" class="btn btn-link">Poems</a>
+            
+        </section>
+        <!--new section for social media links-->
+        <section class= "navbar-section">
+            
+                <a href= "https://www.linkedin.com/in/aster-fialla/" class="btn btn-link">
+                    <img src="assets/images/linkedin.png" alt="linkedin link" height="25" width="25">
+                </a>
+            
+                <a href= "https://github.com/pieartsy" class="btn btn-link">
+                    <img src="assets/images/github.png" alt="github link" height="25" width="25">
+                </a>
+            
+                <a href= "https://pieartsy.itch.io/" class="btn btn-link">
+                    <img src="assets/images/itchio.png" alt="itch.io link" height="25" width="25">
+                </a>
+            
+                <a href= "https://twitter.com/pieartsy" class="btn btn-link">
+                    <img src="assets/images/twitter.png" alt="twitter link" height="25" width="25">
+                </a>
+            
+                <a href= "https://instagram.com/pieartsy" class="btn btn-link">
+                    <img src="assets/images/insta.png" alt="instagram link" height="25" width="25">
+                </a>
+            
+                <a href= "https://pieartsy.tumblr.com" class="btn btn-link">
+                    <img src="assets/images/tumblr.png" alt="tumblr link" height="25" width="25">
+                </a>
+                
+        </section>
+    </div>
+    <div class="columns col-12 col-mx-auto content-mobile" style="position:fixed;z-index: 1000;">
+        <section class= "navbar-section">
+            
+                <a href= "/" class="btn btn-link">Home</a>
+            
+                <a href= "/art.html" class="btn btn-link">Art</a>
+            
+                <a href= "/commissions.html" class="btn btn-link">Commissions</a>
+            
+                <a href= "/poems.html" class="btn btn-link">Poems</a>
+                    </section>
+        <section class="navbar-section">
+            <div class="dropdown dropdown-right">
+                <a href="#" class="btn btn-link dropdown-toggle" tabindex="0">
+                  Contact<i class="icon icon-caret"></i>
+                </a>
+                <!-- menu component -->
+                <ul class="menu">
+                    
+                    <li class="menu-item">
+                        <a href= "https://www.linkedin.com/in/aster-fialla/" class="btn btn-link">
+                            <img src="assets/images/linkedin.png" alt="linkedin link" height="25" width="25">
+                        </a>
+                    </li>
+                    
+                    <li class="menu-item">
+                        <a href= "https://github.com/pieartsy" class="btn btn-link">
+                            <img src="assets/images/github.png" alt="github link" height="25" width="25">
+                        </a>
+                    </li>
+                    
+                    <li class="menu-item">
+                        <a href= "https://pieartsy.itch.io/" class="btn btn-link">
+                            <img src="assets/images/itchio.png" alt="itch.io link" height="25" width="25">
+                        </a>
+                    </li>
+                    
+                    <li class="menu-item">
+                        <a href= "https://twitter.com/pieartsy" class="btn btn-link">
+                            <img src="assets/images/twitter.png" alt="twitter link" height="25" width="25">
+                        </a>
+                    </li>
+                    
+                    <li class="menu-item">
+                        <a href= "https://instagram.com/pieartsy" class="btn btn-link">
+                            <img src="assets/images/insta.png" alt="instagram link" height="25" width="25">
+                        </a>
+                    </li>
+                    
+                    <li class="menu-item">
+                        <a href= "https://pieartsy.tumblr.com" class="btn btn-link">
+                            <img src="assets/images/tumblr.png" alt="tumblr link" height="25" width="25">
+                        </a>
+                    </li>
+                    
+                </ul>
+            </div>
+        </section>
+    </div>
+
+</header>
+<!--same spectre.css grid as before, this time for the rest of the body-->
+<!--content wrapper for everything except footer-->
+<div id="content">
+        <h1>Art</h1>
+    <div class="flex-centered columns col-sm-11 col-10 col-mx-auto">
+        <p>I'm a self-taught digital illustrator and comic creator, primarily focused on character art. My work has been published in several zines and I do commissions. Further examples of my art are on my various social media accounts @pieartsy; you can find links to those in the upper right corner of my website. More information on my commissions can be found here: <a href="commissions.html">Commissions</a>.</p>
+        
+                <div class="flex-centered columns col-8 col-mx-auto" style="padding:1em;padding-bottom:2em;">
+            <a href=#content class="anchorbutton btn btn-link">
+                Top
+            </a>
+            
+            <a href="#digital" class="anchorbutton btn btn-link">
+                Digital
+            </a>
+            
+            <a href="#trad" class="anchorbutton btn btn-link">
+                Traditional
+            </a>
+            
+            <a href="#comics" class="anchorbutton btn btn-link">
+                Comics
+            </a>
+            
+            <a href="#projects" class="anchorbutton btn btn-link">
+                Projects
+            </a>
+            
+        </div>
+    </div>
+
+    <div id="illustrations" class="section1">
+        <h2>Illustrations</h2>
+        <div class="flex-centered columns col-10 col-mx-auto">
+            <div class="thumbnailgrid column col-12 col-mx-auto">
+                
+                <div>
+                    <a href="#worstgirl">
+                        <div class="thumbnail">
+                            <img src="assets/images/worst girl thumb.png" alt="worst girl thumbnail" class="img-round img-responsive">
+                            <div class="overlay">
+                                <div class="text">Click for full image</div>
+                            </div>
+                        </div>
+                    </a>
+                    <div class="modal modal-lg" id="worstgirl">
+                        <a href="#back" class="modal-overlay" aria-label="Close"></a>
+                        <div class="modal-container">
+                            <div class="modal-header">
+                                <a href="#back" class="btn btn-clear float-right" aria-label="Close"></a>
+                                <h4>Worst Girl's Diner Date (2022)</h4>
+                            </div>
+                            <div class="modal-body">
+                                <img src="assets/images/worst girl.png" alt="worst girl full image" class="img-fit-contain">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div>
+                    <a href="#motw">
+                        <div class="thumbnail">
+                            <img src="assets/images/motw thumb.png" alt="monster of the week thumbnail" class="img-round img-responsive">
+                            <div class="overlay">
+                                <div class="text">Click for full image</div>
+                            </div>
+                        </div>
+                    </a>
+                    <div class="modal modal-lg" id="motw">
+                        <a href="#back" class="modal-overlay" aria-label="Close"></a>
+                        <div class="modal-container">
+                            <div class="modal-header">
+                                <a href="#back" class="btn btn-clear float-right" aria-label="Close"></a>
+                                <h4>Monster of the Week (2021)</h4>
+                            </div>
+                            <div class="modal-body">
+                                <img src="assets/images/motw.png" alt="monster of the week full image" class="img-fit-contain">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div>
+                    <a href="#asher">
+                        <div class="thumbnail">
+                            <img src="assets/images/asher thumb.png" alt="asher art nouveau thumbnail" class="img-round img-responsive">
+                            <div class="overlay">
+                                <div class="text">Click for full image</div>
+                            </div>
+                        </div>
+                    </a>
+                    <div class="modal modal-lg" id="asher">
+                        <a href="#back" class="modal-overlay" aria-label="Close"></a>
+                        <div class="modal-container">
+                            <div class="modal-header">
+                                <a href="#back" class="btn btn-clear float-right" aria-label="Close"></a>
+                                <h4>Asher Art Nouveau (2020)</h4>
+                            </div>
+                            <div class="modal-body">
+                                <img src="assets/images/asher.png" alt="asher art nouveau full image" class="img-fit-contain">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div>
+                    <a href="#gitfr">
+                        <div class="thumbnail">
+                            <img src="assets/images/gitfr thumb.png" alt="get in the fucking robot thumbnail" class="img-round img-responsive">
+                            <div class="overlay">
+                                <div class="text">Click for full image</div>
+                            </div>
+                        </div>
+                    </a>
+                    <div class="modal modal-lg" id="gitfr">
+                        <a href="#back" class="modal-overlay" aria-label="Close"></a>
+                        <div class="modal-container">
+                            <div class="modal-header">
+                                <a href="#back" class="btn btn-clear float-right" aria-label="Close"></a>
+                                <h4>Get in the Fucking Robot (2021)</h4>
+                            </div>
+                            <div class="modal-body">
+                                <img src="assets/images/gitfr.png" alt="get in the fucking robot full image" class="img-fit-contain">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div>
+                    <a href="#zephyr">
+                        <div class="thumbnail">
+                            <img src="assets/images/zephyr thumb.png" alt="zephyr thumbnail" class="img-round img-responsive">
+                            <div class="overlay">
+                                <div class="text">Click for full image</div>
+                            </div>
+                        </div>
+                    </a>
+                    <div class="modal modal-lg" id="zephyr">
+                        <a href="#back" class="modal-overlay" aria-label="Close"></a>
+                        <div class="modal-container">
+                            <div class="modal-header">
+                                <a href="#back" class="btn btn-clear float-right" aria-label="Close"></a>
+                                <h4>Zephyr (2021)</h4>
+                            </div>
+                            <div class="modal-body">
+                                <img src="assets/images/zephyr.png" alt="zephyr full image" class="img-fit-contain">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div>
+                    <a href="#strahd">
+                        <div class="thumbnail">
+                            <img src="assets/images/strahd thumb.png" alt="lady strahd thumbnail" class="img-round img-responsive">
+                            <div class="overlay">
+                                <div class="text">Click for full image</div>
+                            </div>
+                        </div>
+                    </a>
+                    <div class="modal modal-lg" id="strahd">
+                        <a href="#back" class="modal-overlay" aria-label="Close"></a>
+                        <div class="modal-container">
+                            <div class="modal-header">
+                                <a href="#back" class="btn btn-clear float-right" aria-label="Close"></a>
+                                <h4>Lady Strahd (2021)</h4>
+                            </div>
+                            <div class="modal-body">
+                                <img src="assets/images/strahd.png" alt="lady strahd full image" class="img-fit-contain">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div>
+                    <a href="#halflight">
+                        <div class="thumbnail">
+                            <img src="assets/images/half light thumb.png" alt="half light thumbnail" class="img-round img-responsive">
+                            <div class="overlay">
+                                <div class="text">Click for full image</div>
+                            </div>
+                        </div>
+                    </a>
+                    <div class="modal modal-lg" id="halflight">
+                        <a href="#back" class="modal-overlay" aria-label="Close"></a>
+                        <div class="modal-container">
+                            <div class="modal-header">
+                                <a href="#back" class="btn btn-clear float-right" aria-label="Close"></a>
+                                <h4>Half Light (2021)</h4>
+                            </div>
+                            <div class="modal-body">
+                                <img src="assets/images/half light.png" alt="half light full image" class="img-fit-contain">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div>
+                    <a href="#bret">
+                        <div class="thumbnail">
+                            <img src="assets/images/bret thumb.png" alt="bret d&d thumbnail" class="img-round img-responsive">
+                            <div class="overlay">
+                                <div class="text">Click for full image</div>
+                            </div>
+                        </div>
+                    </a>
+                    <div class="modal modal-lg" id="bret">
+                        <a href="#back" class="modal-overlay" aria-label="Close"></a>
+                        <div class="modal-container">
+                            <div class="modal-header">
+                                <a href="#back" class="btn btn-clear float-right" aria-label="Close"></a>
+                                <h4>Bret D&D (2020)</h4>
+                            </div>
+                            <div class="modal-body">
+                                <img src="assets/images/bret.png" alt="bret d&d full image" class="img-fit-contain">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+                    <div class="flex-centered columns col-8 col-mx-auto" style="padding:1em;padding-bottom:2em;">
+            <a href=#content class="anchorbutton btn btn-link">
+                Top
+            </a>
+            
+            <a href="#digital" class="anchorbutton btn btn-link">
+                Digital
+            </a>
+            
+            <a href="#trad" class="anchorbutton btn btn-link">
+                Traditional
+            </a>
+            
+            <a href="#comics" class="anchorbutton btn btn-link">
+                Comics
+            </a>
+            
+            <a href="#projects" class="anchorbutton btn btn-link">
+                Projects
+            </a>
+            
+        </div>
+        </div>
+    </div>
+
+    <div id="trad" class="section1">
+        <h2>Traditional</h2>
+        <div class="flex-centered columns col-10 col-mx-auto">
+            <div class="thumbnailgrid column col-12 col-mx-auto">
+                <div>
+                </div>
+                        <div class="flex-centered columns col-8 col-mx-auto" style="padding:1em;padding-bottom:2em;">
+            <a href=#content class="anchorbutton btn btn-link">
+                Top
+            </a>
+            
+            <a href="#digital" class="anchorbutton btn btn-link">
+                Digital
+            </a>
+            
+            <a href="#trad" class="anchorbutton btn btn-link">
+                Traditional
+            </a>
+            
+            <a href="#comics" class="anchorbutton btn btn-link">
+                Comics
+            </a>
+            
+            <a href="#projects" class="anchorbutton btn btn-link">
+                Projects
+            </a>
+            
+        </div>
+            </div>
+        </div>
+    </div>
+
+<!--
+    <div id="comics" class="section2">
+        <h2>Comics</h2>
+        <div class="flex-centered columns col-10 col-md-auto col-mx-auto">
+            <div class="flex-centered column col-5 col-md-auto col-mx-auto contain" style="margin:1rem">
+                <button class="btn btn-link prev" onclick="plusDivs(-1, 0)">&#10094;</button>
+                <img class="mySlides1 img-responsive" alt="CONTENT NOTES: hanged corpse, vomiting" src="imgs/kim big bang blur.png">
+                <img class="mySlides1 img-responsive" alt="disco elysium big bang comic page 1" src="imgs/kim big bang 1.png">
+                <img class="mySlides1 img-responsive" alt="disco elysium big bang comic page 2" src="imgs/kim big bang 2.png">
+                <img class="mySlides1 img-responsive" alt="disco elysium big bang comic page 3" src="imgs/kim big bang 3.png">
+                <img class="mySlides1 img-responsive" alt="disco elysium big bang comic page 4" src="imgs/kim big bang 4.png">
+                <img class="mySlides1 img-responsive" alt="disco elysium big bang comic page 5" src="imgs/kim big bang 5.png">
+                <button class="btn btn-link next" onclick="plusDivs(1, 0)">&#10095;</button>
+            </div>
+            <div class="flex-centered column col-5 col-md-auto col-mx-auto contain" style="margin:1rem">
+                <button class="btn btn-link prev" onclick="plusDivs(-1, 1)">&#10094;</button>
+                <img class="mySlides2 img-responsive" alt="handcrusher comic page 1" src="imgs/hand crusher_001.png">
+                <img class="mySlides2 img-responsive" alt="handcrusher comic page 2" src="imgs/hand crusher.png">
+                <button class="btn btn-link next" onclick="plusDivs(1, 1)">&#10095;</button>
+            </div>
+        </div>
+        <script>
+            var slideIndex = [1,1];
+            var slideId = ["mySlides1", "mySlides2"]
+            showDivs(1, 0);
+            showDivs(1, 1);
+            
+            function plusDivs(n, no) {
+              showDivs(slideIndex[no] += n, no);
+            }
+            
+            function showDivs(n, no) {
+              var i;
+              var x = document.getElementsByClassName(slideId[no]);
+              if (n > x.length) {slideIndex[no] = 1}
+              if (n < 1) {slideIndex[no] = x.length}
+              for (i = 0; i < x.length; i++) {
+                x[i].style.display = "none";  
+              }
+              x[slideIndex[no]-1].style.display = "block";  
+            }
+        </script>
+                <div class="flex-centered columns col-8 col-mx-auto" style="padding:1em;padding-bottom:2em;">
+            <a href=#content class="anchorbutton btn btn-link">
+                Top
+            </a>
+            
+            <a href="#digital" class="anchorbutton btn btn-link">
+                Digital
+            </a>
+            
+            <a href="#trad" class="anchorbutton btn btn-link">
+                Traditional
+            </a>
+            
+            <a href="#comics" class="anchorbutton btn btn-link">
+                Comics
+            </a>
+            
+            <a href="#projects" class="anchorbutton btn btn-link">
+                Projects
+            </a>
+            
+        </div>
+    </div>
+
+    <div id="projects" class="section1">
+        <h2>Projects</h2>
+        <div class="flex-centered columns col-10 col-md-auto col-mx-auto">
+            <div class="column col-6 col-mr-auto col-md-auto">
+                <div class="card">
+                    <div class="card-header">
+                        <h3>Get in the Fucking Robot cover</h3>
+                        <h4>2021</h4>
+                    </div>
+                    <div class="card-image">
+                        <image src="imgs/gitfrproj.png" class="img-responsive" alt="Preview of the Get in the Fucking Robot cover">
+                    </div>
+                    <div class="card-body">
+                        A cover for the PDF of the tabletop RPG, Get in the Fucking Robot, by Penguin King Games. Link to the playtest version of the game here: <a href="https://penguinking.com/get-in-the-fucking-robot/">Get in the Fucking Robot</a>.
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="card-header">
+                        <h3>Fandom Zines</h3>
+                        <h4>2017-2019</h4>
+                    </div>
+                    <div class="card-image">
+                        <image src="imgs/projs.png" class="img-responsive" alt="Preview of my comic for the Enough Love to Go Around zine">
+                    </div>
+                    <div class="card-body">
+                        <p>
+                            Several comics done for zines in the My Hero Academia and Voltron: Legendary Defender fandoms. These zines were focused around celebrating concepts or specific characters from each piece of media.
+                            <ul>
+                                <li>Enough Love to Go Around zine: <a href="https://bnha-poly-ships-zine.tumblr.com/">website link</a></li>
+                                <li>Your Power zine: <a href="https://yourpowerzine.tumblr.com/post/178090475908">link with details</a></li>
+                                <li>The Gorgeous Man zine: <a href="https://coranzine.tumblr.com/">website link</a></li>
+                            </ul>
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class="column col-6 col-md-auto col-ml-auto">
+                <div class="card">
+                    <div class="card-header">
+                        <h3>Make a Scene</h3>
+                        <h4>2020</h4>
+                    </div>
+                    <div class="card-image">
+                        <image src="imgs/makeascene.png" class="img-responsive" alt="Preview of my illustration for the Make a Scene anthology">
+                    </div>
+                    <div class="card-body">
+                        <p>
+                            An anthology of LARPs. I illustrated the cover art for Boldly Go. The anthology has a Kickstarter at this link: <a href="https://www.kickstarter.com/projects/makeascene/make-a-scene-larp-anthologies">Kickstarter</a>. More information about the Make a Scene festival can be found here: <a href="http://makeascenemn.org/en/">Make a Scene</a>.
+                        </p>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="card-header">
+                        <h3>Serving Pride: The Queer History Dinner Party Handbook</h3>
+                        <h4>2017</h4>
+                    </div>
+                    <div class="card-image">
+                         <image src="imgs/servingpride.png" class="img-responsive" alt="Preview of my illustration for Serving Pride: The Queer History Dinner Party Handbook">
+                    </div>
+                    <div class="card-body">
+                        <p>
+                            An illustrated handbook of queer history presented as a dinner party. I illustrated the art for the candle ritual in Chapter 6. More info on the handbook can be found at this link: <a href="https://www.geeksout.org/serving-pride/">Serving Pride</a>.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+</div>
+<!--copyright-->
+<footer id="footer" class="flex-centered columns col-12 col-mx-auto">
+        <div class="content-mobile column col-1 col-mr-auto">
+        <a href="mailto:asterfialla@gmail.com" class="btn btn-link">
+       <img src="assets/images/email.png" alt="email link" height="25" width="25">
+        </a>
+    </div>
+    &copy Aster Fialla 2021
+</footer>
+</body>
+</html>
