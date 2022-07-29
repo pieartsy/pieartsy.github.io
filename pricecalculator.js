@@ -72,15 +72,9 @@
                     case "Full": levelsizeprice=140; break;
                 }
                 break;
-            case "complex":
-                switch(size_index) {
-                    case "Half": levelsizeprice=150; break;
-                    case "Full": levelsizeprice=180; break;
-                }
-                break;
         }
         
-        var charaprice = charas * levelsizeprice * 0.5;
+        var charaprice = charas * levelsizeprice;
         
         console.log(charaprice);
 
@@ -140,7 +134,7 @@
         
         if (charas > 0) {
         result_html.innerHTML +='Additional characters: '  + charas + '<br>';
-        result_html.innerHTML +='Additional characters price: '  + '$' + levelsizeprice + ' * ' + charas + ' * 50% = $' + charaprice + '<br>';
+        result_html.innerHTML +='Additional characters price: '  + '$' + levelsizeprice + ' * ' + charas + ' = $' + charaprice + '<br>';
         }
         
         if (background) {
