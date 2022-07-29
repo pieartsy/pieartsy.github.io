@@ -110,13 +110,6 @@
                     default: backgroundprice = 0;
                 }
                 break;
-            case "complex":
-                switch(background) {
-                    case true: 
-                        backgroundprice = 180; break;
-                    default: backgroundprice = 0;
-                }
-                break;
         }
 
         total = levelsizeprice + charaprice + backgroundprice;
