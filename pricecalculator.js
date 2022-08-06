@@ -50,37 +50,31 @@
         switch(level_index) {
             case "sketch":
                 switch(size_index) {
-                    case "Half": levelsizeprice=20; break;
-                    case "Full": levelsizeprice=40; break;
+                    case "Half": levelsizeprice=30; break;
+                    case "Full": levelsizeprice=50; break;
                 }
                 break;
             case "lineart":
-                switch(size_index) {
-                    case "Half": levelsizeprice=50; break;
-                    case "Full": levelsizeprice=70; break;
-                }
-                break;
-            case "color":
-                switch(size_index) {
-                    case "Half": levelsizeprice=70; break;
-                    case "Full": levelsizeprice=90; break;
-                }
-                break;
-            case "shading":
                 switch(size_index) {
                     case "Half": levelsizeprice=80; break;
                     case "Full": levelsizeprice=100; break;
                 }
                 break;
-            case "complex":
+            case "color":
                 switch(size_index) {
-                    case "Half": levelsizeprice=100; break;
-                    case "Full": levelsizeprice=150; break;
+                    case "Half": levelsizeprice=90; break;
+                    case "Full": levelsizeprice=120; break;
+                }
+                break;
+            case "shading":
+                switch(size_index) {
+                    case "Half": levelsizeprice=110; break;
+                    case "Full": levelsizeprice=140; break;
                 }
                 break;
         }
         
-        var charaprice = charas * levelsizeprice * 0.5;
+        var charaprice = charas * levelsizeprice;
         
         console.log(charaprice);
 
@@ -91,35 +85,28 @@
             case "sketch":
                 switch(background) {
                     case true: 
-                        backgroundprice = 40;break;
+                        backgroundprice = 50;break;
                     default: backgroundprice = 0;
                 }
                 break;
             case "lineart":
                 switch(background) {
                     case true: 
-                        backgroundprice = 70;break;
+                        backgroundprice = 100;break;
                     default: backgroundprice = 0;
                 }
                 break;
             case "color":
                 switch(background) {
                     case true:
-                        backgroundprice = 90;break;
+                        backgroundprice = 120;break;
                     default: backgroundprice = 0;
                 }
                 break;
             case "shading":
                 switch(background) {
                     case true: 
-                        backgroundprice = 100; break;
-                    default: backgroundprice = 0;
-                }
-                break;
-            case "complex":
-                switch(background) {
-                    case true: 
-                        backgroundprice = 150; break;
+                        backgroundprice = 140; break;
                     default: backgroundprice = 0;
                 }
                 break;
@@ -140,7 +127,7 @@
         
         if (charas > 0) {
         result_html.innerHTML +='Additional characters: '  + charas + '<br>';
-        result_html.innerHTML +='Additional characters price: '  + '$' + levelsizeprice + ' * ' + charas + ' * 50% = $' + charaprice + '<br>';
+        result_html.innerHTML +='Additional characters price: '  + '$' + levelsizeprice + ' * ' + charas + ' = $' + charaprice + '<br>';
         }
         
         if (background) {
