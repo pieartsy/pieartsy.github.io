@@ -55,6 +55,13 @@ illos:
     illotitle: Bret D&D (2020)
     illoid: bret
 
+trads:
+  - trad: monsterryuko.png
+    tradalt: monster ryuko
+    tradthumb: monsterryukothumb.png
+    tradtitle: Monster Ryuko (2020)
+    tradid: monsterryuko
+
 artprojs:
   - artproj: Get in the Fucking Robot cover
     artprojyear: 2021
@@ -86,4 +93,28 @@ artprojs:
     artprojalt: "Preview of my illustration for Serving Pride: The Queer History Dinner Party Handbook"
     artprojdesc: "An illustrated handbook of queer history presented as a dinner party. I illustrated the art for the candle ritual in Chapter 6. More info on the handbook can be found at this link: <a href='https://www.geeksout.org/serving-pride/'>Serving Pride</a>."
 
-  
+comic1s:
+  - comic1alt: "CONTENT NOTES: hanged corpse, vomiting"
+    comic1: kim big bang blur
+
+  - comic1alt: disco elysium big bang comic page 1
+    comic1: kim big bang 1
+
+  - comic1alt: disco elysium big bang comic page 2
+    comic1: kim big bang 2
+
+  - comic1alt: disco elysium big bang comic page 3
+    comic1: kim big bang 3
+
+  - comic1alt: disco elysium big bang comic page 4
+    comic1: kim big bang 4
+
+  - comic1alt: disco elysium big bang comic page 5
+    comic1: kim big bang 5
+
+comic2s:
+  - comic2alt: handcrusher comic page 1
+    comic2: hand crusher_001
+
+  - comic2alt: handcrusher comic page 2
+    comic2: hand crusher

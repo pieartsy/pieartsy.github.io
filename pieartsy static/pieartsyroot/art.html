@@ -19,66 +19,29 @@ title: Aster Fialla Art
         </div>
     </div>
 
+    <div id="trad" class="section4">
+        <h2>Traditional</h2>
+        <div class="flex-centered columns col-10 col-mx-auto">
+            <div class="thumbnailgrid column col-12 col-mx-auto">
+                {% include trad.html %}
+            </div>
+            {% include artbuttons.html %}
+        </div>
+    </div>
+
+
+    <div id="comics" class="section3">
+        <h2>Comics</h2>
+        <div class="flex-centered columns col-10 col-md-auto col-mx-auto">
+            {% include comics.html %}
+        </div>
+        {% include artbuttons.html %}
+    </div>
+
     <div id="projects" class="section2">
         <h2>Projects</h2>
         <div class="flex-centered columns col-10 col-mx-auto">
             {% include artprojs.html %}
         </div>
-    </div>
-<!--
-    <div id="trad" class="section1">
-        <h2>Traditional</h2>
-        <div class="flex-centered columns col-10 col-mx-auto">
-            <div class="thumbnailgrid column col-12 col-mx-auto">
-                <div>
-                </div>
-                {% include artbuttons.html %}
-            </div>
-        </div>
-    </div>
--->
-<!--
-    <div id="comics" class="section2">
-        <h2>Comics</h2>
-        <div class="flex-centered columns col-10 col-md-auto col-mx-auto">
-            <div class="flex-centered column col-5 col-md-auto col-mx-auto contain" style="margin:1rem">
-                <button class="btn btn-link prev" onclick="plusDivs(-1, 0)">&#10094;</button>
-                <img class="mySlides1 img-responsive" alt="CONTENT NOTES: hanged corpse, vomiting" src="imgs/kim big bang blur.png">
-                <img class="mySlides1 img-responsive" alt="disco elysium big bang comic page 1" src="imgs/kim big bang 1.png">
-                <img class="mySlides1 img-responsive" alt="disco elysium big bang comic page 2" src="imgs/kim big bang 2.png">
-                <img class="mySlides1 img-responsive" alt="disco elysium big bang comic page 3" src="imgs/kim big bang 3.png">
-                <img class="mySlides1 img-responsive" alt="disco elysium big bang comic page 4" src="imgs/kim big bang 4.png">
-                <img class="mySlides1 img-responsive" alt="disco elysium big bang comic page 5" src="imgs/kim big bang 5.png">
-                <button class="btn btn-link next" onclick="plusDivs(1, 0)">&#10095;</button>
-            </div>
-            <div class="flex-centered column col-5 col-md-auto col-mx-auto contain" style="margin:1rem">
-                <button class="btn btn-link prev" onclick="plusDivs(-1, 1)">&#10094;</button>
-                <img class="mySlides2 img-responsive" alt="handcrusher comic page 1" src="imgs/hand crusher_001.png">
-                <img class="mySlides2 img-responsive" alt="handcrusher comic page 2" src="imgs/hand crusher.png">
-                <button class="btn btn-link next" onclick="plusDivs(1, 1)">&#10095;</button>
-            </div>
-        </div>
-        <script>
-            var slideIndex = [1,1];
-            var slideId = ["mySlides1", "mySlides2"]
-            showDivs(1, 0);
-            showDivs(1, 1);
-            
-            function plusDivs(n, no) {
-              showDivs(slideIndex[no] += n, no);
-            }
-            
-            function showDivs(n, no) {
-              var i;
-              var x = document.getElementsByClassName(slideId[no]);
-              if (n > x.length) {slideIndex[no] = 1}
-              if (n < 1) {slideIndex[no] = x.length}
-              for (i = 0; i < x.length; i++) {
-                x[i].style.display = "none";  
-              }
-              x[slideIndex[no]-1].style.display = "block";  
-            }
-        </script>
         {% include artbuttons.html %}
     </div>
--->
