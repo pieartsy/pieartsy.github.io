@@ -54,3 +54,36 @@ illos:
     illothumbalt: bret d&d thumbnail
     illotitle: Bret D&D (2020)
     illoid: bret
+
+artprojs:
+  - artproj: Get in the Fucking Robot cover
+    artprojyear: 2021
+    artprojimg: assets/images/gitfrproj.png
+    artprojalt: Preview of the Get in the Fucking Robot cover
+    artprojdesc: "A cover for the PDF of the tabletop RPG, Get in the Fucking Robot, by Penguin King Games. Link to the playtest version of the game here: <a href='https://penguinking.com/get-in-the-fucking-robot/'>Get in the Fucking Robot</a>."
+
+  - artproj: Make a Scene
+    artprojyear: 2020
+    artprojimg: assets/images/makeascene.png
+    artprojalt: Preview of my illustration for the Make a Scene anthology
+    artprojdesc: "An anthology of LARPs. I illustrated the cover art for Boldly Go. The anthology has a Kickstarter at this link: <a href='https://www.kickstarter.com/projects/makeascene/make-a-scene-larp-anthologies'>Kickstarter</a>. More information about the Make a Scene festival can be found here: <a href='http://makeascenemn.org/en/'>Make a Scene</a>."
+
+  - artproj: Fandom Zines
+    artprojyear: 2017-2019
+    artprojimg: assets/images/projs.png
+    artprojalt: Preview of various zine comics
+    artprojdesc: "<p> Several comics done for zines in the My Hero Academia and Voltron: Legendary Defender fandoms. These zines were focused around celebrating concepts or specific characters from each piece of media.
+      <ul>
+        <li>Enough Love to Go Around zine: <a href='https://bnha-poly-ships-zine.tumblr.com/'>website link</a></li>
+        <li>Your Power zine: <a href='https://yourpowerzine.tumblr.com/post/178090475908'>link with details</a></li>
+        <li>The Gorgeous Man zine: <a href='https://coranzine.tumblr.com'>website link</a></li>
+      </ul>
+    </p>"
+
+  - artproj: "Serving Pride: The Queer History Dinner Party Handbook"
+    artprojyear: 2017
+    artprojimg: assets/images/servingpride.png
+    artprojalt: "Preview of my illustration for Serving Pride: The Queer History Dinner Party Handbook"
+    artprojdesc: "An illustrated handbook of queer history presented as a dinner party. I illustrated the art for the candle ritual in Chapter 6. More info on the handbook can be found at this link: <a href='https://www.geeksout.org/serving-pride/'>Serving Pride</a>."
+
+  
