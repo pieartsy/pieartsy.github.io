@@ -1,10 +1,14 @@
 nav:
-  - name: Home
-    link: /
+  - name: About
+    link: /about.html
   - name: Art
     link: /art.html
   - name: Commissions
     link: /commissions.html
+  - name: Code
+    link: /code.html
+  - name: Games
+    link: /games.html
   - name: Poems
     link: /poems.html
 

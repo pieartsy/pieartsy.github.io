@@ -1,8 +1,8 @@
 art:
     - artlink: digital
       artname: Digital
-    - artlink: trad
-      artname: Traditional
+   # - artlink: trad
+    #  artname: Traditional
     - artlink: comics
       artname: Comics
     - artlink: projects

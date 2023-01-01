@@ -1,0 +1,13 @@
+{% for item in site.data.intro.intro %}
+    <div>
+        <a href="#{{ item.thinglink }}">
+            <div class="thumbnail">
+                <img src="assets\images\{{ item.thingimg }}.png" alt="{{ item.thingimgalt }}" class="img-round img-responsive">
+                <div class="overlay">
+                    <div class="text" style="font-size: 5vw">{{ item.thing }}</div>
+                </div>
+            </div>
+        </a>
+    </div>
+
+{% endfor %}
