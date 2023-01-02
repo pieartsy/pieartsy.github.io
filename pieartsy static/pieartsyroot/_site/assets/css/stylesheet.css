@@ -295,7 +295,7 @@ template {
 *,
 *::before,
 *::after {
-  box-sizing: inherit;
+  box-sizing: border-box;
 }
 
 html {
@@ -2443,7 +2443,8 @@ summary.accordion-header::-webkit-details-marker {
 
 .dropdown.active .menu,
 .dropdown .dropdown-toggle:focus + .menu,
-.dropdown .menu:hover {
+.dropdown .menu:hover,
+.menu:active {
   display: block;
 }
 
@@ -3802,17 +3803,32 @@ details > summary {
 .thumbnailgrid {
   display: grid;
   grid-template-columns: repeat( auto-fit, minmax(200px, 1fr) );
-  grid-gap: 30px;
 }
 
 /*overlay for thumbnails*/
 .thumbnail {
   position: relative;
+  margin: 15px;
 }
 
-.thumbnail:hover .overlay {
-  opacity: 1;
+@media (hover: none) {
+  .overlay {
+    opacity: 1;
+    background-color: rgba(250, 231, 235, 0.6);
+  }
 }
+
+@media (hover: hover) {
+  .thumbnail:hover .overlay {
+    opacity: 1;
+  }
+
+  .overlay {
+    opacity: 0;
+    background-color: rgba(250, 231, 235, 0.75);
+  }
+}
+
 
 .overlay {
   position: absolute;
@@ -3820,9 +3836,7 @@ details > summary {
   bottom: 0;
   right: 0;
   left: 0;
-  opacity: 0;
   object-fit: fill;
-  background-color: rgba(250, 231, 235, 0.75);
   border-radius: 40px;
 }
 
