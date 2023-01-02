@@ -1,16 +1,18 @@
 nav:
-  - name: About
-    link: /about.html
-  - name: Art
-    link: /art.html
+ # - name: About
+  #  link: /about.html
+  - name: Pronouns
+    link: /pronouns.html
+ # - name: Art
+ #   link: /art.html
   - name: Commissions
     link: /commissions.html
-  - name: Code
-    link: /code.html
-  - name: Games
-    link: /games.html
-  - name: Poems
-    link: /poems.html
+  #- name: Code
+  #  link: /code.html
+  #- name: Games
+  #  link: /games.html
+ # - name: Poems
+  #  link: /poems.html
 
 sm:
   - socialmedia: https://www.linkedin.com/in/aster-fialla/
