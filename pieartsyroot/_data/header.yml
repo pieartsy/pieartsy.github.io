@@ -1,0 +1,36 @@
+nav:
+
+ # - name: About
+  #  link: about.html
+  - name: Art
+    link: index.html
+  #- name: Pronouns
+   # link: pronouns
+  - name: Commissions
+    link: commissions.html
+  #- name: Code
+  #  link: code.html
+  - name: Games
+    link: games.html
+ # - name: Poems
+  #  link: poems.html
+
+sm:
+  - socialmedia: https://www.linkedin.com/in/aster-fialla/
+    socialmediaimg: assets/images/linkedin.png
+    socialmediaalt: linkedin link
+  - socialmedia: https://github.com/pieartsy
+    socialmediaimg: assets/images/github.png
+    socialmediaalt: github link
+  - socialmedia: https://pieartsy.itch.io/
+    socialmediaimg: assets/images/itchio.png
+    socialmediaalt: itch.io link
+  - socialmedia: https://twitter.com/pieartsy
+    socialmediaimg: assets/images/twitter.png
+    socialmediaalt: twitter link
+  - socialmedia: https://instagram.com/pieartsy
+    socialmediaimg: assets/images/insta.png
+    socialmediaalt: instagram link
+  - socialmedia: https://pieartsy.tumblr.com
+    socialmediaimg: assets/images/tumblr.png
+    socialmediaalt: tumblr link
