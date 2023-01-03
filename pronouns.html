@@ -19,6 +19,131 @@
     <link rel="manifest" href="site.webmanifest">
 </head>
 <body>
+<!--header for email, other pages, and social media links-->
+<header class="navbar">
+        <!--spectre.css grid that makes the header not run up against the edges of the screen-->
+    <div class="columns col-12 col-mx-auto content-desktop title">
+        <!--Email on one side-->
+        <section class="navbar-section">
+            <h4><a href="index.html" class="btn btn-link">Aster Fialla Portfolio</a></h4>
+        </section>
+        <!--breadcrumb (nav menu)-->
+        <section class="navbar-center">
+            
+                <a href= "index.html" class="btn btn-link">Art</a>
+            
+                <a href= "commissions.html" class="btn btn-link">Commissions</a>
+            
+                <a href= "games.html" class="btn btn-link">Games</a>
+            
+        </section>
+        <!--new section for social media links-->
+        <section class="navbar-section">
+            
+                <a href= "https://www.linkedin.com/in/aster-fialla/" class="btn btn-link">
+                    <img src="assets/images/linkedin.png" alt="linkedin link" height="25" width="25">
+                </a>
+            
+                <a href= "https://github.com/pieartsy" class="btn btn-link">
+                    <img src="assets/images/github.png" alt="github link" height="25" width="25">
+                </a>
+            
+                <a href= "https://pieartsy.itch.io/" class="btn btn-link">
+                    <img src="assets/images/itchio.png" alt="itch.io link" height="25" width="25">
+                </a>
+            
+                <a href= "https://twitter.com/pieartsy" class="btn btn-link">
+                    <img src="assets/images/twitter.png" alt="twitter link" height="25" width="25">
+                </a>
+            
+                <a href= "https://instagram.com/pieartsy" class="btn btn-link">
+                    <img src="assets/images/insta.png" alt="instagram link" height="25" width="25">
+                </a>
+            
+                <a href= "https://pieartsy.tumblr.com" class="btn btn-link">
+                    <img src="assets/images/tumblr.png" alt="tumblr link" height="25" width="25">
+                </a>
+                
+        </section>
+    </div>
+    <!--mobile version compresses the social media links into a dropdown-->
+    <div class="columns col-12 col-mx-auto content-mobile title">
+        <section class= "navbar-section">
+            <div class="dropdown">
+                <a href="#" class="btn btn-link dropdown-toggle" tabindex="0">
+                    Menu<i class="icon icon-caret"></i>
+                </a>  
+                <ul class="menu">
+                    
+                    <li class="menu-item">
+                        <a href= "index.html" class="btn btn-link">Art</a>        
+                    </li>
+                    
+                    <li class="menu-item">
+                        <a href= "commissions.html" class="btn btn-link">Commissions</a>        
+                    </li>
+                    
+                    <li class="menu-item">
+                        <a href= "games.html" class="btn btn-link">Games</a>        
+                    </li>
+                            
+                </ul>
+            </div>
+        </section>
+        <section class="navbar-center">
+            <a href="index.html" class="btn btn-link">Aster Fialla Portfolio</a>
+        </section>
+        <section class="navbar-section">
+            <div class="dropdown dropdown-right">
+                <a href="#" class="btn btn-link dropdown-toggle" tabindex="0">
+                  Contact<i class="icon icon-caret"></i>
+                </a>
+                <!-- menu component -->
+                <ul class="menu">
+                    
+                    <li class="menu-item">
+                        <a href= "https://www.linkedin.com/in/aster-fialla/" class="btn btn-link">
+                            <img src="assets/images/linkedin.png" alt="linkedin link" height="25" width="25">
+                        </a>
+                    </li>
+                    
+                    <li class="menu-item">
+                        <a href= "https://github.com/pieartsy" class="btn btn-link">
+                            <img src="assets/images/github.png" alt="github link" height="25" width="25">
+                        </a>
+                    </li>
+                    
+                    <li class="menu-item">
+                        <a href= "https://pieartsy.itch.io/" class="btn btn-link">
+                            <img src="assets/images/itchio.png" alt="itch.io link" height="25" width="25">
+                        </a>
+                    </li>
+                    
+                    <li class="menu-item">
+                        <a href= "https://twitter.com/pieartsy" class="btn btn-link">
+                            <img src="assets/images/twitter.png" alt="twitter link" height="25" width="25">
+                        </a>
+                    </li>
+                    
+                    <li class="menu-item">
+                        <a href= "https://instagram.com/pieartsy" class="btn btn-link">
+                            <img src="assets/images/insta.png" alt="instagram link" height="25" width="25">
+                        </a>
+                    </li>
+                    
+                    <li class="menu-item">
+                        <a href= "https://pieartsy.tumblr.com" class="btn btn-link">
+                            <img src="assets/images/tumblr.png" alt="tumblr link" height="25" width="25">
+                        </a>
+                    </li>
+                    
+                </ul>
+            </div>
+        </section>
+    </div>
+
+</header>
+<!--same spectre.css grid as before, this time for the rest of the body-->
 <!--content wrapper for everything except footer-->
 <div id="content">
     <h1>My Gender and Pronouns</h1>

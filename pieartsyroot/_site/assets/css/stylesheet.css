@@ -8,17 +8,10 @@
 
 :root {
   --lightbg : #fae7eb;
-<<<<<<<< HEAD:assets/css/stylesheet.css
-  --sectionone: #f18da6;
-  --sectiontwo: #eba1b2;
-  --sectionthree: #ffceda;
-  --brighttext: #D54455;
-========
   --sectionone: #f695ad;
   --sectiontwo: #ffceda;
   --sectionthree: #ffaebf;
   --brighttext: #d2384a;
->>>>>>>> static:pieartsyroot/_site/assets/css/stylesheet.css
 }
 
 html {
