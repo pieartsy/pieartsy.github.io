@@ -18,6 +18,18 @@ comm:
   - commlink: policy
     commname: Policy
 
+games:
+  - gamelink: erstwhilegame
+    gamename: Erstwhile
+  - gamelink: andromedagame
+    gamename: Andromeda Chained
+  - gamelink: writing
+    gamename: Writing Samples
+
+samples:
+  - samplelink: triaprima
+    samplename: Tria Prima
+
 poem:
   - poemlink: love
     poemname: How to Fall in Love

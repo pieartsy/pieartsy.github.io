@@ -63,6 +63,12 @@ trads:
     tradid: monsterryuko
 
 artprojs:
+  - artproj: Twilight's Oasis rulebook art
+    artprojyear: 2022
+    artprojimg: assets/images/cynosuresproj.png
+    artprojalt: Preview of the Twilight's Oasis rulebook art
+    artprojdesc: "Rulebook art for the mythical Cynosures from the upcoming LARP, Twilight's Oasis. A preview of the rulebook can be seen here: <a href='https://www.instagram.com/p/Cl6QlNAN_nO/'>Instagram link</a>."
+
   - artproj: Get in the Fucking Robot cover
     artprojyear: 2021
     artprojimg: assets/images/gitfrproj.png

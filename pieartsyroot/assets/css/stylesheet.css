@@ -8,10 +8,10 @@
 
 :root {
   --lightbg : #fae7eb;
-  --sectionone: #f18da6;
-  --sectiontwo: #eba1b2;
-  --sectionthree: #ffceda;
-  --brighttext: #D54455;
+  --sectionone: #f695ad;
+  --sectiontwo: #ffceda;
+  --sectionthree: #ffaebf;
+  --brighttext: #d2384a;
 }
 
 html {
@@ -384,7 +384,8 @@ h4,
 
 h5,
 .h5 {
-  font-size: 1rem;
+  font-size: 1.3rem;
+  font-style: oblique;
 }
 
 h6,
@@ -604,7 +605,6 @@ td:hover::after {
   color: #5755d9;
   cursor: pointer;
   display: inline-block;
-  height: 1.8rem;
   line-height: 1.2rem;
   outline: none;
   padding: .25rem .4rem;
@@ -657,6 +657,7 @@ td:hover::after {
   background: var(--brighttext);
   border-color: var(--brighttext);
   color: #fff;
+  border-radius: 40px;
 }
 
 .btn.btn-primary:focus,
