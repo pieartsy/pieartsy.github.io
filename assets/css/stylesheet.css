@@ -3767,8 +3767,6 @@ a.text-error:visited {
   min-height: calc(100vh - 50px);
 }
 
-
-
 /*header css to hide and show elements*/
 .content-desktop {display: auto;}
 .content-mobile {display: none;}
