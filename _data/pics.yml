@@ -4,7 +4,7 @@ illos:
     illothumb: assets/images/illos/Manny thumb.png
     illothumbalt: manny thumbnail
     illotitle: Manny (2023)
-    illoid: gentlemen
+    illoid: manny
 
   - illo: assets/images/illos/moderngentlemen.png
     illoalt: modern gentlemen full image
@@ -40,7 +40,7 @@ illos:
     illothumbalt: monster of the week thumbnail
     illotitle: Monster of the Week (2021)
     illoid: motw
-    
+
   - illo: assets/images/illos/gitfr.png
     illoalt: get in the fucking robot full image
     illothumb: assets/images/illos/gitfr thumb.png
