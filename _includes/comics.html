@@ -1,17 +1,11 @@
+{% for comic in site.data.pics.comics %}
 <div class="flex-centered column col-5 col-md-12 col-mx-auto contain" style="margin:1rem">
-    <button class="btn btn-link prev" onclick="plusDivs(-1, 0)">&#10094;</button>
-        {% for item in site.data.pics.comic1s %}
-            <img class="mySlides1 img-responsive" alt="{{ item.comic1alt }}" src="assets\images\{{ item.comic1 }}.png">
+    <button class="btn btn-link prev" {{ comic.minus }}>&#10094;</button>
+        {% for page in comic.pages %}
+            <img class="comic {{comic.comic}} img-responsive" alt="{{ page.pagealt }}" src="assets\images\illos\{{ page.page }}.png">
         {% endfor %}
-    <button class="btn btn-link next" onclick="plusDivs(1, 0)">&#10095;</button>
+    <button class="btn btn-link next" {{ comic.plus }}>&#10095;</button>
 </div>
-
-<div class="flex-centered column col-5 col-md-12 col-mx-auto contain" style="margin:1rem">
-    <button class="btn btn-link prev" onclick="plusDivs(-1, 1)">&#10094;</button>
-        {% for item in site.data.pics.comic2s %}
-            <img class="mySlides2 img-responsive" alt="{{ item.comic2alt }}" src="assets\images\{{ item.comic2 }}.png">
-        {% endfor %}
-    <button class="btn btn-link next" onclick="plusDivs(1, 1)">&#10095;</button>
-</div>
+{% endfor %}
 
 <script src="assets\js\comics.js"></script>

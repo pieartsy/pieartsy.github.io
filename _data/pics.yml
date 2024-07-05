@@ -1,4 +1,25 @@
 illos:
+  - illo: assets/images/illos/Manny.png
+    illoalt: Manny full image
+    illothumb: assets/images/illos/Manny thumb.png
+    illothumbalt: manny thumbnail
+    illotitle: Manny (2023)
+    illoid: gentlemen
+
+  - illo: assets/images/illos/moderngentlemen.png
+    illoalt: modern gentlemen full image
+    illothumb: assets/images/illos/moderngentlemen thumb.png
+    illothumbalt: modern gentlemen thumbnail
+    illotitle: Modern Gentlemen (2023)
+    illoid: gentlemen
+
+  - illo: assets/images/illos/polyam_prima.png
+    illoalt: tria night full image
+    illothumb: assets/images/illos/polyam_prima thumb.png
+    illothumbalt: tria night thumbnail
+    illotitle: Tria Night (2023)
+    illoid: triaprima
+
   - illo: assets/images/illos/cynosures.png
     illoalt: twilight's oasis cynosures full image
     illothumb: assets/images/illos/cynosures thumb.png
@@ -19,14 +40,7 @@ illos:
     illothumbalt: monster of the week thumbnail
     illotitle: Monster of the Week (2021)
     illoid: motw
-
-  - illo: assets/images/illos/asher.png
-    illoalt: asher art nouveau full image
-    illothumb: assets/images/illos/asher thumb.png
-    illothumbalt: asher art nouveau thumbnail
-    illotitle: Asher Art Nouveau (2020)
-    illoid: asher
-
+    
   - illo: assets/images/illos/gitfr.png
     illoalt: get in the fucking robot full image
     illothumb: assets/images/illos/gitfr thumb.png
@@ -63,6 +77,12 @@ trads:
     tradid: monsterryuko
 
 artprojs:
+  - artproj: Thank You For Joining the Algorithm
+    artprojyear: 2023
+    artprojimg: assets/images/algorithmproj.png
+    artprojalt: Preview of submission to Thank You For Joining the Algorithm
+    artprojdesc: "A submission to Thank You For Joining the Algorithm, a magazine by Tenebrous Press celebrating the connection between humanity and creativity in the face of algorithmic dominion. The magazine can be bought at <a href='https://store.tenebrouspress.com/products/thank-you-for-joining-the-algorithm-magazine-print-copy-ebook?_pos=2&_psq=thank+you&_ss=e&_v=1.0'>this store link</a>."
+
   - artproj: Twilight's Oasis rulebook art
     artprojyear: 2022
     artprojimg: assets/images/cynosuresproj.png
@@ -99,23 +119,36 @@ artprojs:
     artprojalt: "Preview of my illustration for Serving Pride: The Queer History Dinner Party Handbook"
     artprojdesc: "An illustrated handbook of queer history presented as a dinner party. I illustrated the art for the candle ritual in Chapter 6. More info on the handbook can be found at this link: <a href='https://www.geeksout.org/serving-pride/'>Serving Pride</a>."
 
-comic1s:
+comics:
+  - comic: comic1
+    plus: onclick="plusDivs(1, 0)"
+    minus: onclick="plusDivs(-1, 0)"
+    pages:
+    - page: lmg1
+      pagealt: little match girl comic page 1
+    - page: lmg2
+      pagealt: little match girl comic page 2
+    - page: lmg3
+      pagealt: little match girl comic page 3
+    - page: lmg4
+      pagealt: little match girl comic page 4
 
-  - comic1alt: dammerung comic page 1
-    comic1: bnb1
+  - comic: comic3
+    plus: onclick="plusDivs(1, 2)"
+    minus: onclick="plusDivs(-1, 2)"
+    pages:
+    - page: defluff1
+      pagealt: disco elysium fluff comic page 1
+    - page: defluff2
+      pagealt: disco elysium fluff comic page 2
 
-  - comic1alt: dammerung comic page 2
-    comic1: bnb2
-
-  - comic1alt: dammerung comic page 3
-    comic1: bnb3
-
-  - comic1alt: dammerung comic page 4
-    comic1: bnb4
-
-comic2s:
-  - comic2alt: disco elysium fluff comic page 1
-    comic2: defluff1
-
-  - comic2alt: disco elysium fluff comic page 2
-    comic2: defluff2
+  - comic: comic2
+    plus: onclick="plusDivs(1, 1)"
+    minus: onclick="plusDivs(-1, 1)"
+    pages:
+    - page: algorithm1
+      pagealt: Captcha comic 1
+    - page: algorithm2
+      pagealt: Captcha comic 2
+    - page: algorithm3
+      pagealt: Captcha comic 3

@@ -3866,8 +3866,7 @@ details > summary {
 }
 
 /*comics slideshow on art page*/
-.mySlides1,
-.mySlides2 {
+.comic {
   border-radius: 40px;
   -moz-border-radius: 40px;
   -webkit-border-radius: 40px;
