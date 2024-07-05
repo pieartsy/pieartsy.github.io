@@ -1,0 +1,24 @@
+{% for item in site.data.pics.trads %}
+                <div>
+                    <a href="#{{ item.tradid }}">
+                        <div class="thumbnail">
+                            <img src="assets\images\{{ item.tradthumb }}" alt="{{ item.tradalt}} thumbnail" class="img-round img-responsive">
+                            <div class="overlay">
+                                <div class="text">Click for full image</div>
+                            </div>
+                        </div>
+                    </a>
+                    <div class="modal modal-lg" id="{{ item.tradid }}">
+                        <a href="#back" class="modal-overlay" aria-label="Close"></a>
+                        <div class="modal-container">
+                            <div class="modal-header">
+                                <a href="#back" class="btn btn-clear float-right" aria-label="Close"></a>
+                                <h4>{{ item.tradtitle }}</h4>
+                            </div>
+                            <div class="modal-body">
+                                <img src="assets\images\{{ item.trad }}" alt="{{ item.tradalt }} full image" class="img-fit-contain">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+{% endfor %}

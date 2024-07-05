@@ -1,0 +1,17 @@
+{% for item in site.data.pics.artprojs %}
+<div class="column col-6 col-md-12">
+    <div class="card">
+        <div class="card-header">
+            <h3>{{ item.artproj }}</h3>
+            <h4>{{ item.artprojyear }}</h4>
+        </div>
+        <div class="card-image">
+            <image src="{{ item.artprojimg }}" class="img-responsive" alt="{{ item.artprojalt }}">
+        </div>
+        <div class="card-body">
+            {{ item.artprojdesc }}
+        </div>
+    </div>
+</div>
+
+{% endfor %}

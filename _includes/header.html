@@ -1,0 +1,58 @@
+    <!--spectre.css grid that makes the header not run up against the edges of the screen-->
+    <div class="columns col-12 col-mx-auto content-desktop title">
+        <!--Email on one side-->
+        <section class="navbar-section">
+            <h4><a href="index.html" class="btn btn-link">Aster Fialla Portfolio</a></h4>
+        </section>
+        <!--breadcrumb (nav menu)-->
+        <section class="navbar-center">
+            {% for item in site.data.header.nav %}
+                <a href= "{{ item.link }}" class="btn btn-link">{{ item.name }}</a>
+            {% endfor %}
+        </section>
+        <!--new section for social media links-->
+        <section class="navbar-section">
+            {% for item in site.data.header.sm %}
+                <a href= "{{ item.socialmedia }}" class="btn btn-link">
+                    <img src="{{ item.socialmediaimg }}" alt="{{ item.socialmediaalt }}" height="25" width="25">
+                </a>
+            {% endfor %}    
+        </section>
+    </div>
+    <!--mobile version compresses the social media links into a dropdown-->
+    <div class="columns col-12 col-mx-auto content-mobile title">
+        <section class= "navbar-section">
+            <div class="dropdown">
+                <a href="#" class="btn btn-link dropdown-toggle" tabindex="0">
+                    Menu<i class="icon icon-caret"></i>
+                </a>  
+                <ul class="menu">
+                    {% for item in site.data.header.nav %}
+                    <li class="menu-item">
+                        <a href= "{{ item.link }}" class="btn btn-link">{{ item.name }}</a>        
+                    </li>
+                    {% endfor %}        
+                </ul>
+            </div>
+        </section>
+        <section class="navbar-center">
+            <a href="index.html" class="btn btn-link">Aster Fialla Portfolio</a>
+        </section>
+        <section class="navbar-section">
+            <div class="dropdown dropdown-right">
+                <a href="#" class="btn btn-link dropdown-toggle" tabindex="0">
+                  Contact<i class="icon icon-caret"></i>
+                </a>
+                <!-- menu component -->
+                <ul class="menu">
+                    {% for item in site.data.header.sm %}
+                    <li class="menu-item">
+                        <a href= "{{ item.socialmedia }}" class="btn btn-link">
+                            <img src="{{ item.socialmediaimg }}" alt="{{ item.socialmediaalt }}" height="25" width="25">
+                        </a>
+                    </li>
+                    {% endfor %}
+                </ul>
+            </div>
+        </section>
+    </div>

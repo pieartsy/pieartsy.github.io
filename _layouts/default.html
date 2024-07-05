@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!--uses unicode characters-->
+    <meta charset="utf-8">
+    <!--makes it responsive-->
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>
+            {{ page.title }}
+    </title>
+    <link rel="stylesheet" type="text/css" href="assets/css/stylesheet.css">
+    <!--font for headers and special text-->
+    <link href="https://fonts.googleapis.com/css?family=Sulphur+Point&display=swap" rel="stylesheet">
+    <!--font for body text-->
+    <link href="https://fonts.googleapis.com/css?family=ABeeZee&display=swap" rel="stylesheet">
+    <link rel="apple-touch-icon" sizes="180x180" href="assets/images/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="assets/images/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="assets/images/favicon-16x16.png">
+    <link rel="manifest" href="site.webmanifest">
+</head>
+<body>
+<!--header for email, other pages, and social media links-->
+<header class="navbar">
+    {% include header.html %}
+</header>
+<!--same spectre.css grid as before, this time for the rest of the body-->
+<!--content wrapper for everything except footer-->
+<div id="content">
+    {{ content }}
+</div>
+<!--copyright-->
+<footer id="footer" class="flex-centered columns col-12 col-mx-auto">
+    {% include footer.html %}
+</footer>
+</body>
+</html>

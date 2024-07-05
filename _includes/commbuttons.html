@@ -1,0 +1,7 @@
+<div class="flex-centered columns col-8 col-mx-auto" style="padding:1em;padding-top:2em">
+    {% for item in site.data.buttons.comm %}
+    <a href="#{{ item.commlink }}" class="anchorbutton btn btn-link">
+        {{ item.commname }}
+    </a>
+    {% endfor %}
+</div>
