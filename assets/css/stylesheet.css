@@ -8,10 +8,10 @@
 
 :root {
   --lightbg : #fae7eb;
-  --sectionone: #f695ad;
+  --sectionone: #ffa1b9;
   --sectiontwo: #ffceda;
   --sectionthree: #ffaebf;
-  --brighttext: #d2384a;
+  --brighttext: #cf284f;
 }
 
 html {
@@ -428,9 +428,10 @@ mark {
 }
 
 blockquote {
-  border-left: .1rem solid #dadee4;
+  border-left: .1rem solid var(--brighttext);
   margin-left: 0;
   padding: .4rem .8rem;
+  font-style: italic;
 }
 
 blockquote p:last-child {
