@@ -1,79 +1,86 @@
 illos:
+  - illo: assets/images/illos/Laios Devourer.png
+    illoalt: Laios the Devourer full image
+    illothumb: assets/images/illos/Laios Devourer thumb.png
+    illothumbalt: Laios the Devourer thumb
+    illotitle: Laios the Devourer
+    illoid: laios
+
+  - illo: assets/images/illos/dor and cathabel.png
+    illoalt: Dor and Cathabel full image
+    illothumb: assets/images/illos/dor and cathabel thumb.png
+    illothumbalt: Dor and Cathabel thumbnail
+    illotitle: Dor and Cathabel
+    illoid: dorAndCath
+
   - illo: assets/images/illos/Manny.png
     illoalt: Manny full image
     illothumb: assets/images/illos/Manny thumb.png
     illothumbalt: manny thumbnail
-    illotitle: Manny (2023)
+    illotitle: Manny
     illoid: manny
 
   - illo: assets/images/illos/moderngentlemen.png
     illoalt: modern gentlemen full image
     illothumb: assets/images/illos/moderngentlemen thumb.png
     illothumbalt: modern gentlemen thumbnail
-    illotitle: Modern Gentlemen (2023)
+    illotitle: Modern Gentlemen
     illoid: gentlemen
 
   - illo: assets/images/illos/polyam_prima.png
     illoalt: tria night full image
     illothumb: assets/images/illos/polyam_prima thumb.png
     illothumbalt: tria night thumbnail
-    illotitle: Tria Night (2023)
+    illotitle: Tria Night
     illoid: triaprima
 
   - illo: assets/images/illos/cynosures.png
     illoalt: twilight's oasis cynosures full image
     illothumb: assets/images/illos/cynosures thumb.png
     illothumbalt: twilight's oasis cynosures thumbnail
-    illotitle: Twilight's Oasis Cynosures (2022)
+    illotitle: Twilight's Oasis Cynosures
     illoid: cynosures
-
-  - illo: assets/images/illos/worst girl.png
-    illoalt: worst girl full image
-    illothumb: assets/images/illos/worst girl thumb.png
-    illothumbalt: worst girl thumbnail
-    illotitle: Worst Girl's Diner Date (2022)
-    illoid: worstgirl
 
   - illo: assets/images/illos/motw.png
     illoalt: monster of the week full image
     illothumb: assets/images/illos/motw thumb.png
     illothumbalt: monster of the week thumbnail
-    illotitle: Monster of the Week (2021)
+    illotitle: Monster of the Week
     illoid: motw
 
   - illo: assets/images/illos/gitfr.png
     illoalt: get in the fucking robot full image
     illothumb: assets/images/illos/gitfr thumb.png
     illothumbalt: get in the fucking robot thumbnail
-    illotitle: Get in the Fucking Robot (2021)
+    illotitle: Get in the Fucking Robot
     illoid: gitfr
 
   - illo: assets/images/illos/zephyr.png
     illoalt: zephyr full image
     illothumb: assets/images/illos/zephyr thumb.png
     illothumbalt: zephyr thumbnail
-    illotitle: Zephyr (2021)
+    illotitle: Zephyr
     illoid: zephyr
 
   - illo: assets/images/illos/strahd.png
     illoalt: lady strahd full image
     illothumb: assets/images/illos/strahd thumb.png
     illothumbalt: lady strahd thumbnail
-    illotitle: Lady Strahd (2021)
+    illotitle: Lady Strahd
     illoid: strahd
 
   - illo: assets/images/illos/half light.png
     illoalt: half light full image
     illothumb: assets/images/illos/half light thumb.png
     illothumbalt: half light thumbnail
-    illotitle: Half Light (2021)
+    illotitle: Half Light
     illoid: halflight
 
 trads:
   - trad: monsterryuko.png
     tradalt: monster ryuko
     tradthumb: monsterryukothumb.png
-    tradtitle: Monster Ryuko (2020)
+    tradtitle: Monster Ryuko
     tradid: monsterryuko
 
 artprojs:

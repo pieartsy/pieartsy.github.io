@@ -12,7 +12,7 @@ intro:
     thingimg: codebanner
     thingimgalt: creatibot palette examples
   - thing: Games
-    thinglink: games.html
+    thinglink: games-old.html
     thingimg: gamebanner
     thingimgalt: the cover of Erstwhile
   - thing: Poems

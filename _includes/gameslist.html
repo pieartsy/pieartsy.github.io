@@ -1,0 +1,9 @@
+{% for game in site.data.games.game %}
+    <div id="{{game.title}}" class="{{game.section}}">
+        <h2>{{game.title}}</h2>
+        <h4><a href="{{base}}/assets/games/{{game.link}}" style="padding:1em"><img height="auto" width="50%" src="{{base}}/assets/images/{{game.image}}" class="img-round" alt="Cover art for {{game.title}}"></a></h4>
+        <div class="flex-centered columns col-10 col-mx-auto">
+            <div>{{game.blurb}}</div>
+        </div>
+    </div>
+{% endfor %}

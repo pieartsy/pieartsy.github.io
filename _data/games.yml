@@ -1,0 +1,23 @@
+game:
+    - title: Erstwhile
+      section: section1
+      link: Erstwhile update.html
+      image: erstwhile.png
+      blurb: >
+        <blockquote>The neighborhood Thanksgiving party was going pretty well until you keeled over and died.<br><br>
+
+        Now you're a ghost, and you're going to figure out who killed you. But you can't exactly interview people or search for clues when you're dead, can you? All you can do is piece together memories about what happened.<br><br>
+
+        No one said the memories had to be yours.</blockquote>
+        <p>Erstwhile was co-written by myself (under a previous name) and Marijke Perry. It placed <a href="https://ifcomp.org/comp/2018">5th in IFComp 2018</a>. It also was nominated in the <a href="http://xyzzyawards.org/?p=533">2018 XYZZY awards</a> for Best NPCs and Best Individual Puzzle; it won the latter category.</p>
+
+    - title: Andromeda Chained
+      section: section2
+      link: andromeda-chained/andromeda-chained.html
+      image: andromeda chained.png
+      blurb: >
+        <blockquote>You stand on the rocks for an indeterminable amount of time. Waves roar, gulls cry overhead, and your arms are beginning to ache from being held above your head by the chain.<br><br>
+        
+        There’s nothing to do but wait here to die.</blockquote>
+        <p>A myth retelling of the Perseus and Andromeda story.</p>
+        <p>I recommend you replay it more than once.</p>
