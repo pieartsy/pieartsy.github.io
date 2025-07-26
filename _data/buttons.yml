@@ -19,10 +19,12 @@ art:
 #    commname: Policy
 
 games:
-  - gamelink: erstwhile
-    gamename: Erstwhile
-  - gamelink: andromedagame
-    gamename: Andromeda Chained
+  - id: ifgames
+    button: Interactive Fiction Games
+  - id: ttrpgs
+    button: TTRPGS
+  - id: pieces
+    button: Interactive Pieces
 
 #poem:
 #  - poemlink: love

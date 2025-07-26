@@ -12,6 +12,8 @@
   --sectiontwo: #ffceda;
   --sectionthree: #ffaebf;
   --brighttext: #cf284f;
+  --darktext: #53030d;
+  --purble: #8f31fa;
 }
 
 html {
@@ -316,27 +318,23 @@ body {
 a {
   color: var(--brighttext);
   outline: none;
-  text-decoration: underline;
-
+  text-decoration: none;
+  font-weight: bold;
 }
 
-a:focus {
-  box-shadow: 0;
-  color: #fa3878;
-  font-weight: bolder;
+
+a:visited {
+  color: var(--purble);
 }
 
 a:focus,
 a:hover,
 a:active,
 a.active {
-  color: #fa3878;
-  font-weight: bolder;
+  color: var(--darktext);
+  text-decoration: underline;
 }
 
-a:visited {
-  color: #8f31fa;
-}
 
 h1,
 h2,
@@ -744,10 +742,11 @@ td:hover::after {
   background: var(--lightbg);
   border-color:transparent;
   color: black;
-  -moz-border-radius: 40px;
-  -webkit-border-radius: 40px;
   border-radius: 40px;
   margin: .2rem;
+  max-width: 200px;
+  white-space: normal;
+  font-weight: normal;
 }
 
 .btn.btn-link:focus,
@@ -755,8 +754,7 @@ td:hover::after {
 .btn.btn-link:active,
 .btn.btn-link.active {
   background-color: var(--brighttext);
-  border-color: black;
-  border-width: 3px;
+  border: black solid 3px;
   font-weight: bold;
 }
 

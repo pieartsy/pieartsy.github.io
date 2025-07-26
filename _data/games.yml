@@ -1,23 +1,68 @@
-game:
+if:
     - title: Erstwhile
-      section: section1
+      folder: erstwhile
       link: Erstwhile update.html
       image: erstwhile.png
       blurb: >
-        <blockquote>The neighborhood Thanksgiving party was going pretty well until you keeled over and died.<br><br>
-
-        Now you're a ghost, and you're going to figure out who killed you. But you can't exactly interview people or search for clues when you're dead, can you? All you can do is piece together memories about what happened.<br><br>
-
-        No one said the memories had to be yours.</blockquote>
-        <p>Erstwhile was co-written by myself (under a previous name) and Marijke Perry. It placed <a href="https://ifcomp.org/comp/2018">5th in IFComp 2018</a>. It also was nominated in the <a href="http://xyzzyawards.org/?p=533">2018 XYZZY awards</a> for Best NPCs and Best Individual Puzzle; it won the latter category.</p>
+        <blockquote>The neighborhood Thanksgiving party was going pretty well until you keeled over and died.</blockquote>
+        <p>Placed 5th in <a href="https://ifcomp.org/comp/2018">IFComp 2018</a> and won Best Individual Puzzle in the <a href="http://xyzzyawards.org/?p=533">2018 XYZZY awards</a>.
+#<br><br>
+#
+#        Now you're a ghost, and you're going to figure out who killed you. But you can't exactly interview people or search for clues when you're dead, can you? All you can do is piece together memories about what happened.<br><br>
+#
+#        No one said the memories had to be yours.</blockquote>
+#        <p>Erstwhile was co-written by myself (under a previous name) and Marijke Perry. It placed <a href="https://ifcomp.org/comp/2018">5th in IFComp 2018</a>. It also was nominated in the <a href="http://xyzzyawards.org/?p=533">2018 XYZZY awards</a> for Best NPCs and Best Individual Puzzle; it won the latter category.</p>
 
     - title: Andromeda Chained
-      section: section2
-      link: andromeda-chained/andromeda-chained.html
+      folder: andromeda-chained
+      link: andromeda-chained.html
       image: andromeda chained.png
-      blurb: >
+      blurb: >       
         <blockquote>You stand on the rocks for an indeterminable amount of time. Waves roar, gulls cry overhead, and your arms are beginning to ache from being held above your head by the chain.<br><br>
-        
+
         There’s nothing to do but wait here to die.</blockquote>
         <p>A myth retelling of the Perseus and Andromeda story.</p>
-        <p>I recommend you replay it more than once.</p>
+
+    - title: You Promise
+      folder: promise
+      link: you-promise.html
+      image: promise.png
+      blurb: <p>What will you give your Honored Guest? What will you get in return?</p><p>Created in 2 hours by 2 authors for <a href="https://itch.io/jam/ectocomp-2024">Ectocomp 2024</a> and won 3rd place in the La Petite Mort category.</p>
+
+    - title: In a minute there is time
+      folder: minute
+      link: minute.html
+      image: minute.png
+      blurb: <p>A gamified love song to J. Alfred Prufrock and T. S. Eliot. Walk through half-deserted streets and muttering retreats, listen to odd conversations, and take in the evening. You only have 60 seconds, but don't worry— in a minute there is time for decisions and revisions which a minute will reverse.</p><p>Submitted to <a href="https://itch.io/jam/seed-comp-1-growing">SeedComp 2023</a> and won the Best Seed Subversion and Best Technical awards.<p>
+
+    - title: You are Neurodivergent as FUCK (and not alone)
+      folder: nd-af
+      link: nd-af.html
+      image: nd-af.png
+      blurb: <p>A short game that is way less affirming than the title sounds.</p>
+
+ttrpgs:
+  - title: Burn and Again
+    folder: burn-and-again
+    link: burn.pdf
+    image: burn.png
+    blurb: > 
+      <p>A lyric game involving your hand and a stovetop. CW: self harm.</p>
+
+
+pieces:
+  - title: Compassionate Simulation
+    folder: compsim
+    link: compsim.html
+    image: compsim.png
+    blurb: >
+      <blockquote><i>—our company mission to provide grieving families with accurate, compassionate simulations of their deceased loved ones—</i><br><br>
+
+      You! Winnifred Meyer. Remember? You are Winnifred Meyer, and you died at age twenty-six in a car accident.</blockquote>
+      <p>A Twinefied adaption of Compassionate Simulation, a short story by <a  href="http://rachelswirsky.com/">Rachel Swirsky</a> and <a href="https://twitter.com/P_H_Lee">P H Lee</a>. Originally published in <a href="https://uncannymagazine.com/article/compassionate-simulation/">Uncanny Magazine</a>, I adapted it with the authors' permission; the adaption's original publication was in <a target="_blank" href="https://sub-q.com/compassionate-simulation/">subQ magazine</a>.</p>
+
+  - title: Reflecting my face in the mirror
+    folder: reflecting
+    link: reflecting.html
+    image: reflecting.png
+    blurb: <p>A dynamic poem for the Neo-Twiny Jam. Not mobile-friendly.</p>
