@@ -616,7 +616,7 @@ td:hover::after {
   user-select: none;
   vertical-align: middle;
   white-space: nowrap;
-  word-wrap: anywhere;
+  /*word-wrap: anywhere;*/
 }
 
 .btn:focus {
@@ -744,7 +744,6 @@ td:hover::after {
   color: black;
   border-radius: 40px;
   margin: .2rem;
-  max-width: 200px;
   white-space: normal;
   font-weight: normal;
 }
@@ -753,9 +752,12 @@ td:hover::after {
 .btn.btn-link:hover,
 .btn.btn-link:active,
 .btn.btn-link.active {
-  background-color: var(--brighttext);
+  background-color: var(--brighttext) !important;
   border: black solid 3px;
-  font-weight: bold;
+}
+
+.btn.btn-link.darker {
+  background-color: var(--sectionone);
 }
 
 .btn.btn-sm {
@@ -1597,8 +1599,6 @@ video.video-responsive::before {
   display: -ms-flexbox;
   -ms-flex-wrap: wrap;
   flex-wrap: wrap;
-  margin-left: -.4rem;
-  margin-right: -.4rem;
 }
 
 .columns.col-gapless {
