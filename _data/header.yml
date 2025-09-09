@@ -22,9 +22,6 @@ sm:
   - socialmedia: https://github.com/pieartsy
     socialmediaimg: github.png
     socialmediaalt: github link
-  - socialmedia: https://codeberg.org/pieartsy
-    socialmediaimg: codeberg.png
-    socialmediaalt: codeberg link
   - socialmedia: https://pieartsy.itch.io/
     socialmediaimg: itchio.png
     socialmediaalt: itch.io link
