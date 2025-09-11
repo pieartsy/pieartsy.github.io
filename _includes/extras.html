@@ -1,0 +1,32 @@
+<h2>Website</h2>
+<div class="columns col-sm-11 col-10 col-mx-auto">
+    <p>Stuff not linked elsewhere on my website.</p>
+</div>
+<div class="p-centered column col-sm-11 col-10 col-mx-auto">
+    <ul>
+        {% for item in site.data.links.extras %}
+        <li><a href="{{ item.link }}">{{ item.name }}</a> - {{ item.desc }}</li>
+        {% endfor %}
+    </ul>
+</div>
+
+<h2>Webrings</h2>
+<div class="columns col-sm-11 col-10 col-mx-auto">
+    <p>The webrings I'm in. (Just one so far)</p>
+</div>
+<div class="flex-centered columns col-sm-11 col-10 col-mx-auto">
+    <a class="btn btn-link" href="https://neoint-webring.netlify.app/asterfialla/previous">⮜</a>
+
+    <a href="https://neoint-webring.netlify.app/"><img alt="Neo-Interactives badge" src="assets/images/neo-interactives-badge.png"></a>
+
+    <a class="btn btn-link" href="https://neoint-webring.netlify.app/asterfialla/next">⮞</a>
+</div>
+
+<h2>Other cool sites</h2>
+<div class="p-centered column col-sm-11 col-10 col-mx-auto">
+    <ul>
+        {% for item in site.data.links.outside %}
+        <li><span style="display:inline-block;vertical-align:middle;"><img alt="{{item.logo-alt}}" src="assets/images/{{item.logo-src}}" height="{{item.logo-height}}"></span> <a href="{{ item.link }}"> {{ item.name }}</a> - {{ item.desc }}</li>
+        {% endfor %}
+    </ul>
+</div>

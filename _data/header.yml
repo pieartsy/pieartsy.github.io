@@ -1,7 +1,7 @@
 nav:
 
- # - name: About
-  #  link: about.html
+  - name: About
+    link: about.html
   - name: Art
     link: index.html
   #- name: Pronouns
@@ -12,6 +12,8 @@ nav:
     link: games.html
   - name: Blog
     link: blog.html
+  - name: Miscellany
+    link: misc.html
  # - name: Poems
   #  link: poems.html
 
