@@ -1,11 +1,10 @@
+---
+---
 /*! Spectre.css v0.5.8 | MIT License | github.com/picturepan2/spectre */
 /* Manually forked from Normalize.css */
 /* normalize.css v5.0.0 | MIT License | github.com/necolas/normalize.css */
 /** 1. Change the default font family in all browsers (opinionated). 2. Correct the line height in all browsers. 3. Prevent adjustments of font size after orientation changes in IE on Windows Phone and in iOS. */
 /* Document ========================================================================== */
-
-@import url('https://fonts.googl#ffcedaeapis.com/css2?family=ABeeZee&family=Sulphur+Point&display=swap');
-
 :root {
   --lightbg : #fae7eb;
   --sectionone: #ffa1b9;
@@ -14,6 +13,51 @@
   --brighttext: #cf284f;
   --darktext: #53030d;
   --purble: #8f31fa;
+}
+
+@font-face {
+  font-family: "ABeeZee";
+  src:
+          local("ABeeZee-Regular"),
+          url(fonts/ABeeZee-Regular.ttf) format("truetype");
+  font-style: normal;
+  font-weight: normal;
+}
+
+@font-face {
+  font-family: "ABeeZee";
+  src:
+          local("ABeeZee-Italic"),
+          url(fonts/ABeeZee-Italic.ttf) format("truetype");
+  font-style: italic;
+  font-weight: normal;
+}
+
+@font-face {
+  font-family: "Sulphur Point";
+  src:
+          local("SulphurPoint-Regular"),
+          url(fonts/SulphurPoint-Regular.ttf) format("truetype");
+  font-style: normal;
+  font-weight: normal;
+}
+
+@font-face {
+  font-family: "Sulphur Point";
+  src:
+          local("SulphurPoint-Bold"),
+          url(fonts/SulphurPoint-Bold.ttf) format("truetype");
+  font-style: normal;
+  font-weight: bold;
+}
+
+@font-face {
+  font-family: "Sulphur Point";
+  src:
+          local("SulphurPoint-Light"),
+          url(fonts/SulphurPoint-Light.ttf) format("truetype");
+  font-style: normal;
+  font-weight: 300;
 }
 
 html {
@@ -750,8 +794,7 @@ td:hover::after {
 
 .btn.btn-link:focus,
 .btn.btn-link:hover,
-.btn.btn-link:active,
-.btn.btn-link.active {
+.btn.btn-link:active {
   background-color: var(--brighttext) !important;
   border: black solid 3px;
 }

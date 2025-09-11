@@ -23,6 +23,8 @@ platforms :mingw, :x64_mingw, :mswin, :jruby do
   gem "tzinfo-data"
 end
 
+gem 'jekyll-sass-converter'
+
 # Performance-booster for watching directories on Windows
 gem "wdm", "~> 0.2.0", :platforms => [:mingw, :x64_mingw, :mswin]
 

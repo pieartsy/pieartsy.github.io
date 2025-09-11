@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+{% include base.html %}
+<html lang="en">
+<head>
+    {% include head.html %}
+</head>
+<body>
+<!--header for email, other pages, and social media links-->
+<header class="navbar">
+    {% include header.html %}
+</header>
+<!--same spectre.css grid as before, this time for the rest of the body-->
+<!--content wrapper for everything except footer-->
+<div id="content">
+    <h1>{{page.title}}</h1>
+    <div class="columns col-sm-11 col-10 col-mx-auto">
+        <div class="column col-sm-12 col-6">
+            <img src="assets/games/{{page.logo}}" class="img-responsive" alt="{{page.alt}}">
+        </div>
+        <div class="column">
+            {{content}}
+            <a class="btn btn-link" href="assets/games/{{page.game}}">Download</a>
+        </div>
+    </div>
+    <div class="columns col-sm-11 col-10 col-mx-auto">
+        <!-- begin wwww.htmlcommentbox.com -->
+        <div id="HCB_comment_box"><a href="http://www.htmlcommentbox.com">Widget</a> is loading comments...</div>
+        <link rel="stylesheet" type="text/css" href="assets/css/commentbox.css" />
+        <script type="text/javascript" id="hcb"> /*<!--*/ if(!window.hcb_user){hcb_user={};} (function(){var s=document.createElement("script"), l=hcb_user.PAGE || (""+window.location).replace(/'/g,"%27"), h="https://www.htmlcommentbox.com";s.setAttribute("type","text/javascript");s.setAttribute("src", h+"/jread?page="+encodeURIComponent(l).replace("+","%2B")+"&mod=%241%24wq1rdBcg%24ynkfQoA6rcwylBJ4co.Jm1"+"&opts=16798&num=10&ts=1757623858328");if (typeof s!="undefined") document.getElementsByTagName("head")[0].appendChild(s);})(); /*-->*/ </script>
+        <!-- end www.htmlcommentbox.com -->
+    </div>
+</div>
+<!--copyright-->
+<footer id="footer" class="flex-centered columns col-12 col-mx-auto">
+    {% include footer.html %}
+</footer>
+</body>
+</html>

@@ -1,7 +1,7 @@
 if:
     - title: Erstwhile
       folder: erstwhile
-      link: Erstwhile update.html
+      link: Erstwhile-update.html
       image: erstwhile.png
       blurb: >
         <blockquote>The neighborhood Thanksgiving party was going pretty well until you keeled over and died.</blockquote>
@@ -47,7 +47,7 @@ ttrpgs:
     link: burn.pdf
     image: burn.png
     blurb: > 
-      <p>A lyric game involving your hand and a stovetop. CW: self harm.</p>
+      <p>A lyric game involving your hand and a stovetop. <a href="assets/games/ttrpgs/burn-and-again/burn-plaintext.txt">Here is the plaintext version</a>. CW: self harm.</p>
 
 
 pieces:
