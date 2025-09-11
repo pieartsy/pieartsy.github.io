@@ -1,11 +1,10 @@
 if:
     - title: Erstwhile
       folder: erstwhile
-      link: Erstwhile-update.html
+      link: erstwhile
       image: erstwhile.png
       blurb: >
         <blockquote>The neighborhood Thanksgiving party was going pretty well until you keeled over and died.</blockquote>
-        <p>Placed 5th in <a href="https://ifcomp.org/comp/2018">IFComp 2018</a> and won Best Individual Puzzle in the <a href="http://xyzzyawards.org/?p=533">2018 XYZZY awards</a>.
 #<br><br>
 #
 #        Now you're a ghost, and you're going to figure out who killed you. But you can't exactly interview people or search for clues when you're dead, can you? All you can do is piece together memories about what happened.<br><br>
@@ -15,7 +14,7 @@ if:
 
     - title: Andromeda Chained
       folder: andromeda-chained
-      link: andromeda-chained.html
+      link: assets/games/if/andromeda-chained/andromeda-chained.html
       image: andromeda chained.png
       blurb: >       
         <blockquote>You stand on the rocks for an indeterminable amount of time. Waves roar, gulls cry overhead, and your arms are beginning to ache from being held above your head by the chain.<br><br>
@@ -25,19 +24,19 @@ if:
 
     - title: You Promise
       folder: promise
-      link: you-promise.html
+      link: assets/games/if/promise/you-promise.html
       image: promise.png
       blurb: <p>What will you give your Honored Guest? What will you get in return?</p><p>Created in 2 hours by 2 authors for <a href="https://itch.io/jam/ectocomp-2024">Ectocomp 2024</a> and won 3rd place in the La Petite Mort category.</p>
 
     - title: In a minute there is time
       folder: minute
-      link: minute.html
+      link: in-a-minute.html
       image: minute.png
       blurb: <p>A gamified love song to J. Alfred Prufrock and T. S. Eliot. Walk through half-deserted streets and muttering retreats, listen to odd conversations, and take in the evening. You only have 60 seconds, but don't worry— in a minute there is time for decisions and revisions which a minute will reverse.</p><p>Submitted to <a href="https://itch.io/jam/seed-comp-1-growing">SeedComp 2023</a> and won the Best Seed Subversion and Best Technical awards.<p>
 
     - title: You are Neurodivergent as FUCK (and not alone)
       folder: nd-af
-      link: nd-af.html
+      link: assets/games/if/nd-af/nd-af.html
       image: nd-af.png
       blurb: <p>A short game that is way less affirming than the title sounds.</p>
 

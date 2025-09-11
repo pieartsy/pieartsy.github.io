@@ -13,18 +13,18 @@
 <!--content wrapper for everything except footer-->
 <div id="content">
     <h1>{{page.title}}</h1>
-        <iframe class="columns col-sm-11 col-10 col-mx-auto" src="assets/games/{{page.directory}}/{{page.game}}" style="border-radius: 40px; border: black 3px solid; height: 700px;" allow="fullscreen">
+    <div style="position: relative;" class="columns col-sm-11 col-10 col-mx-auto">
+        <iframe  src="assets/games/{{page.directory}}/{{page.game}}" style="border-radius: 40px; border: black 3px solid; height: 700px; width:100%;" allow="fullscreen">
             Your browser doesn't support iframes
         </iframe>
-    <div class="column col-sm-12 col-5 col-mx-auto">
-        <button class="btn btn-link" onclick="document.getElementsByTagName('iframe')[0].requestFullscreen();">Full screen</button>
+        <button style="opacity: 90%; float: right;position: absolute;bottom: 1em;right: 1em;z-index:999" class="btn btn-link" onclick="document.getElementsByTagName('iframe')[0].requestFullscreen();">Full screen</button>
     </div>
 
     <div class="columns col-sm-11 col-10 col-mx-auto">
-        <div class="column col-sm-12 col-5 col-mx-auto">
-            <img src="assets/games/{{page.directory}}/{{page.logo}}" class="img-responsive" alt="{{page.alt}}">
+        <div class="column col-5 col-sm-12 col-mx-auto">
+            <img src="assets/games/{{page.directory}}/{{page.logo}}" style="padding:1em;" class="img-responsive" alt="{{page.alt}}">
         </div>
-        <div class="column col-11 col-mx-auto">
+        <div class="column col-12 col-mx-auto">
             <div>{{content}}</div>
             <a class="flex-centered btn btn-link" href="assets/games/{{page.directory}}/{{page.zip}}" download="{{page.filename}}">Download</a>
         </div>
@@ -42,34 +42,4 @@
     {% include footer.html %}
 </footer>
 </body>
-
-<script>
-    document.addEventListener('fullscreenchange', () => {
-        if (document.fullscreenElement === iframe) {
-            fullscreenButton.textContent = 'Exit Fullscreen';
-            fullscreenButton.addEventListener('click', exitFullscreenHandler);
-        } else {
-            fullscreenButton.textContent = 'Go Fullscreen';
-            fullscreenButton.removeEventListener('click', exitFullscreenHandler);
-            fullscreenButton.addEventListener('click', fullscreenHandler);
-        }
-    });
-
-    function fullscreenHandler() {
-        if (iframe.requestFullscreen) {
-            iframe.requestFullscreen();
-    }
-
-    function exitFullscreenHandler() {
-        if (document.exitFullscreen) {
-            document.exitFullscreen();
-        }
-
-
-    function makeFullScreen() {
-        // document.getElementsByTagName("iframe")[0].className = "fullScreen";
-        var elem = document.body;
-        requestFullScreen(elem);
-    }
-</script>
 </html>
