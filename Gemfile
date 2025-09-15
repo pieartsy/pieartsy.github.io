@@ -24,6 +24,7 @@ platforms :mingw, :x64_mingw, :mswin, :jruby do
 end
 
 gem 'jekyll-sass-converter'
+gem 'jekyll-feed'
 
 # Performance-booster for watching directories on Windows
 gem "wdm", "~> 0.2.0", :platforms => [:mingw, :x64_mingw, :mswin]
