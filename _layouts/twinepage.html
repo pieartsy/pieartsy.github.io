@@ -13,12 +13,6 @@
 <!--content wrapper for everything except footer-->
 <div id="content">
     <h1>{{page.title}}</h1>
-    <div style="position: relative;" class="columns col-sm-11 col-10 col-mx-auto">
-        <iframe  src="assets/{{page.directory}}/{{page.game}}" style="border-radius: 40px; border: black 3px solid; height: 700px; width:100%;" allow="fullscreen">
-            Your browser doesn't support iframes
-        </iframe>
-        <button style="opacity: 90%; float: right;position: absolute;bottom: 1em;right: 1em;z-index:999" class="btn btn-link" onclick="document.getElementsByTagName('iframe')[0].requestFullscreen();">Full screen</button>
-    </div>
 
     <div class="columns col-sm-11 col-10 col-mx-auto">
         <div class="column col-5 col-sm-12 col-mx-auto">
@@ -26,9 +20,20 @@
         </div>
         <div class="column col-12 col-mx-auto">
             <div>{{content}}</div>
-            <a class="flex-centered btn btn-link" style="margin-bottom: 2em;" href="assets/{{page.directory}}/{{page.zip}}" download="{{page.filename}}">Download</a>
         </div>
     </div>
+
+    <div style="position: relative;" class="columns col-sm-11 col-10 col-mx-auto">
+        <iframe  src="assets/{{page.directory}}/{{page.game}}" style="border-radius: 40px; border: black 3px solid; height: 700px; width:100%;" allow="fullscreen">
+            Your browser doesn't support iframes
+        </iframe>
+        <button style="opacity: 90%; float: right;position: absolute;bottom: 1em;right: 1em;z-index:999" class="btn btn-link" onclick="document.getElementsByTagName('iframe')[0].requestFullscreen();">Full screen</button>
+    </div>
+
+    <div class="columns col-sm-11 col-10 col-mx-auto" style="padding: 1em;">
+        <a class="btn btn-link column col-12 col-mx-auto" href="assets/{{page.directory}}/{{page.zip}}" download="{{page.filename}}">Download</a>
+    </div>
+
     <div class="columns col-12 col-mx-auto section2">
         <!-- begin wwww.htmlcommentbox.com -->
         <div id="HCB_comment_box"><a href="http://www.htmlcommentbox.com">Widget</a> is loading comments...</div>
