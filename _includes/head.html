@@ -10,3 +10,10 @@
 <link rel="icon" type="image/png" sizes="32x32" href="{{base}}/assets/images/favicon-32x32.png">
 <link rel="icon" type="image/png" sizes="16x16" href="{{base}}/assets/images/favicon-16x16.png">
 <link rel="manifest" href="site.webmanifest">
+{% feed_meta %}
+<meta property="og:url" content="{{ site.url }}{{ page.url }}" />
+<meta property="og:title" content="{{ page.title }}" />
+<meta property="og:description" content="{{ page.description }}" />
+<meta property="og:image" content="{{base}}/assets/{{ page.image }}" />
+<meta property="og:type"  content="{{ page.type }}" />
+<meta property="og:locale"  content="en_US" />

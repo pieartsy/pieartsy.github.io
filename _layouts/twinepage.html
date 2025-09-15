@@ -14,7 +14,7 @@
 <div id="content">
     <h1>{{page.title}}</h1>
     <div style="position: relative;" class="columns col-sm-11 col-10 col-mx-auto">
-        <iframe  src="assets/games/{{page.directory}}/{{page.game}}" style="border-radius: 40px; border: black 3px solid; height: 700px; width:100%;" allow="fullscreen">
+        <iframe  src="assets/{{page.directory}}/{{page.game}}" style="border-radius: 40px; border: black 3px solid; height: 700px; width:100%;" allow="fullscreen">
             Your browser doesn't support iframes
         </iframe>
         <button style="opacity: 90%; float: right;position: absolute;bottom: 1em;right: 1em;z-index:999" class="btn btn-link" onclick="document.getElementsByTagName('iframe')[0].requestFullscreen();">Full screen</button>
@@ -22,11 +22,11 @@
 
     <div class="columns col-sm-11 col-10 col-mx-auto">
         <div class="column col-5 col-sm-12 col-mx-auto">
-            <img src="assets/games/{{page.directory}}/{{page.logo}}" style="padding:1em;" class="img-responsive" alt="{{page.alt}}">
+            <img src="assets/{{page.directory}}/{{page.image}}" style="padding:1em;" class="img-responsive" alt="{{page.alt}}">
         </div>
         <div class="column col-12 col-mx-auto">
             <div>{{content}}</div>
-            <a class="flex-centered btn btn-link" style="margin-bottom: 2em;" href="assets/games/{{page.directory}}/{{page.zip}}" download="{{page.filename}}">Download</a>
+            <a class="flex-centered btn btn-link" style="margin-bottom: 2em;" href="assets/{{page.directory}}/{{page.zip}}" download="{{page.filename}}">Download</a>
         </div>
     </div>
     <div class="columns col-12 col-mx-auto section2">

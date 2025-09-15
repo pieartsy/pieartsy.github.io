@@ -1,5 +1,6 @@
 title: Aster Fialla
-description: The art and games of Aster Fialla
+description: Aster Fialla's portfolio, blog, and miscellaneous other things.
+author: Aster Fialla
 domain: asterfialla.com     # if you want to force HTTPS, specify the domain without the http at the start, e.g. example.com
 url: https://asterfialla.com  # the base hostname and protocol for your site, e.g. http://example.com
 layout: default
@@ -15,8 +16,20 @@ collections:
   ttrpg:
     output: true
     permalink: /:title
+plugins:
+  - jekyll-feed
+
+feed:
+  icon: /images/avvie.png
+  disable_in_development: true
 
 defaults:
+  - scope:
+      path: ""
+    values:
+      type: "website"
+      description: Aster Fialla's portfolio, blog, and miscellaneous other things.
+      title: Aster Fialla
   -
     scope:
       path: ""

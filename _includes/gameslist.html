@@ -6,10 +6,10 @@
         <div class="card" id="{{if.directory}}">
             <div class="card-header"><h3>{{if.title}}</h3></div>
             <div class="card-image">
-                <img height="auto" width="100%" src="{{base}}/assets/games/{{if.directory}}/{{if.logo}}" class="img-round" alt="Cover art for {{if.title}}.">
+                <img height="auto" width="100%" src="{{base}}/assets/{{if.directory}}/{{if.image}}" class="img-round" alt="Cover art for {{if.title}}.">
             </div>
             <div class="card-body">
-                <div>{{if.blurb}}</div>
+                <div>{{if.description}}</div>
             </div>
             <div class="card-footer p-centered"><a class="btn btn-link darker"  id="{{if.directory}}-link" href="{{if.url}}">Play <i>{{if.title}}</i></a></div>
         </div>
@@ -29,10 +29,10 @@
         <div class="card" id="{{ttrpg.directory}}">
             <div class="card-header"><h3>{{ttrpg.title}}</h3></div>
             <div class="card-image">
-                <img height="auto" width="100%" src="{{base}}/assets/games/{{ttrpg.directory}}/{{ttrpg.logo}}" class="img-round" alt="Cover art for {{ttrpg.title}}">
+                <img height="auto" width="100%" src="{{base}}/assets/{{ttrpg.directory}}/{{ttrpg.image}}" class="img-round" alt="Cover art for {{ttrpg.title}}">
             </div>
             <div class="card-body">
-                <div>{{ttrpg.blurb}}</div>
+                <div>{{ttrpg.description}}</div>
             </div>
             <div class="card-footer p-centered"><a class="btn btn-link darker" id="{{ttrpg.directory}}-link" href="{{ttrpg.url}}">Read <i>{{ttrpg.title}}</i></a></div>
         </div>
@@ -55,10 +55,10 @@
         <div class="card" id="{{piece.directory}}">
             <div class="card-header"><h3>{{piece.title}}</h3></div>
             <div class="card-image">
-                <img height="auto" width="100%" src="{{base}}/assets/games/{{piece.directory}}/{{piece.logo}}" class="img-round" alt="Cover art for {{piece.title}}">
+                <img height="auto" width="100%" src="{{base}}/assets/{{piece.directory}}/{{piece.image}}" class="img-round" alt="Cover art for {{piece.title}}">
             </div>
             <div class="card-body">
-                <div>{{piece.blurb}}</div>
+                <div>{{piece.description}}</div>
             </div>
             <div class="card-footer p-centered"><a class="btn btn-link darker" id="{{piece.directory}}-link" href="{{piece.url}}">Explore <i>{{piece.title}}</i></a></div>
         </div>
