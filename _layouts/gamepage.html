@@ -14,15 +14,15 @@
 <div id="content">
     <h1>{{page.title}}</h1>
     <div class="columns col-sm-11 col-10 col-mx-auto">
-        <div class="column col-sm-12 col-6">
-            <img src="assets/games/{{page.logo}}" class="img-responsive" alt="{{page.alt}}">
+        <div class="column col-5 col-sm-12 col-mx-auto">
+            <img src="assets/games/{{page.directory}}/{{page.logo}}" style="padding:1em;" class="img-responsive" alt="Cover art for {{page.title}}.">
         </div>
-        <div class="column">
-            {{content}}
-            <a class="btn btn-link" href="assets/games/{{page.game}}">Download</a>
+        <div class="column col-12 col-mx-auto">
+            <div>{{content}}</div>
+            <a class="flex-centered btn btn-link" style="margin-bottom: 2em;" href="assets/games/{{page.directory}}/{{page.zip}}" download="{{page.filename}}">Download</a>
         </div>
     </div>
-    <div class="columns col-sm-11 col-10 col-mx-auto">
+    <div class="columns col-12 col-mx-auto section2">
         <!-- begin wwww.htmlcommentbox.com -->
         <div id="HCB_comment_box"><a href="http://www.htmlcommentbox.com">Widget</a> is loading comments...</div>
         <link rel="stylesheet" type="text/css" href="assets/css/commentbox.css" />

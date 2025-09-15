@@ -4,3 +4,34 @@ domain: asterfialla.com     # if you want to force HTTPS, specify the domain wit
 url: https://asterfialla.com  # the base hostname and protocol for your site, e.g. http://example.com
 layout: default
 excerpt_separator: <!--more-->
+collections_dir: collections
+collections:
+  twine:
+    output: true
+    permalink: /:title
+  piece:
+    output: true
+    permalink: /:title
+  ttrpg:
+    output: true
+    permalink: /:title
+
+defaults:
+  -
+    scope:
+      path: ""
+      type: "twine"
+    values:
+      layout: "twinepage"
+  -
+    scope:
+      path: ""
+      type: "piece"
+    values:
+      layout: "twinepage"
+  -
+    scope:
+      path: ""
+      type: "ttrpg"
+    values:
+      layout: "twinepage"

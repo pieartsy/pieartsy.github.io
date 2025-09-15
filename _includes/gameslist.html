@@ -1,17 +1,17 @@
 <section id="ifgames" class="section2">
     <h2>Interactive Fiction games</h2>
     <div class="flex-centered columns col-sm-11 col-10 col-mx-auto">
-    {% for if in site.data.games.if %}
+    {% for if in site.twine %}
     <div class="column col-4 col-md-12">
-        <div class="card" id="{{if.folder}}">
+        <div class="card" id="{{if.directory}}">
             <div class="card-header"><h3>{{if.title}}</h3></div>
             <div class="card-image">
-                <img height="auto" width="100%" src="{{base}}/assets/games/if/{{if.folder}}/{{if.image}}" class="img-round" alt="Cover art for {{if.title}}">
+                <img height="auto" width="100%" src="{{base}}/assets/games/{{if.directory}}/{{if.logo}}" class="img-round" alt="Cover art for {{if.title}}.">
             </div>
             <div class="card-body">
                 <div>{{if.blurb}}</div>
             </div>
-            <div class="card-footer p-centered"><a class="btn btn-link darker"  id="{{if.folder}}-link" href="{{if.link}}">Play <i>{{if.title}}</i></a></div>
+            <div class="card-footer p-centered"><a class="btn btn-link darker"  id="{{if.directory}}-link" href="{{if.url}}">Play <i>{{if.title}}</i></a></div>
         </div>
     </div>
     {% endfor %}
@@ -24,17 +24,17 @@
 <section id="ttrpgs" class="section3">
     <h2>TTRPGS</h2>
     <div class="flex-centered columns col-sm-11 col-10 col-mx-auto">
-    {% for ttrpg in site.data.games.ttrpgs %}
+    {% for ttrpg in site.ttrpg %}
     <div class="column col-4 col-md-12">
-        <div class="card" id="{{ttrpg.folder}}">
+        <div class="card" id="{{ttrpg.directory}}">
             <div class="card-header"><h3>{{ttrpg.title}}</h3></div>
             <div class="card-image">
-                <img height="auto" width="100%" src="{{base}}/assets/games/ttrpgs/{{ttrpg.folder}}/{{ttrpg.image}}" class="img-round" alt="Cover art for {{ttrpg.title}}">
+                <img height="auto" width="100%" src="{{base}}/assets/games/{{ttrpg.directory}}/{{ttrpg.logo}}" class="img-round" alt="Cover art for {{ttrpg.title}}">
             </div>
             <div class="card-body">
                 <div>{{ttrpg.blurb}}</div>
             </div>
-            <div class="card-footer p-centered"><a class="btn btn-link darker" id="{{ttrpg.folder}}-link" href="{{base}}/assets/games/ttrpgs/{{ttrpg.folder}}/{{ttrpg.link}}">Read <i>{{ttrpg.title}}</i></a></div>
+            <div class="card-footer p-centered"><a class="btn btn-link darker" id="{{ttrpg.directory}}-link" href="{{ttrpg.url}}">Read <i>{{ttrpg.title}}</i></a></div>
         </div>
     </div>
     {% endfor %}
@@ -50,17 +50,17 @@
     <div class="flex-centered columns col-10 col-mx-auto">
         <p>Not really games, but they're definitely interactive!</p>
     </div>
-    {% for piece in site.data.games.pieces %}
+    {% for piece in site.piece %}
     <div class="column col-4 col-md-12">
-        <div class="card" id="{{piece.folder}}">
+        <div class="card" id="{{piece.directory}}">
             <div class="card-header"><h3>{{piece.title}}</h3></div>
             <div class="card-image">
-                <img height="auto" width="100%" src="{{base}}/assets/games/pieces/{{piece.folder}}/{{piece.image}}" class="img-round" alt="Cover art for {{piece.title}}">
+                <img height="auto" width="100%" src="{{base}}/assets/games/{{piece.directory}}/{{piece.logo}}" class="img-round" alt="Cover art for {{piece.title}}">
             </div>
             <div class="card-body">
                 <div>{{piece.blurb}}</div>
             </div>
-            <div class="card-footer p-centered"><a class="btn btn-link darker" id="{{piece.folder}}-link" href="{{base}}/assets/games/pieces/{{piece.folder}}/{{piece.link}}">Explore <i>{{piece.title}}</i></a></div>
+            <div class="card-footer p-centered"><a class="btn btn-link darker" id="{{piece.directory}}-link" href="{{piece.url}}">Explore <i>{{piece.title}}</i></a></div>
         </div>
     </div>
     {% endfor %}
