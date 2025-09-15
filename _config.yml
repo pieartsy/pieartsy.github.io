@@ -30,6 +30,8 @@ defaults:
       type: "website"
       description: Aster Fialla's portfolio, blog, and miscellaneous other things.
       title: Aster Fialla
+      directory: /images
+      image: /portraits.png
   -
     scope:
       path: ""
