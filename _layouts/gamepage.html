@@ -13,15 +13,65 @@
 <!--content wrapper for everything except footer-->
 <div id="content">
     <h1>{{page.title}}</h1>
-    <div class="columns col-sm-11 col-10 col-mx-auto">
-        <div class="column col-5 col-sm-12 col-mx-auto">
-            <img src="assets/{{page.directory}}/{{page.image}}" style="padding:1em;" class="img-responsive" alt="Cover art for {{page.title}}.">
+
+    <div class="columns col-sm-11 col-10 col-mx-auto flex-centered">
+        <div id="game-container" style="position: relative;padding: 1em;" class="columns col-sm-11 col-10 col-mx-auto flex-centered">
+            <button class="btn btn-link thumbnail" onclick="replaceButtonWithIframe(this, Event)">
+                <img style="padding:unset; margin:unset; border-radius:40px;" id="coverart" src="assets/{{page.directory}}/{{page.image}}" class="img-responsive" alt="{{page.alt}}">
+                <span class="overlay">
+                    <span class="text">{{page.verb}}</span>
+                </span>
+            </button>
         </div>
         <div class="column col-12 col-mx-auto">
             <div>{{content}}</div>
-            <a class="flex-centered btn btn-link" style="margin-bottom: 2em;" href="assets/{{page.directory}}/{{page.zip}}" download="{{page.filename}}">Download</a>
         </div>
     </div>
+
+    <script>
+        function replaceButtonWithIframe(element, evt) {
+            const gameContainer = document.getElementById('game-container');
+            const gameframe = createIframe(coverart.height);
+            const fullscreenButton = createFullscreenButton();
+            gameContainer.replaceChild(gameframe, element);
+            gameContainer.appendChild(fullscreenButton);
+        }
+
+        function createIframe(coverHeight) {
+            let gameframe = document.createElement("iframe");
+            // Setting the values for the attributes
+            gameframe.setAttribute("class", "centered");
+            gameframe.src = "{{base}}/assets{{page.directory}}/{{page.game}}";
+            gameframe.width= "100%";
+            gameframe.height = coverHeight;
+            gameframe.style.border = "black 3px solid";
+            gameframe.style.borderRadius = "40px";
+            gameframe.allow = "fullscreen";
+            gameframe.innerText = "Your browser doesn't support iframes"
+            return gameframe;
+        }
+
+        function createFullscreenButton() {
+            let fullscreenButton = document.createElement("button");
+            fullscreenButton.setAttribute("class", "btn btn-link");
+            fullscreenButton.style.opacity = "90%";
+            fullscreenButton.style.float = "right";
+            fullscreenButton.style.position = "absolute";
+            fullscreenButton.style.bottom = "2em";
+            fullscreenButton.style.right = "2em";
+            fullscreenButton.style.zIndex = "50";
+            fullscreenButton.innerText = "Full screen";
+            fullscreenButton.addEventListener("click", function () {
+                document.getElementsByTagName('iframe')[0].requestFullscreen();
+            })
+            return fullscreenButton;
+        }
+    </script>
+
+    <div class="columns col-sm-11 col-10 col-mx-auto" style="padding: 1em;">
+        <a class="btn btn-link column col-12 col-mx-auto" href="assets/{{page.directory}}/{{page.zip}}" download="{{page.filename}}">Download</a>
+    </div>
+
     <div class="columns col-12 col-mx-auto section2">
         <!-- begin wwww.htmlcommentbox.com -->
         <div id="HCB_comment_box"><a href="http://www.htmlcommentbox.com">Widget</a> is loading comments...</div>

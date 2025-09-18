@@ -37,16 +37,19 @@ defaults:
       path: ""
       type: "twine"
     values:
-      layout: "twinepage"
+      layout: "gamepage"
+      verb: "Play"
   -
     scope:
       path: ""
       type: "piece"
     values:
-      layout: "twinepage"
+      layout: "gamepage"
+      verb: "Explore"
   -
     scope:
       path: ""
       type: "ttrpg"
     values:
-      layout: "twinepage"
+      layout: "gamepage"
+      verb: "Read"
