@@ -9,13 +9,13 @@ collections_dir: collections
 collections:
   twine:
     output: true
-    permalink: /:title
+    permalink: games/:title
   piece:
     output: true
-    permalink: /:title
+    permalink: games/:title
   ttrpg:
     output: true
-    permalink: /:title
+    permalink: games/:title
 plugins:
   - jekyll-feed
 
@@ -53,3 +53,9 @@ defaults:
     values:
       layout: "gamepage"
       verb: "Read"
+  - scope:
+      path: ""
+      type: "posts"
+    values:
+      type: "article"
+      layout: "posts"

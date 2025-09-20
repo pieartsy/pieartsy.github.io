@@ -7,6 +7,7 @@ description: Aster Fialla's blog.
     {% for post in site.posts %}
     <div class="centered column col-12 col-mc">
         <h2><a href="{{ post.url }}">{{ post.title }}</a></h2>
+        <p class="flex-centered subtitle">Posted {{ post.date | date: "%B %d, %Y" }}</p>
         <p>{{ post.excerpt }}</p>
     </div>
     {% endfor %}
