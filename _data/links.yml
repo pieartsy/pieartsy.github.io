@@ -27,3 +27,10 @@ outside:
     logo-alt: Cartoonist Coop logo
     logo-src: coop_logo.svg
     logo-height: 50
+
+  - name: Jekyll
+    link: https://jekyllrb.com
+    desc: The static site generator I used to make this website.
+    logo-alt: Jekyll logo
+    logo-src: jekyll.png
+    logo-height: 40
