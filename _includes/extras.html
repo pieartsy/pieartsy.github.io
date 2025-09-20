@@ -17,7 +17,7 @@
 <div class="flex-centered columns col-sm-11 col-10 col-mx-auto">
     <a class="btn btn-link" href="https://neoint-webring.netlify.app/asterfialla/previous">⮜</a>
 
-    <a href="https://neoint-webring.netlify.app/"><img alt="Neo-Interactives badge" src="assets/images/neo-interactives-badge.png"></a>
+    <a href="https://neoint-webring.netlify.app/"><img alt="Neo-Interactives badge" src="{{site.url}}/assets/images/neo-interactives-badge.png"></a>
 
     <a class="btn btn-link" href="https://neoint-webring.netlify.app/asterfialla/next">⮞</a>
 </div>
@@ -26,7 +26,7 @@
 <div class="p-centered column col-sm-11 col-10 col-mx-auto">
     <ul>
         {% for item in site.data.links.outside %}
-        <li><span style="display:inline-block;vertical-align:middle;"><img alt="{{item.logo-alt}}" src="assets/images/{{item.logo-src}}" height="{{item.logo-height}}"></span> <a href="{{ item.link }}"> {{ item.name }}</a> - {{ item.desc }}</li>
+        <li><span style="display:inline-block;vertical-align:middle;"><img alt="{{item.logo-alt}}" src="{{site.url}}/assets/images/{{item.logo-src}}" height="{{item.logo-height}}"></span> <a href="{{ item.link }}"> {{ item.name }}</a> - {{ item.desc }}</li>
         {% endfor %}
     </ul>
 </div>

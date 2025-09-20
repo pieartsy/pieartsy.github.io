@@ -6,7 +6,7 @@
         <div class="card" id="{{if.directory}}">
             <div class="card-header"><h3>{{if.title}}</h3></div>
             <div class="card-image">
-                <img height="auto" width="100%" src="{{base}}/assets{{if.directory}}{{if.image}}" class="img-round" alt="Cover art for {{if.title}}.">
+                <img height="auto" width="100%" src="{{site.url}}/assets{{if.directory}}{{if.image}}" class="img-round" alt="Cover art for {{if.title}}.">
             </div>
             <div class="card-body">
                 <div>{{if.description}}</div>
@@ -29,7 +29,7 @@
         <div class="card" id="{{ttrpg.directory}}">
             <div class="card-header"><h3>{{ttrpg.title}}</h3></div>
             <div class="card-image">
-                <img height="auto" width="100%" src="{{base}}/assets{{ttrpg.directory}}{{ttrpg.image}}" class="img-round" alt="Cover art for {{ttrpg.title}}">
+                <img height="auto" width="100%" src="{{site.url}}/assets{{ttrpg.directory}}{{ttrpg.image}}" class="img-round" alt="Cover art for {{ttrpg.title}}">
             </div>
             <div class="card-body">
                 <div>{{ttrpg.description}}</div>
@@ -55,7 +55,7 @@
         <div class="card" id="{{piece.directory}}">
             <div class="card-header"><h3>{{piece.title}}</h3></div>
             <div class="card-image">
-                <img height="auto" width="100%" src="{{base}}/assets{{piece.directory}}{{piece.image}}" class="img-round" alt="Cover art for {{piece.title}}">
+                <img height="auto" width="100%" src="{{site.url}}/assets{{piece.directory}}{{piece.image}}" class="img-round" alt="Cover art for {{piece.title}}">
             </div>
             <div class="card-body">
                 <div>{{piece.description}}</div>

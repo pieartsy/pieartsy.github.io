@@ -2,19 +2,19 @@
     <div class="columns col-12 col-mx-auto content-desktop title">
         <!--Email on one side-->
         <section class="navbar-section">
-            <h4><a href="{{base}}/index.html" class="btn btn-link">Aster Fialla</a></h4>
+            <h4><a href="{{site.url}}/index.html" class="btn btn-link">Aster Fialla</a></h4>
         </section>
         <!--breadcrumb (nav menu)-->
         <section class="navbar-center">
             {% for item in site.data.header.nav %}
-                <a href= "{{base}}/{{ item.link }}" class="btn btn-link">{{ item.name }}</a>
+                <a href= "{{site.url}}/{{ item.link }}" class="btn btn-link">{{ item.name }}</a>
             {% endfor %}
         </section>
         <!--new section for social media links-->
         <section class="navbar-section">
             {% for item in site.data.header.sm %}
                 <a href= "{{ item.socialmedia }}" class="btn btn-link">
-                    <img src="{{base}}/assets/images/{{ item.socialmediaimg }}" alt="{{ item.socialmediaalt }}" height="25" width="25">
+                    <img src="{{site.url}}/assets/images/{{ item.socialmediaimg }}" alt="{{ item.socialmediaalt }}" height="25" width="25">
                 </a>
             {% endfor %}    
         </section>
@@ -36,7 +36,7 @@
             </div>
         </section>
         <section class="navbar-center">
-            <a href="{{base}}/index.html" class="btn btn-link">Aster Fialla</a>
+            <a href="{{site.url}}/index.html" class="btn btn-link">Aster Fialla</a>
         </section>
         <section class="navbar-section">
             <div class="dropdown dropdown-right">
@@ -48,7 +48,7 @@
                     {% for item in site.data.header.sm %}
                     <li class="menu-item">
                         <a href= "{{ item.socialmedia }}" class="btn btn-link">
-                            <img src="{{base}}/assets/images/{{ item.socialmediaimg }}" alt="{{ item.socialmediaalt }}" height="25" width="25">
+                            <img src="{{site.url}}/assets/images/{{ item.socialmediaimg }}" alt="{{ item.socialmediaalt }}" height="25" width="25">
                         </a>
                     </li>
                     {% endfor %}
