@@ -1,6 +1,7 @@
 ---
 title: You promise me a postmortem?
 tags: [interactive fiction, you promise]
+excerpt: A postmortem about You Promise. Full spoilers!
 ---
 A postmortem about [You promise]({{site.url}}/games/you-promise). Full spoilers!
 <!--more-->

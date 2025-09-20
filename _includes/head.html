@@ -13,7 +13,11 @@
 {% feed_meta %}
 <meta property="og:url" content="{{ site.url }}{{ page.url }}" />
 <meta property="og:title" content="{{ page.title }}" />
+{% if page.layout == 'posts' %}
+<meta property="og:description" content="{{ page.excerpt }}" />
+{% else %}
 <meta property="og:description" content="{{ page.description }}" />
+{% endif %}
 <meta property="og:image" content="{{site.url}}/assets{{page.directory}}{{ page.image }}" />
 <meta property="og:type"  content="{{ page.type }}" />
 <meta property="og:locale"  content="en_US" />
