@@ -13,6 +13,7 @@
   --brighttext: #cf284f;
   --darktext: #53030d;
   --purble: #8f31fa;
+  --desaturated: #745a8c;
 }
 
 @font-face {
@@ -496,6 +497,10 @@ ol ol {
 ul li,
 ol li {
   margin-top: .4rem;
+}
+
+ul li::marker {
+  content: "✿ ";
 }
 
 ul {
@@ -1499,7 +1504,7 @@ input.disabled + .form-icon {
 code {
   background: #fcf2f2;
   border-radius: .1rem;
-  color: #d73e48;
+  color: var(--darktext);
   font-size: 85%; 
   line-height: 1.25;
   padding: .1rem .2rem;
@@ -3796,10 +3801,15 @@ a.text-error:visited {
 
 /*=========Custom IDs and classes==========*/
 
-/* title */
 .title {
   position:fixed;
   z-index: 100;
+}
+
+.subtitle {
+  color: var(--desaturated);
+  font-style: italic;
+  margin-top: -1em;
 }
 
 /* ids to make sure that footer stays at bottom*/
@@ -3822,12 +3832,8 @@ a.text-error:visited {
 
 /*details effects for dropdown arrow on index page*/
 
-details > summary::-webkit-details-marker {
-  display: none;
-}
-
 details > summary {
-  display: block;
+  font-weight: bold;
 }
 
 /*container for sections of pages*/
@@ -3881,7 +3887,6 @@ details > summary {
     background-color: rgba(250, 231, 235, 0.75);
   }
 }
-
 
 .overlay {
   position: absolute;
@@ -3940,19 +3945,4 @@ details > summary {
 /*calculated price on commissions*/
 #calculated_price {
   color: black;
-}
-
-/*table of contents for trope a day*/
-#tableofcontents {
-  top: 2.5rem;
-  position:sticky;
-  padding-left: 20%;
-  min-height: 90vh;
-}
-
-#thanks {
-  bottom:0;
-  display: block;
-  text-align: center;
-  padding: .5rem;
 }
