@@ -11,7 +11,13 @@
 <!--same spectre.css grid as before, this time for the rest of the body-->
 <!--content wrapper for everything except footer-->
 <div id="content">
-    <h1>{{page.title}}</h1>
+    <h1>{% if page.previous.url %}
+        <a href="{{page.previous.url}}" title="{{page.previous.title}}">&#x2B9C;</a>
+        {% endif %}
+        {{page.title}}
+        {% if page.next.url %}
+        <a title="{{page.next.title}}" href="{{page.next.url}}">&#x2B9E;</a>
+        {% endif %}</h1>
     <p class="flex-centered subtitle">Posted {{ page.date | date: "%B %d, %Y" }}</p>
     <!--more-->
     <div class="columns col-sm-11 col-10 col-mx-auto">
