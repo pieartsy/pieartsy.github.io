@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    {% include head.html %}
+</head>
+<body>
+<!--header for email, other pages, and social media links-->
+<header class="navbar">
+    {% include header.html %}
+</header>
+<!--same spectre.css grid as before, this time for the rest of the body-->
+<!--content wrapper for everything except footer-->
+<div id="content">
+    {{ content }}
+</div>
+<!--copyright-->
+<footer id="footer" class="flex-centered columns col-12 col-mx-auto">
+    {% include footer.html %}
+</footer>
+</body>
+</html>

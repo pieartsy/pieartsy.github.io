@@ -1,17 +1,6 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    {% include head.html %}
-</head>
-<body>
-<!--header for email, other pages, and social media links-->
-<header class="navbar">
-    {% include header.html %}
-</header>
-<!--same spectre.css grid as before, this time for the rest of the body-->
-<!--content wrapper for everything except footer-->
-<div id="content">
-    <h1>{{page.title}}</h1>
+---
+layout: default
+---
     <div class="columns col-sm-11 col-10 col-mx-auto flex-centered">
         <div id="game-container" style="position: relative;padding: 1em;" class="columns col-sm-12 col-11 col-mx-auto flex-centered">
             <button class="btn btn-link thumbnail" onclick="replaceButtonWithIframe(this, Event)">
@@ -57,11 +46,6 @@
         </div>
     </div>
 </div>
-<!--copyright-->
-<footer id="footer" class="flex-centered columns col-12 col-mx-auto">
-    {% include footer.html %}
-</footer>
-</body>
 <script type="text/javascript">
     function replaceButtonWithIframe(element, evt) {
         const gameContainer = document.getElementById('game-container');
@@ -101,4 +85,3 @@
         return fullscreenButton;
     }
 </script>
-</html>
