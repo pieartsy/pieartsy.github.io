@@ -2,15 +2,15 @@
 layout: wrapper
 ---
     <h1>{% if page.previous.url %}
-        <a href="{{page.previous.url}}" title="{{page.previous.title}}">&#x2B9C;</a>
+            <a href="{{page.previous.url}}" title="{{page.previous.title}}">&#x2B9C;</a>
         {% endif %}
         {{page.title}}
         {% if page.next.url %}
-        <a title="{{page.next.title}}" href="{{page.next.url}}">&#x2B9E;</a>
+            <a title="{{page.next.title}}" href="{{page.next.url}}">&#x2B9E;</a>
         {% endif %}</h1>
     <p class="flex-centered subtitle">
         {% if page.category %}
-        Category:&nbsp;<a href="{{post.category | slugify}}">{{page.category}}</a>&nbsp;|
+            Category:&nbsp;<a href="{{post.category | slugify}}">{{page.category}}</a>&nbsp;|
         {% endif %}
         Posted: {{ page.date | date: "%B %d, %Y" }}</p>
     <!--more-->
