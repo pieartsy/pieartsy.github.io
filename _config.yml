@@ -26,7 +26,7 @@ plugins:
 feed:
   icon: /images/avvie.png
   excerpt_only: true
-  disable_in_development: true
+#  disable_in_development: true
   categories:
     - essays
     - devlogs
@@ -37,7 +37,6 @@ defaults:
       path: ""
     values:
       type: "website"
-      description: Aster Fialla's portfolio, blog, and miscellaneous other things.
       title: Aster Fialla
       directory: /images
       image: /portraits.png
