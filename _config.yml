@@ -16,12 +16,21 @@ collections:
   ttrpg:
     output: true
     permalink: games/:title
+  posts:
+    output: true
+    permalink: blog/:title
+
 plugins:
   - jekyll-feed
 
 feed:
   icon: /images/avvie.png
+  excerpt_only: true
   disable_in_development: true
+  categories:
+    - essays
+    - devlogs
+    - meta
 
 defaults:
   - scope:
