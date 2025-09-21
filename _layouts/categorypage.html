@@ -1,0 +1,9 @@
+---
+layout: default
+---
+<p class="flex-centered">{{ page.description }}</p>
+<div class="flex-centered columns col-sm-11 col-10 col-mx-auto">
+    {% for post in site.categories[page.category] %}
+        {% include postslist.html %}
+    {% endfor %}
+</div>

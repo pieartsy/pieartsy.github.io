@@ -1,6 +1,7 @@
 ---
 title: An atheist/non-spiritual approach to tarot
-tags: [essay, tarot]
+tags: [tarot]
+category: essays
 ---
 I am not a spiritual person. While I recognize these are important to many people, spirituality, magic, "magick", and "metaphysics" are not practices I follow or believe in. When people talk about crystals, reiki, astrology,  things like that, the best they'll get from me is a polite nod and a tight smile while I hold back opinions that I know they won't like.
 

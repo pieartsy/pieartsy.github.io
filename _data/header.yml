@@ -11,7 +11,7 @@ nav:
   - name: Games
     link: games.html
   - name: Blog
-    link: blog.html
+    link: blog/home.html
   - name: Miscellany
     link: misc.html
  # - name: Poems

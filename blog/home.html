@@ -1,0 +1,10 @@
+---
+layout: default
+title: Aster's Blog
+description: Just another body in the blogosphere.
+---
+<div class="flex-centered columns col-sm-11 col-10 col-mx-auto">
+    {% for post in site.posts %}
+        {% include postslist.html %}
+    {% endfor %}
+</div>
