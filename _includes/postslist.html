@@ -1,9 +1,17 @@
 <div class="centered column col-12">
-    <h2><a href="{{ post.url }}">{{ post.title }}</a></h2>
+    <h2>
+        <a href="{{ post.url }}">
+            {% if post.image and post.image != "/portraits.png" %}
+                <img style="height: 300px;" class="img-responsive" src="{{site.url}}/assets/{{post.directory}}{{post.image}}" alt="{{post.alt}}">
+            {% endif %}
+            {{ post.title }}
+        </a>
+    </h2>
     <p class="flex-centered subtitle">
         {% if post.category %}
         Category:&nbsp;<a href="{{post.category | slugify}}">{{post.category}}</a>&nbsp;|
         {% endif %}
         Posted: {{ post.date | date: "%B %d, %Y" }}</p>
+
     <p>{{ post.excerpt }}</p>
 </div>

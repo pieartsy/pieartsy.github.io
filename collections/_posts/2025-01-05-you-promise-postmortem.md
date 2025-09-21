@@ -2,6 +2,9 @@
 title: You promise me a postmortem?
 tags: [interactive fiction, you promise]
 category: devlogs
+directory: /games/if/promise
+image: /promise.png
+alt: You promise cover page
 ---
 A postmortem about [You promise]({{site.url}}/games/you-promise). Full spoilers!
 <!--more-->

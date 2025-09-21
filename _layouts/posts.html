@@ -1,6 +1,9 @@
 ---
 layout: wrapper
 ---
+{% if page.image and page.image != "/portraits.png" %}
+<img style="height: 300px;margin-top: 2em;margin-bottom: -2em;" class="img-responsive" src="{{site.url}}/assets/{{page.directory}}{{page.image}}" alt="{{post.alt}}">
+{% endif %}
     <h1>{% if page.previous.url %}
             <a href="{{page.previous.url}}" title="{{page.previous.title}}">&#x2B9C;</a>
         {% endif %}
@@ -10,7 +13,7 @@ layout: wrapper
         {% endif %}</h1>
     <p class="flex-centered subtitle">
         {% if page.category %}
-            Category:&nbsp;<a href="{{post.category | slugify}}">{{page.category}}</a>&nbsp;|
+            Category:&nbsp;<a href="{{page.category | slugify}}">{{page.category}}</a>&nbsp;|
         {% endif %}
         Posted: {{ page.date | date: "%B %d, %Y" }}</p>
     <!--more-->
