@@ -8,4 +8,73 @@ description: The interactive fiction and TTRPGs of Aster Fialla.
 </p>
 </div>
 
-{% include gameslist.html %}
+<section id="ifgames" class="section2">
+    <h2>Interactive Fiction games</h2>
+    <div class="flex-centered columns col-sm-11 col-10 col-mx-auto">
+        {% for if in site.twine %}
+        <div class="column col-4 col-md-12">
+            <div class="card" id="{{if.directory}}">
+                <div class="card-header"><h3>{{if.title}}</h3></div>
+                <div class="card-image">
+                    <img height="auto" width="100%" src="{{site.url}}/assets{{if.directory}}{{if.image}}" class="img-round" alt="Cover art for {{if.title}}.">
+                </div>
+                <div class="card-body">
+                    <div>{{if.description}}</div>
+                </div>
+                <div class="card-footer p-centered"><a class="btn btn-link darker" href="{{if.url}}">Play <i>{{if.title}}</i></a></div>
+            </div>
+        </div>
+        {% endfor %}
+    </div>
+    {% include gamesbuttons.html %}
+</section>
+
+
+
+<section id="ttrpgs" class="section3">
+    <h2>TTRPGS</h2>
+    <div class="flex-centered columns col-sm-11 col-10 col-mx-auto">
+        {% for ttrpg in site.ttrpg %}
+        <div class="column col-4 col-md-12">
+            <div class="card" id="{{ttrpg.directory}}">
+                <div class="card-header"><h3>{{ttrpg.title}}</h3></div>
+                <div class="card-image">
+                    <img height="auto" width="100%" src="{{site.url}}/assets{{ttrpg.directory}}{{ttrpg.image}}" class="img-round" alt="Cover art for {{ttrpg.title}}">
+                </div>
+                <div class="card-body">
+                    <div>{{ttrpg.description}}</div>
+                </div>
+                <div class="card-footer p-centered"><a class="btn btn-link darker" href="{{ttrpg.url}}">Read <i>{{ttrpg.title}}</i></a></div>
+            </div>
+        </div>
+        {% endfor %}
+    </div>
+    {% include gamesbuttons.html %}
+
+</section>
+
+<section id="pieces" class="section1">
+
+    <h2>Interactive pieces</h2>
+    <div class="flex-centered columns col-sm-11 col-10 col-mx-auto">
+        <div class="flex-centered columns col-10 col-mx-auto">
+            <p>Not really games, but they're definitely interactive!</p>
+        </div>
+        {% for piece in site.piece %}
+        <div class="column col-4 col-md-12">
+            <div class="card" id="{{piece.directory}}">
+                <div class="card-header"><h3>{{piece.title}}</h3></div>
+                <div class="card-image">
+                    <img height="auto" width="100%" src="{{site.url}}/assets{{piece.directory}}{{piece.image}}" class="img-round" alt="Cover art for {{piece.title}}">
+                </div>
+                <div class="card-body">
+                    <div>{{piece.description}}</div>
+                </div>
+                <div class="card-footer p-centered"><a class="btn btn-link darker" href="{{piece.url}}">Explore <i>{{piece.title}}</i></a></div>
+            </div>
+        </div>
+        {% endfor %}
+    </div>
+    {% include gamesbuttons.html %}
+
+</section>
