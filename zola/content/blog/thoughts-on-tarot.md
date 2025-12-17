@@ -1,10 +1,12 @@
----
-title: An atheist/non-spiritual approach to tarot
-tags: [tarot]
-category: essays
-image: /eighth-of-winter.jpg
-alt: A black, white, and gold card depicting an elk skeleton with giant gold horns and trees around it. It is labeled, 'The Eighth of Winter'.
----
++++
+title = "An atheist/non-spiritual approach to tarot"
+# tags: [tarot]
+date = 2025-09-19
+# category: essays
+[extra]
+image = "eighth-of-winter.jpg"
+alt  ="A black, white, and gold card depicting an elk skeleton with giant gold horns and trees around it. It is labeled, 'The Eighth of Winter'."
++++
 I am not a spiritual person. While I recognize these are important to many people, spirituality, magic, "magick", and "metaphysics" are not practices I follow or believe in. When people talk about crystals, reiki, astrology,  things like that, the best they'll get from me is a polite nod and a tight smile while I hold back opinions that I know they won't like.
 
 However. I _will_ go to bat for tarot (and oracle decks et al).
@@ -17,7 +19,7 @@ Semiotics is the study of the communication of meaning via *signs*. A sign is an
 
 That means when you think of a crown, or a sword, or a cup, it's not just the object, but also the semiotics and symbols you associate with the object. These connotation come from stories (fictional or nonfictional), cultural customs, linguistic quirks, education, the news, and, crucially, personal experiences. And tarot is *chock-full* of these semiotic signs. I'd guess a single tarot card probably has like 5 pieces of symbolism on it at minimum. It could be an object, an action being taken in the card, the colors, the composition of the illustration, the words written on it. Even if you know literally nothing about tarot or the deck I'm using, if I pull out a card that looks like this* and say "this is you", you might have some guesses as to what it means:
 
-<img class="img-responsive flex-centered" style="height: 600px;" src="{{site.url}}/assets/images/eighth-of-winter.jpg" alt="A black, white, and gold card depicting an elk skeleton with giant gold horns and trees around it. It is labeled, 'The Eighth of Winter'.">
+<img style="height: 600px;" src="eighth-of-winter.jpg" alt="A black, white, and gold card depicting an elk skeleton with giant gold horns and trees around it. It is labeled, 'The Eighth of Winter'.">
 
 This is even more nuanced due to the connotations and semiotics that tarot itself has constructed for itself over the decades. In tarot, the suit, rank, and arcana also contain their own meanings. While "the devil", "the lovers" or "death" are signs with very obvious meanings for a lay person, the cards' usual meanings aren't quite what you'd expect if you're not familiar with tarot.
 
@@ -25,13 +27,13 @@ Still, if you ignore literally all the tarot-specific symbolism and semiotics, a
 
 For example, the Ten of Cups generally means family, celebration, and harmony. It traditionally looks like this:
 
-<img class="img-responsive flex-centered" style="height: 600px;" src="{{site.url}}/assets/images/ten-of-cups.png" alt="The ten of cups card in the Rider-Waite-Smith tarot, described below.">
+<img style="height: 600px;" src="ten-of-cups.png" alt="The ten of cups card in the Rider-Waite-Smith tarot, described below.">
 
 In the card, you can see several signs: a countryside, a happy couple, children playing, a rainbow, and plentiful cups floating in the air because symbolism.
 
 However, in my favorite deck, the Chromatic Fates tarot, the Ten of Cups looks like this:
 
-<img class="img-responsive flex-centered" style="height: 600px;" src="{{site.url}}/assets/images/ten-of-cups-chromatic.jpg" alt="A purple card with 10 wine glasses being raised in the air in a 'Cheers' gesture by 10 hands. It is labeled 'X of Cups'">
+<img style="height: 600px;" src="ten-of-cups-chromatic.jpg" alt="A purple card with 10 wine glasses being raised in the air in a 'Cheers' gesture by 10 hands. It is labeled 'X of Cups'">
 
 I don't associate that card, in my deck, to be a good thing. I've had terrible experiences with family and alcoholism, so whenever I pull a reading with the Ten of Cups, I go "uh-oh". That "uh-oh", or any other emotion I might have that is elicited by the signs of the card, is what makes tarot specific and personal.
 

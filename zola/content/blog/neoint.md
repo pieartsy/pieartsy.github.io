@@ -2,8 +2,9 @@
 title: Neo-Interactives webring
 tags: [interactive fiction, site update]
 category: meta
-image: /neoint.jpg
+image: neoint.jpg
 alt: The logo for the Neo-Interactives group.
+date: 2025-07-28
 ---
 <p>I asked to be added to the Neo-Interactives webring, so you will see a new set of buttons in the footer of my site now!</p>
 <!--more-->

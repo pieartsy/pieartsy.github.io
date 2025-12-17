@@ -1,12 +1,12 @@
 ---
 title: You promise me a postmortem?
+date: 2025-01-05
 tags: [interactive fiction, you promise]
 category: devlogs
-directory: /games/if/promise
-image: /promise.png
+image: promise.png
 alt: You promise cover page
 ---
-A postmortem about [You promise]({{site.url}}/games/you-promise). Full spoilers!
+A postmortem about You promise. Full spoilers!
 <!--more-->
 ## The reason
 __You promise__ essentially started out as a date idea.

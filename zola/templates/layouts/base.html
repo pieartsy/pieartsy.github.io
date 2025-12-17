@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    {% include "includes/head.html" %}
+</head>
+<body>
+<!--header for email, other pages, and social media links-->
+<header class="navbar">
+
+</header>
+<!--content wrapper for everything except footer-->
+<main>
+    {% block content %}{% endblock content %}
+</main>
+<!--copyright-->
+<footer id="footer">
+    {% include "includes/footer.html" %}
+</footer>
+</body>
+</html>

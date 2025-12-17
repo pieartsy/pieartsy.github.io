@@ -1,0 +1,30 @@
+{% extends "layouts/base.html" %}
+
+{% block content %}
+<article>
+    <hgroup>
+        {% if page.extra.image %}
+            <img style="height: 300px;" src="{{page.extra.image}}" alt="{{page.extra.alt}}">
+        {% endif %}
+        <h1>
+            {% if page.higher %}
+                <a href="{{page.higher.permalink}}" title="{{page.higher.title}}">&#x2B9C;</a>
+            {% endif %}
+            {{page.title}}
+            {% if page.lower %}
+                <a href="{{page.lower.permalink}}" title="{{page.lower.title}}">&#x2B9E;</a>
+            {% endif %}
+        </h1>
+        <p>
+            Posted: {{ page.date | date(format="%B %d, %Y") }} 
+        </p>
+        {% if page.update_date %}
+        <p>
+            Updated: {{ page.update_date | date(format="%B %d, %Y") }} 
+        </p>
+        {% endif %}
+
+    </hgroup>
+    {{ page.content | safe }}
+</article>
+{% endblock content %}
