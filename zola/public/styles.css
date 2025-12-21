@@ -85,7 +85,7 @@ section {
 }
 
 footer {
-  padding: .5rem;
+  padding: .1rem;
   background-color: var(--lightbg);
 }
 
@@ -3815,7 +3815,12 @@ dialog[open] {
 
 main {
   padding-top: 2.5rem;
-  min-height: calc(100vh - 50px);
+  min-height: calc(100vh - 2.5em);
+}
+
+footer p {
+  margin: 0;
+  padding: 0 .3em;
 }
 
 /*header css to hide and show elements*/
