@@ -3,9 +3,38 @@
 <!--makes it responsive-->
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>
-{% if page.title %}
-  {{ page.title }}
-{% else %}
- {{config.title}}
-{% endif %}
+  {% if page.title %}
+    {{ page.title }}
+  {% else %}
+  {{config.title}}
+  {% endif %}
 </title>
+  <link rel="icon" type="image/x-icon" href="/images/favicon.ico">
+<link rel="apple-touch-icon" sizes="180x180" href='{{ get_url(path="images/apple-touch-icon.png") }}'>
+<link rel="icon" type="image/png" sizes="32x32" href="{{ get_url(path='images/favicon-32x32.png') }}">
+<link rel="icon" type="image/png" sizes="16x16" href="{{ get_url(path='images/favicon-16x16.png') }}">
+<link rel="stylesheet" type="text/css" href="{{ get_url(path='styles.css') }}">
+{% if page %}
+  <meta property="og:url" content="{{ page.permalink }}" />
+  <meta property="og:title" content="{{ page.title }}" />
+  {% if section and section.extra.type == "posts" %}
+    <meta property="og:type"  content="article" />
+    <meta property="og:description" content="{{ page.summary | safe}}" />
+    {% else %}
+    <meta property="og:type"  content="website" />
+    <meta property="og:description" content="{{ page.description }}" />
+  {% endif %}
+  {% if page.image %}
+    <meta property="og:image" content="images/{{ page.image }}" />
+    <meta property="og:image:alt" content="page.alt" />
+  {% endif %}
+{% else %}
+  <meta property="og:url" content="{{ config.base_url }}" />
+  <meta property="og:title" content="{{ config.title }}" />
+  <meta property="og:type"  content="website" />
+  <meta property="og:image" content="{{ get_url(path='images/portraits.png') }}" />
+  <meta property="og:image:alt" content="A photo of Aster, a person with pink hair, surrounded by illustrations of erself in many different art styles." />
+  <meta property="og:description" content="{{ config.description }}" />
+{% endif %}
+<meta property="og:locale"  content="en_US" />
+<meta name="twitter:card" content="summary_large_image" />

@@ -8,7 +8,7 @@
 <article>
     <hgroup>
         {% if page.extra.image %}
-            <img style="height: 300px;" src="{{page.extra.image}}" alt="{{page.extra.alt}}">
+            <img style="height: 300px;" src="{{page.permalink}}/{{page.extra.image}}" alt="{{page.extra.alt}}">
         {% endif %}
         <h2>
             <a href="{{ page.permalink | safe }}">{{ page.title }}</a>
@@ -28,12 +28,14 @@
 </article>
 {% endfor %}
 
-<nav class="pagination">
-    {% if paginator.previous %}
-        <a class="previous" href="{{ paginator.previous }}">‹ Previous</a>
-    {% endif %}
-    {% if paginator.next %}
-        <a class="next" href="{{ paginator.next }}">Next ›</a>
-    {% endif %}
-</nav>
+{% if paginator.previous or paginator.next %}
+    <nav class="pagination">
+        {% if paginator.previous %}
+            <a class="previous" href="{{ paginator.previous }}">‹ Previous</a>
+        {% endif %}
+        {% if paginator.next %}
+            <a class="next" href="{{ paginator.next }}">Next ›</a>
+        {% endif %}
+    </nav>
+{% endif %}
 {% endblock content %}

@@ -1,0 +1,68 @@
+{% set header = load_data(path="content/data/header.yml") %}
+<script>
+    function showDialog(id) {
+        const dialog = document.getElementById(id);
+        dialog.show();
+    }
+</script>
+<!--spectre.css grid that makes the header not run up against the edges of the screen-->
+    <nav class="columns col-12 col-mx-auto content-desktop title">
+        <!--Email on one side-->
+        <div class="navbar-section">
+            <h4><a href="{{config.base_url}}" class="btn btn-link">Aster Fialla</a></h4>
+        </div>
+        <!--breadcrumb (nav menu)-->
+        <div class="navbar-center">
+            {% for item in header.nav %}
+                <a href="{{config.base_url}}/{{ item.link }}" class="btn btn-link">{{ item.name }}</a>
+            {% endfor %}
+        </div>
+        <!--new section for social media links-->
+        <div class="navbar-section">
+            {% for item in header.sm %}
+                <a href="{{ item.socialmedia }}" class="btn btn-link">
+                    <img src="{{config.base_url}}/images/socmed/{{ item.socialmediaimg }}" alt="{{ item.socialmediaalt }}" height="25" width="25">
+                </a>
+            {% endfor %}    
+        </div>
+    </nav>
+    <!--mobile version compresses the links into a dropdown-->
+    <nav class="columns col-12 col-mx-auto content-mobile title">
+        <div class= "navbar-section">
+            <div class="dropdown">
+                <button type="button" onclick="showDialog('menu-popup')" aria-haspopup="dialog" class="btn btn-link dropdown-toggle">
+                    Menu<i class="icon icon-caret"></i>
+                </button>
+                <dialog id="menu-popup" closedby="any">
+                    <menu class="menu">
+                        {% for item in header.nav %}
+                        <li class="menu-item">
+                            <a href="{{config.base_url}}/{{ item.link }}" class="btn btn-link">{{ item.name }}</a>
+                        </li>
+                        {% endfor %}        
+                    </menu>
+                </dialog>
+            </div>
+        </div>
+        <div class="navbar-center">
+            <a href="{{config.base_url}}" class="btn btn-link">Aster Fialla</a>
+        </div>
+        <div class="navbar-section">
+            <div class="dropdown dropdown-right">
+                <button type="button" onclick="showDialog('sm-popup')" aria-haspopup="dialog" class="btn btn-link dropdown-toggle">
+                    Contact<i class="icon icon-caret"></i>
+                </button>
+                <dialog id="sm-popup" closedby="any">
+                    <menu class="menu">
+                        {% for item in header.sm %}
+                        <li class="menu-item">
+                            <a href= "{{ item.socialmedia }}" class="btn btn-link">
+                                <img src="{{config.base_url}}/images/socmed/{{ item.socialmediaimg }}" alt="{{ item.socialmediaalt }}" height="25" width="25">
+                            </a>
+                        </li>
+                    {% endfor %}  
+                    </menu>
+                </dialog>
+            </div>
+        </div>
+    </nav>
