@@ -3,7 +3,7 @@ nav:
   - name: About
     link: about.html
   - name: Art
-    link: index.html
+    link: /
   #- name: Pronouns
    # link: pronouns
   #- name: Code
@@ -11,7 +11,7 @@ nav:
   - name: Games
     link: games.html
   - name: Blog
-    link: blog/home.html
+    link: blog
   - name: Miscellany
     link: misc.html
  # - name: Poems
