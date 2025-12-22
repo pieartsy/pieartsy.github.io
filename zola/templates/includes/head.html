@@ -28,6 +28,11 @@
     <meta property="og:image" content="images/{{ page.image }}" />
     <meta property="og:image:alt" content="page.alt" />
   {% endif %}
+{% elif section %}
+  <meta property="og:url" content="{{ section.permalink }}" />
+  <meta property="og:title" content="{{ section.title }}" />
+  <meta property="og:type"  content="website" />
+  <meta property="og:description" content="{{ section.description }}" />
 {% else %}
   <meta property="og:url" content="{{ config.base_url }}" />
   <meta property="og:title" content="{{ config.title }}" />
