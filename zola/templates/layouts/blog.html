@@ -1,26 +1,29 @@
 {% extends "layouts/base.html" %}
 
 {% block content %}
+<div class="flex-centered columns col-sm-11 col-10 col-mx-auto">
 <h1>
     {{ section.title }}
 </h1>
 {% for page in paginator.pages %}
-<article>
+<article class="centered column col-12">
     <hgroup>
         {% if page.extra.image %}
-            <img style="height: 300px;" src="{{page.permalink}}/{{page.extra.image}}" alt="{{page.extra.alt}}">
+            <img style="height: 300px" class="img-responsive" src="{{page.permalink}}{{page.extra.image}}" alt="{{page.extra.alt}}">
         {% endif %}
         <h2>
             <a href="{{ page.permalink | safe }}">{{ page.title }}</a>
         </h2>
-        <p>
-            Posted: {{ page.date | date(format="%B %d, %Y") }}
-        </p>
-        {% if page.update_date %}
+        <div class="flex-centered subtitle">
             <p>
-                Updated: {{ page.update_date | date(format="%B %d, %Y") }} 
+                Posted: {{ page.date | date(format="%B %d, %Y") }}
             </p>
-        {% endif %}
+            {% if page.update_date %}
+                <p>
+                    Updated: {{ page.update_date | date(format="%B %d, %Y") }} 
+                </p>
+            {% endif %}
+        </div>
         <p>
             {{ page.summary | safe }}
         </p>
@@ -38,4 +41,5 @@
         {% endif %}
     </nav>
 {% endif %}
+</div>
 {% endblock content %}
