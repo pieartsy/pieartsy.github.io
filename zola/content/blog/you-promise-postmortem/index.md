@@ -1,11 +1,12 @@
----
-title: You promise me a postmortem?
-date: 2025-01-05
-tags: [interactive fiction, you promise]
-category: devlogs
-image: promise.png
-alt: You promise cover page
----
++++
+title = "You promise me a postmortem?"
+date = 2025-01-05
+# tags: [interactive fiction, you promise]
+# category: devlogs
+[extra]
+image = "promise.png"
+alt = "The cover for You Promise. It is a fortune cookie fortune with the words 'You Promise' on it, and a series of numbers."
++++
 A postmortem about You promise. Full spoilers!
 <!--more-->
 ## The reason
