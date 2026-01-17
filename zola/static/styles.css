@@ -316,7 +316,6 @@ menu {
 /* Add the correct display in all browsers. */
 summary {
   display: list-item;
-  outline: none;
 }
 
 /* Scripting ========================================================================== */
@@ -359,7 +358,6 @@ body {
 
 a {
   color: var(--brighttext);
-  outline: none;
   text-decoration: none;
   font-weight: bold;
 }
@@ -418,7 +416,8 @@ h3,
 }
 
 h4,
-.h4 {
+.h4,
+.header-title {
   font-size: 1.7rem;
 }
 
@@ -651,7 +650,6 @@ td:hover::after {
   cursor: pointer;
   display: inline-block;
   line-height: 1.2rem;
-  outline: none;
   padding: .25rem .4rem;
   text-align: center;
   text-decoration: none;
@@ -666,7 +664,7 @@ td:hover::after {
 }
 
 .btn:focus {
-  box-shadow: 0
+  box-shadow: unset;
 }
 
 .btn:focus,
@@ -2101,24 +2099,19 @@ video.video-responsive::before {
 }
 
 .navbar {
-  align-items: flex-start;
+  /*align-items: flex-start;*/
   display: flex;
-  display: -ms-flexbox;
-  -ms-flex-align: stretch;
-  -ms-flex-pack: justify;
-  -ms-flex-wrap: wrap;
   flex-wrap: wrap;
   justify-content: space-between;
 }
 
-.navbar .navbar-section {
+.navbar .navbar-section, .footer {
   align-items: center;
+  padding: 0 .5em;
   display: flex;
-  display: -ms-flexbox;
-  -ms-flex: 1 0 0;
-  flex: 1 0 0; 
-  -ms-flex-align: center;
+  flex: 1 0 0;
   flex-wrap: wrap;
+  gap: 1em;
 }
 
 .navbar .navbar-section:not(:first-child):last-child {
@@ -2546,7 +2539,7 @@ summary.accordion-header::-webkit-details-marker {
 
 .menu .menu-item {
   margin-top: 0;
-  padding: 0 .4rem;
+  /*padding: 0 .4rem;*/
   position: relative;
   text-decoration: none;
 }
@@ -2554,21 +2547,21 @@ summary.accordion-header::-webkit-details-marker {
 .menu .menu-item > a {
   border-radius: 2em;
   color: inherit;
-  margin: 0 -.4rem;
-  padding: .2rem .5rem;
+  /*margin: 0 -.4rem;*/
+  /*padding: .2rem .5rem;*/
   text-decoration: none;
 }
 
 .menu .menu-item > a:focus,
 .menu .menu-item > a:hover {
-  background: var(--brighttext);
-  color: #5755d9;
+  /*background: var(--brighttext);*/
+  color: var(--darktext);
+  text-decoration: underline;
 }
 
-.menu .menu-item > a:active,
-.menu .menu-item > a.active {
-  background: var(--brighttext);
-  color: #5755d9;
+.menu .menu-item > a:visited {
+  /*background: var(--brighttext);*/
+  color: var(--purble);
 }
 
 .menu .menu-item .form-checkbox,
@@ -2683,8 +2676,6 @@ summary.accordion-header::-webkit-details-marker {
 
 .nav {
   display: flex;
-  display: -ms-flexbox;
-  -ms-flex-direction: column;
   flex-direction: column;
   list-style: none;
   margin: .2rem 0;
@@ -3812,10 +3803,29 @@ dialog[open] {
   margin-top: -1em;
 }
 
+a.contact img {
+  margin: .2em;
+  height: 1.2em;
+  width: 1.2em;
+}
+
+a.contact:visited img {
+  filter: invert(47%) sepia(93%) saturate(7318%) hue-rotate(262deg) brightness(99%) contrast(99%);
+}
+
+a.contact img:hover {
+  filter: invert(7%) sepia(48%) saturate(5727%) hue-rotate(341deg) brightness(91%) contrast(105%);
+  border-bottom: 2px solid var(--darktext);
+}
+
+.header-title {
+  font-family: 'Sulphur Point', sans-serif;
+}
+
 /* ids to make sure that footer stays at bottom*/
 
 main {
-  padding-top: 2.5rem;
+  margin-top: 1em;
   min-height: calc(100vh - 2.5em);
 }
 
@@ -3824,15 +3834,15 @@ footer p {
   padding: 0 .3em;
 }
 
+
 /*header css to hide and show elements*/
-.content-desktop {display: auto;}
+.content-desktop {display: inherit;}
 .content-mobile {display: none;}
 
 @media screen and (max-width: 1020px) {
 
 .content-desktop {display: none;}
 .content-mobile {display: inherit;}
-
 }
 
 /*details effects for dropdown arrow on index page*/
