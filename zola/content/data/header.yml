@@ -18,21 +18,22 @@ nav:
   #  link: poems.html
 
 sm:
-  - socialmedia: https://www.linkedin.com/in/aster-fialla/
-    socialmediaimg: linkedin.png
-    socialmediaalt: linkedin link
+
   - socialmedia: https://github.com/pieartsy
-    socialmediaimg: github.png
-    socialmediaalt: github link
+    socialmediaimg: github.svg
+    socialmediaalt: github icon
   - socialmedia: https://pieartsy.itch.io/
-    socialmediaimg: itchio.png
-    socialmediaalt: itch.io link
+    socialmediaimg: itchio.svg
+    socialmediaalt: itch.io icon
 #  - socialmedia: https://bsky.app/profile/pieartsy.bsky.social
 #    socialmediaimg: bluesky.png
-#    socialmediaalt: bluesky link
+#    socialmediaalt: bluesky icon
   - socialmedia: https://instagram.com/pieartsy
-    socialmediaimg: insta.png
-    socialmediaalt: instagram link
+    socialmediaimg: insta.svg
+    socialmediaalt: instagram icon
   - socialmedia: https://pieartsy.tumblr.com
-    socialmediaimg: tumblr.png
-    socialmediaalt: tumblr link
+    socialmediaimg: tumblr.svg
+    socialmediaalt: tumblr icon
+  - socialmedia: https://www.linkedin.com/in/aster-fialla/
+    socialmediaimg: linkedin.svg
+    socialmediaalt: linkedin icon
