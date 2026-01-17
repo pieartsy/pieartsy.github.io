@@ -26,6 +26,7 @@ highlight_code = true
 render_emoji = true
 smart_punctuation = true
 definition_list = true
+github_alerts = true
 
 [search]
 # Whether to include the title of the page/section in the index
