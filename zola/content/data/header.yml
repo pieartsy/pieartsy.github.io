@@ -27,9 +27,9 @@ sm:
   - socialmedia: https://pieartsy.itch.io/
     socialmediaimg: itchio.png
     socialmediaalt: itch.io link
-  - socialmedia: https://bsky.app/profile/pieartsy.bsky.social
-    socialmediaimg: bluesky.png
-    socialmediaalt: bluesky link
+#  - socialmedia: https://bsky.app/profile/pieartsy.bsky.social
+#    socialmediaimg: bluesky.png
+#    socialmediaalt: bluesky link
   - socialmedia: https://instagram.com/pieartsy
     socialmediaimg: insta.png
     socialmediaalt: instagram link
