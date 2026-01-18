@@ -15,16 +15,12 @@
                 <a href="{{page.lower.permalink}}" title="{{page.lower.title}}">&#x2B9E;</a>
             {% endif %}
         </h1>
-        <div class="flex-centered subtitle">
-            <p>
-                Posted: {{ page.date | date(format="%B %d, %Y") }} 
+            <p class="flex-centered subtitle">
+                Posted: {{ page.date | date(format="%B %d, %Y") }}
+                {% if page.update_date %}
+                    Updated: {{ page.update_date | date(format="%B %d, %Y") }}
+                {% endif %}
             </p>
-            {% if page.update_date %}
-                <p>
-                    Updated: {{ page.update_date | date(format="%B %d, %Y") }} 
-                </p>
-            {% endif %}
-        </div>
     </hgroup>
     <div class="columns col-sm-11 col-10 col-mx-auto">
         <div class="column col-12 col-mc">
