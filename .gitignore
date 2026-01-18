@@ -1,3 +1,4 @@
 public
 zola.exe
-_site
+jekyll/_site
+node_modules

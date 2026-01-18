@@ -1,10 +1,10 @@
 +++
 template = "layouts/page.html"
 title = "Narrascope 2023 slides"
-[extra]
-type = "posts"
-image = "narrascope23.png"
 description = "My slides for the Thematic Puzzle Design talk I did at Narrascope."
+[extra]
+image = "narrascope23.png"
+alt = "Title card for my Narrascope 2023 talk on Thematic Puzzle Design."
 +++
 In 2023, I was a speaker at <a href="https://2023.narrascope.org/">Narrascope</a>. My presentation was on <a href="https://2023.narrascope.org/pages/schedule.html#thematicpuzzledesign">Thematic Puzzle Design</a>. The <a href="https://www.youtube.com/watch?v=g5oKL2C65R0">video recording</a> is up on YouTube, but you can also check out the slides for it here!
 <div class="flex-centered columns col-sm-11 col-10 col-mx-auto">

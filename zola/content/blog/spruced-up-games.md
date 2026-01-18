@@ -3,6 +3,8 @@ title = "Spruced up games pages"
 #tags: [interactive fiction]
 #category: meta
 date = 2025-09-15
+[extra]
+type = "post"
 +++
 I still have yet to cross-post all my games from itch.io onto this site, but I made landing pages for all of them and I think they look really nice!
 <!--more-->

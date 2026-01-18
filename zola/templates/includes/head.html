@@ -17,16 +17,15 @@
 {% if page %}
   <meta property="og:url" content="{{ page.permalink }}" />
   <meta property="og:title" content="{{ page.title }}" />
-  {% if section and section.extra.type == "posts" %}
-    <meta property="og:type"  content="article" />
-    <meta property="og:description" content="{{ page.summary | safe}}" />
-    {% else %}
-    <meta property="og:type"  content="website" />
+  <meta property="og:type"  content="article" />
+  {% if page.description %}
     <meta property="og:description" content="{{ page.description }}" />
+  {% else %}
+    <meta property="og:description" content="{{ page.summary }}" />
   {% endif %}
-  {% if page.image %}
-    <meta property="og:image" content="images/{{ page.image }}" />
-    <meta property="og:image:alt" content="page.alt" />
+  {% if page.extra.image and page.extra.alt %}
+    <meta property="og:image" content="images/{{ page.extra.image }}" />
+    <meta property="og:image:alt" content="{{page.extra.alt}}" />
   {% endif %}
 {% elif section %}
   <meta property="og:url" content="{{ section.permalink }}" />
