@@ -1,9 +1,13 @@
 ---
-layout: categorypage
+layout: wrapper
 title: Aster's Blog
 description: Just another body in the blogosphere.
 ---
 <div class="flex-centered columns col-sm-11 col-10 col-mx-auto">
+    <hgroup>
+        <h1>{{page.title}}</h1>
+        <p class="subtitle flex-centered">{{ page.description }}</p>
+    </hgroup>
     {% for post in site.posts %}
         {% include postslist.html %}
     {% endfor %}

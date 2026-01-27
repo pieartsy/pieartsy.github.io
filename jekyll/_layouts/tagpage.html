@@ -1,0 +1,9 @@
+---
+layout: wrapper
+---
+<div class="flex-centered columns col-sm-11 col-10 col-mx-auto">
+    <h1>{{page.tag | replace: "-", " "}}</h1>
+    {% for post in page.posts %}
+        {% include postslist.html %}
+    {% endfor %}
+</div>

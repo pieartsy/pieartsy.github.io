@@ -22,6 +22,7 @@ collections:
 
 plugins:
   - jekyll-feed
+  - jekyll/tagging
 
 feed:
   icon: /images/avvie.png
@@ -31,6 +32,9 @@ feed:
     - essays
     - devlogs
     - meta
+
+tag_page_layout: tagpage
+tag_page_dir: blog/tag
 
 defaults:
   - scope:

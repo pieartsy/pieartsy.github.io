@@ -1,6 +1,6 @@
 ---
 title: "An atheist/non-spiritual approach to tarot"
-tags: [tarot]
+tags: tarot
 date: 2025-09-19
 category: essays
 image: "eighth-of-winter.jpg"

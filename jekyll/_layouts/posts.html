@@ -1,31 +1,51 @@
 ---
 layout: wrapper
 ---
-{% if page.image and page.image != "/portraits.png" %}
-<img style="height: 300px;margin-top: 2em;margin-bottom: -2em;" class="img-responsive" src="{{site.url}}/assets/{{page.directory}}{{page.image}}" alt="{{post.alt}}">
-{% endif %}
-    <h1>{% if page.previous.url %}
-            <a href="{{page.previous.url}}" title="{{page.previous.title}}">&#x2B9C;</a>
-        {% endif %}
-        {{page.title}}
-        {% if page.next.url %}
-            <a title="{{page.next.title}}" href="{{page.next.url}}">&#x2B9E;</a>
-        {% endif %}</h1>
-    <p class="flex-centered subtitle">
-        {% if page.category %}
-            Category:&nbsp;<a href="{{page.category | slugify}}">{{page.category}}</a>&nbsp;|
-        {% endif %}
-        Posted: {{ page.date | date: "%B %d, %Y" }}</p>
-    <!--more-->
-    <div class="columns col-sm-11 col-10 col-mx-auto">
-        <div class="column col-12 col-mc">
-            {{ content }}
+<article class="column col-12 col-mx-auto">
+    <div class="post col-10 col-mx-auto">
+        <header>
+            {% if page.image and page.image != "/portraits.png" %}
+                <img class="img-responsive post-img" src="{{site.url}}/assets{{page.directory}}/{{page.image}}" alt="{{page.alt}}">
+            {% endif %}
+            <div class="flex-around">
+                {% if page.previous.url %}
+                    <a class="h1" href="{{page.previous.url}}" title="{{page.previous.title}}">&#x2B9C;</a>
+                {% endif %}
+                    <h1>{{page.title}}</h1>
+                {% if page.next.url %}
+                    <a class="h1" title="{{page.next.title}}" href="{{page.next.url}}">&#x2B9E;</a>
+                {% endif %}
+            </div>
+            <p class="flex-centered subtitle">Posted: {{ page.date | date: "%B %d, %Y" }}</p>
+            {% if page.update_date %}
+                <p class="flex-centered subtitle">Updated: {{ page.update_date | date: "%B %d, %Y" }}</p>
+            {% endif %}
+        </header>
+            <!--more-->
+        <div class="columns col-sm-11 col-10 col-mx-auto post">
+            <div class="column col-12 col-mc">
+                {{ content }}
+            </div>
         </div>
+        <footer>
+            {% if page.category %}
+                <p class="flex-centered subtitle">Category:&nbsp;<a href="{{site.url}}/blog/categories/{{page.category | slugify}}">{{page.category}}</a></p>
+            {% endif %}
+            {% if page.tags != empty %}
+                <p class="flex-centered subtitle">Tags:&nbsp;
+                    {% for tag in page.tags %}
+                        <a href="{{site.url}}/blog/tags/{{tag | slugify}}">{{tag}}</a>
+                        {% if tag != page.tags.last %},&nbsp;{% endif %}
+                    {% endfor %}
+                </p>
+            {% endif %}
+        </footer>
     </div>
-    <div class="columns col-12 col-mx-auto section2">
-        <!-- begin wwww.htmlcommentbox.com -->
+    <section class="columns col-12 col-mx-auto section2">
+            <!-- begin wwww.htmlcommentbox.com -->
         <div id="HCB_comment_box"><a href="http://www.htmlcommentbox.com">Widget</a> is loading comments...</div>
         <link rel="stylesheet" type="text/css" href="{{site.url}}/assets/css/commentbox.css" />
         <script type="text/javascript" id="hcb"> /*<!--*/ if(!window.hcb_user){hcb_user={};} (function(){var s=document.createElement("script"), l=hcb_user.PAGE || (""+window.location).replace(/'/g,"%27"), h="https://www.htmlcommentbox.com";s.setAttribute("type","text/javascript");s.setAttribute("src", h+"/jread?page="+encodeURIComponent(l).replace("+","%2B")+"&mod=%241%24wq1rdBcg%24ynkfQoA6rcwylBJ4co.Jm1"+"&opts=16798&num=10&ts=1757623858328");if (typeof s!="undefined") document.getElementsByTagName("head")[0].appendChild(s);})(); /*-->*/ </script>
-        <!-- end www.htmlcommentbox.com -->
-    </div>
+            <!-- end www.htmlcommentbox.com -->
+    </section>
+</article>

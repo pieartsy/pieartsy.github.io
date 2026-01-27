@@ -1,17 +1,31 @@
-<div class="centered column col-12">
-    <h2>
-        <a href="{{ post.url }}">
-            {% if post.image and post.image != "/portraits.png" %}
-                <img style="height: 300px;" class="img-responsive" src="{{site.url}}/assets/{{post.directory}}{{post.image}}" alt="{{post.alt}}">
-            {% endif %}
-            {{ post.title }}
-        </a>
-    </h2>
-    <p class="flex-centered subtitle">
-        {% if post.category %}
-        Category:&nbsp;<a href="{{post.category | slugify}}">{{post.category}}</a>&nbsp;|
+<section class="column col-10 post">
+    <header>
+        {% if post.image and post.image != "/portraits.png" %}
+        <img class="img-responsive post-img" src="{{site.url}}/assets/{{post.directory}}/{{post.image}}" alt="{{post.alt}}">
         {% endif %}
-        Posted: {{ post.date | date: "%B %d, %Y" }}</p>
-
-    <p>{{ post.excerpt }}</p>
-</div>
+        <div class="flex-around">
+            {% if post.previous.url %}
+                <a class="h2" href="{{post.previous.url}}" title="{{post.previous.title}}">&#x2B9C;</a>
+            {% endif %}
+            <h2><a href="{{post.url}}">{{post.title}}</a></h2>
+            {% if post.next.url %}
+                <a class="h2" title="{{post.next.title}}" href="{{post.next.url}}">&#x2B9E;</a>
+            {% endif %}
+        </div>
+        <p class="flex-centered subtitle">Posted: {{ post.date | date: "%B %d, %Y" }}</p>
+        {% if post.update_date %}
+            <p class="flex-centered subtitle">Updated: {{ post.update_date | date: "%B %d, %Y" }}</p>
+        {% endif %}
+        {% if post.category %}
+            <p class="flex-centered subtitle">Category:&nbsp;<a href="{{site.url}}/blog/categories/{{post.category | slugify}}">{{post.category}}</a></p>
+        {% endif %}
+        {% if post.tags != empty %}
+            <p class="flex-centered subtitle">Tags:&nbsp;
+            {% for tag in post.tags %}
+                <a href="{{site.url}}/blog/tags/{{tag | slugify}}">{{tag}}</a>{% if tag != post.tags.last %},&nbsp;{% endif %}
+            {% endfor %}
+            </p>
+        {% endif %}
+    </header>
+    {{ post.excerpt }}
+</section>

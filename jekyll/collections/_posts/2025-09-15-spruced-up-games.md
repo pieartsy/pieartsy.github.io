@@ -1,6 +1,6 @@
 ---
 title: "Spruced up games pages"
-tags: [interactive fiction]
+tags: interactive-fiction
 category: meta
 date: 2025-09-15
 ---
