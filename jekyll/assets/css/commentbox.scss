@@ -5,6 +5,11 @@
     font-family: "ABeeZee" !important;
     font-size: unset !important;
     margin: auto;
+
+    h3 {
+        display:none;
+    }
+
     textarea {
         border: unset !important;
         font-family: unset !important;
@@ -43,7 +48,7 @@
 }
 
 #HCB_comment_box span.home-desc {
-    opacity:0.4;
+    opacity:1;
 }
 
 /* the individual comment display containers */

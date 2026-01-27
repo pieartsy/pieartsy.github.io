@@ -104,7 +104,7 @@ var LZString=function(){var r=String.fromCharCode,o="ABCDEFGHIJKLMNOPQRSTUVWXYZa
 		<div id="init-lacking"><p>Browser lacks capabilities required to play.</p><p>Upgrade or switch to another browser.</p></div>
 		<div id="init-loading"><div>Loading&hellip;</div></div>
 	</div>
-	<!-- UUID://32B671E9-410E-4617-8935-4B098641A64F// --><tw-storydata name="You promise" startnode="49" creator="Tweego" creator-version="2.1.1+81d1d71" ifid="32B671E9-410E-4617-8935-4B098641A64F" zoom="1" format="SugarCube" format-version="2.37.3" options="" hidden><style role="stylesheet" id="twine-user-stylesheet" type="text/twine-css">@import url('https://fonts.googleapis.com/css2?family=Delius&display=swap');
+	<!-- UUID://32B671E9-410E-4617-8935-4B098641A64F// --><tw-storydata name="You promise" startnode="73" creator="Tweego" creator-version="2.1.1+81d1d71" ifid="32B671E9-410E-4617-8935-4B098641A64F" zoom="1" format="SugarCube" format-version="2.37.3" options="" hidden><style role="stylesheet" id="twine-user-stylesheet" type="text/twine-css">@import url('https://fonts.googleapis.com/css2?family=Delius&display=swap');
   
 body {
 	font-family: 'Delius', serif;
@@ -120,6 +120,15 @@ body {
     -ms-transition: background-color 7000ms ease-in, color 7000ms ease-in;
     transition: background-color 7000ms ease-in, color 7000ms ease-in;
 }
+
+.dark-short {
+	background-color: black;
+	color: black;
+    -webkit-transition: background-color 1000ms ease-in, color 1000ms ease-in;
+    -ms-transition: background-color 1000ms ease-in, color 1000ms ease-in;
+    transition: background-color 1000ms ease-in, color 1000ms ease-in;
+}
+
 
 .red {
     color: #F50000;
@@ -233,7 +242,7 @@ postrender['i18n-passage-include'] = function (content) {
 Setting.addList('lang', {
 	label    : 'Language.',
 	list     : setup.i18n.labels(),
-	default  : setup.i18n.labelFromTag('en'),
+	default  : setup.i18n.labelFromTag('es'),
 	onInit   : initLanguage,
 });</script><tw-passagedata pid="1" name="Cash_en" tags="" position="100,100" size="100,100">I could use a million dollars right now, to get a new home and pay off my debts,&quot; you say to It.
 
@@ -336,7 +345,7 @@ When you blow on the hot coffee to cool it, your breath comes out like a winter 
 &quot;Oh dear, what happened to your trust?&quot; It asks. &quot;I&#39;m sure I had it until &lt;&lt;linkappend &quot;just a moment ago.\&quot;&quot; t8n&gt;&gt;&lt;&lt;include &quot;Bad ending_en&quot;&gt;&gt;&lt;&lt;/linkappend&gt;&gt;</tw-passagedata><tw-passagedata pid="18" name="Bad ending_en" tags="" position="975,225" size="100,100">&lt;br&gt;
 Dread crawls up your gut as the reflection you&#39;re staring at distorts, distends, bloats, until your Honored Guest looms over you once more, the rest of the world dripping away around you. A shrill keening starts up, rattling your ears, and you try to raise your arms to cover them only to find that you cannot move your limbs.
 
-&quot;What&#39;s happening?&quot; you manage to choke out, tears streaming down your face. The Honored Guest grins at you with far, far too many teeth, gazes at you with far, far too many eyes, Its bronze tendrils whipping around It. &quot;What did I do &lt;&lt;linkappend &#39;wrong?!&quot;&#39; t8n&gt;&gt;&lt;&lt;addclass &quot;body&quot; &quot;dark&quot;&gt;&gt;
+&quot;What&#39;s happening?&quot; you manage to choke out, tears streaming down your face. The Honored Guest grins at you with far, far too many teeth, gazes at you with far, far too many eyes, Its bronze tendrils whipping around It. &quot;What did I do &lt;&lt;linkappend &#39;wrong?!&quot;&#39; t8n&gt;&gt;&lt;&lt;if $badwait === &quot;8s&quot;&gt;&gt;&lt;&lt;addclass &quot;body&quot; &quot;dark&quot;&gt;&gt;&lt;&lt;else&gt;&gt;&lt;&lt;addclass &quot;body&quot; &quot;dark-short&quot;&gt;&gt;&lt;&lt;/if&gt;&gt;
 
 &quot;Oh, my Esteemed Host,&quot; It coos softly, as your vision starts to blur and darken. &lt;&lt;timed $badwait t8n&gt;&gt;@@.promised;&quot;You promised.&quot;@@
 &lt;&lt;next&gt;&gt;
@@ -345,7 +354,9 @@ Dread crawls up your gut as the reflection you&#39;re staring at distorts, diste
 &lt;&lt;/linkappend&gt;&gt;</tw-passagedata><tw-passagedata pid="19" name="Credits_en" tags="" position="1100,225" size="100,100">! Credits
 Written by [[Aster Fialla | https://asterfialla.com]] and Jake Gardner.
 
-French translation by [[Astride Couillaux | https://dr-umbrus.itch.io/]], [[manonamora | https://manonamora.neocities.org/home]], and Dolores B.
+French translation by [[Astride Couillaux | https://dr-umbrus.itch.io/]], [[manonamora | https://manonamora.neocities.org/home]], and Dolores B. Corrections by [[Allyson Gray | https://zophobas-morio.itch.io/]].
+
+Spanish translation by [[Bert the Stroller | https://strollersoft.itch.io/]]. Corrections by [[n-n | https://n2n.itch.io/]] and Aster Fialla.
 
 [[You promise | Start]]</tw-passagedata><tw-passagedata pid="20" name="You promise_en" tags="" position="1225,225" size="100,100">This could be a scam, but all it costs is a postage stamp and a sprig of sage. Maybe it&#39;s worth trying just to make yourself feel better. If this really works, it could make you rich.
 
@@ -403,188 +414,379 @@ Who knows if you&#39;ll keep it?
 
 &lt;&lt;timed $wait t8n&gt;&gt;
     &lt;&lt;link &quot;You promise&lt;br&gt;By Aster Fialla and Jake Gardner&quot; &quot;Start&quot;&gt;&gt;&lt;&lt;/link&gt;&gt;
-&lt;&lt;/timed&gt;&gt;</tw-passagedata><tw-passagedata pid="25" name="Cash_fr" tags="" position="600,350" size="100,100">J&#39;aurais bien besoin d&#39;un million d&#39;euros, là tout de suite. Pour acheter une nouvelle maison, et régler mes dettes.
+&lt;&lt;/timed&gt;&gt;</tw-passagedata><tw-passagedata pid="25" name="You promise_fr" tags="" position="600,350" size="100,100">Ce pourrait être une arnaque, mais ça ne coûte qu&#39;un timbre et un brin de sauge. Peut-être que ça vaudrait le coup d&#39;essayer, juste pour vous sentir mieux. Et si ça fonctionnait vraiment, vous pourriez devenir riche.
 
-&quot;Tu @@.promise;promets@@ de t&#39;en servir immédiatement ? Comment puis-je refuser cela!&quot; répond votre Cher Invité, rempli de joie. Iel ouvre le loquet de sa mallette puis la tourne vers vous, révélant des liasses et des liasses de billets. L&#39;odeur sèche et boisée qui accompagne votre Cher Invité semble maintenant contenir le parfum humide des feuilles d&#39;automne après la pluie.
+Vous mettez l&#39;enveloppe sans adresse dans la boîte aux lettres. Les instructions du sortilège disaient simplement d&#39;écrire « à mon Cher Invité » au recto. Pliés à l&#39;intérieur, un brin de sauge et une note indiquant une date et une heure : « demain, 22h45 ».
 
-C&#39;est trop beau pour être vrai et pourtant. Un million d&#39;euros. Là, devant vous. Vous sortez les liasses et les posez sur la table, bégayant des remerciements. Tandis que votre Cher Invité referme sa mallette, les possibilités fusent dans votre tête. Vous vous empressez d&#39;allumer votre ordinateur, et d&#39;ouvrir des sites immobiliers, à la recherche de la maison de vos rêves. Votre Cher Invité vous fait poliment ses adieux, avant de se diriger [[vers la porte. |Cash 2]]</tw-passagedata><tw-passagedata pid="26" name="Cash 2_fr" tags="" position="725,350" size="100,100">Quelques heures plus tard, vous éteignez enfin l&#39;ordinateur. Le visage de votre Cher Invité apparait dans le sombre reflet de l&#39;écran, vous faisant sursauter.
+Vous entendez quelqu&#39;un toquer à la porte. Pile à l&#39;heure. Vous vous levez instantanément et saluez votre Cher Invité.
 
-&quot;Tu avais dit avoir besoin de cet argent immédiatement. Combien de temps suis-je sensé attendre ?&quot;
+Iel se tient dans l&#39;entrée, imposant et pourtant modeste, tenant à la main une mallette de cuir luxueux fermée par un loquet à combinaison en laiton brillant.
 
-&quot;Mais... C&#39;est du liquide. Il est minuit. Un dimanche. C&#39;est impossible de le dépenser.&quot;, répondez-vous.
+Vous ne saviez pas à quoi vous attendre mais Iel ressemble à quelqu&#39;un de professionnel, portant un chemisier de soie, une jupe droite, et une paire de talons hauts noirs.
 
-&quot;Oh, mon Cher Hôte... &#39;immédiatement&#39; signifie //tout de suite//, &lt;&lt;linkappend &quot;j&#39;en ai bien peur.\&quot;&quot; t8n&gt;&gt;&lt;&lt;include &quot;Bad ending_fr&quot;&gt;&gt;&lt;&lt;/linkappend&gt;&gt;</tw-passagedata><tw-passagedata pid="27" name="Happy_fr" tags="" position="850,350" size="100,100">&quot;Je suis toujours heureux d&#39;avoir un invité de marque chez moi,&quot; dites-vous en forcant votre sourire le plus placide. Espérant que cette esquive soit suffisamment courtoise pour votre Cher Invité.
+Ses yeux, d&#39;un rouge profond, et Ses longs cheveux, brillants comme du bronze sous la lumière nocturne, trahissent Sa vraie nature. Tout ce que vous savez, si on en croit le sortilège, c&#39;est qu&#39;Iel peut donner tout ce qu&#39;on Lui demande, et prendra tout ce qu&#39;on Lui offre en échange.
 
-&quot;Oh, tu @@.promise;promets@@ ? Que c&#39;est adorable,&quot; dit lea Cher Invité en entrant, suivi d&#39;un froid humide et d&#39;une odeur de feuilles détrempées.
+« Merci pour l&#39;invitation », dit-Iel avec une sincérité raffinée, accompagnée d&#39;un mouvement de tête soigné et professionnel. « Je suis ravi de faire affaire avec vous. Mais avant toute chose, puis-je avoir le nom de mon Cher Hôte ? »
 
-Vous ouvrez la bouche pour l&#39;informer de ce que vous voulez, mais Son doigt se lève avant que vous ayez le temps de commencer. &quot;Chut, ne vous inquiètez pas,&quot; dit-Iel en vous lançant un clin d&#39;oeil et un sourire chaleureux. &quot;Je sais déjà ce que tu cherches&quot;. Sa mallette est ouverte avec un &quot;pop&quot;. A l&#39;intérieur se trouve un chèque d&#39;un million d&#39;euros, à votre nom.
+Vous inspirez profondément. C&#39;est parti.
 
-&quot;Et bien,vous me comblez!&quot; vous vous exclamez sans le vouloir, avant de vous emparez du chèque et de votre téléphone et de le déposer en ligne. Vous rendant compte de votre impolitesse, vous levez les yeux et Lea remerciez, réalisant que votre Cher Invité a déjà disparu. La porte d&#39;entrée est ouverte, laissant entrer un vent glacial. Vous la fermez [[en grelottant.|Happy 2]]</tw-passagedata><tw-passagedata pid="28" name="Happy 2_fr" tags="" position="975,350" size="100,100">Vous n&#39;y croyez pas vraiment lorsque l&#39;argent apparait vraiment sur le compte le lendemain matin. Vous peinez encore à y croire quand il reste jusqu&#39;au soir et les semaines suivantes que vous aurez attendu pour être sûr. Vous n&#39;allez pas laisser l&#39;or féérique faire disparaitre votre chèque! Enfin, après avoir dévalisé toutes les boutiques que vous vouliez, vous vous installez dans votre lit, impressioné d&#39;avoir à peine entamé votre magot.
+[[Je suis toujours heureux d&#39;avoir un Invité de marque chez moi. | Happy]]
+[[Je ne donnerai pas ça. | Name]]
+[[Non merci. Mais entrez, je vous en prie, et discutons-en. | Good 1]]</tw-passagedata><tw-passagedata pid="26" name="Good 1_fr" tags="" position="725,350" size="100,100">« Non merci », dites-vous nerveusement, « Mais entrez, je vous en prie, et discutons-en. » Vous vous décalez pour Lea laisser entrer.
 
-Cette nuit là, des grattements venant de la salle de bain vous réveillent. En vous extirpant du lit pour aller voir, vous pensez à quel point ce sera un plaisir de vivre dans une nouvelle maison. Une que vous //possèderez//. Sans ces stupides rongeurs qui volent vos médicaments et meurent derrière vos toilettes.
+« Pas de problème. Merci de me l&#39;avoir dit », réagit votre Cher Invité. Tandis qu&#39;Iel sourit, vous êtes certain d&#39;apercevoir deux rangées de canines. Alors qu&#39;Iel passe le pas de la porte, un faible cliquettement résonne dans l&#39;air. Vous baissez les yeux vers la source de ce bruit, et remarquez que le premier chiffre du loquet a changé. Il est devenu une sorte de symbole arcanique que vous n&#39;arrivez pas à identifier. Le regarder vous brûle les yeux. Vous tournez à nouveau votre regard vers Ellui.
 
-Alors que vous ouvrez la porte de la salle de bain, vous hurlez de [[terreur. | Happy 3]]</tw-passagedata><tw-passagedata pid="29" name="Happy 3_fr" tags="" position="1100,350" size="100,100">Là, en face du miroir, se trouvent d&#39;énormes yeux impassibles, brillant sinistrement dans la lumière vacillante. &quot;Tu n&#39;es pas une satanée souris!&quot; criez-vous, essayant de faire fuir la créature d&#39;un revers de la main. Elle ne bouge pas d&#39;un poil. Est-ce qu&#39;un chat sauvage est entré ?! Vous empoignez un balais, prêt à faire fuir la chose qui s&#39;est introduite chez vous. Alors que vous levez les yeux, votre anciennement Cher Invité vous sourit depuis l&#39;intérieur du miroir.
+« Je suis tellement heureux d&#39;être ici », continue-t-Iel. Sur Son passage, une forte odeur de feuilles mortes se fait sentir dans le couloir, rendant l&#39;air lourd et étouffant. Difficile de croire Ses paroles, étant donné votre appartement minuscule et délabré. « Je suis certain que vous ne m&#39;avez pas simplement invité pour discuter, n&#39;est-ce pas ? Eh bien, mon Cher Hôte, que voulez-vous ? »
+Vous plissez les yeux en essayant de comprendre Ses intentions. Une question aussi directe, d&#39;une telle entité. Que voulez-vous vraiment ?
 
-&quot;Et bien, tu n&#39;es plus si heureux de me voir, &lt;&lt;linkappend &#39;mon Cher Hôte ?&quot;&#39; t8n&gt;&gt;&lt;&lt;include &quot;Bad ending_fr&quot;&gt;&gt;&lt;&lt;/linkappend&gt;&gt;</tw-passagedata><tw-passagedata pid="30" name="Heart_fr" tags="" position="1225,350" size="100,100">&quot;Oui,&quot; répondez-vous. Montrer la moindre trace d&#39;hésitation serait une erreur.
+[[J&#39;aurais bien besoin d&#39;un million d&#39;euros, là, tout de suite. Pour acheter une nouvelle maison et régler mes dettes. | Cash]]
+[[Tout ce que je veux, c&#39;est les numéros gagnants du Loto de cette semaine. | Numbers]]
+[[Donnez-moi les numéros gagnants du Loto de cette semaine. | Good 2]]</tw-passagedata><tw-passagedata pid="27" name="Good 2_fr" tags="" position="850,350" size="100,100">« Si clair. Si direct », Se moque-t-Iel, Ses yeux brillant comme un éclair en cage. « Est-ce là une manière de parler à son Cher Invité ? »
 
-&quot;Oh, tellement de confiance en toi. Mais @@.promise;promets-tu@@ d&#39;y mettre ton cœur et ton âme ?&quot;
+Vous L&#39;observez, essayant de garder vos yeux à Sa hauteur et votre souffle stable. Vous ne pouvez pas vous empêcher de danser nerveusement d&#39;un pied sur l&#39;autre. Espérons ne pas l&#39;avoir fâché — si Iel est vexé, répondra-t-Iel à votre requête ? Va-t-Iel vous punir ? Ou bien…
 
-Vous hochez vigoureusement la tête, comme si vous n&#39;aviez pas la moindre peur en vous.
+Vos pensées sont interrompues par un nouveau //cliquetis// de la mallette. Un autre symbole étrange apparaît à la place du second « chiffre ». Essayant de garder votre calme, vous Lea menez à la cuisine, L&#39;invitez à S&#39;asseoir et à poser Sa mallette sur la table. Iel entreprend cette dernière action, mais ne S&#39;assoit pas. Iel S&#39;approche de vous d&#39;une foulée beaucoup trop grande, faisant résonner le plancher avec Ses chaussures pointues.
 
-&quot;Très bien. Nous pouvons donc nous y mettre&quot;, dit votre Cher Invité. Iel approche Ses doigts trop longs vers votre torse. Son contact glacé vous donne la chair de poule et vous fait sursauter.
+« Eh bien, soit », dit votre Cher Invité, baissant la voix jusqu&#39;à atteindre un murmure intimidant. « Je peux vous offrir ces choses, bien entendu, mais je ne crois pas apprécier cet échange. »
 
-&quot;Et bien, mon Cher Hôte, as-tu déjà oublié tes paroles ? Impossible de reculer, j&#39;en ai bien peur. Oh, mais si tu préfère t&#39;en occuper toi-même, n&#39;hésite surtout pas !&quot; Iel retire sa main, et sors un long couteau effilé de sa mallette, puis le place sur la table entre vous. Enfin, Iel se lève et effectue une révérence.
+Vous tressaillez. Est-ce que tout cela aura été en vain ? Difficilement, vous croisez à nouveau Son regard, aux simulacre d&#39;iris tournant et changeant continuellement de forme et de couleur. Vous sentez votre estomac se tordre, mais restez déterminé à ne pas laisser tomber.
 
-&quot;Je reviendrais lorsque tu auras terminé,&quot; dit votre Cher Invité en se tournant vers la porte d&#39;entrée. Iel s&#39;éloigne, suivi d&#39;une étrange odeur de [[feuilles mouillées. | Heart 2]]</tw-passagedata><tw-passagedata pid="31" name="Heart 2_fr" tags="" position="100,475" size="100,100">Iel veut que vous... retiriez votre propre cœur ? Parce que vous avez dit y mettre &quot;votre coeur et votre âme&quot; ? Un soupir de défaite s&#39;échappe de vos lèvres, réalisant que vous êtes vaincu. Bien entendu, vous ne pouvez pas arracher //votre coeur// pour de simples numéros de Loto. Vous avez essayé d&#39;avoir l&#39;air confiant et commit une grave erreur.
+« Je n&#39;apprécie guère de faire affaire avec des gens incertains », siffle-t-Iel. « Alors, dites-moi, y mettez-vous vraiment votre cœur et votre âme ? »
 
-En tout cas vous possédez maintenant un magnifique couteau. Au vu de son fil délicat et sa poignée en os sculpté, il vaut probablement une certaine somme. Enervé mais pas encore vaincu, vous reposez le couteau et [[vous levez de votre chaise. | Heart 3]]</tw-passagedata><tw-passagedata pid="32" name="Heart 3_fr" tags="" position="225,475" size="100,100">Dès que votre main lâche le manche, la pièce se refroidit subitement, jusqu&#39;à être recouverte de givre. Un voile de ténèbres s&#39;abat autour de vous. Seule reste la lumière reflétée par la lame du couteau de votre Cher Invité. Dans son reflet apparait Son visage, juste derrière vous, immatériel.
+[[Ça ne sera pas nécessaire. | Good 3]]
+[[Je vous fais confiance pour vous en occuper. | Trust]]
+[[Oui. | Heart]]</tw-passagedata><tw-passagedata pid="28" name="Good 3_fr" tags="" position="975,350" size="100,100">« Ça ne sera pas nécessaire », répondez-vous avec raideur. « Montrez-moi simplement les numéros. »
 
-&quot;Et bien, que se passe-t-il ?&quot; Dit-Iel avec un air malicieux. &quot;Tu m&#39;as bien promis d&#39;y &lt;&lt;linkappend &#39;mettre ton cœur.&quot;&#39; t8n&gt;&gt;&lt;&lt;include &quot;Bad ending_fr&quot;&gt;&gt;&lt;&lt;/linkappend&gt;&gt;</tw-passagedata><tw-passagedata pid="33" name="Name_fr" tags="" position="350,475" size="100,100">&quot;Je ne vous remettrez pas cela.&quot; répondez vous. &quot;Mais faisons quand même affaire.&quot; Vous n&#39;êtes pas stupide au point de donner votre nom aussi simplement. C&#39;est trop évident.
+Vous jureriez qu&#39;un profond grognement résonne dans Son torse, Son visage se tordant dans un rictus, mais alors qu&#39;Iel ouvre Sa bouche, la mallette résonne d&#39;un dernier //clic//, s&#39;ouvrant de son propre chef. À l&#39;intérieur se trouve un simple petit morceau de papier, comme on en verrait dans un biscuit chinois. Dessus se trouvent 11 numéros.
 
-Votre Cher Invité roule des yeux. &quot;Vous refusez? C&#39;est une @@.promise;promesse@@ ?
+21 14 5 16 18 15 13 5 19 19 5
 
-Vous hochez fermement la tête.
-
-&quot;Très bien, mon Cher Hôte. Je vois que tu ne veux pas me faciliter la tâche.&quot;
-
-Iel entre, suivi par une odeur de feuilles séchées. Le guidant vers la cuisine, vous l&#39;invitez à s&#39;asseoir à la table, afin de négocier. Iel pose la mallette de cuir à côté de Sa chaise, puis se penche vers vous avec un rictus carnassier.
-
-&quot;Et bien, que puis-je faire pour mon Cher Hôte ?&quot; demande-t-Iel. Vous expliquez vos difficultés financières. Iel hôche la tête, d&#39;un air faussement sympathique. Obtenir l&#39;argent que vous souhaitez semble extrêmement simple pour Ellui.
-
-&quot;J&#39;ai exactement ce qu&#39;il te faut. Tu vas adorer, vraiment.&quot; Dit-Iel, ouvrant le loquet en laiton, produisant un morceau de papier sur lequel se trouve une série de chiffres. &quot;Voici les numéros du [[Loto de cette semaine. | Name 2]]&quot;</tw-passagedata><tw-passagedata pid="34" name="Name 2_fr" tags="" position="475,475" size="100,100">Vous prenez le papier. Après tout, vous n&#39;avez rien à perdre, et tout à gagner. &quot;Que dois-je vous donner en échange ?&quot; demandez-vous prudemment ?
-
-&quot;Oh, mon Cher Hôte, tu m&#39;as déjà donné bien assez,&quot; répond-Iel joyeusement. &quot;Utilise ces numéros demain, et profite de ta récompense. Ce fut un plaisir.&quot;
-
-Tout se passe comme prévu. Les numéros vous font gagner une somme à 7 chiffres. Quand le chèque arrive, vous vous empressez d&#39;aller à la banque la plus proche pour l&#39;encaisser.
-
-&quot;Félicitations ! Quelle somme impressionnante !&quot;, remarque l&#39;employée de banque. &quot;Pour cette raison, nous allons devoir procéder à quelques vérifications,&quot; continue-t-elle en sortant des documents de son bureau. &quot;Si vous voulez bien me suivre&quot;, dis-t-elle en se levant, avant de vous diriger vers le bureau du [[directeur. | Name 3]]</tw-passagedata><tw-passagedata pid="35" name="Name 3_fr" tags="" position="600,475" size="100,100">Le directeur vous serre la main et vous invite à vous asseoir dans son bureau. Il énumère une liste de mentions légales apparemment standard pour gérer un si gros chèque, puis attire votre attention vers une ligne pointillée sur le document.
-
-&quot;Veuillez indiquer votre nom et signer ici, s&#39;il vous plait.&quot;
-
-Vous suivez les indications avant de renvoyer le document vers le directeur. A l&#39;instant où sa main le touche, du gel se répand sur le papier, puis le long de ses doigts. En un clin d&#39;œil, le gérant est complètement gelé, tout comme l&#39;ensemble du lieu. Dehors, le jour est devenu la nuit. La pièce se reflète dans la grande fenêtre du bureau. Votre Cher Invité apparait dans la fenêtre, assis devant le reflet de la table, face à vous.
-
-&quot;Tu avais promis de ne pas remettre ton nom, mon Cher Hôte. &lt;&lt;linkappend &quot;Ceci n\&#39;est pas acceptable.&quot; t8n&gt;&gt;&lt;&lt;include &quot;Bad ending_fr&quot;&gt;&gt;&lt;&lt;/linkappend&gt;&gt;&quot;</tw-passagedata><tw-passagedata pid="36" name="Numbers_fr" tags="" position="725,475" size="100,100">&quot;Tout ce que je veux, c&#39;est les numéros gagants du Loto de cette semaine&quot;
-
-Les yeux de votre Cher Invité scintillent comme le ciel nocturne. &quot;Seulement les numéros, c&#39;est bien ça ? Tu @@.promise;promets@@ ?&quot;
-
-&quot;Oui. les numéros //gagnants//&quot;, vous insistez.
-
-&quot;Oui, oui, les numéros gagnants, bien sûr. Je peux absolument m&#39;occuper de cela pour toi.&quot;
-
-&quot;Que voulez-vous en échange ?&quot; vous Lui demandez. Vous n&#39;a pas spécialement envie d&#39;accepter quoi que ce soit sans en connaître son prix. &lt;&lt;link &quot;Son //vrai// prix.&quot; &quot;Numbers 2&quot;&gt;&gt;&lt;&lt;/link&gt;&gt;</tw-passagedata><tw-passagedata pid="37" name="Numbers 2_fr" tags="" position="850,475" size="100,100">Iel rit, produisant une sorte de roulement de tambour dans Son torse. &quot;Ah, mon Cher Hôte, tu m&#39;as déjà donné tant.&quot; Iel ouvre le loquet en laiton, et sort un morceau de papier sur lequel se trouvent 10 numéros.
-
-25 15 21 16 18 15 13 9 19 5
-
-&quot;Est-ce bien tout ce que tu veux ?&quot;
-
-Vous hochez la tête. Iel place le papier dans votre main. A l&#39;odeur sèche et boisée qui accompagne votre Cher Invité s&#39;ajoute une touche humide, comme s&#39;il avait plu dans ces bois.
-
-&quot;Ce sont les numéros gagants de cette semaine, je te le garantis&quot;, vous rassure votre Cher Invité. Avec un hochement de tête, Iel se lève et vous fait ses adieux, se dirigeant vers [[la porte d&#39;entrée. | Numbers 3]]</tw-passagedata><tw-passagedata pid="38" name="Numbers 3_fr" tags="" position="975,475" size="100,100">Le lendemain, dès que possible, vous remplissez une grille de Loto, avec les nombres indiqués. Quand les numéros gagnants sont annoncés, vous n&#39;en croyez pas vos oreilles. Vos chiffres sont cités, l&#39;un après l&#39;autre. Un million d&#39;euros ! Vous arrivez à peine à comprendre ce qui se passe. D&#39;une main tremblante, vous tendez votre ticket au buraliste.
-
-Le propriétaire arrive en trombe pour vous féliciter, avant de prendre une photo souvenir. Votre ticket gagnant en main, vous vous dirigez vers la porte. Vers une nouvelle vie de richesse.
-
-A l&#39;instant où votre main touche la porte vitrée, de la glace apparait au bout de vos doigts, se propageant, scellant la sortie. Le bâtiment entier gèle, tandis que le temps s&#39;arrête. Dans la porte vitrée apparait le reflet de votre Cher Invité, se tenant derrière le votre.
-
-Iel secoue la tête, ses cheveux brillants produisant un son de feuilles mortes.
-
-&quot;Mon Cher Hôte, tu m&#39;as certifié vouloir les  //numéros//, et pourtant tu les abandonne &lt;&lt;linkappend &#39;dès le lendemain.&quot;&#39; t8n&gt;&gt;&lt;&lt;include &quot;Bad ending_fr&quot;&gt;&gt;&lt;&lt;/linkappend&gt;&gt;</tw-passagedata><tw-passagedata pid="39" name="Trust_fr" tags="" position="1100,475" size="100,100">&quot;Je vous fais confiance pour vous en occuper.&quot;
-
-&quot;La confiance est quelque chose de très précieux à @@.promise;promettre@@. Très bien,&quot; réponds votre Cher Invité, récupérant Sa mallette avant de se lever et de se diriger vers la porte d&#39;entrée.
-
-C&#39;est... tout ? Iel ne voulait que votre confiance ? Vous arrivez à peine à y croire, mais ce n&#39;est pas comme si vous aviez beaucoup à y perdre. Vous aviez confiance en envoyant l&#39;invitation, et //ça// a clairement marché. Ca devrait être [[du gâteau. | Trust 2]]</tw-passagedata><tw-passagedata pid="40" name="Trust 2_fr" tags="" position="1225,475" size="100,100">Le jour suivant, rien ne semble avoir changé. Tellement que vous devez vous convaincre que cette rencontre nocturne a vraiment eu lieu.
-
-La semaine suivante, rien non plus. Soit. Votre Cher Invité ne vous donnera pas les numéros gagnant de cette semaine. Ce n&#39;est pas grave, vous attrendrez encore un peu.
-
-Le mois suivant, toujours aucun signe de changement, malgré l&#39;accord conclus.Le loyer est dû, suivi d&#39;une facture imprévu vous forçant à piocher dans vos économies. Vous vous poussez à attendre [[juste un peu plus longtemps. | Trust 3]]</tw-passagedata><tw-passagedata pid="41" name="Trust 3_fr" tags="" position="100,600" size="100,100">L&#39;année suivante, vous viviez encore dans cet appartement pourri. L&#39;hiver passe sans allumer le chauffage, pour faire des économies. Vous avez presque oublié cette nuit étrange, où l&#39;impossible semblait possible. Le vent dehors vous rafraichit la mémoire. Tandis que vos yeux se reflètent dans votre tasse de café bas de gamme, un ressentiment s&#39;installe dans votre coeur.
-
-&quot;Quelle arnaque&quot;, vous marmonnez en prenant la tasse.
-
-Vous soufflez sur le café pour le refroidir. Au lieu d&#39;un filet d&#39;air, vous exhalez un vent hivernal. Le café gèle, tout comme le reste de la pièce. Dans la surface brillante du café se reflète le visage de votre Cher Invité.
-
-&quot;Mon cher, qu&#39;est-t-il arrivé à ta confiance ?&quot; demande-t-Iel. &quot;Et dire que je l&#39;avais &lt;&lt;linkappend &#39;il y a un instant encore.&quot;&#39; t8n&gt;&gt;&lt;&lt;include &quot;Bad ending_fr&quot;&gt;&gt;&lt;&lt;/linkappend&gt;&gt;</tw-passagedata><tw-passagedata pid="42" name="Bad ending_fr" tags="" position="225,600" size="100,100">&lt;br&gt;
-La terreur s&#39;instille en vous face à ce reflet, faisant son nid dans vos entrailles. Ce visage commence à se distordre, se détendre, et gonfler. Après un moment qui vous semble infini, votre Cher Invité se tient à nouveau face à vous, faisant peser son regard d&#39;un autre monde. Autour de vous, plus rien ne semble exister. Un bourdonnement terrible se fait entendre, assaillant vos oreilles. Vous essayez de les boucher, vous rendant compte que vous ne pouvez plus bouger.
-
-&quot;Qu-qu&#39;est-ce qu-qu&#39;il se passe ?&quot;. Vous parvenez à peine à former ces mots, d&#39;une voix étouffée. Des larmes ruissèlent sur vos joues. Le Cher Invité vous sourit, montrant ses trop nombreuses dents. Iel vous regarde de ses trop nombreux yeux. Ses boucles de bronze fouettent l&#39;air autour d&#39;Ellui. &quot;Qu&#39;est-ce que j&#39;ai bien pu faire de &lt;&lt;linkappend &#39;mal ?!&quot;&#39; t8n&gt;&gt;&lt;&lt;addclass &quot;body&quot; &quot;dark&quot;&gt;&gt;
-
-&quot;Oh, mon Cher Hôte,&quot; susurre-t-Iel tandis que votre vision se trouble. &lt;&lt;timed $badwait t8n&gt;&gt;@@.promised;Tu avais pourtant promis.@@&quot;
-&lt;&lt;next&gt;&gt;
-    &lt;&lt;goto &quot;Start&quot;&gt;&gt;
-&lt;&lt;/timed&gt;&gt;
-&lt;&lt;/linkappend&gt;&gt;</tw-passagedata><tw-passagedata pid="43" name="Credits_fr" tags="" position="350,600" size="100,100">! Crédits
-Ecrit par [[Aster Fialla | https://asterfialla.com]] et Jake Gardner.
-
-Traduction française par [[Astride Couillaux | https://dr-umbrus.itch.io/]], [[manonamora | https://manonamora.neocities.org/home]] et Dolores B.
-
-[[Promis | Start]]</tw-passagedata><tw-passagedata pid="44" name="You promise_fr" tags="" position="475,600" size="100,100">Ce pourrait être une arnaque. Mais tout ceci vous coûterait seulement un timbre et un brin de sauge. Peut être que cela vaudrait le coup d&#39;essayer, juste pour se sentir mieux. Et si cela marche, vous seriez riche.
-
-Vous mettez l&#39;envelope sans addresse dans la boite aux lettres. Les instructions du sort disaient simplement d&#39;écrire &quot;à mon Cher Invité&quot; au recto. Pliés à l&#39;intérieur, un brin de sauge et une note indiquant une date et une heure : &quot;demain, 22h45&quot;.
-
-Vous entendez quelqu&#39;un toquer à la porte. Pile à l&#39;heure. Vous vous levez instantanément, et saluez votre Cher Invité.
-
-Iel se tient dans l&#39;entrée, imposant et pourtant modeste, tenant à la main une mallette de cuir luxueux, fermée par un loquet à combinaison en laiton brillant. Vous ne savez pas à quoi vous attendre, mais Iel ressemble à quelqu&#39;un de professionnel, portant un chemisier de soie, une jupe droite, et une paire de talons hauts noirs. Ses yeux, d&#39;un rouge profond, et Ses longs cheveux, brillants comme du bronze sous la lumière nocturne, trahissent Sa vraie nature. Tout ce que vous savez, si on en croit le sortilège, c&#39;est qu&#39;Iel peut donner tout ce qu&#39;on Lui demande, et prendra tout ce qu&#39;on Lui offrira en échange.
-
-&quot;Merci pour l&#39;invitation&quot;, dit-Iel avec une sincérité raffinée, accompagnée d&#39;un mouvement de tête soigné et professionnel. &quot;Je suis ravi de faire affaires avec toi. Mais avant toute chose, puis-je avoir le nom de mon Cher Hôte ?&quot; 
-
-Vous inspirez profondément. //C&#39;est parti.//
-
-[[C&#39;est toujours un honneur d&#39;avoir un Invité de marque chez moi.| Happy]]
-&lt;&lt;link &quot;Je ne vous remettrez pas //cela//.&quot; &quot;Name&quot;&gt;&gt;&lt;&lt;/link&gt;&gt;
-[[Non merci. Mais entrez, je vous en prie, et discutons en. | Good 1]]</tw-passagedata><tw-passagedata pid="45" name="Good 1_fr" tags="" position="600,600" size="100,100">&quot;Non merci&quot;, dites-vous nerveusement, &quot;Mais entrez, je vous en prie, et discutons en.&quot; Vous vous décalez pour Lea laisser entrer.
-
-&quot;Pas de problème. Merci de me l&#39;avoir dit.&quot;, réagis votre Cher Invité. Tandis qu&#39;Iel sourit, vous êtes certain d&#39;apercevoir deux rangées de canines. Alors qu&#39;Iel passe le pas de la porte, un faible cliquettement résonne dans l&#39;air. Vous baissez les yeux vers la source de ce bruit, et remarquez que le premier chiffre du locket a changé. Iel est devenu une sorte de symbole arcanique que vous n&#39;arrivez pas à identifier. Le regarder vous brûle les yeux. Vous tournez à nouveau votre regard vers Ellui.
-
-&quot;Je suis tellement heureux d&#39;être ici&quot;, continue-t-Iel. Sur son passage, une forte odeur de feuilles mortes se fait sentir dans le couloir, rendant l&#39;air lourd et étouffant. Difficile de croire Ses paroles, étant donné votre appartement minuscule et délabré. &quot;Je suis certain que tu ne m&#39;a pas simplement invité pour discuter, n&#39;est-ce pas ? Et bien, mon Cher Hôte, que veux tu ?&quot;
-
-Vos yeux rétrécissent en essayant de comprendre Ses intentions. Une question aussi directe, d&#39;une telle entité. Que //voulez//-vous vraiment ?
-
-[[J&#39;aurais bien besoin d&#39;un million d&#39;euros, là tout de suite. Pour acheter une nouvelle maison, et régler mes dettes. | Cash]]
-[[Tout ce que je veux, c&#39;est les numéros gagants du Loto de cette semaine. | Numbers]]
-[[Donnez-moi les numéros gagnants du Loto de cette semaine. | Good 2]]</tw-passagedata><tw-passagedata pid="46" name="Good 2_fr" tags="" position="725,600" size="100,100">&quot;Si clair. Si direct,&quot; se moque-t-Iel, ses yeux brillant comme un éclair en cage. &quot;Est-ce là une manière de parler à son Cher Invité ?&quot;
-
-Vous L&#39;observez, essayant de garder vos yeux à sa hauteur, et vottre souffle stable. Vous ne pouvez pas vous empêcher de danser nerveusement d&#39;un pied sur l&#39;autre. Espérons ne pas l&#39;avoir fâché. -- Si Iel est vexé, répondra-t-Iel à votre requête ? Va-t-Iel vous punir ? Ou bien...
-
-Vos pensées sont interrompues par un nouveau //cliquetis// de la mallette. Un autre symbole étrange apparait à la place du second &quot;chiffre&quot;. Essayant de garder votre calme, vous Lea menez à la cuisine, L&#39;invitez à s&#39;asseoir et à poser sa mallette sur la table. Iel entreprend cette dernière action, mais ne s&#39;asseoit pas. Iel s&#39;approche de vous d&#39;une foulée beaucoup trop grande, faisant résonner le plancher avec ses chaussures pointues.
-
-&quot;Eh bien soit,&quot; dit votre Cher Invité, abaissant sa voix en un murmure intimidant. &quot;Je peux t&#39;offrir ces choses, bien entendu, mais je ne crois pas apprécier cet échange.&quot;
-
-Vous tressaillez. Est-ce que tout cela aura été en vain ? Difficilement, vous croisez à nouveau Son regard, aux simulacre d&#39;iris tournant et changeant continuellement de forme et de couleur. Vous sentez votre estomac se tordre, mais restez déterminé à ne pas laisser tomber.
-
-&quot;Je n&#39;apprécie guère de faire affaire avec des gens incertains,&quot; siffle-t-Iel. &quot;Alors, dis-moi, y mets tu vraiment ton cœur et ton âme ?&quot;
-
-[[Cela ne sera pas nécessaire. | Good 3]]
-[[Je vous fait confiance pour vous en occuper. | Trust]]
-[[Oui. | Heart]]</tw-passagedata><tw-passagedata pid="47" name="Good 3_fr" tags="" position="850,600" size="100,100">&quot;Ca ne sera pas nécessaire&quot;, répondez-vous avec raideur. &quot;Montrez moi simplement les numéros.&quot;
-
-Vous jureriez qu&#39;un profond grognement résonne dans Son torse. Son visage se tordant dans un rictus, mais alors qu&#39;Iel ouvre Sa bouche, la mallette résonne d&#39;un dernier //click//, s&#39;ouvrant de son propre chef. A l&#39;intérieur se trouve un simple petit morceau de papier, comme on en verrait dans un biscuit chinois. Dessus se trouvent 10 numéros.&quot;
-
-25 15 21 16 18 15 13 9 19 5
-
-Votre Cher Invité recule enfin, installant une distance plus raisonnable. Vous sentez votre tension diminuer. &quot;Et bien ! Tout ce que tu m&#39;as donné, ce sont des ordres et une attitude si autoritaire,&quot; dit-Iel en pleurnichant. Iel sort le papier de la mallette et vous le jette. &quot;Quelle sorte de marché est-ce donc là ?&quot;
+Votre Cher Invité recule enfin, installant une distance plus raisonnable. Vous sentez votre tension diminuer. « Eh bien ! Tout ce que vous m&#39;avez donné, ce sont des ordres et une attitude si autoritaire », dit-Iel en pleurnichant. Iel sort le papier de la mallette et vous le jette. « Quelle sorte de marché est-ce donc là ? »
 
 Vous tendez la main maladroitement, mais réussissez à attraper le papier volant. Vous relevez ensuite les yeux alors qu&#39;Iel se remet à parler, de manière horriblement douce.
 
-&quot;J&#39;espère que tu profiteras bien de ta vie. Ne m&#39;invite plus jamais.&quot; Sur ces mots, Iel récupère sa mallette, tourne les talons et, à grandes enjambées, sort de la cuisine, du couloir, de votre [[maison. | Good end]]</tw-passagedata><tw-passagedata pid="48" name="Good end_fr" tags="" position="975,600" size="100,100">Le lendemain, dès que possible, vous remplissez une grille de Loto, avec les nombres indiqués. Quand l&#39;annonce arrive finalement, vous n&#39;en croyez pas vos oreilles lorsque vos chiffres sont cités, l&#39;un après l&#39;autre. Un million d&#39;euros ! Vous arrivez à peine à comprendre ce qui se passe, même en encaissant le chèque. Même en regardant le nombre sur l&#39;application de la banque, craignant la disparition de cet or féérique. Même en attendant quelques semaines, pour être sûr. Contre toute attente, l&#39;argent reste. Vous posédez vraiment un million d&#39;euros.
+« J&#39;espère que vous profiterez bien de votre vie. Ne m&#39;invitez plus jamais. » Sur ces mots, Iel récupère sa mallette, tourne les talons et, à grandes enjambées, sort de la cuisine, du couloir, de votre [[maison|Good end]].</tw-passagedata><tw-passagedata pid="29" name="Good end_fr" tags="" position="1100,350" size="100,100">Le lendemain, dès que possible, vous remplissez une grille de Loto avec les nombres indiqués. Quand l&#39;annonce arrive finalement, vous n&#39;en croyez pas vos oreilles lorsque vos chiffres sont cités, l&#39;un après l&#39;autre. Un million d&#39;euros ! Vous arrivez à peine à comprendre ce qui se passe, même en encaissant le chèque. Même en regardant le nombre sur l&#39;application de votre banque, craignant la disparition de cet or féérique. Même en attendant quelques semaines, pour être sûr. Contre toute attente, l&#39;argent reste. Vous possédez vraiment un million d&#39;euros.
 
-Vous ferez de grandes choses avec cette argent, vous vous le jurez.
+Vous ferez de grandes choses avec cet argent, vous vous le jurez.
 
-Qui sait si vous allez le garder ?
+Qui sait si vous allez le garder ?
 
 &lt;&lt;timed $wait t8n&gt;&gt;
-    &lt;&lt;link &quot;Promis&lt;br&gt;Ecrit par Aster Fialla et Jake Gardner&quot; &quot;Start&quot;&gt;&gt;&lt;&lt;/link&gt;&gt;
-&lt;&lt;/timed&gt;&gt;</tw-passagedata><tw-passagedata pid="49" name="Start" tags="" position="1100,600" size="100,100"></tw-passagedata><tw-passagedata pid="50" name="Start_en" tags="" position="1225,600" size="100,100">! [[You promise]]
+    &lt;&lt;link &quot;Promis&lt;br&gt;Ecrit par Aster Fialla and Jake Gardner&quot; &quot;Start&quot;&gt;&gt;&lt;&lt;/link&gt;&gt;
+&lt;&lt;/timed&gt;&gt;</tw-passagedata><tw-passagedata pid="30" name="Happy_fr" tags="" position="1225,350" size="100,100">« Je suis toujours heureux d&#39;avoir un Invité de marque chez moi », dites-vous en forçant votre sourire le plus placide, espérant que cette esquive soit suffisamment courtoise pour votre Cher Invité.
+
+« Oh, vous @@.promise;promettez@@ ? Que c&#39;est adorable », dit lea Cher Invité en entrant, suivi d&#39;un froid humide et d&#39;une odeur de feuilles détrempées.
+
+Vous ouvrez la bouche pour L&#39;informer de ce que vous voulez, mais Son doigt se lève avant que vous n&#39;ayez le temps de commencer.
+
+« Chut, ne vous inquiétez pas », dit-Iel en vous lançant un clin d&#39;œil et un sourire chaleureux. « Je sais déjà ce que vous cherchez. » Sa mallette s&#39;ouvre avec un //pop//. A l&#39;intérieur se trouve un chèque d&#39;un million d&#39;euros, à votre nom.
+
+« Eh bien, vous me comblez ! » vous exclamez-vous sans le vouloir, avant de vous emparer du chèque et de votre téléphone afin de le déposer en ligne. Vous rendant compte de votre impolitesse, vous levez les yeux pour Lea remercier, réalisant que votre Cher Invité a déjà disparu. La porte d&#39;entrée est ouverte, laissant entrer un vent glacial. Vous la fermez [[en grelottant.|Happy 2]]</tw-passagedata><tw-passagedata pid="31" name="Happy 2_fr" tags="" position="100,475" size="100,100">Vous n&#39;y croyez pas vraiment lorsque l&#39;argent apparaît réellement sur le compte le lendemain matin. Vous peinez encore à y croire quand il y reste jusqu&#39;au soir, et les semaines suivantes que vous aurez attendu pour être sûr.
+
+Vous n&#39;allez pas laisser cet or féérique disparaître ! Enfin, après avoir dévalisé toutes les boutiques que vous vouliez, vous vous installez dans votre lit, impressionné d&#39;avoir à peine entamé votre magot.
+
+Cette nuit-là, des grattements venant de la salle de bain vous réveillent. En vous extirpant du lit pour aller voir, vous pensez au plaisir que sera la vie dans une nouvelle maison. Une que vous //posséderez//. Sans ces stupides rongeurs qui volent vos médicaments et meurent derrière vos toilettes.
+
+Alors que vous ouvrez la porte de la salle de bain, vous hurlez de [[terreur.|Happy 3]]</tw-passagedata><tw-passagedata pid="32" name="Happy 3_fr" tags="" position="225,475" size="100,100">Là, en face du miroir, se trouvent d&#39;énormes yeux impassibles, brillant sinistrement dans la lumière vacillante. « T&#39;es pas une satanée souris ! » criez-vous, essayant de faire fuir la créature d&#39;un revers de la main. Elle ne bouge pas d&#39;un poil. Est-ce qu&#39;un chat sauvage est entré ?! Vous empoignez un balai, prêt à faire fuir la chose qui s&#39;est introduite chez vous. Alors que vous levez les yeux, votre anciennement Cher Invité vous sourit depuis l&#39;autre côté du miroir. »
+
+« Eh bien, vous n&#39;êtes plus si heureux de me voir, &lt;&lt;linkappend &#39;mon Cher Hôte ? »&#39; t8n&gt;&gt;&lt;&lt;include &quot;Bad ending_fr&quot;&gt;&gt;&lt;&lt;/linkappend&gt;&gt;</tw-passagedata><tw-passagedata pid="33" name="Name_fr" tags="" position="350,475" size="100,100">« Je ne donnerai pas ça », répondez-vous. « Mais faisons quand même affaire. » Vous n&#39;êtes pas stupide au point de donner votre nom aussi simplement. C&#39;est trop évident.
+
+Votre Cher Invité roule des yeux. « Vous refusez ? C&#39;est une @@.promise;promesse@@ ? »
+
+Vous hochez fermement la tête.
+
+« Très bien, mon Cher Hôte. Je vois que vous ne voulez pas me faciliter la tâche. »
+Iel entre, suivi par une odeur de feuilles séchées. Lea guidant vers la cuisine, vous L&#39;invitez à s&#39;asseoir à la table, afin de négocier. Iel pose la mallette de cuir à côté de Sa chaise, puis se penche vers vous avec un rictus carnassier.
+
+« Eh bien, que puis-je faire pour mon Cher Hôte ? » demande-t-Iel. Vous expliquez vos difficultés financières. Iel hoche la tête, d&#39;un air faussement sympathique. Obtenir l&#39;argent que vous souhaitez semble extrêmement simple pour Ellui.
+
+« J&#39;ai exactement ce qu&#39;il vous faut. Vous allez adorer ça, vraiment », dit-Iel, ouvrant le loquet en laiton, produisant un morceau de papier sur lequel se trouve une série de chiffres. « Voici les numéros du [[Loto de cette semaine.|Name 2]] »</tw-passagedata><tw-passagedata pid="34" name="Name 2_fr" tags="" position="475,475" size="100,100">Vous prenez le papier. Après tout, vous n&#39;avez rien à perdre, et tout à gagner. « Que dois-je vous donner en échange ? » demandez-vous prudemment.
+
+« Oh, mon Cher Hôte, vous m&#39;avez déjà donné bien assez », répond-Iel joyeusement. « Utilisez ces numéros demain, et profitez de votre récompense. Ce fut un plaisir. »
+
+Tout se passe comme prévu. Les numéros vous font gagner une somme à 7 chiffres. Quand le chèque arrive, vous vous empressez d&#39;aller à la banque la plus proche pour l&#39;encaisser.
+
+« Félicitations ! Quelle somme impressionnante ! » remarque l&#39;employée de banque. « Pour cette raison, nous allons devoir procéder à quelques vérifications », continue-t-elle en sortant des documents de son bureau. « Si vous voulez bien me suivre », dit-elle en se levant, avant de vous diriger vers le bureau du [[directeur.|Name 3]]</tw-passagedata><tw-passagedata pid="35" name="Name 3_fr" tags="" position="600,475" size="100,100">Le directeur vous serre la main et vous invite à vous asseoir dans son bureau. Il énumère une liste de mentions légales apparemment standard pour gérer un si gros chèque, puis attire votre attention vers une ligne pointillée sur le document.
+
+« Veuillez indiquer votre nom et signer ici, s&#39;il vous plait. »
+
+Vous suivez les indications avant de renvoyer le document vers le directeur. A l&#39;instant où sa main le touche, du givre se répand sur le papier, puis le long de ses doigts. En un clin d&#39;œil, le gérant est complètement gelé, tout comme l&#39;ensemble du lieu. Dehors, le jour est devenu la nuit. La pièce se reflète dans la grande fenêtre du bureau. Votre Cher Invité apparaît de l&#39;autre côté de la fenêtre, assis devant le reflet de la table, face à vous.
+
+« Vous aviez promis de ne pas donner votre nom, mon Cher Hôte. &lt;&lt;linkappend &quot;Ceci n&#39;est pas acceptable. »&quot; t8n&gt;&gt;&lt;&lt;include &quot;Bad ending_fr&quot;&gt;&gt;&lt;&lt;/linkappend&gt;&gt;</tw-passagedata><tw-passagedata pid="36" name="Cash_fr" tags="" position="725,475" size="100,100">J&#39;aurais bien besoin d&#39;un million d&#39;euros, là, tout de suite. Pour acheter une nouvelle maison et régler mes dettes.
+
+« Vous @@.promise;promettez@@ de vous en servir immédiatement ? Comment puis-je refuser cela! » répond votre Cher Invité, rempli de joie. Iel ouvre le loquet de Sa mallette puis la tourne vers vous, révélant des liasses et des liasses de billets. L&#39;odeur sèche et boisée qui accompagne votre Cher Invité semble maintenant contenir le parfum humide des feuilles d&#39;automne après la pluie.
+C&#39;est trop beau pour être vrai et pourtant. Un million d&#39;euros. Là, devant vous. Vous sortez les liasses et les posez sur la table, bégayant des remerciements. Tandis que votre Cher Invité referme Sa mallette, les possibilités fusent dans votre tête. Vous vous empressez d&#39;allumer votre ordinateur et d&#39;ouvrir des sites immobiliers, à la recherche de la maison de vos rêves. Votre Cher Invité vous fait poliment ses adieux, avant de se diriger [[vers la porte.|Cash 2]]</tw-passagedata><tw-passagedata pid="37" name="Cash 2_fr" tags="" position="850,475" size="100,100">Quelques heures plus tard, vous éteignez enfin l&#39;ordinateur. Le visage de votre Cher Invité apparaît dans le sombre reflet de l&#39;écran, vous faisant sursauter.
+
+« Vous aviez dit avoir besoin de cet argent immédiatement. Combien de temps suis-je sensé attendre ? »
+
+« Mais... C&#39;est du liquide. Il est minuit. Un dimanche. C&#39;est impossible de le dépenser », répondez-vous.
+
+« Oh, mon Cher Hôte... &quot;immédiatement&quot; signifie //tout de suite//, &lt;&lt;linkappend &quot;j&#39;en ai bien peur. »&quot; t8n&gt;&gt;&lt;&lt;include &quot;Bad ending_fr&quot;&gt;&gt;&lt;&lt;/linkappend&gt;&gt;</tw-passagedata><tw-passagedata pid="38" name="Numbers_fr" tags="" position="975,475" size="100,100">« Tout ce que je veux, c&#39;est les numéros gagnants du Loto de cette semaine. »
+
+Les yeux de votre Cher Invité scintillent comme le ciel nocturne. « Seulement les numéros, c&#39;est bien ça ? Vous @@.promise;promettez@@ ? »
+
+« Oui. les numéros //gagnants// », vous insistez.
+
+« Oui, oui, les numéros gagnants, bien sûr. Je peux absolument m&#39;occuper de cela pour vous. »
+
+« Que voulez-vous en échange ? », vous Lui demandez. Vous n&#39;avez pas spécialement envie d&#39;accepter quoi que ce soit sans en connaître le prix. &lt;&lt;link &quot;Le //vrai// prix.&quot; &quot;Numbers 2&quot;&gt;&gt;&lt;&lt;/link&gt;&gt;</tw-passagedata><tw-passagedata pid="39" name="Numbers 2_fr" tags="" position="1100,475" size="100,100">Iel rit, produisant une sorte de roulement de tambour dans Son torse. « Ah, mon Cher Hôte, vous m&#39;avez déjà tant donné. » Iel ouvre le loquet en laiton, et sort un morceau de papier sur lequel se trouvent 11 numéros.
+
+21 14 5 16 18 15 13 5 19 19 5
+
+« Est-ce bien tout ce que vous voulez ? »
+
+Vous hochez la tête. Iel place le papier dans votre main. A l&#39;odeur sèche et boisée qui accompagne votre Cher Invité s&#39;ajoute une touche humide, comme s&#39;il avait plu dans ces bois.
+« Ce sont les numéros gagnants de cette semaine, je vous le garantis », vous rassure votre Cher Invité. Avec un hochement de tête, Iel se lève et vous fait Ses adieux, Se dirigeant vers [[la porte d&#39;entrée.|Numbers 3]]</tw-passagedata><tw-passagedata pid="40" name="Numbers 3_fr" tags="" position="1225,475" size="100,100">Le lendemain, dès que possible, vous remplissez une grille de Loto avec les nombres indiqués. Quand les numéros gagnants sont annoncés, vous n&#39;en croyez pas vos oreilles. Vos chiffres sont cités, l&#39;un après l&#39;autre. Un million d&#39;euros ! Vous arrivez à peine à comprendre ce qui se passe. D&#39;une main tremblante, vous tendez votre ticket au buraliste.
+
+Le propriétaire arrive en trombe pour vous féliciter, avant de prendre une photo souvenir. Votre ticket gagnant en main, vous vous dirigez vers la porte. Vers une nouvelle vie de richesse.
+À l&#39;instant où votre main touche la porte vitrée, de la glace apparaît au bout de vos doigts, se propageant, scellant la sortie. Le bâtiment entier gèle, tandis que le temps s&#39;arrête. Dans la porte vitrée apparaît le reflet de votre Cher Invité, se tenant derrière le votre.
+
+Iel secoue la tête, Ses cheveux brillants produisant un son de feuilles mortes.
+
+« Mon Cher Hôte, vous m&#39;avez certifié vouloir les  //numéros//, et pourtant vous les abandonnez &lt;&lt;linkappend &quot;dès le lendemain. »&quot; t8n&gt;&gt;&lt;&lt;include &quot;Bad ending_fr&quot;&gt;&gt;&lt;&lt;/linkappend&gt;&gt;</tw-passagedata><tw-passagedata pid="41" name="Heart_fr" tags="" position="100,600" size="100,100">« Oui », répondez-vous. Montrer la moindre trace d&#39;hésitation serait une erreur.
+
+« Oh, tellement de confiance. Mais @@.promise;promettez-vous@@ d&#39;y mettre votre cœur et votre âme ? »
+
+Vous hochez vigoureusement la tête, comme si vous n&#39;aviez pas la moindre peur en vous.
+« Très bien. Nous pouvons donc nous y mettre », dit votre Cher Invité. Iel approche Ses doigts trop longs vers votre torse. Son contact glacé vous donne la chair de poule et vous fait sursauter.
+« Eh bien, mon Cher Hôte, avez vous déjà oublié vos paroles ? Impossible de reculer, j&#39;en ai bien peur. Oh, mais si vous préfèrez vous en occuper vous-même, n&#39;hésitez surtout pas ! » Iel retire Sa main, et sort un long couteau effilé de Sa mallette, puis le place sur la table entre vous. Enfin, Iel Se lève et effectue une révérence.
+
+« Je reviendrai lorsque vous aurez terminé », dit votre Cher Invité en se tournant vers la porte d&#39;entrée. Iel s&#39;éloigne, suivi d&#39;une étrange odeur de [[feuilles mouillées.|Heart 2]]</tw-passagedata><tw-passagedata pid="42" name="Heart 2_fr" tags="" position="225,600" size="100,100">Iel veut que vous... retiriez votre propre cœur ? Parce que vous avez dit y mettre « votre cœur et votre âme » ? Un soupir de défaite s&#39;échappe de vos lèvres, réalisant que vous êtes vaincu. Bien entendu, vous ne pouvez pas arracher //votre cœur// pour de simples numéros de Loto. Vous avez essayé d&#39;avoir l&#39;air confiant et commis une grave erreur.
+
+En tout cas, vous possédez maintenant un magnifique couteau. Au vu de son fil délicat et sa poignée en os sculpté, il vaut probablement une certaine somme. Enervé mais pas encore vaincu, vous reposez le couteau et [[vous levez de votre chaise.|Heart 3]]</tw-passagedata><tw-passagedata pid="43" name="Heart 3_fr" tags="" position="350,600" size="100,100">Dès que votre main lâche le manche, la pièce se refroidit subitement, jusqu&#39;à être recouverte de givre. Un voile de ténèbres s&#39;abat autour de vous. Seule reste la lumière reflétée par la lame du couteau de votre Cher Invité. Dans ce reflet apparaît Son visage, juste derrière vous, immatériel.
+
+« Eh bien, que se passe-t-il ? » dit-Iel avec un air malicieux. « Vous m&#39;aviez bien promis d&#39;y &lt;&lt;linkappend &quot;mettre votre cœur »&quot; t8n&gt;&gt;&lt;&lt;include &quot;Bad ending_fr&quot;&gt;&gt;&lt;&lt;/linkappend&gt;&gt;</tw-passagedata><tw-passagedata pid="44" name="Trust_fr" tags="" position="475,600" size="100,100">« Je vous fais confiance pour vous en occuper. »
+
+« La confiance est quelque chose de très précieux à @@.promise;promettre@@. Très bien », répond votre Cher Invité, récupérant Sa mallette avant de Se lever et de Se diriger vers la porte d&#39;entrée.
+
+C&#39;est... tout ? Iel ne voulait que votre confiance ? Vous arrivez à peine à y croire, mais ce n&#39;est pas comme si vous aviez beaucoup à y perdre. Vous aviez confiance en envoyant l&#39;invitation, et //ça//, ça a clairement marché. Ça devrait être [[du gâteau.|Trust 2]]</tw-passagedata><tw-passagedata pid="45" name="Trust 2_fr" tags="" position="600,600" size="100,100">Le jour suivant, rien ne semble avoir changé. Vous devez vous convaincre que cette rencontre nocturne a vraiment eu lieu et n&#39;était pas un rêve étrange.
+
+La semaine suivante, rien non plus. Soit. Votre Cher Invité ne vous donnera pas les numéros gagnants de cette semaine. Ce n&#39;est pas grave, vous attendrez encore un peu.
+
+Le mois suivant, toujours aucun signe de changement, malgré l&#39;accord conclu. Le loyer est dû, suivi d&#39;une facture imprévue vous forçant à piocher dans vos économies. Vous vous forcez à attendre [[juste un peu plus longtemps.|Trust 3]]</tw-passagedata><tw-passagedata pid="46" name="Trust 3_fr" tags="" position="725,600" size="100,100">L&#39;année suivante, vous vivez toujours dans cet appartement pourri. L&#39;hiver passe sans allumer le chauffage, pour faire des économies. Vous avez presque oublié cette nuit étrange, où l&#39;impossible semblait possible. Le vent dehors vous rafraîchit la mémoire. Tandis que vos yeux se reflètent dans votre tasse de café bas de gamme, un ressentiment s&#39;installe dans votre cœur.
+« Quelle arnaque », vous marmonnez en prenant la tasse.
+Vous soufflez sur le café pour le refroidir. Au lieu d&#39;un filet d&#39;air, vous exhalez un vent hivernal. Le café gèle, tout comme le reste de la pièce. Dans la surface brillante du café se reflète le visage de votre Cher Invité.
+« Mon cher, qu&#39;est-il arrivé à votre confiance ? » demande-t-Iel. « Et dire que je l&#39;avais &lt;&lt;linkappend &quot;il y a un instant encore. »&quot; t8n&gt;&gt;&lt;&lt;include &quot;Bad ending_fr&quot;&gt;&gt;&lt;&lt;/linkappend&gt;&gt;</tw-passagedata><tw-passagedata pid="47" name="Bad ending_fr" tags="" position="850,600" size="100,100">&lt;br&gt;
+La terreur s&#39;instille en vous face à ce reflet, faisant son nid dans vos entrailles. Ce visage commence à se distordre, se distendre, et gonfler. Après un moment qui vous semble infini, votre Cher Invité Se tient à nouveau face à vous, faisant peser Son regard d&#39;un autre monde. Autour de vous, plus rien ne semble exister. Un bourdonnement terrible se fait entendre, assaillant vos oreilles. Vous essayez de les boucher, vous rendant compte que vous ne pouvez plus bouger.
+
+« Qu-qu&#39;est-ce qu-qu&#39;il se passe ? » Vous parvenez à peine à former ces mots, d&#39;une voix étouffée. Des larmes ruissèlent sur vos joues. Le Cher Invité vous sourit, montrant Ses trop nombreuses dents. Iel vous regarde de Ses trop nombreux yeux. Ses boucles de bronze fouettent l&#39;air autour d&#39;Ellui. « Qu&#39;est-ce que j&#39;ai bien pu faire de &lt;&lt;linkappend &quot;mal ?! »&quot; t8n&gt;&gt;&lt;&lt;if $badwait == &quot;8s&quot;&gt;&gt;&lt;&lt;addclass &quot;body&quot; &quot;dark&quot;&gt;&gt;&lt;&lt;else&gt;&gt;&lt;&lt;addclass &quot;body&quot; &quot;dark-short&quot;&gt;&gt;&lt;&lt;/if&gt;&gt;
+
+« Oh, mon Cher Hôte », susurre-t-Iel tandis que votre vision se trouble. &lt;&lt;timed $badwait t8n&gt;&gt;@@.promised;« Vous aviez pourtant promis. »@@
+&lt;&lt;next&gt;&gt;
+    &lt;&lt;goto &quot;Start&quot;&gt;&gt;
+&lt;&lt;/timed&gt;&gt;
+&lt;&lt;/linkappend&gt;&gt;</tw-passagedata><tw-passagedata pid="48" name="Credits_fr" tags="" position="975,600" size="100,100">Crédits
+Écrit par [[Aster Fialla | https://asterfialla.com]] et Jake Gardner.
+
+Traduction française par [[Astride Couillaux | https://dr-umbrus.itch.io/]], [[manonamora | https://manonamora.neocities.org/home]] et Dolores B. Correction par [[Allyson Gray | https://zophobas-morio.itch.io/]].
+
+Traduction espagnole par [[Bert the Stroller | https://strollersoft.itch.io/]]. Correction par [[n-n | https://n2n.itch.io/]] et Aster Fialla.
+
+[[Promis | Start]]</tw-passagedata><tw-passagedata pid="49" name="You promise_es" tags="" position="1100,600" size="100,100">Aunque fuera un timo, por probar tampoco se perdería nada, solo el sello de correos y la ramita de salvia, y mira que si llega a funcionar y te haces de oro…
+
+Metes el sobre sin dirección en el buzón de correos. Las instrucciones del conjuro solo indicaban «remitir a la atención de tu Honorable Visita» junto a la salvia y una nota doblada en el interior con el siguiente texto: «Mañana, 22:45».
+
+Justo a la hora de la cita, llaman a la puerta. Te levantas de un respingo y corres a recibir a tu Honorable Visita.
+
+Se cierne sobre ti imponente y, sin embargo, con cierto aire de modestia; en la mano un caro maletín de cuero provisto de un refulgente cierre de combinación. No sabes con qué esperabas toparte, pero a primera vista —y a juzgar por la blusa de seda, la falda lápiz y los zapatos de tacón —dirías que se dedica a los negocios. Los únicos indicios que delatan su naturaleza sobrenatural son el rojo profundo de los ojos y el fulgor metálico de su larga cabellera cobriza brillando a la luz de la luna. Del conjuro solo te ha quedado claro que cumplirá cualquier cosa que le pidas y aceptará lo que ofrezcas a cambio.
+
+—Gracias por la invitación —dice con refinamiento y sinceridad; a continuación inclina la cabeza remilgada, profesionalmente. —Será un placer cerrar un trato, pero antes el nombre de mi Estimado Anfitrión— demanda abriendo la mano con gesto apremiante.
+
+Inspiras profundamente. Allá vamos.
+
+[[—Siempre es un placer recibir visitas tan distinguidas.|Happy]]
+[[—Si lo que quieres es mi nombre, no voy a desprenderme de él.|Name]]
+[[—No, pero no te quedes en la puerta, pasa y lo discutiremos.|Good 1]]</tw-passagedata><tw-passagedata pid="50" name="Good 1_es" tags="" position="1225,600" size="100,100">—No —objetas nervioso. —Pero no te quedes en el umbral, pasa y lo discutiremos. —Te apartas para dejarle paso.
+
+—Está bien, gracias por aclararlo. —Al sonreír jurarías que ves asomarse dos filas de caninos. Cuando atraviesa la puerta, un suave clic resuena en el aire; tus ojos rastrean su origen y percibes que el primer dígito de la combinación del maletín ha girado, si bien es un símbolo arcano que no logras descifrar. Mirarlo hace que te duelan los ojos, así que te centras en la Honorable Visita.
+
+—Es un placer estar aquí —dice dejando por el pasillo un tufo a hojas secas. Te cuesta creer eso teniendo en cuenta lo zarrapastroso y minúsculo que es tu apartamento. —Ya me imagino que no me invocaste para charlar. Dime, Estimado Anfitrión, ¿qué es lo que deseas?
+
+Tus ojos se entrecierran e intentas adivinar sus intenciones. Vaya una pregunta directa. La entidad no se anda con rodeos. ¿Qué es lo que quieres?
+
+[[—Pues ahora mismo no me vendrían mal un millón de dólares para comprar una casa y saldar mis deudas.|Cash]]
+[[—Solo deseo el número ganador de la lotería.|Numbers]]
+[[—Dame el número ganador de la lotería.|Good 2]]</tw-passagedata><tw-passagedata pid="51" name="Good 2_es" tags="" position="100,725" size="100,100">—Qué falta de tacto... —se mofa, y en sus ojos encuentras, atrapado, un destello de luz. —Qué manera de tratar a tu Honorable Visita.
+
+Luchas por sostener la mirada conteniendo la respiración, aunque no puedes evitar cambiar de apoyo de un pie a otro. Esperas no provocar su ira —porque si es así, ¿se avendrá a cumplir tu petición? ¿Te castigará? ¿O...?—.
+
+El hilo de tus pensamientos se interrumpe cuando el maletín hace clic una segunda vez y otro símbolo extraño se manifiesta en la combinación. Intentando recobrar la calma, conduces a tu Honorable Visita a la cocina, después la invitas a dejar el maletín en la mesa y tomar asiento. Y sí, deja el maletín, pero en lugar de sentarse, da un paso exageradamente largo hacia ti, que hace crujir las baldosas bajo sus zapatos puntiagudos.
+
+—Bien, que así sea —y atenúa la voz hasta tornarse inquietante siseo. —Claro que puedo conseguírtelos, aunque no sé si el trato me da buena espina.
+
+Te estremeces. ¿Es que todo este esfuerzo ha sido en vano? A duras penas consigues aguantar su mirada, ese remedo de iris girando en remolinos mutantes de color y forma. Sientes náuseas, no obstante, sigues determinado a continuar adelante.
+
+—No me gusta hacer negocios con gente reacia a comprometerse —sisea— Así que dime, ¿estás dispuesto a poner el corazón en esto?
+
+[[—No va a ser necesario.| Good 3]]
+[[—Espero que hagas esto por mí. | Trust]]
+[[—Sí. | Heart]]</tw-passagedata><tw-passagedata pid="52" name="Good 3_es" tags="" position="225,725" size="100,100">—No va a ser necesario —respondes fríamente. —Limítate a enseñarme los números. 
+
+Jurarías que un profundo rugido resuena desde el interior de su caja torácica. Los rasgos se le contraen como si fuera a gruñir, pero al abrir la boca la combinación emite un último clic, y, con un chasquido, cede como por voluntad propia. Su único contenido es una tira de papel como la que encontrarías en una galleta de la suerte, con diez números impresos:
+
+12 16 17 19 16 13 5 21 5 20
+
+Finalmente, la Honorable Visita retrocede a una distancia razonable; puedes sentir cómo se libera la tensión de tu cuerpo. —¡¿En serio?! ¡Todo lo que he recibido de ti son órdenes y más órdenes! —lanza un resoplido, agarra el papel y te lo lanza. —¡¿Qué clase de negocio es este?! ¡¿Eh?!
+
+Ejecutas una danza ridícula y logras pillarlo al vuelo; después vuelve a dirigirse a ti con empalagosa dulzura.
+
+—Disfruta de tu vida. No vuelvas a invitarme —recoge el maletín, y con un giro de tacones, sale a zancadas de la cocina, hacia el recibidor y fuera de tu [[casa.| Good end]]</tw-passagedata><tw-passagedata pid="53" name="Good end_es" tags="" position="350,725" size="100,100">Al día siguiente, tan pronto como te es posible, compras un número de lotería en la tienda más cercana. Llega la hora del sorteo y, cuando escuchas uno por uno anunciar tus números, no puedes creerlo. ¡Un millón de dólares! Tu mente es incapaz de procesarlo y cuando ingresas el dinero en tu cuenta, esperas que se esfume como el oro de las ollas mágicas en los cuentos. Has esperado semanas para asegurarte de que no se desvanece, y, sin saber cómo ni por qué, resulta que aún continúa ahí. Tienes un millón de dólares.
+
+Te prometes a ti mismo hacer algo grande con el dinero.
+
+¿Cumplirás esa promesa?
+
+&lt;&lt;timed $wait t8n&gt;&gt;
+    &lt;&lt;link &quot;Prometes&lt;br&gt;Escrito por Aster Fialla y Jake Gardner&quot; &quot;Start&quot;&gt;&gt;&lt;&lt;/link&gt;&gt;
+&lt;&lt;/timed&gt;&gt;</tw-passagedata><tw-passagedata pid="54" name="Happy_es" tags="" position="475,725" size="100,100">—Siempre es un placer recibir visitas tan distinguidas —contestas con expresión beatífica. Esperas que la respuesta sea lo suficientemente afable como para evadir su pregunta.
+
+—¿Ah, sí? Te tomo @@.promise;la palabra@@. Muy amable por tu parte — y un aire gélido y borrascoso acompañado de un efluvio a hojarasca mojada se cuela cuando atraviesa el umbral de una zancada.
+
+Al abrir la boca para formular tu deseo, levanta el índice y enmudeces. —Sssh... No—, te guiña un ojo y una cálida sonrisa se le dibuja en el rostro. —Sé de sobra lo que quieres—. Abre el maletín de un chasquido y dentro... dentro hay un cheque a tu nombre por valor de un millón de dólares.
+ 
+Te abalanzas sobre él y, en un impulso irrefrenable, exclamas lo feliz que serás a partir de ahora. Sin perder un segundo, sacas el móvil para ingresártelo en el banco, y es entonces cuando caes en la cuenta de lo desconsiderado que estás siendo. Ni siquiera se lo has agradecido. Cuando te dispones a hacerlo, levantas la vista y ya no está. Una gélida corriente se cuela por la puerta abierta; la cierras mientras [[te recorre un escalofrío.|Happy 2]]</tw-passagedata><tw-passagedata pid="55" name="Happy 2_es" tags="" position="600,725" size="100,100">No puedes creerlo, esta mañana el dinero ha aparecido en tu cuenta. Sigues sin dar crédito cuando al final de la tarde no se ha evaporado. Las cifras permanecen intactas al cabo del par de semanas que has esperado para estar seguro. ¡¿A qué más esperas, a que se anule la operación y el dinero se esfume como el oro de las ollas mágicas en los cuentos?! No te lo piensas más; tras una bacanal de compras y un despilfarro de proporciones colosales, te vas a la cama asombrado de no haber hecho la más mínima mella a la descomunal cifra depositada en tu cuenta bancaria.
+
+Esa misma noche, te despierta el sonido de unos arañazos en el suelo del baño. Te arrastras fuera de la cama para ver qué ocurre y vas pensando en lo maravilloso que va ser vivir en una casa nueva, una que sea tuya, donde no tengas que lidiar con estúpidos roedores que aparecen muertos bajo el retrete tras roer tus medicamentos.
+
+Al abrir la puerta del baño dejas escapar un alarido de [[terror.|Happy 3]]</tw-passagedata><tw-passagedata pid="56" name="Happy 3_es" tags="" position="725,725" size="100,100">Frente al espejo unos ojos enormes te miran sin pestañear brillando inquietantes bajo la parpadeante luz del fluorescente.
+
+—¡No eres un ratón! —Gritas intentando espantar a la criatura que permanece impasible. «¡¿Se habrá colado un gato callejero?!». Agarras la escoba para expulsar lo que quiera que se te haya metido en casa. Cuando vuelves, tu Honorable Visita te sonríe desde el interior del espejo.
+
+—No pareces complacido de verme, &lt;&lt;linkappend &#39;mi Estimado Anfitrión.&#39; t8n&gt;&gt;&lt;&lt;include &quot;Bad ending_es&quot;&gt;&gt;&lt;&lt;/linkappend&gt;&gt;</tw-passagedata><tw-passagedata pid="57" name="Name_es" tags="" position="850,725" size="100,100">—Si lo que quieres es mi nombre, no voy a desprenderme de él, pero podemos hacer un trato—. No eres tan idiota como para caer en una trampa tan obvia.
+
+Tu Honorable Visita pone los ojos en blanco —No lo vas a hacer, ¿eh? ¿De verdad? ¿Estás @@.promise;seguro@@?
+
+Asientes con la cabeza, convencido de tu respuesta.
+
+—De acuerdo, mi Estimado Anfitrión. Ya veo que no vas a ponerme fáciles las cosas.
+
+Cruza el umbral, arrastrando un aroma a hojas secas, la guías hasta la cocina y le ofreces asiento con la intención de llegar a un acuerdo. Luego coloca el fino maletín de piel al lado de la silla y se inclina hacia adelante mostrando una sonrisa de tiburón.
+
+—Y bien, ¿qué puedo hacer por mi Estimado Anfitrión? —A continuación le explicas tus necesidades financieras y asiente con estudiada simpatía. Al parecer conseguirte el dinero que necesitas es una tarea harto sencilla.
+
+—Tengo justo lo que necesitas. Te va a encantar —abre los pasadores de latón del maletín. Acto seguido te muestra una hoja de papel con una combinación. —Los números de [[la lotería de esta semana.|Name 2]]</tw-passagedata><tw-passagedata pid="58" name="Name 2_es" tags="" position="975,725" size="100,100">Aceptas el papel porque no tienes nada que perder y mucho que ganar. —¿Y qué se supone que debería darte a cambio? —respondes cautelosamente.
+
+—Oh, mi Estimado Anfitrión, ya me has dado bastante —replica alegremente. —Mañana compra el número y disfruta de tu recompensa. Ha sido un placer.
+
+Sigues las instrucciones y todo sale a la perfección; los números te sirven para hacerte con un bote de siete dígitos. Cuando recibes el cheque, casi vas a la carrera hasta la sucursal más cercana para efectuar el depósito.
+
+—¡Felicidades! ¡Vaya cifra impresionante! —comenta la persona que atiende en ventanilla. —Para una suma de esta envergadura necesitamos hacer algunas comprobaciones, así que si es tan amable... —dice sin dejar de sacar formularios de debajo del mostrador. —Sígame— abandona su puesto y te conduce al [[despacho del director.|Name 3]]</tw-passagedata><tw-passagedata pid="59" name="Name 3_es" tags="" position="1100,725" size="100,100">El director te estrecha la mano y te ofrece asiento. Luego, menciona los procedimientos legales típicos para cobrar un cheque por un importe tan elevado y te indica la línea de puntos del formulario. 
+
+—Firme aquí, por favor...
+
+Escribes tu nombre y le devuelves la hoja. En cuanto su mano la roza, una escarcha se extiende desde el papel y trepa por sus dedos. En un abrir y cerrar de ojos, el director se ha congelado, igual que el resto del despacho.
+
+Afuera, el día se convierte en noche y la habitación se refleja en los cristales de la oficina. Tu Honorable Visita aparece a tu lado, en el reflejo de un ventanal.
+
+—Dijiste que no ibas a dar tu nombre, mi Estimado Anfitrión. &lt;&lt;linkappend &#39;Esto es del todo inadmisible.&#39; t8n&gt;&gt;&lt;&lt;include &quot;Bad ending_es&quot;&gt;&gt;&lt;&lt;/linkappend&gt;&gt;</tw-passagedata><tw-passagedata pid="60" name="Cash_es" tags="" position="1225,725" size="100,100">—Pues ahora mismo no me vendrían mal un millón de dólares para comprar una casa y saldar mis deudas.
+
+—Si tu @@.promise;lo dices@@... ¡Perfecto! ¡¿Cómo iba a negarme?! —responde jubilosa tu Honorable Visita. Abre el pasador del maletín y lo gira para mostrarte el interior repleto de fajos de cientos de dólares ordenados con pulcritud. Al olor a hojarasca ahora se suma el miasma que flota en el aire tras una lluvia otoñal.
+
+Parece demasiado bonito para ser cierto, sin embargo, ahí los tienes, un millón de dólares tan reales como tú y como yo. Tomas los montones y los pones encima de la mesa farfullando tu agradecimiento. La cabeza te da vueltas solo de pensar en las posibilidades y la Honorable Visita cierra el maletín. Corres al ordenador y empiezas a consultar portales inmobiliarios en busca de la casa de tus sueños. Entretanto, se excusa educadamente y [[enfila hacia la puerta.|Cash 2]]</tw-passagedata><tw-passagedata pid="61" name="Cash 2_es" tags="" position="100,850" size="100,100">Horas más tarde, apagas el ordenador. La faz de tu Honorable Visita comparece en el oscuro reflejo del monitor, dándote un susto de muerte.
+
+—Dijiste que no te vendrían mal «ahora mismo». ¿Cuánto tengo que esperar?
+
+—Pero... es que me lo has dado en efectivo y es la medianoche de un domingo. ¿Cómo quieres que lo gaste a estas horas?
+
+—Oh, mi Estimado Anfitrión... Me temo que «ahora mismo» quiere decir &lt;&lt;linkappend &#39;//ahora mismo//.&#39; t8n&gt;&gt;&lt;&lt;include &quot;Bad ending_es&quot;&gt;&gt;&lt;&lt;/linkappend&gt;&gt;</tw-passagedata><tw-passagedata pid="62" name="Numbers_es" tags="" position="225,850" size="100,100">—Solo deseo el número ganador de la lotería.
+Los ojos de tu Honorable Visita centellean como luz de luna reflejada en un estanque. —¿Así que solo el número? @@.promise;Que así sea@@.
+
+—Sí, el número ganador.
+
+—El número ganador, claro, claro... Puedo proporcionártelo.
+
+—¿Y qué quieres a cambio? —No piensas aceptar sin conocer &lt;&lt;link &quot;el coste //real//.&quot; &quot;Numbers 2&quot;&gt;&gt;&lt;&lt;/link&gt;&gt;</tw-passagedata><tw-passagedata pid="63" name="Numbers 2_es" tags="" position="350,850" size="100,100">Se ríe entre dientes, y un sonido a adoquines traquetea en su pecho. —Ah, mi Estimado Anfitrión, ya me has dado suficiente—. Abre la brillante combinación y extrae un papelito con diez números impresos:
+
+12 16 17 19 16 13 5 21 5 20
+
+—¿Seguro que no quieres nada más?
+
+Asientes y deposita el papel en tu mano. El olor a hojarasca ahora parece enmohecido, como las mismas hojas tras un día de lluvia.
+
+—Puedo garantizártelo, es el número ganador de la lotería de esta semana —. Con un ligero saludo se levanta de la mesa, se excusa y sale por [[la puerta.|Numbers 3]]</tw-passagedata><tw-passagedata pid="64" name="Numbers 3_es" tags="" position="475,850" size="100,100">Al día siguiente y tan pronto como puedes, compras un boleto de lotería en la tienda del barrio. Uno tras otro se anuncian todos y cada uno de los dígitos de tu número. No puedes dar crédito a lo que oyes. ¡Un millón de dólares...! Ni siquiera eres capaz de procesarlo. Con manos temblorosas entregas el boleto al encargado.
+
+El dueño de la tienda sale del mostrador para felicitarte. Los altavoces retumban y distorsionan con la música de fiesta que han puesto a todo trapo los empleados del establecimiento. Con el recibo de la victoria ya en tu poder, te abres paso hacia la puerta dispuesto a comenzar una nueva vida de abundancia.
+
+Justo en el instante en que tu mano entra en contacto con la puerta acristalada, unos hilos de hielo se propagan de tus yemas sellando la puerta. El local se congela y el tiempo se detiene. El reflejo de tu Honorable Visita aparece en la puerta de cristal, de pie, justo detrás del tuyo.
+
+Cuando sacude la cabeza, su centelleante cabello cobrizo suena como las hojas al viento.
+
+—Mi Estimado Anfitrión, me aseguraste que solo querías el número, pero, en cuanto has podido, &lt;&lt;linkappend &#39;te has desprendido de él.&#39; t8n&gt;&gt;&lt;&lt;include &quot;Bad ending_es&quot;&gt;&gt;&lt;&lt;/linkappend&gt;&gt;</tw-passagedata><tw-passagedata pid="65" name="Heart_es" tags="" position="600,850" size="100,100">—Sí —respondes. A estas alturas mostrar vacilación sería un error.
+
+—Oh, te veo muy seguro de ti mismo. ¿Estás poniendo @@.promise;de verdad@@ tu corazón en esto?
+
+Asientes con decisión, como si en realidad no estuvieras atemorizado.
+
+—Muy bien, entonces sigamos adelante —. La Honorable Visita extiende unos dedos anormalmente alargados hacia tu pecho y, cuando te toca, la piel se te contrae y un frío glacial te sobrecoge.
+
+—Nos estamos contradiciendo, mi Estimado Anfitrión. Ya es demasiado tarde, me temo que no puedes echarte atrás... Oh, pero si lo prefieres, ¡tú mismo puedes hacer los honores! —aparta la mano y saca del maletín un largo y pulido cuchillo que deja entre ambos, en el centro de la mesa. Luego se levanta y hace una pequeña reverencia. 
+
+—Volveré cuando hayas terminado —y se gira para salir por la puerta dejando un olor a [[hojas húmedas y enmohecidas.|Heart 2]]</tw-passagedata><tw-passagedata pid="66" name="Heart 2_es" tags="" position="725,850" size="100,100">¿Quiere qu... que te saques el corazón porque has dicho que...? Te das cuenta de que te han vencido y lanzas un bufido de desesperación. Obviamente, no vas arrancarte el corazón a cambio del número premiado. En fin, has intentado jugar fuerte y no ha salido como esperabas, aunque al menos has sacado en limpio este cuchillo tan elegante. Seguro que te dan algo por él, discurres mientras inspeccionas el mango de hueso tallado y la afilada hoja de cristal. Molesto, mas recuperado tras el momento de zozobra, devuelves el cuchillo a la mesa y [[te pones en pie.|Heart 3]]</tw-passagedata><tw-passagedata pid="67" name="Heart 3_es" tags="" position="850,850" size="100,100">En el momento en que te enderezas y dejas el mango en la mesa, la temperatura de la habitación se desploma. De hecho, parece que está helando. Todo se sume en la oscuridad, excepto por una luz reflejada en la hoja bruñida del cuchillo. En ese reflejo aparece, detrás de ti, el semblante de tu Honorable Visita que no se encuentra físicamente presente en la habitación.
+
+—¿Algún problema? —dice dedicándote una mirada perversa. —Me aseguraste que estabas dispuesto a &lt;&lt;linkappend &#39;poner el corazón en ello.&#39; t8n&gt;&gt;&lt;&lt;include &quot;Bad ending_es&quot;&gt;&gt;&lt;&lt;/linkappend&gt;&gt;</tw-passagedata><tw-passagedata pid="68" name="Trust_es" tags="" position="975,850" size="100,100">— Espero que hagas esto por mí.
+
+—Muy bien, la confianza es @@.promise;una ofrenda@@ preciosa —sentencia tu Honorable Visita mientras toma el maletín; luego se levanta y sale por la puerta.
+
+Qu... ¿qué ha sido eso? ¿Es que solo quería tu confianza? Te cuesta creerlo, pero tampoco es que te estés jugando nada. Tenías fe cuando enviaste la invitación, supones que eso la hizo acudir a tu llamada. Si estás en lo cierto, el resto debería ser un [[juego de niños.|Trust 2]]</tw-passagedata><tw-passagedata pid="69" name="Trust 2_es" tags="" position="1100,850" size="100,100">Al día siguiente no percibes ningún cambio. De hecho, tienes que convencerte a ti mismo de que la visita de anoche fue real y no algún sueño estrafalario.
+
+Pasa una semana y todo sigue igual. Está claro que tu Honorable Visita no piensa entregarte el número del gordo de esta semana.
+
+Al mes aún no hay indicio alguno de que haya cumplido su parte del trato. Toca pagar el alquiler y una factura inesperada te obliga, otra vez, a tirar de ahorros. Solo tienes que aguantar un poco más, [[te dices a ti mismo. |Trust 3]]</tw-passagedata><tw-passagedata pid="70" name="Trust 3_es" tags="" position="1225,850" size="100,100">Al año siguiente, sigues malviviendo en este apartamento inmundo en el que pasas el invierno sin atreverte a encender la calefacción por miedo a fundir tus ahorros. Ya casi te has olvidado de aquella noche insólita en la que lo imposible casi parecía al alcance de tus dedos cuando una ráfaga de aire ulula al otro lado de la ventana y vuelves a recordarlo. Una pequeña semilla de resentimiento crece en tu interior mientras observas ese nefasto café solo que tienes entre las manos.
+
+—Un maldito timo —mascullas a nadie en particular y alzas la taza para sorber.
+
+Al soplar para enfriarla, tu aliento se convierte en una ventisca. El café se hiela, igual que el resto de la habitación. Se ha convertido en una superficie brillante y helada, en la que se refleja el rostro de tu Honorable Visita.
+
+—Oh, querido, ¿y tu confianza? —pregunta. —Juraría que contaba con ella &lt;&lt;linkappend &#39;hasta hace un momento.&#39; t8n&gt;&gt;&lt;&lt;include &quot;Bad ending_es&quot;&gt;&gt;&lt;&lt;/linkappend&gt;&gt;</tw-passagedata><tw-passagedata pid="71" name="Bad ending_es" tags="" position="100,975" size="100,100">&lt;br&gt;
+El terror se abre paso en tus entrañas mientras contemplas cómo el reflejo se distorsiona, se distiende, se hincha, hasta que la Honorable Visita se yergue, una vez más sobre ti, y el resto del mundo se deshace a tu alrededor. Un agudo lamento crece atronando tus oídos. Intentas tapártelos y descubres que tus extremidades se encuentran paralizadas.
+
+—¿Qué ocurre? —alcanzas a balbucear con lágrimas corriendo por tus mejillas. Tu Honorable Visita te sonríe con una superabundancia de dientes y ojos; sus tentáculos cobrizos restallan a su alrededor. &lt;&lt;linkappend &quot;—¡¿Qué he hecho?!&quot; t8n&gt;&gt;&lt;&lt;if $badwait == &quot;8s&quot;&gt;&gt;&lt;&lt;addclass &quot;body&quot; &quot;dark&quot;&gt;&gt;&lt;&lt;else&gt;&gt;&lt;&lt;addclass &quot;body&quot; &quot;dark-short&quot;&gt;&gt;&lt;&lt;/if&gt;&gt;
+
+—Oh, mi Estimado Anfitrión —susurra mientras tu visión se empaña y oscurece. &lt;&lt;timed $badwait t8n&gt;&gt;@@.promised;—Una promesa.@@
+&lt;&lt;next&gt;&gt;
+    &lt;&lt;goto &quot;Start&quot;&gt;&gt;
+&lt;&lt;/timed&gt;&gt;
+&lt;&lt;/linkappend&gt;&gt;</tw-passagedata><tw-passagedata pid="72" name="Credits_es" tags="" position="225,975" size="100,100">! Créditos
+Escrito por [[Aster Fialla | https://asterfialla.com]] y Jake Gardner
+
+Traducción al francés por [[Astride Couillaux | https://dr-umbrus.itch.io/]], [[manonamora | https://manonamora.neocities.org/home]], Doloros B. Corrección por [[Allyson Gray | https://zophobas-morio.itch.io/]].
+
+Traducción al español por [[Bert the Stroller | https://strollersoft.itch.io/]]. Corrección por [[n-n | https://n2n.itch.io/]] y Aster Fialla.
+
+[[Prometes| Start]]</tw-passagedata><tw-passagedata pid="73" name="Start" tags="" position="350,975" size="100,100"></tw-passagedata><tw-passagedata pid="74" name="Start_en" tags="" position="475,975" size="100,100">! [[You promise]]
 //By Aster Fialla and Jake Gardner//
+
+&#39;&#39;Do not read this version if you are judging for EctoComp 2025.&#39;&#39;
 
 &lt;&lt;if visitedTags(&#39;end&#39;)&gt;&gt;\
 [[Credits]]
+
 &lt;&lt;/if&gt;&gt;\
-&lt;&lt;link &quot;Français&quot; &quot;Start&quot;&gt;&gt;&lt;&lt;set settings.lang to &quot;Français&quot;&gt;&gt;&lt;&lt;run Setting.save();&gt;&gt;&lt;&lt;/link&gt;&gt;</tw-passagedata><tw-passagedata pid="51" name="Start_fr" tags="" position="100,725" size="100,100">! [[Promis | You promise]]
+&lt;&lt;link &quot;Français&quot; &quot;Start&quot;&gt;&gt;&lt;&lt;set settings.lang to &quot;Français&quot;&gt;&gt;&lt;&lt;run Setting.save();&gt;&gt;&lt;&lt;/link&gt;&gt;
+&lt;&lt;link &quot;Español&quot; &quot;Start&quot;&gt;&gt;&lt;&lt;set settings.lang to &quot;Español&quot;&gt;&gt;&lt;&lt;run Setting.save();&gt;&gt;&lt;&lt;/link&gt;&gt;</tw-passagedata><tw-passagedata pid="75" name="Start_fr" tags="" position="600,975" size="100,100">! [[Promis | You promise]]
 //Ecrit par Aster Fialla et Jake Gardner.//
+
+//Traduction française par Astride Couillaux, manonamora et Dolores B. Correction par Allyson Gray.//
+
+&#39;&#39;Si vous êtes un juge pour l&#39;EctoComp 2025, veuillez ne pas lire cette version.&#39;&#39;
 
 &lt;&lt;if visitedTags(&#39;end&#39;)&gt;&gt;\
 [[Crédits | Credits]]
+
 &lt;&lt;/if&gt;&gt;\
-&lt;&lt;link &quot;English&quot; &quot;Start&quot;&gt;&gt;&lt;&lt;set settings.lang to &quot;English&quot;&gt;&gt;&lt;&lt;run Setting.save();&gt;&gt;&lt;&lt;/link&gt;&gt;</tw-passagedata><tw-passagedata pid="52" name="You promise" tags="" position="225,725" size="100,100"></tw-passagedata><tw-passagedata pid="53" name="Good 1" tags="" position="350,725" size="100,100"></tw-passagedata><tw-passagedata pid="54" name="Good 2" tags="" position="475,725" size="100,100"></tw-passagedata><tw-passagedata pid="55" name="Good 3" tags="" position="600,725" size="100,100"></tw-passagedata><tw-passagedata pid="56" name="Good end" tags="good end" position="725,725" size="100,100"></tw-passagedata><tw-passagedata pid="57" name="Cash" tags="" position="850,725" size="100,100"></tw-passagedata><tw-passagedata pid="58" name="Cash 2" tags="bad end" position="975,725" size="100,100"></tw-passagedata><tw-passagedata pid="59" name="Happy" tags="" position="1100,725" size="100,100"></tw-passagedata><tw-passagedata pid="60" name="Happy 2" tags="" position="1225,725" size="100,100"></tw-passagedata><tw-passagedata pid="61" name="Happy 3" tags="bad end" position="100,850" size="100,100"></tw-passagedata><tw-passagedata pid="62" name="Heart" tags="" position="225,850" size="100,100"></tw-passagedata><tw-passagedata pid="63" name="Heart 2" tags="" position="350,850" size="100,100"></tw-passagedata><tw-passagedata pid="64" name="Heart 3" tags="bad end" position="475,850" size="100,100"></tw-passagedata><tw-passagedata pid="65" name="Name" tags="" position="600,850" size="100,100"></tw-passagedata><tw-passagedata pid="66" name="Name 2" tags="" position="725,850" size="100,100"></tw-passagedata><tw-passagedata pid="67" name="Name 3" tags="bad end" position="850,850" size="100,100"></tw-passagedata><tw-passagedata pid="68" name="Numbers" tags="" position="975,850" size="100,100"></tw-passagedata><tw-passagedata pid="69" name="Numbers 2" tags="" position="1100,850" size="100,100"></tw-passagedata><tw-passagedata pid="70" name="Numbers 3" tags="bad end" position="1225,850" size="100,100"></tw-passagedata><tw-passagedata pid="71" name="Trust" tags="" position="100,975" size="100,100"></tw-passagedata><tw-passagedata pid="72" name="Trust 2" tags="" position="225,975" size="100,100"></tw-passagedata><tw-passagedata pid="73" name="Trust 3" tags="bad end" position="350,975" size="100,100"></tw-passagedata><tw-passagedata pid="74" name="Bad ending" tags="" position="475,975" size="100,100"></tw-passagedata><tw-passagedata pid="75" name="Credits" tags="" position="600,975" size="100,100"></tw-passagedata><tw-passagedata pid="76" name="StoryDisplayTitle" tags="" position="725,975" size="100,100">TEST</tw-passagedata><tw-passagedata pid="77" name="StoryInit" tags="nobr" position="850,975" size="100,100">&lt;&lt;set $badwait = &#39;8s&#39;&gt;&gt;
-&lt;&lt;set $wait = &#39;10s&#39;&gt;&gt;</tw-passagedata><tw-passagedata pid="78" name="PassageReady" tags="" position="975,975" size="100,100">&lt;&lt;if visitedTags(&#39;bad&#39;) &gt;= 2&gt;&gt;&lt;&lt;set $badwait = &quot;2s&quot;&gt;&gt;&lt;&lt;/if&gt;&gt;
+&lt;&lt;link &quot;Español&quot; &quot;Start&quot;&gt;&gt;&lt;&lt;set settings.lang to &quot;Español&quot;&gt;&gt;&lt;&lt;run Setting.save();&gt;&gt;&lt;&lt;/link&gt;&gt;
+&lt;&lt;link &quot;English&quot; &quot;Start&quot;&gt;&gt;&lt;&lt;set settings.lang to &quot;English&quot;&gt;&gt;&lt;&lt;run Setting.save();&gt;&gt;&lt;&lt;/link&gt;&gt;</tw-passagedata><tw-passagedata pid="76" name="Start_es" tags="" position="725,975" size="100,100">! [[Prometes | You promise]]
+//Escrito por Aster Fialla y Jake Gardner.//
+
+//Traducción al español por Bert the Stroller. Corrección por n-n y Aster Fialla.//
+
+&lt;&lt;if visitedTags(&#39;end&#39;)&gt;&gt;\
+[[Créditos | Credits]]
+
+&lt;&lt;/if&gt;&gt;\
+&lt;&lt;link &quot;Français&quot; &quot;Start&quot;&gt;&gt;&lt;&lt;set settings.lang to &quot;Français&quot;&gt;&gt;&lt;&lt;run Setting.save();&gt;&gt;&lt;&lt;/link&gt;&gt;
+&lt;&lt;link &quot;English&quot; &quot;Start&quot;&gt;&gt;&lt;&lt;set settings.lang to &quot;English&quot;&gt;&gt;&lt;&lt;run Setting.save();&gt;&gt;&lt;&lt;/link&gt;&gt;</tw-passagedata><tw-passagedata pid="77" name="You promise" tags="" position="850,975" size="100,100"></tw-passagedata><tw-passagedata pid="78" name="Good 1" tags="" position="975,975" size="100,100"></tw-passagedata><tw-passagedata pid="79" name="Good 2" tags="" position="1100,975" size="100,100"></tw-passagedata><tw-passagedata pid="80" name="Good 3" tags="" position="1225,975" size="100,100"></tw-passagedata><tw-passagedata pid="81" name="Good end" tags="good end" position="100,1100" size="100,100"></tw-passagedata><tw-passagedata pid="82" name="Cash" tags="" position="225,1100" size="100,100"></tw-passagedata><tw-passagedata pid="83" name="Cash 2" tags="bad end" position="350,1100" size="100,100"></tw-passagedata><tw-passagedata pid="84" name="Happy" tags="" position="475,1100" size="100,100"></tw-passagedata><tw-passagedata pid="85" name="Happy 2" tags="" position="600,1100" size="100,100"></tw-passagedata><tw-passagedata pid="86" name="Happy 3" tags="bad end" position="725,1100" size="100,100"></tw-passagedata><tw-passagedata pid="87" name="Heart" tags="" position="850,1100" size="100,100"></tw-passagedata><tw-passagedata pid="88" name="Heart 2" tags="" position="975,1100" size="100,100"></tw-passagedata><tw-passagedata pid="89" name="Heart 3" tags="bad end" position="1100,1100" size="100,100"></tw-passagedata><tw-passagedata pid="90" name="Name" tags="" position="1225,1100" size="100,100"></tw-passagedata><tw-passagedata pid="91" name="Name 2" tags="" position="100,1225" size="100,100"></tw-passagedata><tw-passagedata pid="92" name="Name 3" tags="bad end" position="225,1225" size="100,100"></tw-passagedata><tw-passagedata pid="93" name="Numbers" tags="" position="350,1225" size="100,100"></tw-passagedata><tw-passagedata pid="94" name="Numbers 2" tags="" position="475,1225" size="100,100"></tw-passagedata><tw-passagedata pid="95" name="Numbers 3" tags="bad end" position="600,1225" size="100,100"></tw-passagedata><tw-passagedata pid="96" name="Trust" tags="" position="725,1225" size="100,100"></tw-passagedata><tw-passagedata pid="97" name="Trust 2" tags="" position="850,1225" size="100,100"></tw-passagedata><tw-passagedata pid="98" name="Trust 3" tags="bad end" position="975,1225" size="100,100"></tw-passagedata><tw-passagedata pid="99" name="Bad ending" tags="" position="1100,1225" size="100,100"></tw-passagedata><tw-passagedata pid="100" name="Credits" tags="" position="1225,1225" size="100,100"></tw-passagedata><tw-passagedata pid="101" name="StoryDisplayTitle" tags="" position="100,1350" size="100,100">TEST</tw-passagedata><tw-passagedata pid="102" name="StoryInit" tags="nobr" position="225,1350" size="100,100">&lt;&lt;set $badwait = &#39;8s&#39;&gt;&gt;
+&lt;&lt;set $wait = &#39;10s&#39;&gt;&gt;</tw-passagedata><tw-passagedata pid="103" name="PassageReady" tags="" position="350,1350" size="100,100">&lt;&lt;if visitedTags(&#39;bad&#39;) &gt;= 2&gt;&gt;&lt;&lt;set $badwait = &quot;2s&quot;&gt;&gt;&lt;&lt;/if&gt;&gt;
 &lt;&lt;if visitedTags(&#39;good&#39;) &gt;= 2&gt;&gt;&lt;&lt;set $wait = &quot;2s&quot;&gt;&gt;&lt;&lt;/if&gt;&gt;</tw-passagedata></tw-storydata>
 	<script id="script-sugarcube" type="text/javascript">
 	/*! SugarCube JS */

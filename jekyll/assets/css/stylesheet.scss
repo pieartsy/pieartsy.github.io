@@ -3970,6 +3970,18 @@ details > summary {
   -moz-border-radius: 40px;
   -webkit-border-radius: 40px;
 }
+
+img#coverart {
+  padding:unset;
+  margin:unset;
+  border-radius:40px;
+}
+
+#game-container {
+  position: relative;
+  padding: 1em;
+}
+
 /*calculated price on commissions*/
 #calculated_price {
   color: black;

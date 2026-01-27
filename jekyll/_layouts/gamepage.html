@@ -1,17 +1,17 @@
 ---
-layout: default
+layout: page
 ---
     <div class="columns col-sm-11 col-10 col-mx-auto flex-centered">
-        <div id="game-container" style="position: relative;padding: 1em;" class="columns col-sm-12 col-11 col-mx-auto flex-centered">
-            <button class="btn btn-link thumbnail" onclick="replaceButtonWithIframe(this, Event)">
-                <img style="padding:unset; margin:unset; border-radius:40px;" id="coverart" src="{{site.url}}/assets/{{page.directory}}/{{page.image}}" class="img-responsive" alt="{{page.title}} cover art.">
+        <div id="game-container" class="columns col-sm-12 col-11 col-mx-auto flex-centered">
+            <button class="btn btn-link thumbnail" onclick="passInSource(this, Event)">
+                <img id="coverart" src="{{site.url}}/assets/{{page.directory}}/{{page.image}}" class="img-responsive" alt="{{page.title}} cover art.">
                 <span class="overlay">
                     <span class="text">Click to {{page.verb}}</span>
                 </span>
             </button>
         </div>
         <div class="column col-12 col-mx-auto">
-            <div>{{content}}</div>
+            {{content}}
         </div>
     </div>
 
@@ -19,11 +19,11 @@ layout: default
         <a class="btn btn-link column col-12 col-mx-auto" href="{{site.url}}/assets/{{page.directory}}/{{page.zip}}" download="{{page.filename}}">Download</a>
     </div>
 
-    {% assign title = page.title | downcase %}
+    {% assign title = page.title | downcase | replace: " ", "-" %}
     {% for tag in site.tags %}
         {% assign tagname = tag[0] | downcase %}
         {% if tagname == title %}
-            <div class="col-mx-auto section3">
+            <div class="col-mx-auto section4">
                 <h2>Devlog</h2>
                 <div class="column col-sm-11 col-10 col-mx-auto flex-centered">
                     <ul>
@@ -36,52 +36,17 @@ layout: default
         {% endif %}
     {% endfor %}
 
-    <div class="columns col-12 col-mx-auto section2">
+    <section class="section2">
+        <h2 class="flex-centered">Comments</h2>
         <!-- begin wwww.htmlcommentbox.com -->
-        <div class="column col-8 col-sm-11 col-mx-auto">
-        <div id="HCB_comment_box"><a href="http://www.htmlcommentbox.com">Widget</a> is loading comments...</div>
+        <div class="column col-8 col-sm-11 col-mx-auto" id="HCB_comment_box"><a href="http://www.htmlcommentbox.com">Widget</a> is loading comments...</div>
         <link rel="stylesheet" type="text/css" href="{{site.url}}/assets/css/commentbox.css" />
+
         <script type="text/javascript" id="hcb"> /*<!--*/ if(!window.hcb_user){hcb_user={};} (function(){var s=document.createElement("script"), l=hcb_user.PAGE || (""+window.location).replace(/'/g,"%27"), h="https://www.htmlcommentbox.com";s.setAttribute("type","text/javascript");s.setAttribute("src", h+"/jread?page="+encodeURIComponent(l).replace("+","%2B")+"&mod=%241%24wq1rdBcg%24ynkfQoA6rcwylBJ4co.Jm1"+"&opts=16798&num=10&ts=1757623858328");if (typeof s!="undefined") document.getElementsByTagName("head")[0].appendChild(s);})(); /*-->*/ </script>
         <!-- end www.htmlcommentbox.com -->
-        </div>
-    </div>
-</div>
+    </section>
 <script type="text/javascript">
-    function replaceButtonWithIframe(element, evt) {
-        const gameContainer = document.getElementById('game-container');
-        const gameframe = createIframe(coverart.height);
-        const fullscreenButton = createFullscreenButton();
-        gameContainer.replaceChild(gameframe, element);
-        gameContainer.appendChild(fullscreenButton);
-    }
-
-    function createIframe(coverHeight) {
-        let gameframe = document.createElement("iframe");
-        // Setting the values for the attributes
-        gameframe.setAttribute("class", "centered");
-        gameframe.src = "{{site.url}}/assets{{page.directory}}/{{page.game}}";
-        gameframe.width= "100%";
-        gameframe.height = coverHeight;
-        gameframe.style.border = "black 3px solid";
-        gameframe.style.borderRadius = "40px";
-        gameframe.allow = "fullscreen";
-        gameframe.innerText = "Your browser doesn't support iframes"
-        return gameframe;
-    }
-
-    function createFullscreenButton() {
-        let fullscreenButton = document.createElement("button");
-        fullscreenButton.setAttribute("class", "btn btn-link");
-        fullscreenButton.style.opacity = "90%";
-        fullscreenButton.style.float = "right";
-        fullscreenButton.style.position = "absolute";
-        fullscreenButton.style.bottom = "2em";
-        fullscreenButton.style.right = "2em";
-        fullscreenButton.style.zIndex = "50";
-        fullscreenButton.innerText = "Full screen";
-        fullscreenButton.addEventListener("click", function () {
-            document.getElementsByTagName('iframe')[0].requestFullscreen();
-        })
-        return fullscreenButton;
+    function passInSource(element) {
+        replaceButtonWithIframe(element, "{{site.url}}/assets{{page.directory}}/{{page.game}}")
     }
 </script>
