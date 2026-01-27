@@ -2518,7 +2518,7 @@ summary.accordion-header::-webkit-details-marker {
 }
 
 .menu {
-  background: rgb(250, 231, 235, 0.5);
+  background: var(--lightbg);
   border-radius: 1em;
   box-shadow: 0 .05rem .2rem rgba(48, 55, 66, .3);
   list-style: none;
