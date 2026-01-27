@@ -77,17 +77,16 @@ body {
 
 /** Add the correct display in IE 9-. */
 aside,
-footer,
-header,
-nav,
-section {
+main + footer,
+main > header,
+nav
+{
   display: block;
   background-color: var(--lightbg);
 }
 
 footer {
   padding: .1rem;
-  background-color: var(--lightbg);
 }
 
 /** Correct the font size and margin on `h1` elements within `section` and `article` contexts in Chrome, Firefox, and Safari. */
@@ -360,8 +359,8 @@ body {
 
 a {
   color: var(--brighttext);
-  text-decoration: none;
   font-weight: bold;
+  text-decoration: underline;
 }
 
 
@@ -374,7 +373,6 @@ a:hover,
 a:active,
 a.active {
   color: var(--darktext);
-  text-decoration: underline;
 }
 
 
@@ -1532,6 +1530,12 @@ code {
   margin: auto;
 }
 
+.post-img {
+  height: 20em;
+  margin-top: 2em;
+  margin-bottom: -1em;
+}
+
 .img-fit-cover {
   object-fit: cover;
 }
@@ -1659,8 +1663,6 @@ video.video-responsive::before {
   -ms-flex: 1;
   flex: 1;
   max-width: 100%;
-  padding-left: .4rem;
-  padding-right: .4rem;
 }
 
 .column.col-12,
@@ -2521,7 +2523,7 @@ summary.accordion-header::-webkit-details-marker {
   box-shadow: 0 .05rem .2rem rgba(48, 55, 66, .3);
   list-style: none;
   margin: 0;
-  padding: .4rem;
+  padding: 0;
   transform: translateY(.2rem);
   z-index: 300;
   position: relative;
@@ -2534,29 +2536,19 @@ summary.accordion-header::-webkit-details-marker {
 
 .menu .menu-item {
   margin-top: 0;
-  /*padding: 0 .4rem;*/
+  padding: .4rem;
   position: relative;
-  text-decoration: none;
+}
+
+.menu .menu-item:has(a:hover) {
+  background: var(--sectionone);
 }
 
 .menu .menu-item > a {
   border-radius: 2em;
-  color: inherit;
   /*margin: 0 -.4rem;*/
   /*padding: .2rem .5rem;*/
   text-decoration: none;
-}
-
-.menu .menu-item > a:focus,
-.menu .menu-item > a:hover {
-  /*background: var(--brighttext);*/
-  color: var(--darktext);
-  text-decoration: underline;
-}
-
-.menu .menu-item > a:visited {
-  /*background: var(--brighttext);*/
-  color: var(--purble);
 }
 
 .menu .menu-item .form-checkbox,
@@ -3506,7 +3498,6 @@ a.text-error:visited {
 
 .p-sticky {
   position: sticky !important;
-  position: -webkit-sticky !important;
 }
 
 .p-centered {
@@ -3519,11 +3510,19 @@ a.text-error:visited {
 .flex-centered {
   align-items: center;
   display: flex;
-  display: -ms-flexbox;
-  -ms-flex-align: center;
-  -ms-flex-pack: center;
-  justify-self: center;
   justify-content: center;
+}
+
+.flex-between {
+  align-items: center;
+  display: flex;
+  justify-content: space-between;
+}
+
+.flex-around {
+  align-items: center;
+  display: flex;
+  justify-content: space-around;
 }
 
 .m-0 {
@@ -3795,7 +3794,19 @@ dialog[open] {
 .subtitle {
   color: var(--desaturated);
   font-style: italic;
-  margin-top: -1em;
+  margin: unset;
+}
+
+.post:last-child {
+  margin-bottom: 2em;
+}
+
+.subtitle:last-of-type {
+  margin-bottom: 1em;
+}
+
+.gap {
+  gap: 2em;
 }
 
 a.contact img {
@@ -3804,23 +3815,30 @@ a.contact img {
   width: 1.2em;
 }
 
-a.contact:visited img {
-  filter: invert(47%) sepia(93%) saturate(7318%) hue-rotate(262deg) brightness(99%) contrast(99%);
-}
-
-a.contact img:hover {
-  filter: invert(7%) sepia(48%) saturate(5727%) hue-rotate(341deg) brightness(91%) contrast(105%);
-  border-bottom: 2px solid var(--darktext);
-}
-
 .header-title {
   font-family: 'Sulphur Point', sans-serif;
+}
+
+.skip {
+  position: absolute;
+  left: -10000px;
+  top: auto;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+}
+
+.skip:focus {
+  position: static;
+  width: auto;
+  height: auto;
+  z-index:200;
 }
 
 /* ids to make sure that footer stays at bottom*/
 
 main {
-  margin-top: 1em;
+  margin-top: 2em;
   min-height: calc(100vh - 3em);
 }
 
