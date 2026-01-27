@@ -1,24 +1,21 @@
 {% for item in site.data.pics.illos %}
 <div>
-    <a href="#{{ item.illoid }}">
-        <div class="thumbnail">
+        <button style="padding: unset;border:unset;" class="thumbnail btn btn-link" onclick="toggleDialog('{{item.illoid}}', true)">
             <img src="{{ item.illothumb }}" alt="{{ item.illothumbalt }}" class="img-round img-responsive">
-            <div class="overlay">
-                <div class="text">Click for full image</div>
-            </div>
-        </div>
-    </a>
-    <div class="modal modal-lg" id="{{ item.illoid }}">
-        <a href="#back" class="modal-overlay" aria-label="Close"></a>
+            <span class="overlay">
+                <span class="text">Click for full image</span>
+            </span>
+        </button>
+    <dialog closedby="any" class="modal-lg" id="{{ item.illoid }}">
         <div class="modal-container">
-            <div class="modal-header">
-                <a href="#back" class="btn btn-clear float-right" aria-label="Close"></a>
-                <h4>{{ item.illotitle }}</h4>
-            </div>
-            <div class="modal-body">
-                <img src="{{ item.illo }}" alt="{{ item.illoalt }}" class="img-fit-contain">
-            </div>
+        <header>
+            <button class="btn btn-clear float-right" aria-label="Close" autofocus onclick="toggleDialog('{{item.illoid}}')"></button>
+            <h4>{{ item.illotitle }}</h4>
+        </header>
+        <div>
+            <img src="{{ item.illo }}" alt="{{ item.illoalt }}" class="img-fit-contain">
         </div>
-    </div>
+        </div>
+    </dialog>
 </div>
 {% endfor %}

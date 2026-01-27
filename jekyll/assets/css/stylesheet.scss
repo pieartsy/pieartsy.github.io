@@ -1543,7 +1543,7 @@ code {
 .img-fit-contain {
   object-fit: contain;
   display: block;
-  max-height: 85vh;
+  max-height: 80vh;
   max-width: 95vw;
 }
 
@@ -3898,7 +3898,7 @@ details > summary {
 }
 
 @media (hover: none) {
-  .overlay {
+  span.overlay {
     opacity: 1;
     background-color: rgba(250, 231, 235, 0.6);
     font-weight: bolder;
@@ -3906,17 +3906,17 @@ details > summary {
 }
 
 @media (hover: hover) {
-  .thumbnail:hover .overlay {
+  .thumbnail:hover span.overlay {
     opacity: 1;
   }
 
-  .overlay {
+  span.overlay {
     opacity: 0;
     background-color: rgba(250, 231, 235, 0.75);
   }
 }
 
-.overlay {
+span.overlay {
   position: absolute;
   top: 0;
   bottom: 0;
