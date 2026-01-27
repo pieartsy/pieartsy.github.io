@@ -8,5 +8,6 @@ zip: reflecting.zip
 filename: reflecting-my-face-in-the-mirror
 description: A dynamic poem.
 ---
-<p>A dynamic poem for the <a href="https://itch.io/jam/neo-twiny-jam">2023 Neo-Twiny Jam</a>.</p>
-<p>(Note: this poem is not meant to be played on mobile, as it has whitespace and hovertext.)</p>
+A dynamic poem for the <a href="https://itch.io/jam/neo-twiny-jam">2023 Neo-Twiny Jam</a>.
+
+(Note: this poem is not meant to be played on mobile, as it has whitespace and hovertext.)
