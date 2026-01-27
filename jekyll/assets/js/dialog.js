@@ -1,8 +1,12 @@
-function showDialog(id, modal=false) {
+function toggleDialog(id, modal=false) {
     const dialog = document.getElementById(id);
-    if (modal) {
-        dialog.showModal();
+    if (!dialog.open) {
+        if (modal) {
+            dialog.showModal();
+            return;
+        }
+        dialog.show();
         return;
     }
-    dialog.show();
+    dialog.close();
 }

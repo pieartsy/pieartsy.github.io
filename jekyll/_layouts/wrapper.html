@@ -6,11 +6,12 @@
 <body>
 <!--header for email, other pages, and social media links-->
 <header class="navbar">
+    <a href="#content" class="skip btn btn-link">Skip to main content</a>
     {% include header.html %}
 </header>
 <!--same spectre.css grid as before, this time for the rest of the body-->
 <!--content wrapper for everything except footer-->
-<main id="content" tabindex="-1">
+<main id="content">
     {{ content }}
 </main>
 <!--copyright-->

@@ -23,8 +23,8 @@
 <nav class="columns col-12 col-mx-auto content-mobile title navbar">
     <div class= "navbar-section">
         <div class="dropdown">
-            <button type="button" onclick="showDialog('menu-popup')" aria-haspopup="dialog" class="btn btn-link dropdown-toggle">
-                Menu<i class="icon icon-caret"></i>
+            <button type="button" onclick="toggleDialog('menu-popup')" aria-haspopup="dialog" class="btn btn-link dropdown-toggle">
+                Menu
             </button>
             <dialog id="menu-popup" closedby="any">
                 <menu class="menu">
@@ -42,12 +42,12 @@
     </div>
     <div class="navbar-section">
         <div class="dropdown dropdown-right">
-            <button type="button" onclick="showDialog('sm-popup')" aria-haspopup="dialog" class="btn btn-link dropdown-toggle">
-                Contact<i class="icon icon-caret"></i>
+            <button type="button" onclick="toggleDialog('sm-popup')" aria-haspopup="dialog" class="btn btn-link dropdown-toggle">
+                Contact
             </button>
             <dialog id="sm-popup" closedby="any">
                 <menu class="menu">
-                    {% for item in header.sm %}
+                    {% for item in site.data.header.sm %}
                     <li class="menu-item">
                         <a href= "{{ item.socialmedia }}" class="contact">
                             <img src="{{site.url}}/assets/images/socmed/{{ item.socialmediaimg }}" alt="{{ item.socialmediaalt }}">
