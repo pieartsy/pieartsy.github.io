@@ -128,8 +128,6 @@ artprojs:
 
 comics:
   - comic: comic1
-    plus: onclick="plusDivs(1, 0)"
-    minus: onclick="plusDivs(-1, 0)"
     pages:
     - page: lmg1
       pagealt: little match girl comic page 1
@@ -140,18 +138,7 @@ comics:
     - page: lmg4
       pagealt: little match girl comic page 4
 
-  - comic: comic3
-    plus: onclick="plusDivs(1, 2)"
-    minus: onclick="plusDivs(-1, 2)"
-    pages:
-    - page: defluff1
-      pagealt: disco elysium fluff comic page 1
-    - page: defluff2
-      pagealt: disco elysium fluff comic page 2
-
   - comic: comic2
-    plus: onclick="plusDivs(1, 1)"
-    minus: onclick="plusDivs(-1, 1)"
     pages:
     - page: algorithm1
       pagealt: Captcha comic 1

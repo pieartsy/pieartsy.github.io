@@ -1,9 +1,17 @@
 {% for comic in site.data.pics.comics %}
-<div class="flex-centered column col-5 col-md-12 col-mx-auto contain" style="margin:1rem">
-    <button class="btn btn-link prev" {{ comic.minus }}>&#10094;</button>
-        {% for page in comic.pages %}
-            <img class="comic {{comic.comic}} img-responsive" alt="{{ page.pagealt }}" src="assets\images\illos\{{ page.page }}.png">
+    <div id="{{comic.comic}}" class="carousel">
+        <button class="btn btn-link prev" id="{{comic.comic}}-prev"><span class="visually-hidden">Previous </span>&#10094;</button>
+        <ol class="comic">
+            {% for page in comic.pages %}
+                <li class="comic-page">
+                    <img class="{{comic.comic}} img-responsive img-round" alt="{{ page.pagealt }}"
+                         src="assets\images\illos\{{ page.page }}.png">
+                </li>
         {% endfor %}
-    <button class="btn btn-link next" {{ comic.plus }}>&#10095;</button>
-</div>
+        </ol>
+        <button class="btn btn-link next" id="{{comic.comic}}-next"><span class="visually-hidden">Next </span>&#10095;</button>
+        <div id="{{comic.comic}}-liveregion" aria-live="polite" aria-atomic="true" class="visually-hidden liveregion"></div>
+    </div>
 {% endfor %}
+
+<script type="text/javascript" language="JavaScript" src="{{site.url}}/assets/js/carousel.js"></script>
