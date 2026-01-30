@@ -693,7 +693,7 @@ td:hover::after {
   background: var(--brighttext);
   border-color: var(--brighttext);
   color: #fff;
-  border-radius: 40px;
+  border-radius: 2em;
 }
 
 .btn.btn-primary:focus,
@@ -779,7 +779,7 @@ td:hover::after {
   background: var(--lightbg);
   border-color:transparent;
   color: black;
-  border-radius: 40px;
+  border-radius: 2em;
   margin: .2rem;
   white-space: normal;
   font-weight: normal;
@@ -833,9 +833,10 @@ td:hover::after {
   color: currentColor;
   opacity: 1;
   text-decoration: none;
+  border-radius: 2em;
 }
 
-.btn.btn-clear:focus,
+.btn.btn-clear:focus-visible:not(:focus),
 .btn.btn-clear:hover {
   background: rgba(247, 248, 249, .5);
   opacity: .95;
@@ -2109,7 +2110,6 @@ video.video-responsive::before {
   display: flex;
   flex: 1 0 0;
   flex-wrap: wrap;
-  gap: 1em;
 }
 
 .navbar .navbar-section:not(:first-child):last-child {
@@ -2400,7 +2400,7 @@ summary.accordion-header::-webkit-details-marker {
 .card {
   background: var(--lightbg);
   border: .05rem solid var(--lightbg);
-  border-radius: 40px;
+  border-radius: 2em;
   margin: 1rem .2rem;
   display: flex;
   display: -ms-flexbox;
@@ -2537,19 +2537,27 @@ summary.accordion-header::-webkit-details-marker {
 
 .menu .menu-item {
   margin-top: 0;
-  padding: .4rem;
   position: relative;
 }
 
-.menu .menu-item:has(a:hover) {
-  background: var(--sectionone);
+.menu-item:has(a:focus) {
+  background: var(--brighttext);
 }
 
+.menu .menu-item:has(a:hover), .menu-item:has(a:focus) {
+  background: var(--brighttext);
+}
+
+.menu .menu-item a:hover {
+  color: var(--lightbg);
+}
+
+
 .menu .menu-item > a {
-  border-radius: 2em;
-  /*margin: 0 -.4rem;*/
-  /*padding: .2rem .5rem;*/
   text-decoration: none;
+  padding: .4rem;
+  width:100%;
+  display: inline-block;
 }
 
 .menu .menu-item .form-checkbox,
@@ -3483,6 +3491,7 @@ a.text-error:visited {
 
 .float-right {
   float: right !important;
+  padding: .5em;
 }
 
 .p-relative {
@@ -3784,7 +3793,6 @@ dialog[open] {
   background: none;
   border: none;
   padding: 0;
-  position: absolute;
 }
 
 .title {
@@ -3811,9 +3819,20 @@ dialog[open] {
 }
 
 a.contact img {
-  margin: .2em;
   height: 1.2em;
   width: 1.2em;
+  display: flex;
+}
+
+a.header-link, a.contact {
+  padding: .5em .5em;
+  text-decoration: none;
+  outline: none;
+}
+
+a.header-link:hover, a.contact:hover {
+  background: var(--brighttext);
+  color: var(--lightbg);
 }
 
 .header-title {
@@ -3906,6 +3925,10 @@ details > summary {
   }
 }
 
+.thumbnail:focus span.overlay {
+  opacity: 1;
+}
+
 @media (hover: hover) {
   .thumbnail:hover span.overlay {
     opacity: 1;
@@ -3924,58 +3947,61 @@ span.overlay {
   right: 0;
   left: 0;
   object-fit: fill;
-  border-radius: 40px;
+  border-radius: 2em;
 }
 
 .text {
   font-size: 1.2rem;
   color: var(--brighttext);
-  width: 100%;
+  width: 50%;
   position: absolute;
-  top: 50%;
-  left: 50%;
-  -webkit-transform: translate(-50%, -50%);
-  -ms-transform: translate(-50%, -50%);
-  transform: translate(-50%, -50%);
+  top: 30%;
+  left: 25%;
   text-align: center;
   word-wrap: break-word;
 }
 
-/*comics slideshow on art page*/
-.comic {
-  border-radius: 40px;
-  -moz-border-radius: 40px;
-  -webkit-border-radius: 40px;
-}
-
-.contain {
+.img-round {
+  border-radius: 2em;
   position: relative;
 }
 
-.next {
-  right: 0;
-  position: absolute;
-  padding-top: 20%;
-  padding-bottom: 20%;
+button.illos {
+  height: fit-content;
+  align-self: center;
 }
 
-.prev  {
-  left: 0;
-  position: absolute;
-  padding-top: 20%;
-  padding-bottom: 20%;
+button.thumbnail.btn.btn-link {
+  padding: unset;
+  border:0;
 }
 
-.img-round {
-  border-radius: 40px;
-  -moz-border-radius: 40px;
-  -webkit-border-radius: 40px;
+dialog {
+  transition: overlay 1s;
+  &[open] {
+    animation: open 1s forwards;
+  }
+  &:not([open]) {
+    animation: close 1s forwards;
+  }
 }
+
+@keyframes open {
+  from { opacity: 0 }
+  to   { opacity: 1 }
+}
+
+@keyframes close {
+  from { opacity: 1 }
+  to   { opacity: 0 }
+}
+
+/*games*/
 
 img#coverart {
   padding:unset;
   margin:unset;
-  border-radius:40px;
+  border-radius: 2em;
 }
 
 #game-container {
@@ -3986,4 +4012,18 @@ img#coverart {
 /*calculated price on commissions*/
 #calculated_price {
   color: black;
+}
+
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
 }

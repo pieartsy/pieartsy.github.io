@@ -7,13 +7,13 @@
     <!--breadcrumb (nav menu)-->
     <div class="navbar-center navbar-section">
         {% for item in site.data.header.nav %}
-        <a href="{{site.url}}/{{ item.link }}">{{ item.name }}</a>
+        <a class="header-link" href="{{site.url}}/{{ item.link }}">{{ item.name }}</a>
         {% endfor %}
     </div>
     <!--new section for social media links-->
     <div class="navbar-section">
         {% for item in site.data.header.sm %}
-        <a href="{{ item.socialmedia }}" class="contact">
+        <a href="{{ item.socialmedia }}" class="contact header-link">
             <img src="{{site.url}}/assets/images/socmed/{{ item.socialmediaimg }}" alt="{{ item.socialmediaalt }}" height="25" width="25">
         </a>
         {% endfor %}

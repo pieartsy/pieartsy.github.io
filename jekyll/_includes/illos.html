@@ -1,16 +1,16 @@
 {% for item in site.data.pics.illos %}
-<div>
-        <button style="padding: unset;border:unset;" class="thumbnail btn btn-link" onclick="toggleDialog('{{item.illoid}}', true)">
+<div class="flex-centered">
+        <button class="thumbnail btn btn-link" onclick="toggleDialog('{{item.illoid}}', true)">
             <img src="{{ item.illothumb }}" alt="{{ item.illothumbalt }}" class="img-round img-responsive">
             <span class="overlay">
                 <span class="text">Click for full image</span>
             </span>
         </button>
     <dialog closedby="any" class="modal-lg" id="{{ item.illoid }}">
-        <div class="modal-container">
-        <header>
-            <button class="btn btn-clear float-right" aria-label="Close" autofocus onclick="toggleDialog('{{item.illoid}}')"></button>
-            <h3>{{ item.illotitle }}</h3>
+        <div class="modal-container flex-between">
+        <header class="columns col-11">
+            <h3 class="col col-11">{{ item.illotitle }}</h3>
+            <button class="btn btn-clear col-1 illos" aria-label="Close" autofocus onclick="toggleDialog('{{item.illoid}}')"></button>
         </header>
         <div>
             <img src="{{ item.illo }}" alt="{{ item.illoalt }}" class="img-fit-contain">
