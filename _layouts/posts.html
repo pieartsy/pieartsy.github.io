@@ -2,14 +2,14 @@
 layout: wrapper
 ---
 <article class="column col-12 col-mx-auto">
-    <div class="post col-10 col-mx-auto">
+    <div class="post col-10 col-sm-11 col-mx-auto">
         <header>
             {% if page.image and page.image != "/portraits.png" %}
                 <img class="img-responsive post-img" src="{{site.url}}/assets{{page.directory}}/{{page.image}}" alt="{{page.alt}}">
             {% endif %}
             <div class="flex-around">
                 {% if page.previous.url %}
-                    <a class="h1" href="{{page.previous.url}}" title="{{page.previous.title}}">&#x2B9C;</a>
+                    <a class="h1" href="{{page.previous.url}}" title="{{page.previous.title}}"><img class="left-arrow" src="{{site_url}}/assets/images/arrow.svg"></a>
                 {% endif %}
                     <h1>{{page.title}}</h1>
                 {% if page.next.url %}
