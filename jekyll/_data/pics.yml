@@ -1,78 +1,78 @@
 illos:
   - illo: assets/images/illos/Laios devourer.png
-    illoalt: Laios the Devourer full image
+    illoalt: Laios from Delicious in Dungeon in a monstrous form, about to eat a heart. The drawing is rendered in red and yellow.
     illothumb: assets/images/illos/Laios devourer thumb.png
-    illothumbalt: Laios the Devourer thumb
+    illothumbalt: Laios from Delicious in Dungeon in a monstrous form.
     illotitle: Laios the Devourer
     illoid: laios
 
   - illo: assets/images/illos/dor and cathabel.png
-    illoalt: Dor and Cathabel full image
+    illoalt: Princess Cathabel, wearing a naval coat over a glamorous dress, and her girlfriend Dor, a smirking alien with grey skin and black eyes and everyday wear. Dor is picking at Cathabel's epaulettes and smirking while Cathabel looks indignant.
     illothumb: assets/images/illos/dor and cathabel thumb.png
-    illothumbalt: Dor and Cathabel thumbnail
+    illothumbalt: Princess Cathabel and her alien girlfriend, Dor.
     illotitle: Dor and Cathabel
     illoid: dorAndCath
 
   - illo: assets/images/illos/Manny.png
-    illoalt: Manny full image
+    illoalt: A satyr, Manny, disguised as a human waving burlesque fans in the air. Each panel of the fan renders Manny in different art styles from the 1970s.
     illothumb: assets/images/illos/Manny thumb.png
-    illothumbalt: manny thumbnail
+    illothumbalt: A psychedelic satyr, Manny.
     illotitle: Manny
     illoid: manny
 
   - illo: assets/images/illos/moderngentlemen.png
-    illoalt: modern gentlemen full image
+    illoalt: A trans man in a gold and red robe that's opened to show his chest, boxers with bulge, and phalloplasty scars. He raises one leg in the air.
     illothumb: assets/images/illos/moderngentlemen thumb.png
-    illothumbalt: modern gentlemen thumbnail
+    illothumbalt: A trans man in a gold and red robe, smoking.
     illotitle: Modern Gentlemen
     illoid: gentlemen
 
   - illo: assets/images/illos/polyam_prima.png
-    illoalt: tria night full image
+    illoalt: A man and woman kissing and being affectionate toward an enby, in a pastiche of the Anne Hathaway Twelfth Night promo image. Instead of a sword, the woman is holding an elbow crutch up for the man to grasp. The enby looks surprised.
     illothumb: assets/images/illos/polyam_prima thumb.png
-    illothumbalt: tria night thumbnail
+    illothumbalt: A person receiving kisses and affection from two other people.
     illotitle: Tria Night
     illoid: triaprima
 
   - illo: assets/images/illos/cynosures.png
-    illoalt: twilight's oasis cynosures full image
+    illoalt: Four people in Asian-inspired clothing, dressed as a betta fish, a goat, a mushroom, and a bee. Despite the goat's best effort to stop them, the mushroom trips and throws multiple cups of tea into the air, which the bee tries to catch. The fish stares at the scene, unthinkingly pouring tea onto the ground.
     illothumb: assets/images/illos/cynosures thumb.png
-    illothumbalt: twilight's oasis cynosures thumbnail
+    illothumbalt: A mushroom person tripping and throwing a platter in the air while a goat person tries to stop them.
     illotitle: Twilight's Oasis Cynosures
     illoid: cynosures
 
   - illo: assets/images/illos/motw.png
-    illoalt: monster of the week full image
+    illoalt: A man in a plaid suit looks up at the stars while an angel with a purple suit and gold wings looks at him lovingly. The first man says, 'The stars sure are beautiful tonight.' The second replies, 'Sure are.'
     illothumb: assets/images/illos/motw thumb.png
-    illothumbalt: monster of the week thumbnail
+    illothumbalt: A man in a plaid suit looks up at the stars.
     illotitle: Monster of the Week
     illoid: motw
 
   - illo: assets/images/illos/gitfr.png
-    illoalt: get in the fucking robot full image
+    illoalt: Three kids argue in front of a giant robot, not paying attention to the giant meteor hurtling toward them. The words 'Get in the Fucking Robot' are overlaid over the scene.
     illothumb: assets/images/illos/gitfr thumb.png
-    illothumbalt: get in the fucking robot thumbnail
+    illothumbalt: Three kids argue in front of a giant robot.
     illotitle: Get in the Fucking Robot
     illoid: gitfr
 
   - illo: assets/images/illos/zephyr.png
-    illoalt: zephyr full image
+    illoalt: Zephyr, a person with red and yellow clothing, eyes, and hair, speeds through the clouds on a hover skateboard, with a pocket knife open in their hand.
     illothumb: assets/images/illos/zephyr thumb.png
-    illothumbalt: zephyr thumbnail
+    illothumbalt: Zephyr, a person with red and yellow hair and eyes, smirks at the viewer.
     illotitle: Zephyr
     illoid: zephyr
 
   - illo: assets/images/illos/strahd.png
-    illoalt: lady strahd full image
+    illoalt: A busty vampire woman, Lady Strahd, with a large brooch in her cleavage swirls a wine glass in her hand. She reclines on thin air.
     illothumb: assets/images/illos/strahd thumb.png
-    illothumbalt: lady strahd thumbnail
+    illothumbalt: A busty vampire woman, Lady Strahd, with a large brooch in her cleavage.
     illotitle: Lady Strahd
     illoid: strahd
 
   - illo: assets/images/illos/half light.png
-    illoalt: half light full image
+    illoalt: Seven images of Disco Elysium's Harry Du Bois overlaid on each other. He looks strung out, strangling, shooting, and punching faceless figures. The drawing is darkly colored, but his eyes and RCM patches are bright white.
     illothumb: assets/images/illos/half light thumb.png
-    illothumbalt: half light thumbnail
+    illothumbalt: Three images of Harry Du Bois overlaid on each other.
     illotitle: Half Light
     illoid: halflight
 
@@ -87,71 +87,62 @@ artprojs:
   - artproj: Thank You For Joining the Algorithm
     artprojyear: 2023
     artprojimg: assets/images/algorithmproj.png
-    artprojalt: Preview of submission to Thank You For Joining the Algorithm
-    artprojdesc: "A submission to Thank You For Joining the Algorithm, a magazine by Tenebrous Press celebrating the connection between humanity and creativity in the face of algorithmic dominion. The magazine can be bought at <a href='https://store.tenebrouspress.com/products/thank-you-for-joining-the-algorithm-magazine-print-copy-ebook?_pos=2&_psq=thank+you&_ss=e&_v=1.0'>this store link</a>."
+    artprojalt: A snippet of a traditional comic with an AI creation reaching out to grab the main character.
+    artprojdesc: "A submission to Thank You For Joining the Algorithm, a magazine by Tenebrous Press celebrating the connection between humanity and creativity in the face of algorithmic dominion. The magazine can be bought at <a href='https://store.tenebrouspress.com/products/thank-you-for-joining-the-algorithm-magazine-print-copy-ebook?_pos=2&_psq=thank+you&_ss=e&_v=1.0'>Tenebrous Press</a>."
 
   - artproj: Twilight's Oasis rulebook art
     artprojyear: 2022
     artprojimg: assets/images/cynosuresproj.png
-    artprojalt: Preview of the Twilight's Oasis rulebook art
-    artprojdesc: "Rulebook art for the mythical Cynosures from the upcoming LARP, Twilight's Oasis. A preview of the rulebook can be seen here: <a href='https://www.instagram.com/p/Cl6QlNAN_nO/'>Instagram link</a>."
+    artprojalt: Three people dressed as a wood mushroom, a bluejay, and a bee.
+    artprojdesc: "Rulebook art for the mythical Cynosures from the upcoming LARP, Twilight's Oasis. A preview of the rulebook can be seen on <a href='https://www.instagram.com/p/Cl6QlNAN_nO/'>Twilight Oasis' instagram.</a>."
 
   - artproj: Get in the Fucking Robot cover
     artprojyear: 2021
     artprojimg: assets/images/gitfrproj.png
-    artprojalt: Preview of the Get in the Fucking Robot cover
-    artprojdesc: "A cover for the PDF of the tabletop RPG, Get in the Fucking Robot, by Penguin King Games. Link to the playtest version of the game here: <a href='https://penguinking.com/get-in-the-fucking-robot/'>Get in the Fucking Robot</a>."
+    artprojalt: Three kids arguing in front of a giant robot.
+    artprojdesc: "A cover for the PDF of the tabletop RPG, <a href='https://penguinking.com/get-in-the-fucking-robot/'>Get in the Fucking Robot</a>, by Penguin King Games."
 
   - artproj: Make a Scene
     artprojyear: 2020
     artprojimg: assets/images/makeascene.png
-    artprojalt: Preview of my illustration for the Make a Scene anthology
-    artprojdesc: "An anthology of LARPs. I illustrated the cover art for Boldly Go. The anthology has a Kickstarter at this link: <a href='https://www.kickstarter.com/projects/makeascene/make-a-scene-larp-anthologies'>Kickstarter</a>. More information about the Make a Scene festival can be found here: <a href='http://makeascenemn.org/en/'>Make a Scene</a>."
+    artprojalt: Several toyetic robots step out of a retro spaceship.
+    artprojdesc: "An anthology of LARPs for <a href='http://makeascenemn.org/en/'>Make a Scene</a>. I illustrated the cover art for Boldly Go."
 
   - artproj: Fandom Zines
     artprojyear: 2017-2019
     artprojimg: assets/images/projs.png
-    artprojalt: Preview of various zine comics
+    artprojalt: Tiny versions of 3 comic pages, not meant to be readable.
     artprojdesc: "<p> Several comics done for zines in the My Hero Academia and Voltron: Legendary Defender fandoms. These zines were focused around celebrating concepts or specific characters from each piece of media.
       <ul>
-        <li>Enough Love to Go Around zine: <a href='https://bnha-poly-ships-zine.tumblr.com/'>website link</a></li>
-        <li>Your Power zine: <a href='https://yourpowerzine.tumblr.com/post/178090475908'>link with details</a></li>
-        <li>The Gorgeous Man zine: <a href='https://coranzine.tumblr.com'>website link</a></li>
+        <li><a href='https://bnha-poly-ships-zine.tumblr.com/'>Enough Love to Go Around zine</a></li>
+        <li><a href='https://yourpowerzine.tumblr.com/post/178090475908'>Your Power zine</a></li>
+        <li><a href='https://coranzine.tumblr.com'>The Gorgeous Man zine</a></li>
       </ul>
     </p>"
 
   - artproj: "Serving Pride: The Queer History Dinner Party Handbook"
     artprojyear: 2017
     artprojimg: assets/images/servingpride.png
-    artprojalt: "Preview of my illustration for Serving Pride: The Queer History Dinner Party Handbook"
-    artprojdesc: "An illustrated handbook of queer history presented as a dinner party. I illustrated the art for the candle ritual in Chapter 6. More info on the handbook can be found at this link: <a href='https://www.geeksout.org/serving-pride/'>Serving Pride</a>."
+    artprojalt: A small girl and an older man read a ritual by candle light.
+    artprojdesc: "An illustrated handbook of queer history presented as a dinner party. I illustrated the art for the candle ritual in Chapter 6. The book can be bought at <a href='https://www.geeksout.org/serving-pride/'>Geeks Out.</a>"
 
 comics:
   - comic: comic1
     pages:
     - page: lmg1
-      pagealt: little match girl comic page 1
+      pagealt: A woman in a pirate coat has a gun showdown with a lizardesque alien with the lower body of a beetle, in a sci-fi room covered in slime. She says, reaching for her gun, 'Captain? Is there any way you would consider giving me the pearl and leaving this ship alone?' The alien captain tenses toward his gun as well and asks, 'Are you going to make me?' She says, 'I would rather not.' He replies, 'And I, similarly, would rather not, Ebenezabeth.' Suddenly she draws and shoots.
     - page: lmg2
-      pagealt: little match girl comic page 2
+      pagealt: The captain skitters up the wall and aims at Ebenezabeth, who skids behind a pillar to avoid his shots. She waits for her moment then shoots the pipe next to him, which releases a burst of cold and stuns him.
     - page: lmg3
-      pagealt: little match girl comic page 3
+      pagealt: Ebenezabeth shoots again, hitting the captain's abdomen. He slides to the ground and groans, 'Right in the spinneret! That's not very honorable.' Ebenezabeth helps him stand up and replies, 'Neither is plundering a ship full of frozen people.' He snickers, 'Well you can't hold pirates to the same--' but is cut off by a spasm of pain.
     - page: lmg4
-      pagealt: little match girl comic page 4
-
-  - comic: comic3
-    pages:
-    - page: defluff1
-      pagealt: disco elysium fluff comic page 1
-    - page: defluff2
-      pagealt: disco elysium fluff comic page 2
+      pagealt: Ebenezabeth points at the captain's gunshot wound and quips, 'You'd better have your ship's doctor take a look at that.' The captain sulks away but Ebenezabeth taps him on the epaulette. He shouts, 'What is it?' She holds out a hand and says, 'Aren't you forgetting something?' Grumbling, the captain drops the pearl in Ebenezabeth's hand and skitters into a duct.
 
   - comic: comic2
-    plus: onclick="plusDivs(1, 1)"
-    minus: onclick="plusDivs(-1, 1)"
     pages:
     - page: algorithm1
-      pagealt: Captcha comic 1
+      pagealt: A person sits at er computer desk in er bedroom and clicks on the 'I'm not a robot' captcha on a login screen. Se waits for the captcha to load, then grips the monitor in shock. In lieu of normal captcha images, 9 distorted AI facsimiles of er face stare back. The captcha reads, 'Select all squares with you'.
     - page: algorithm2
-      pagealt: Captcha comic 2
+      pagealt: One of the AI faces starts to move in the frame while the person stares in horror. Suddenly, it shoots out a hand with too many fingers, grabbing through the screen toward the person, who is yanked into the monitor.
     - page: algorithm3
-      pagealt: Captcha comic 3
+      pagealt: The person dizzily looks up behind a 9 panel window, when a mouse cursor appears and starts clicking on the panels. From their perspective, they see the AI figure now in the real world, grinning back at them. The AI clicks the mouse with its distorted, countless-fingered hand, and a checkbox appears next to the captcha.
