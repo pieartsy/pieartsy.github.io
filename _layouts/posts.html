@@ -20,6 +20,9 @@ layout: wrapper
             {% if page.update_date %}
                 <p class="flex-centered subtitle">Updated: {{ page.update_date | date: "%B %d, %Y" }}</p>
             {% endif %}
+            {% if page.original_date %}
+                <p class="flex-centered subtitle">Originally posted: {{ page.original_date | date: "%B %d, %Y" }}</p>
+            {% endif %}
         </header>
             <!--more-->
         <div class="columns col-sm-11 col-10 col-mx-auto post">
