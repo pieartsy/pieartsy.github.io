@@ -10,27 +10,35 @@ outside:
   - name: Interactive Fiction Technology Foundation (IFTF)
     link: https://iftechfoundation.org
     desc: A foundation dedicated to maintaining, improving, and preserving interactive fiction.
-    logo-alt: IFTF logo
+    logo-alt:
     logo-src: iftf.svg
     logo-height: 40
 
   - name: The Rosebush Magazine
     link: https://the-rosebush.com/
     desc: The interactive fiction literary magazine that I'm an editor on.
-    logo-alt: Rosebush logo
+    logo-alt:
     logo-src: rosebush.jpg
     logo-height: 40
 
   - name: Cartoonist Coop
     link: https://cartoonist.coop
     desc: A guild for cartoonists and comic creators to collectively organize <i>and</i> hang out.<br>
-    logo-alt: Cartoonist Coop logo
+    logo-alt:
     logo-src: coop_logo.svg
     logo-height: 50
 
   - name: Jekyll
     link: https://jekyllrb.com
     desc: The static site generator I used to make this website.
-    logo-alt: Jekyll logo
+    logo-alt:
     logo-src: jekyll.png
     logo-height: 40
+
+  - name: Alt text for comics
+    link: https://veroniiiica.com/how-to-write-alt-text-digital-comics/
+    desc: A guide on writing alt text for comics.
+
+  - name: Are my colors accessible
+    link: https://www.aremycolorsaccessible.com/palette
+    desc: A great site for checking that color palettes are accessible.
