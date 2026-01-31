@@ -55,23 +55,6 @@ let myCarousel = (function () {
                 nextSlide(true);
             });
 
-
-        // Add a live region to announce the slide number when using the previous/next buttons
-        const liveregion = document.getElementById(`${settings.id}-liveregion`);
-
-        // After the slide transitioned, remove the in-transition class, if focus should be set, set the tabindex attribute to -1 and focus the slide.
-        slides[0].parentNode.addEventListener('transitionend', function (event) {
-            const slide = event.target;
-            removeClass(slide, 'in-transition');
-            if (hasClass(slide, 'current')) {
-                if (setFocus) {
-                    slide.setAttribute('tabindex', '-1');
-                    slide.focus();
-                    setFocus = false;
-                }
-            }
-        });
-
         // Set the index (=current slide) to 0 – the first slide
         index = 0;
         setSlides(index);
@@ -113,15 +96,27 @@ let myCarousel = (function () {
             slides[i].setAttribute('aria-hidden', 'true');
         }
 
+        let slideNextImg, slidePrevImg, slideCurrentImg;
+
         // Add classes to the previous, next and current slide
-        slides[new_next].className = 'next slide' + ((transition == 'next') ? ' in-transition' : '');
+        slides[new_next].className = 'next slide';
         slides[new_next].setAttribute('aria-hidden', 'true');
 
-        slides[new_prev].className = 'prev slide' + ((transition == 'prev') ? ' in-transition' : '');
+        slideNextImg = slides[new_next].getElementsByTagName('img')[0];
+        slideNextImg.removeAttribute('tabindex');
+
+        slides[new_prev].className = 'prev slide';
         slides[new_prev].setAttribute('aria-hidden', 'true');
+
+        slidePrevImg = slides[new_prev].getElementsByTagName('img')[0];
+        slidePrevImg.removeAttribute('tabindex');
 
         slides[new_current].className = 'current slide';
         slides[new_current].removeAttribute('aria-hidden');
+
+        slideCurrentImg = slides[new_current].getElementsByTagName('img')[0];
+        slideCurrentImg.setAttribute('tabindex', '-1');
+        slideCurrentImg.focus();
 
         // Update the text in the live region which is then announced by screen readers.
         if (announceItem) {
@@ -186,6 +181,6 @@ let carousels = {
 
 Object.keys(carousels).forEach(key => {
     carousels[key].init({
-        id: key,
+        id: key
     });
 })
