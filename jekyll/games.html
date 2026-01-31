@@ -15,7 +15,7 @@ description: The interactive fiction and TTRPGs of Aster Fialla.
         <div class="column col-4 col-md-12">
             <section class="card" id="{{if.directory}}">
                 <h3 class="card-header">{{if.title}}</h3>
-                <img src="{{site.url}}/assets{{if.directory}}{{if.image}}" class="img-round card-image" alt="Cover art for {{if.title}}.">
+                <img src="{{site.url}}/assets{{if.directory}}{{if.image}}" class="img-round card-image" alt="{{if.alt}}.">
                 <p class="card-body">{{if.description}}</p>
                 <footer class="card-footer p-centered"><a href="{{if.url}}">Play <i>{{if.title}}</i></a></footer>
             </section>
@@ -32,7 +32,7 @@ description: The interactive fiction and TTRPGs of Aster Fialla.
         <div class="column col-4 col-md-12">
             <section class="card" id="{{ttrpg.directory}}">
                 <h3 class="card-header">{{ttrpg.title}}</h3>
-                <img src="{{site.url}}/assets{{ttrpg.directory}}{{ttrpg.image}}" class="img-round card-img" alt="Cover art for {{ttrpg.title}}">
+                <img src="{{site.url}}/assets{{ttrpg.directory}}{{ttrpg.image}}" class="img-round card-img" alt="{{ttrpg.alt}}">
                 <p class="card-body">{{ttrpg.description}}</p>
                 <footer class="card-footer p-centered"><a class="btn btn-link darker" href="{{ttrpg.url}}">Read <i>{{ttrpg.title}}</i></a></footer>
             </section>
@@ -51,7 +51,7 @@ description: The interactive fiction and TTRPGs of Aster Fialla.
         <div class="column col-4 col-md-12">
             <section class="card" id="{{piece.directory}}">
                 <h3 class="card-header">{{piece.title}}</h3>
-                <img src="{{site.url}}/assets{{piece.directory}}{{piece.image}}" class="img-round card-img" alt="Cover art for {{piece.title}}">
+                <img src="{{site.url}}/assets{{piece.directory}}{{piece.image}}" class="img-round card-img" alt="{{piece.alt}}">
                 <p class="card-body">{{ttrpg.description}}</p>
                 <footer class="card-footer p-centered"><a class="btn btn-link darker" href="{{piece.url}}">Explore <i>{{piece.title}}</i></a></footer>
             </section>

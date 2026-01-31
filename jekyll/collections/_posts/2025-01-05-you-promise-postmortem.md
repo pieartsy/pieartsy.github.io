@@ -4,7 +4,7 @@ date: 2025-01-05
 tags: interactive-fiction you-promise
 category: devlogs
 image: "promise.png"
-alt: "The cover for You Promise. It is a fortune cookie fortune with the words 'You Promise' on it, and a series of numbers."
+alt: "A fortune cookie fortune with the words 'You Promise' on it, and a series of numbers."
 layout: posts
 ---
 A postmortem about You promise. Full spoilers!

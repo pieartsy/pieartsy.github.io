@@ -2,6 +2,7 @@
 slug: reflecting-my-face
 title: Reflecting my face in the mirror
 image: /reflecting.png
+alt: A mirror.
 directory: /games/pieces/reflecting
 game: reflecting.html
 zip: reflecting.zip

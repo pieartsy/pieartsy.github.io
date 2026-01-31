@@ -1,6 +1,7 @@
 ---
 title: Compassionate Simulation
 image: /compsim.png
+alt: A brain made out of circuits.
 directory: /games/pieces/compsim
 game: compsim.html
 zip: compassionate-simulation.zip
