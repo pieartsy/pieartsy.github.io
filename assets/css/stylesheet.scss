@@ -6,14 +6,19 @@
 /** 1. Change the default font family in all browsers (opinionated). 2. Correct the line height in all browsers. 3. Prevent adjustments of font size after orientation changes in IE on Windows Phone and in iOS. */
 /* Document ========================================================================== */
 :root {
-  --lightbg : #fae7eb;
+  --light : #fae7eb;
+  --light-filter: invert(82%) sepia(2%) saturate(1362%) hue-rotate(302deg) brightness(115%) contrast(96%);
   --sectionone: #FFB3C6;
   --sectiontwo: #ffceda;
   --sectionthree: #FFC7D3;
   --brighttext: #cf284f;
+  --brighttext-filter: invert(28%) sepia(82%) saturate(3354%) hue-rotate(330deg) brightness(83%) contrast(94%);
   --darktext: #53030d;
+  --darktext-filter: invert(7%) sepia(70%) saturate(6505%) hue-rotate(347deg) brightness(63%) contrast(101%);
   --purble: #8f31fa;
+  --purble-filter: invert(23%) sepia(93%) saturate(2450%) hue-rotate(258deg) brightness(95%) contrast(107%);
   --desaturated: #745a8c;
+
 }
 
 @font-face {
@@ -82,7 +87,7 @@ main > header,
 nav
 {
   display: block;
-  background-color: var(--lightbg);
+  background-color: var(--light);
 }
 
 footer {
@@ -785,7 +790,7 @@ html:lang(ko),
 }
 
 .btn.btn-link {
-  background: var(--lightbg);
+  background: var(--light);
   border-color:transparent;
   color: black;
   border-radius: 2em;
@@ -798,7 +803,7 @@ html:lang(ko),
 .btn.btn-link:hover,
 .btn.btn-link:active {
   background-color: var(--brighttext);
-  color: var(--lightbg);
+  color: var(--light);
   border: black solid 2px;
   font-weight:bold;
 }
@@ -1143,7 +1148,7 @@ textarea.form-input.input-sm {
 .form-checkbox .form-icon,
 .form-radio .form-icon,
 .form-switch .form-icon {
-  border: .05rem solid var(--lightbg);
+  border: .05rem solid var(--light);
   cursor: pointer;
   display: inline-block;
   position: absolute;
@@ -1516,7 +1521,7 @@ pre {
   padding: 1rem;
   overflow: auto;
   code {
-    color: var(--lightbg)
+    color: var(--light)
   }
 }
 
@@ -2423,8 +2428,8 @@ summary.accordion-header::-webkit-details-marker {
 }
 
 .card {
-  background: var(--lightbg);
-  border: .05rem solid var(--lightbg);
+  background: var(--light);
+  border: .05rem solid var(--light);
   border-radius: 2em;
   margin: 1rem .2rem;
   display: flex;
@@ -2544,7 +2549,7 @@ summary.accordion-header::-webkit-details-marker {
 }
 
 .menu {
-  background: var(--lightbg);
+  background: var(--light);
   border-radius: 1em;
   box-shadow: 0 .05rem .2rem rgba(48, 55, 66, .3);
   list-style: none;
@@ -2574,7 +2579,7 @@ summary.accordion-header::-webkit-details-marker {
 }
 
 .menu .menu-item a:hover, .menu .menu-item a:focus {
-  color: var(--lightbg);
+  color: var(--light);
 }
 
 
@@ -3843,6 +3848,8 @@ dialog[open] {
   gap: 2em;
 }
 
+// contact links in the header and footer
+
 a.contact img {
   height: 1.2em;
   width: 1.2em;
@@ -3857,7 +3864,11 @@ a.header-link, a.contact {
 
 a.header-link:hover, a.contact:hover {
   background: var(--brighttext);
-  color: var(--lightbg);
+  color: var(--light);
+}
+
+a.header-link:hover img, a.contact:not(.rss):hover img, a.contact:not(.rss):focus img {
+  filter: var(--light-filter)
 }
 
 .header-title {
@@ -3927,7 +3938,7 @@ details > summary {
 
 .section4 {
   padding: 2.5em 0;
-  background-color: var(--lightbg)
+  background-color: var(--light)
 }
 
 /*thumbnail grid on art page*/
@@ -4056,4 +4067,25 @@ img#coverart {
 figcaption {
   font-style: italic;
   text-align: center;
+}
+
+// arrows
+a .arrow {
+  height: .5em;
+  margin: .2em;
+  filter: var(--brighttext-filter);
+  &.left-arrow {
+    rotate: 180deg;
+    border-top: solid 4px;
+  }
+  &.right-arrow {
+    border-bottom: solid 4px;
+  }
+  &:hover {
+    filter: var(--darktext-filter);
+  }
+}
+
+div.webring a .arrow {
+  height: unset;
 }
