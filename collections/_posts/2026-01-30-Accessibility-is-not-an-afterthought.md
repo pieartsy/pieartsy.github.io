@@ -251,7 +251,7 @@ Descriptions are taken from the MDN documentation, plus some additional explanat
 Alt text is a text description of non-text content (such as images or videos) on a webpage. [A good guide on alt text can be found on the WebAIM site](https://webaim.org/techniques/alttext/), but there’s plenty of others on the internet. Now, obviously alt text is helpful for screen readers and blind people, and that is reason enough. From a business perspective, alt text also boosts your site’s SEO. But those aren’t the only reasons! Say you have a slow internet connection and an image doesn’t load, the image `src` attribute has a typo, or the web page had a hotlink that broke due to link rot. Without alt text, you would be presented with this:
 <div style="border:black solid 2px;padding:2em">
 <p><i>What are the roots that clutch, what branches grow out of this stony rubbish?</i></p>
-<img width="100" height="100" src="son of man you can not say or guess">
+<img width="100" height="100" src="son of man you can not say or guess" aria-label="Intentionally broken image with no alt text">
 </div>
 
 However, with alt text, you might get something like this:
