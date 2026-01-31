@@ -44,6 +44,7 @@ defaults:
       title: Aster Fialla
       directory: /images
       image: /portraits.png
+      alt: "A photo of Aster, a person with pink hair, surrounded by illustrations of erself in many different art styles."
   -
     scope:
       path: ""

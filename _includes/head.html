@@ -24,4 +24,8 @@
 <meta property="og:type"  content="{{ page.type }}" />
 <meta property="og:locale"  content="en_US" />
 <meta name="twitter:card" content="summary_large_image" />
+{% if page.alt %}
+<meta property="twitter:image:alt" content="{{ page.alt }}">
+<meta property="og:image:alt " content="{{ page.alt }}"/>
+{% endif %}
 <script type="text/javascript" language="JavaScript" src="{{site.url}}/assets/js/dialog.js"></script>
