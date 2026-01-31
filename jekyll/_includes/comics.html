@@ -1,5 +1,5 @@
 {% for comic in site.data.pics.comics %}
-    <div id="{{comic.comic}}" class="carousel">
+    <div id="{{comic.comic}}" class="carousel column col-lg-5 col-md-12">
         <button class="btn btn-link prev" id="{{comic.comic}}-prev"><span class="visually-hidden">Previous </span>&#10094;</button>
         <ol class="comic">
             {% for page in comic.pages %}
@@ -7,7 +7,7 @@
                     <img class="{{comic.comic}} img-responsive img-round" alt="{{ page.pagealt }}"
                          src="assets\images\illos\{{ page.page }}.png">
                 </li>
-        {% endfor %}
+            {% endfor %}
         </ol>
         <button class="btn btn-link next" id="{{comic.comic}}-next"><span class="visually-hidden">Next </span>&#10095;</button>
         <div id="{{comic.comic}}-liveregion" aria-live="polite" aria-atomic="true" class="visually-hidden liveregion"></div>
