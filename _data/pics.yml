@@ -128,6 +128,8 @@ artprojs:
 
 comics:
   - comic: comic1
+    title: "The Little Match Girl 4"
+    description: 'A prize for the 3rd place winner of the Interactive Fiction Competition in 2023, <a href="https://ifdb.org/viewgame?id=9zlxggntiap0wjrv">The Little Match Girl 4: Crown of Pearls</a> by <a href="https://rcveeder.net/">Ryan Veeder</a>.'
     pages:
     - page: lmg1
       pagealt: A woman in a pirate coat has a gun showdown with a lizardesque alien with the lower body of a beetle, in a sci-fi room covered in slime. She says, reaching for her gun, 'Captain? Is there any way you would consider giving me the pearl and leaving this ship alone?' The alien captain tenses toward his gun as well and asks, 'Are you going to make me?' She says, 'I would rather not.' He replies, 'And I, similarly, would rather not, Ebenezabeth.' Suddenly she draws and shoots.
@@ -139,6 +141,8 @@ comics:
       pagealt: Ebenezabeth points at the captain's gunshot wound and quips, 'You'd better have your ship's doctor take a look at that.' The captain sulks away but Ebenezabeth taps him on the epaulette. He shouts, 'What is it?' She holds out a hand and says, 'Aren't you forgetting something?' Grumbling, the captain drops the pearl in Ebenezabeth's hand and skitters into a duct.
 
   - comic: comic2
+    title: "Captcha comic"
+    description: A submission to Thank You For Joining the Algorithm, a magazine by Tenebrous Press celebrating the connection between humanity and creativity in the face of algorithmic dominion.
     pages:
     - page: algorithm1
       pagealt: A person sits at er computer desk in er bedroom and clicks on the 'I'm not a robot' captcha on a login screen. Se waits for the captcha to load, then grips the monitor in shock. In lieu of normal captcha images, 9 distorted AI facsimiles of er face stare back. The captcha reads, 'Select all squares with you'.

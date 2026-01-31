@@ -1,17 +1,24 @@
 {% for comic in site.data.pics.comics %}
-    <div id="{{comic.comic}}" class="carousel column col-lg-5 col-md-12">
-        <button class="btn btn-link prev" id="{{comic.comic}}-prev"><span class="visually-hidden">Previous </span>&#10094;</button>
-        <ol class="comic">
-            {% for page in comic.pages %}
-                <li class="comic-page">
-                    <img class="{{comic.comic}} img-responsive img-round" alt="{{ page.pagealt }}"
-                         src="assets\images\illos\{{ page.page }}.png">
-                </li>
-            {% endfor %}
-        </ol>
-        <button class="btn btn-link next" id="{{comic.comic}}-next"><span class="visually-hidden">Next </span>&#10095;</button>
-        <div id="{{comic.comic}}-liveregion" aria-live="assertive" class="visually-hidden liveregion"></div>
+    <div id="{{comic.comic}}" class="carousel columns col-6 col-md-12">
+        <h3 class="column col-12">{{comic.title}}</h3>
+        <p class="column col-12 subtitle">{{comic.description}}</p>
+        <div class="column flex-centered">
+            <button class="btn btn-link prev" id="{{comic.comic}}-prev"><span class="visually-hidden">Previous </span>&#10094;</button>
+        </div>
+            <ol class="comic column col-10 col-xs-9">
+                {% for page in comic.pages %}
+                    <li class="comic-page">
+                        <img class="{{comic.comic}} img-responsive img-round" alt="{{ page.pagealt }}"
+                             src="assets\images\illos\{{ page.page }}.png">
+                    </li>
+                {% endfor %}
+            </ol>
+        <div class="column flex-centered">
+            <button class="btn btn-link next" id="{{comic.comic}}-next"><span class="visually-hidden">Next </span>&#10095;</button>
+        </div>
+        <div id="{{comic.comic}}-liveregion" aria-live="assertive" class="liveregion column col-12 col-mx-auto flex-centered">Page 1 of {{comic.pages.size}}</div>
     </div>
+
 {% endfor %}
 
 <script type="text/javascript" language="JavaScript" src="{{site.url}}/assets/js/carousel.js"></script>
