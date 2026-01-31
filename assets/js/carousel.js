@@ -12,24 +12,6 @@ let myCarousel = (function () {
     // Initial variables
     let carousel, slides, index, settings, setFocus;
 
-    // Helper function: Remove Class
-    function removeClass(el, className) {
-        if (el.classList) {
-            el.classList.remove(className);
-        } else {
-            el.className = el.className.replace(new RegExp('(^|\\b)' + className.split(' ').join('|') + '(\\b|$)', 'gi'), ' ');
-        }
-    }
-
-    // Helper function: Test if element has a specific class
-    function hasClass(el, className) {
-        if (el.classList) {
-            return el.classList.contains(className);
-        } else {
-            return new RegExp('(^| )' + className + '( |$)', 'gi').test(el.className);
-        }
-    }
-
     // Initialization for the carousel
     // Argument: set = an object of settings
     // Possible settings:
@@ -62,16 +44,10 @@ let myCarousel = (function () {
 
     // Function to set a slide the current slide
     function setSlides(new_current, setFocusHere, transition, announceItemHere) {
-        // Focus, transition and announce Item are optional parameters.
-        // focus denotes if the focus should be set after the
-        // carousel advanced to slide number new_current.
-        // transition denotes if the transition is going into the
-        // next or previous direction.
         // If announceItem is set to true, the live region’s text is changed (and announced)
         // Here defaults are set:
 
         setFocus = typeof setFocusHere !== 'undefined' ? setFocusHere : false;
-        transition = typeof transition !== 'undefined' ? transition : 'none';
         let announceItem = typeof announceItemHere !== 'undefined' ? announceItemHere : false;
 
         new_current = parseFloat(new_current);
@@ -114,6 +90,7 @@ let myCarousel = (function () {
         slides[new_current].className = 'current slide';
         slides[new_current].removeAttribute('aria-hidden');
 
+        // Manually focus the current slide so its alt text is read aloud
         slideCurrentImg = slides[new_current].getElementsByTagName('img')[0];
         slideCurrentImg.setAttribute('tabindex', '-1');
         slideCurrentImg.focus();
@@ -125,7 +102,6 @@ let myCarousel = (function () {
 
         // Set the global index to the new current value
         index = new_current;
-
     }
 
     // Function to advance to the next slide
