@@ -1487,6 +1487,9 @@ input.disabled + .form-icon {
 pre {
   white-space: pre-wrap;
   padding: 1rem;
+  code {
+    color: var(--lightbg)
+  }
 
 }
 
