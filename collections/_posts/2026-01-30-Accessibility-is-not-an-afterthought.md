@@ -1,5 +1,6 @@
 ---
 title: Accessibility is not an afterthought
+slug: accessibility
 tags: coding
 date: 2026-01-30
 category: essays
