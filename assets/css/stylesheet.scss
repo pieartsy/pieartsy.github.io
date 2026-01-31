@@ -405,6 +405,30 @@ h1,
   font-size: 4rem;
 }
 
+@media(max-width: 600px) {
+  h1 {
+    font-size: 3rem !important;
+  }
+
+  h2 {
+    font-size: 2.5rem !important;
+  }
+}
+
+@media(max-width: 496px) {
+  h1, .h1 {
+    font-size: 2.3rem !important;
+  }
+
+  h2 {
+    font-size: 2rem !important;
+  }
+
+  h3 {
+    font-size: 1.7rem !important;
+  }
+}
+
 h2,
 .h2 {
   font-size: 3rem;
@@ -1484,11 +1508,13 @@ input.disabled + .form-icon {
   line-height: 1.25;
   padding: .1rem .2rem;
   font-weight: bold;
+  word-break: break-all;
 }
 
 pre {
   white-space: pre-wrap;
   padding: 1rem;
+  overflow: auto;
   code {
     color: var(--lightbg)
   }
