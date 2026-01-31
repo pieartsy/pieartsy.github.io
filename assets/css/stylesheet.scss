@@ -773,8 +773,10 @@ html:lang(ko),
 .btn.btn-link:focus,
 .btn.btn-link:hover,
 .btn.btn-link:active {
-  background-color: var(--brighttext) !important;
-  border: black solid 3px;
+  background-color: var(--brighttext);
+  color: var(--lightbg);
+  border: black solid 2px;
+  font-weight:bold;
 }
 
 .btn.btn-link.darker {
@@ -1490,7 +1492,6 @@ pre {
   code {
     color: var(--lightbg)
   }
-
 }
 
 figure.highlight {
@@ -2546,7 +2547,7 @@ summary.accordion-header::-webkit-details-marker {
   background: var(--brighttext);
 }
 
-.menu .menu-item a:hover {
+.menu .menu-item a:hover, .menu .menu-item a:focus {
   color: var(--lightbg);
 }
 
