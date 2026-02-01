@@ -24,6 +24,7 @@
   background: white;
 }
 
+/* Undoing table code from https://codepen.io/aarongustafson/pen/ARWyLv and further modified */
 
 @media (max-width: 600px) {
   table {
@@ -99,7 +100,6 @@
       }
       &:last-child {
         border: none;
-
       }
     }
     &:last-child {
