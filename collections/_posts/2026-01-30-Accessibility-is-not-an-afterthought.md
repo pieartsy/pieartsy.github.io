@@ -39,64 +39,64 @@ Some of the commonly-needed semantic elements (taken from the MDN documentation 
   </thead>
   <tbody>
     <tr>
-      <td><code class="language-plaintext highlighter-rouge">&lt;a&gt;</code></td>
-      <td>Together with its href attribute, creates a hyperlink to web pages, files, email addresses, locations within the current page, or anything else a URL can address.</td>
+      <td data-title="Element"><code class="language-plaintext highlighter-rouge">&lt;a&gt;</code></td>
+      <td data-title="Description">Together with its href attribute, creates a hyperlink to web pages, files, email addresses, locations within the current page, or anything else a URL can address.</td>
     </tr>
     <tr>
-      <td><code class="language-plaintext highlighter-rouge">&lt;button&gt;</code></td>
-      <td>An interactive element activated by a user with a mouse, keyboard, finger, voice command, or other assistive technology. Once activated, it performs an action, such as submitting a form or opening a dialog.</td>
+      <td data-title="Element"><code class="language-plaintext highlighter-rouge">&lt;button&gt;</code></td>
+      <td data-title="Description">An interactive element activated by a user with a mouse, keyboard, finger, voice command, or other assistive technology. Once activated, it performs an action, such as submitting a form or opening a dialog.</td>
     </tr>
     <tr>
-      <td><code class="language-plaintext highlighter-rouge">&lt;details&gt;</code></td>
-      <td>Creates a disclosure widget in which information is visible only when the widget is toggled into an “open” state. A summary or label must be provided using the <code class="language-plaintext highlighter-rouge">&lt;summary&gt;</code> element.</td>
+      <td data-title="Element"><code class="language-plaintext highlighter-rouge">&lt;details&gt;</code></td>
+      <td data-title="Description">Creates a disclosure widget in which information is visible only when the widget is toggled into an “open” state. A summary or label must be provided using the <code class="language-plaintext highlighter-rouge">&lt;summary&gt;</code> element.</td>
     </tr>
     <tr>
-      <td><code class="language-plaintext highlighter-rouge">&lt;dialog&gt;</code></td>
-      <td>Represents a dialog box or other interactive component, such as a dismissible alert, inspector, or subwindow.</td>
+      <td data-title="Element"><code class="language-plaintext highlighter-rouge">&lt;dialog&gt;</code></td>
+      <td data-title="Description">Represents a dialog box or other interactive component, such as a dismissible alert, inspector, or subwindow.</td>
     </tr>
     <tr>
-      <td><code class="language-plaintext highlighter-rouge">&lt;form&gt;</code></td>
-      <td>Represents a document section containing interactive controls for submitting information.</td>
+      <td data-title="Element"><code class="language-plaintext highlighter-rouge">&lt;form&gt;</code></td>
+      <td data-title="Description">Represents a document section containing interactive controls for submitting information.</td>
     </tr>
     <tr>
-      <td><code class="language-plaintext highlighter-rouge">&lt;h1&gt;</code>, <code class="language-plaintext highlighter-rouge">&lt;h2&gt;</code>, <code class="language-plaintext highlighter-rouge">&lt;h3&gt;</code>, <code class="language-plaintext highlighter-rouge">&lt;h4&gt;</code>, <code class="language-plaintext highlighter-rouge">&lt;h5&gt;</code>, <code class="language-plaintext highlighter-rouge">&lt;h6&gt;</code></td>
-      <td>Represent six levels of section headings. <code class="language-plaintext highlighter-rouge">&lt;h1&gt;</code> is the highest section level and <code class="language-plaintext highlighter-rouge">&lt;h6&gt;</code> is the lowest.</td>
+      <td data-title="Element"><code class="language-plaintext highlighter-rouge">&lt;h1&gt;</code>, <code class="language-plaintext highlighter-rouge">&lt;h2&gt;</code>, <code class="language-plaintext highlighter-rouge">&lt;h3&gt;</code>, <code class="language-plaintext highlighter-rouge">&lt;h4&gt;</code>, <code class="language-plaintext highlighter-rouge">&lt;h5&gt;</code>, <code class="language-plaintext highlighter-rouge">&lt;h6&gt;</code></td>
+      <td data-title="Description">Represent six levels of section headings. <code class="language-plaintext highlighter-rouge">&lt;h1&gt;</code> is the highest section level and <code class="language-plaintext highlighter-rouge">&lt;h6&gt;</code> is the lowest.</td>
     </tr>
     <tr>
-      <td><code class="language-plaintext highlighter-rouge">&lt;input&gt;</code></td>
-      <td>Used to create interactive controls for web-based forms to accept data from the user; a wide variety of types of input data and control widgets are available, depending on the device and user agent. The <code class="language-plaintext highlighter-rouge">&lt;input&gt;</code> element is one of the most powerful and complex in all of HTML due to the sheer number of combinations of input types and attributes.</td>
+      <td data-title="Element"><code class="language-plaintext highlighter-rouge">&lt;input&gt;</code></td>
+      <td data-title="Description">Used to create interactive controls for web-based forms to accept data from the user; a wide variety of types of input data and control widgets are available, depending on the device and user agent. The <code class="language-plaintext highlighter-rouge">&lt;input&gt;</code> element is one of the most powerful and complex in all of HTML due to the sheer number of combinations of input types and attributes.</td>
     </tr>
     <tr>
-      <td><code class="language-plaintext highlighter-rouge">&lt;label&gt;</code></td>
-      <td>Represents a caption for an item in a user interface.</td>
+      <td data-title="Element"><code class="language-plaintext highlighter-rouge">&lt;label&gt;</code></td>
+      <td data-title="Description">Represents a caption for an item in a user interface.</td>
     </tr>
     <tr>
-      <td><code class="language-plaintext highlighter-rouge">&lt;nav&gt;</code></td>
-      <td>Represents a section of a page whose purpose is to provide navigation links, either within the current document or to other documents. Common examples of navigation sections are menus, tables of contents, and indexes.</td>
+      <td data-title="Element"><code class="language-plaintext highlighter-rouge">&lt;nav&gt;</code></td>
+      <td data-title="Description">Represents a section of a page whose purpose is to provide navigation links, either within the current document or to other documents. Common examples of navigation sections are menus, tables of contents, and indexes.</td>
     </tr>
     <tr>
-      <td><code class="language-plaintext highlighter-rouge">&lt;ol&gt;</code></td>
-      <td>Represents an ordered list of items — typically rendered as a numbered list.</td>
+      <td data-title="Element"><code class="language-plaintext highlighter-rouge">&lt;ol&gt;</code></td>
+      <td data-title="Description">Represents an ordered list of items — typically rendered as a numbered list.</td>
     </tr>
     <tr>
-      <td><code class="language-plaintext highlighter-rouge">&lt;p&gt;</code></td>
-      <td>Represents a paragraph. Paragraphs are usually represented in visual media as blocks of text separated from adjacent blocks by blank lines and/or first-line indentation, but HTML paragraphs can be any structural grouping of related content, such as images or form fields.</td>
+      <td data-title="Element"><code class="language-plaintext highlighter-rouge">&lt;p&gt;</code></td>
+      <td data-title="Description">Represents a paragraph. Paragraphs are usually represented in visual media as blocks of text separated from adjacent blocks by blank lines and/or first-line indentation, but HTML paragraphs can be any structural grouping of related content, such as images or form fields.</td>
     </tr>
     <tr>
-      <td><code class="language-plaintext highlighter-rouge">&lt;search&gt;</code></td>
-      <td>Represents a part that contains a set of form controls or other content related to performing a search or filtering operation.</td>
+      <td data-title="Element"><code class="language-plaintext highlighter-rouge">&lt;search&gt;</code></td>
+      <td data-title="Description">Represents a part that contains a set of form controls or other content related to performing a search or filtering operation.</td>
     </tr>
     <tr>
-      <td><code class="language-plaintext highlighter-rouge">&lt;section&gt;</code></td>
-      <td>Represents a generic standalone section of a document, which doesn’t have a more specific semantic element to represent it. Sections should always have a heading, with very few exceptions.</td>
+      <td data-title="Element"><code class="language-plaintext highlighter-rouge">&lt;section&gt;</code></td>
+      <td data-title="Description">Represents a generic standalone section of a document, which doesn’t have a more specific semantic element to represent it. Sections should always have a heading, with very few exceptions.</td>
     </tr>
     <tr>
-      <td><code class="language-plaintext highlighter-rouge">&lt;table&gt;</code></td>
-      <td>Represents tabular data—that is, information presented in a two-dimensional table comprised of rows and columns of cells containing data.</td>
+      <td data-title="Element"><code class="language-plaintext highlighter-rouge">&lt;table&gt;</code></td>
+      <td data-title="Description">Represents tabular data—that is, information presented in a two-dimensional table comprised of rows and columns of cells containing data.</td>
     </tr>
     <tr>
-      <td><code class="language-plaintext highlighter-rouge">&lt;ul&gt;</code></td>
-      <td>Represents an unordered list of items, typically rendered as a bulleted list.</td>
+      <td data-title="Element"><code class="language-plaintext highlighter-rouge">&lt;ul&gt;</code></td>
+      <td data-title="Description">Represents an unordered list of items, typically rendered as a bulleted list.</td>
     </tr>
   </tbody>
 </table>
@@ -211,7 +211,7 @@ ARIA can **override the *semantic information*** of an element, even if the func
 [According to the WebAIM 2025 report on accessibility](https://webaim.org/projects/million/), <q>Home pages with ARIA present had over twice as many errors (57 on average) than pages without ARIA (27 on average).</q> If you don’t know how to use ARIA, don’t put it in at all.
 
 ### A select few useful ARIA
-Descriptions are taken from the MDN documentation, plus some additional explanation by me in parentheses.
+Descriptions are taken from the MDN documentation, plus some additional explanation by me in _(parentheses/italics)_.
 
 <table class="table table-striped">
   <thead>
@@ -222,28 +222,28 @@ Descriptions are taken from the MDN documentation, plus some additional explanat
   </thead>
   <tbody>
     <tr>
-      <td><code class="language-plaintext highlighter-rouge">aria-describedby</code></td>
-      <td>The global <code class="language-plaintext highlighter-rouge">aria-describedby</code> attribute identifies the element (or elements) that describes the element on which the attribute is set.The <code class="language-plaintext highlighter-rouge">aria-describedby</code> attribute lists the ids of the elements that describe the object. It is used to establish a relationship between widgets or groups and the text that describes them.The <code class="language-plaintext highlighter-rouge">aria-describedby</code> attribute is not limited to form controls. It can also be used to associate static text with widgets, groups of elements, regions that have a heading, definitions, and more. The <code class="language-plaintext highlighter-rouge">aria-describedby</code> attribute can be used with semantic HTML elements and with elements that have an ARIA role.(This attribute is very similar to <code class="language-plaintext highlighter-rouge">aria-labelledby</code>, but can be more verbose in its explanation.)</td>
+      <td data-title="ARIA"><code class="language-plaintext highlighter-rouge">aria-describedby</code></td>
+      <td data-title="Description"><p>The global <code class="language-plaintext highlighter-rouge">aria-describedby</code> attribute identifies the element (or elements) that describes the element on which the attribute is set.The <code class="language-plaintext highlighter-rouge">aria-describedby</code> attribute lists the ids of the elements that describe the object. It is used to establish a relationship between widgets or groups and the text that describes them.The <code class="language-plaintext highlighter-rouge">aria-describedby</code> attribute is not limited to form controls. It can also be used to associate static text with widgets, groups of elements, regions that have a heading, definitions, and more. The <code class="language-plaintext highlighter-rouge">aria-describedby</code> attribute can be used with semantic HTML elements and with elements that have an ARIA role.</p><p><i>(This attribute is very similar to <code class="language-plaintext highlighter-rouge">aria-labelledby</code>, but can be more verbose in its explanation.)</i></p></td>
     </tr>
     <tr>
-      <td><code class="language-plaintext highlighter-rouge">aria-haspopup</code></td>
-      <td>The <code class="language-plaintext highlighter-rouge">aria-haspopup</code> attribute indicates the availability and type of interactive popup element that can be triggered by the element on which the attribute is set.(This is most relevant when there’s a visual indicator, like a kebab, chevron, or hamburger icon, that makes it obvious to sighted users that there’s a popup. If it’s obvious to them, it should be obvious to a screen reader as well.)</td>
+      <td data-title="ARIA"><code class="language-plaintext highlighter-rouge">aria-haspopup</code></td>
+      <td data-title="Description"><p>The <code class="language-plaintext highlighter-rouge">aria-haspopup</code> attribute indicates the availability and type of interactive popup element that can be triggered by the element on which the attribute is set.</p><p><i>(This is most relevant when there’s a visual indicator, like a kebab, chevron, or hamburger icon, that makes it obvious to sighted users that there’s a popup. If it’s obvious to them, it should be obvious to a screen reader as well.)</i></p></td>
     </tr>
     <tr>
-      <td><code class="language-plaintext highlighter-rouge">aria-label</code></td>
-      <td>The <code class="language-plaintext highlighter-rouge">aria-label</code> attribute defines a string value that can be used to name an element.Sometimes, the default accessible name of an element is missing or the accessible name does not accurately describe the contents of the element and there is no content visible in the DOM that can be associated with the object to give it meaning. A common example of such an element is a button containing an SVG icon without any text.(In this example, if the button already has text, there’s no need for this element. A label should be short and concise, conveying the essence of the object.)</td>
+      <td data-title="ARIA"><code class="language-plaintext highlighter-rouge">aria-label</code></td>
+      <td data-title="Description"><p>The <code class="language-plaintext highlighter-rouge">aria-label</code> attribute defines a string value that can be used to name an element.Sometimes, the default accessible name of an element is missing or the accessible name does not accurately describe the contents of the element and there is no content visible in the DOM that can be associated with the object to give it meaning. A common example of such an element is a button containing an SVG icon without any text.</p><p><i>(In this example, if the button already has text, there’s no need for this element. A label should be short and concise, conveying the essence of the object.)</i></p></td>
     </tr>
     <tr>
-      <td><code class="language-plaintext highlighter-rouge">aria-labelledby</code></td>
-      <td>The <code class="language-plaintext highlighter-rouge">aria-labelledby</code> property enables authors to reference other elements on the page to define an accessible name. This is useful when using elements that don’t have native support for associating elements to provide an accessible name. (This is useful when the labelling element is divorced from the element it’s labelling. A <code class="language-plaintext highlighter-rouge">&lt;button&gt;</code> or <code class="language-plaintext highlighter-rouge">&lt;a&gt;</code> element already has accessible text nested within its tags, but certain elements might have their descriptions in another element. A label should be short and concise, conveying the essence of the object.)</td>
+      <td data-title="ARIA"><code class="language-plaintext highlighter-rouge">aria-labelledby</code></td>
+      <td data-title="Description"><p>The <code class="language-plaintext highlighter-rouge">aria-labelledby</code> property enables authors to reference other elements on the page to define an accessible name. This is useful when using elements that don’t have native support for associating elements to provide an accessible name.</p><p><i>(This is useful when the labelling element is divorced from the element it’s labelling. A <code class="language-plaintext highlighter-rouge">&lt;button&gt;</code> or <code class="language-plaintext highlighter-rouge">&lt;a&gt;</code> element already has accessible text nested within its tags, but certain elements might have their descriptions in another element. A label should be short and concise, conveying the essence of the object.)</i></p></td>
     </tr>
     <tr>
-      <td><code class="language-plaintext highlighter-rouge">aria-live</code></td>
-      <td>The global <code class="language-plaintext highlighter-rouge">aria-live</code> attribute indicates that an element will be updated, and describes the types of updates the user agents, assistive technologies, and user can expect from the live region.When content changes after initial load, assistive technology (AT) users may not “see” the changes. Some changes are important. Others are not. The <code class="language-plaintext highlighter-rouge">aria-live</code> attribute enables developers to inform the user of updates and choose, based on importance and urgency, whether to immediately, proactively, or passively inform AT users of changes to the content.(There are three kinds of value to an <code class="language-plaintext highlighter-rouge">aria-live</code> attribute. <code class="language-plaintext highlighter-rouge">assertive</code> is more urgent, and interrupts the flow of the page for a time-sensitive update, such as a timer ticking down. <code class="language-plaintext highlighter-rouge">polite</code> reads out the update at “the next graceful opportunity”, such as after finishing a sentence. <code class="language-plaintext highlighter-rouge">off</code> is the default.)</td>
+      <td data-title="ARIA"><code class="language-plaintext highlighter-rouge">aria-live</code></td>
+      <td data-title="Description"><p>The global <code class="language-plaintext highlighter-rouge">aria-live</code> attribute indicates that an element will be updated, and describes the types of updates the user agents, assistive technologies, and user can expect from the live region.When content changes after initial load, assistive technology (AT) users may not “see” the changes. Some changes are important. Others are not. The <code class="language-plaintext highlighter-rouge">aria-live</code> attribute enables developers to inform the user of updates and choose, based on importance and urgency, whether to immediately, proactively, or passively inform AT users of changes to the content.</p><p><i>(There are three kinds of value to an <code class="language-plaintext highlighter-rouge">aria-live</code> attribute. <code class="language-plaintext highlighter-rouge">assertive</code> is more urgent, and interrupts the flow of the page for a time-sensitive update, such as a timer ticking down. <code class="language-plaintext highlighter-rouge">polite</code> reads out the update at “the next graceful opportunity”, such as after finishing a sentence. <code class="language-plaintext highlighter-rouge">off</code> is the default.)</i></p></td>
     </tr>
     <tr>
-      <td><code class="language-plaintext highlighter-rouge">role="status"</code></td>
-      <td>A status is a type of live region providing advisory information that is not important enough to justify an alert, which would immediately interrupt the announcement of a user’s current activity. It is often, but not necessarily, presented as a status bar.(A common place to use status is in form validation, when a user inputs an invalid value and an error message appears. You want the error message to announce itself without grabbing keyboard or screen reader focus.)</td>
+      <td data-title="ARIA"><code class="language-plaintext highlighter-rouge">role="status"</code></td>
+      <td data-title="Description"><p>A status is a type of live region providing advisory information that is not important enough to justify an alert, which would immediately interrupt the announcement of a user’s current activity. It is often, but not necessarily, presented as a status bar.</p><p><i>(A common place to use status is in form validation, when a user inputs an invalid value and an error message appears. You want the error message to announce itself without grabbing keyboard or screen reader focus.)</i></p></td>
     </tr>
   </tbody>
 </table>

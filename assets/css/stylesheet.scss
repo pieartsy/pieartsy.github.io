@@ -600,52 +600,6 @@ html:lang(ko),
   margin-left: .125em;
 }
 
-.table {
-  border-collapse: collapse;
-  border-spacing: 0;
-  text-align: left;
-  box-sizing:border-box;
-  margin: 2rem auto;
-  overflow: hidden;
-  width: 100%;
-}
-
-.table.table-striped tbody tr:nth-of-type(odd) {
-  background: var(--sectionthree);
-}
-
-.table.table-striped tbody tr:nth-of-type(even) {
-  background: #ffffff;;
-}
-
-.table tbody tr.active,
-.table.table-striped tbody tr.active {
-  background: #eef0f3;
-}
-
-.table.table-hover tbody td:hover {
-  background: var(--sectionone);
-  font-weight: bolder;
-}
-
-.table.table-scroll {
-  display: block;
-  overflow-x: auto;
-  padding-bottom: .75rem;
-  white-space: nowrap;
-}
-
-.table td,
-.table th {
-  border-bottom: .05rem solid var(--brighttext);
-  padding: .6rem .4rem;
-  position: relative;
-}
-
-.table th {
-  border-bottom-width: .1rem;
-}
-
 .btn {
   -webkit-appearance: none;
   -moz-appearance: none;
@@ -1513,7 +1467,6 @@ input.disabled + .form-icon {
   line-height: 1.25;
   padding: .1rem .2rem;
   font-weight: bold;
-  word-break: break-all;
 }
 
 pre {
