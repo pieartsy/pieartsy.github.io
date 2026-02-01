@@ -470,14 +470,26 @@ abbr[title] {
   cursor: help;
   text-decoration: none;
 }
+/* Styling the keyboard element in a fun way
+https://dylanatsmith.com/wrote/styling-the-kbd-element
+ */
 
 kbd {
-  background: #303742;
-  border-radius: .1rem;
-  color: #fff;
-  font-size: .7rem;
-  line-height: 1.25;
-  padding: .1rem .2rem;
+  background: var(--light);
+  color: var(--darktext);
+  border-radius: 0.1rem;
+  font-size: 0.7rem;
+  line-height: 1;
+  font-weight: bold;
+  padding: 0.2rem 0.3rem;
+  box-shadow: 0 .2rem 0 1px var(--desaturated);
+  border: 1px solid var(--desaturated);
+  position: relative;
+  top: -.2em;
+  &:hover {
+    box-shadow: 0 1px 0 0.5px var(--desaturated);
+    top: 1px;
+  }
 }
 
 mark {
@@ -1514,11 +1526,6 @@ code {
   margin: auto;
 }
 
-.post-img {
-  max-height: 20em;
-  margin-top: 2em;
-  margin-bottom: -1em;
-}
 
 .img-fit-cover {
   object-fit: cover;
@@ -3500,14 +3507,6 @@ a.text-error:visited {
   margin-right: auto;
 }
 
-.post {
-  .flex-centered {
-    gap: 1rem;
-  }
-  h1 {
-    margin-bottom: .5em;
-  }
-}
 
 .flex-centered {
   align-items: center;
@@ -3798,16 +3797,36 @@ dialog[open] {
   margin: unset;
 }
 
+.gap {
+  gap: 2em;
+}
+
+/* blog posts styling */
+
+.post-img {
+  max-height: 20em;
+  margin-top: 2em;
+  margin-bottom: -1em;
+}
+
 .post:last-child {
   margin-bottom: 2em;
 }
 
-.subtitle:last-of-type {
-  margin-bottom: 1em;
+.post {
+  header .flex-centered :not(.subtitle) {
+    gap: 1rem;
+  }
 }
 
-.gap {
-  gap: 2em;
+.comments {
+  position: relative;
+  height: auto;
+  width: 100%;
+}
+
+.subtitle:last-of-type {
+  margin-bottom: 1em;
 }
 
 // contact links in the header and footer
@@ -3857,7 +3876,7 @@ a.header-link:hover img, a.contact:not(.rss):hover img, a.contact:not(.rss):focu
 
 main {
   margin-top: 2em;
-  min-height: calc(100vh - 3em);
+  min-height: calc(100vh - 4.3em);
 }
 
 footer p {
