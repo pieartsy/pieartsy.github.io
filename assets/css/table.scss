@@ -10,6 +10,12 @@
   display: table;
 }
 
+.table td, .table th {
+  padding: .5em;
+  border-bottom: 2px solid var(--brighttext);
+  border-top: 2px solid var(--brighttext);
+}
+
 .table.table-striped tbody tr:nth-of-type(odd) {
   background: var(--sectionthree);
 }
@@ -18,10 +24,6 @@
   background: white;
 }
 
-.table tbody tr.active,
-.table.table-striped tbody tr.active {
-  background: var(--sectionone);
-}
 
 @media (max-width: 600px) {
   table {
@@ -87,12 +89,16 @@
     font-weight: bold;
   }
 
-  table tr {
+  .table tr {
     padding: .2em;
     td {
       padding: .1em;
       &:first-child {
+        border-top: 2px solid var(--brighttext);
         border-bottom: 2px solid var(--brighttext);
+      }
+      &:last-child {
+        border-bottom: none;
       }
     }
   }

@@ -7,7 +7,7 @@ layout: wrapper
             {% if page.image and page.image != "/portraits.png" %}
                 <img class="img-responsive post-img" src="{{site.url}}/assets{{page.directory}}/{{page.image}}" alt="{{page.alt}}">
             {% endif %}
-            <div class="flex-around">
+            <div class="flex-centered">
                 {% if page.previous.url %}
                     <a class="h1 post-link" href="{{page.previous.url}}" title="{{page.previous.title}}"><img alt="Left arrow" class="post-arrow arrow left-arrow" src="{{site_url}}/assets/images/arrow.svg"></a>
                 {% endif %}

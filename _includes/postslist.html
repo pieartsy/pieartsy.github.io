@@ -3,7 +3,7 @@
         {% if post.image and post.image != "/portraits.png" %}
         <a href="{{post.url}}" tabindex="-1"><img class="img-responsive post-img" src="{{site.url}}/assets/{{post.directory}}/{{post.image}}" alt="{{post.alt}}"></a>
         {% endif %}
-        <div class="flex-around">
+        <div class="flex-centered">
             {% if post.previous.url %}
                 <a class="h2" href="{{post.previous.url}}" title="{{post.previous.title}}"><img alt="Left arrow" class="post-arrow arrow left-arrow" src="{{site_url}}/assets/images/arrow.svg"></a>
             {% endif %}

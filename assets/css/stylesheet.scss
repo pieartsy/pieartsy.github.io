@@ -3500,6 +3500,15 @@ a.text-error:visited {
   margin-right: auto;
 }
 
+.post {
+  .flex-centered {
+    gap: 1rem;
+  }
+  h1 {
+    margin-bottom: .5em;
+  }
+}
+
 .flex-centered {
   align-items: center;
   display: flex;
