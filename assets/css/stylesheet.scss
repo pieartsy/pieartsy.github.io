@@ -1777,7 +1777,8 @@ img#coverart {
   padding:unset;
   margin:unset;
   border-radius: 2em;
-  width: unset;
+  width: 100%;
+  max-width: 30em;
 }
 
 #game-container {
