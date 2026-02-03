@@ -90,14 +90,13 @@ let myCarousel = (function () {
         slides[new_current].className = 'current slide';
         slides[new_current].removeAttribute('aria-hidden');
 
-        // Manually focus the current slide so its alt text is read aloud
-        slideCurrentImg = slides[new_current].getElementsByTagName('img')[0];
-        slideCurrentImg.setAttribute('tabindex', '-1');
-        slideCurrentImg.focus();
-
         // Update the text in the live region which is then announced by screen readers.
         if (announceItem) {
             carousel.querySelector('.liveregion').textContent = 'Page ' + (new_current + 1) + ' of ' + slides.length;
+            // Manually focus the current slide so its alt text is read aloud
+            slideCurrentImg = slides[new_current].getElementsByTagName('img')[0];
+            slideCurrentImg.setAttribute('tabindex', '-1');
+            slideCurrentImg.focus();
         }
 
         // Set the global index to the new current value
