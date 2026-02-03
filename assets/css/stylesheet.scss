@@ -1730,17 +1730,16 @@ span.overlay {
   left: 0;
   object-fit: fill;
   border-radius: 2em;
-}
-
-.text {
-  color: var(--brighttext);
-  width: 100%;
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  text-align: center;
-  word-wrap: break-word;
+  .text {
+    color: var(--brighttext);
+    width: 100%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    word-wrap: break-word;
+  }
 }
 
 .img-round {
@@ -1778,11 +1777,15 @@ img#coverart {
   padding:unset;
   margin:unset;
   border-radius: 2em;
+  width: unset;
 }
 
 #game-container {
   position: relative;
   padding: 1em;
+  span.overlay .text {
+    font-size: 1.5em;
+  }
 }
 
 /*calculated price on commissions*/

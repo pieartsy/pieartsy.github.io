@@ -7,7 +7,7 @@ description: Aster Fialla's portfolio, blog, and miscellaneous other things.
     <p class="column col-12 text-center">
         I'm Aster: software engineer, game designer, illustrator, comic artist, and sundry-other-things-doer. This site has my art, games, blogs, and miscellaneous other stuff. What do you want to check out?
     </p>
-    <div class="column col-4 col-md-12">
+    <div class="column col-4 col-lg-6 col-md-12">
         <section class="index card">
             <h2><a href="art.html">Art</a></h2>
             {% for item in site.data.pics.illos limit:3 %}
@@ -17,7 +17,7 @@ description: Aster Fialla's portfolio, blog, and miscellaneous other things.
         </section>
     </div>
 
-    <div class="column col-4 col-md-12">
+    <div class="column col-4 col-lg-6 col-md-12">
         <section class="index card">
             <h2><a href="games.html">Blog</a></h2>
             {% for post in site.posts limit:3 %}
@@ -49,7 +49,7 @@ description: Aster Fialla's portfolio, blog, and miscellaneous other things.
             {% endfor %}
         </section>
     </div>
-    <div class="column col-4 col-md-12">
+    <div class="column col-4 col-lg-6 col-md-12">
         <section class="index card">
             <h2><a href="games.html">Games</a></h2>
             <h3 class="card-header">{{site.twine.first.title}}</h3>
