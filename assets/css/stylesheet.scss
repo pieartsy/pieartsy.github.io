@@ -1521,27 +1521,8 @@ dialog[open] {
 }
 
 .title {
-  position: fixed;
   z-index: 100;
 }
-
-// gets rid of sticky header when screen is small or zooming in
-@media (max-width: 24rem) {
-  .title {
-    position: static;
-  }
-}
-
-@media screen and (min-resolution: 1.4x) {
-  .title {
-    position: static;
-  }
-
-  main {
-    margin-top: unset !important;
-  }
-}
-
 
 .subtitle {
   color: var(--desaturated);
@@ -1635,8 +1616,7 @@ a.header-link:hover img, a.contact:not(.rss):hover img, a.contact:not(.rss):focu
 /* ids to make sure that footer stays at bottom*/
 
 main {
-  margin-top: 2em;
-  min-height: calc(100vh - 4.3em);
+  min-height: calc(100vh - 5em);
 }
 
 footer p {
