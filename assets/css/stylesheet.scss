@@ -1607,10 +1607,10 @@ a.header-link:hover img, a.contact:not(.rss):hover img, a.contact:not(.rss):focu
 }
 
 .skip:focus {
-  position: static;
   width: auto;
   height: auto;
   z-index:200;
+  left: 0;
 }
 
 /* ids to make sure that footer stays at bottom*/
