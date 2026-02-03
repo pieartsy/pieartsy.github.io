@@ -12,8 +12,8 @@
 
 .table td, .table th {
   padding: .5em;
-  border-bottom: 2px solid var(--brighttext);
-  border-top: 2px solid var(--brighttext);
+  border-bottom: .1em solid var(--brighttext);
+  border-top: .1em solid var(--brighttext);
 }
 
 .table.table-striped tbody tr:nth-of-type(odd) {
@@ -26,7 +26,7 @@
 
 /* Undoing table code from https://codepen.io/aarongustafson/pen/ARWyLv and further modified */
 
-@media (max-width: 600px) {
+@media (max-width: 30rem) {
   table {
     border: 0;
     border-bottom-width: 0.0625em;
@@ -95,15 +95,15 @@
     td {
       padding: .1em;
       &:first-child {
-        border-top: 2px solid var(--brighttext);
-        border-bottom: 1px solid var(--brighttext);
+        border-top: .1em solid var(--brighttext);
+        border-bottom: .05em solid var(--brighttext);
       }
       &:last-child {
         border: none;
       }
     }
     &:last-child {
-      border-bottom: 2px solid var(--brighttext);
+      border-bottom: .1em solid var(--brighttext);
     }
   }
 }
