@@ -1525,13 +1525,14 @@ dialog[open] {
   z-index: 100;
 }
 
+// gets rid of sticky header when screen is small or zooming in
 @media (max-width: 24rem) {
   .title {
     position: static;
   }
 }
 
-@media only screen and (min-resolution: 1.4x) {
+@media screen and (min-resolution: 1.4x) {
   .title {
     position: static;
   }
@@ -1551,6 +1552,12 @@ dialog[open] {
 
 .gap {
   gap: 2em;
+}
+
+/* index */
+.index.card {
+  max-height: 60vh;
+  overflow: scroll;
 }
 
 /* blog posts styling */
@@ -1642,7 +1649,7 @@ footer p {
 .content-desktop {display: inherit;}
 .content-mobile {display: none;}
 
-@media screen and (max-width: 24rem) {
+@media screen and (max-width: 28rem) {
 
   .content-desktop {display: none;}
   .content-mobile {display: inherit;}
@@ -1809,10 +1816,10 @@ a .arrow {
   filter: var(--brighttext-filter);
   &.left-arrow {
     rotate: 180deg;
-    border-top: solid .5em;
+    border-top: solid .05em;
   }
   &.right-arrow {
-    border-bottom: solid .5em;
+    border-bottom: solid .05em;
   }
   &:hover {
     filter: var(--darktext-filter);
