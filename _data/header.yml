@@ -1,6 +1,6 @@
 nav:
   - name: Home
-    link: /
+    link:
   - name: About
     link: about
   - name: Art
