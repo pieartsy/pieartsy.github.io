@@ -33,8 +33,8 @@ Some of the commonly-needed semantic elements (taken from the MDN documentation 
 <table class="table table-striped">
   <thead>
     <tr>
-      <th>Element</th>
-      <th>Description</th>
+      <th scope="col">Element</th>
+      <th scope="col">Description</th>
     </tr>
   </thead>
   <tbody>
