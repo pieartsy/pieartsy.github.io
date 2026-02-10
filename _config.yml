@@ -21,6 +21,7 @@ collections:
     permalink: blog/:title
 
 plugins:
+  - jekyll-sitemap
   - jekyll-feed
   - jekyll/tagging
 

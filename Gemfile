@@ -35,3 +35,6 @@ gem "http_parser.rb", "~> 0.6.0", :platforms => [:jruby]
 
 # adds tags
 gem 'jekyll-tagging'
+
+# adds sitemap
+gem 'jekyll-sitemap'
