@@ -20,3 +20,5 @@ src="https://asterfialla.com/assets/js/tag.js"></script>
 ```
 
 Other than that it works really well! You should try it out...I'd love to have more people join and use the `interactive-fiction` tag for instance, hehehe.
+
+PS: It's a little silly that the little <sup>?</sup links to this blog that you are currently on...but we're going to accept this silliness, alright? Just this once.
