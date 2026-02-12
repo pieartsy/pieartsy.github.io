@@ -20,7 +20,7 @@ const tag = (o, label, flags) => {
     }
     .octo-thorpe[open] {
       display: inherit;
-      text-align: center;
+      /*text-align: center;*/
       align-items: center;
     }
 
@@ -32,6 +32,7 @@ const tag = (o, label, flags) => {
       border-color:transparent;
       color: black;
       border-radius: 2em;
+      text-align: center;
       margin: .2em;
       padding: .2em;
       white-space: normal;
@@ -63,6 +64,10 @@ const tag = (o, label, flags) => {
       padding: 0 0 1em 1em;
       margin: 0;
       word-break: break-word;
+    }
+    
+    .octo-thorpe li::marker {
+        content: "✿ "
     }
   </style>
   <details class="octo-thorpe" data-o="${o}">

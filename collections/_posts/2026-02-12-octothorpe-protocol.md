@@ -5,7 +5,7 @@ category: meta
 layout: posts
 octothorpe: [blog]
 ---
-I just joined Octothorpes, which is a server (not like a Discord server) for the Octothorpe Protocol. It basically connects my blogposts with other websites which are part of the Octothorpes server. It's sort of like a more flexible webring, sort of like social media hashtags but for any site you build, and sort of its own unique thing! It's simple to use and seems really cool.
+I just joined [Octothorpes](https://octothorp.es/), which is a server (not like a Discord server) for the Octothorpe Protocol. It basically connects my blogposts with other websites which are part of the Octothorpes server. It's sort of like a more flexible webring, sort of like social media hashtags but for any site you build, and sort of its own unique thing! It's simple to use and seems really cool.
 <!--more-->
 [The quickstart is here](https://docs.octothorp.es/quickstart/), though if you're a Neocities person, you should look at this [Neocities security fix article](https://docs.octothorp.es/blog/neocities-fix/?text=neocities) on how to make the protocol work with that.
 
