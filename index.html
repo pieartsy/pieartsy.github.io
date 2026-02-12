@@ -45,7 +45,7 @@ description: Aster Fialla's portfolio, blog, and miscellaneous other things.
                 </p>
                 {% endif %}
             </header>
-            <p>{{ post.content | strip_html | truncatewords: 25 }}</p>
+            <p>{{ post.excerpt | strip_html | truncatewords: 25 }}</p>
             {% endfor %}
         </section>
     </div>
