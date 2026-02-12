@@ -31,7 +31,7 @@
         {% endif %}
         {% if post.octothorpe.size > 0 %}
             <p class="flex-centered subtitle">
-                Octothorpes<sup>&nbsp;<a title="What the heck is an octothorpe" href="https://octothorp.es">?</a></sup>:&nbsp;
+                Octothorpes&nbsp;<sup><a title="What the heck is an octothorpe" href="{{site.url}}/blog/octothorpe-protocol">?</a></sup>:&nbsp;
                 {% for tag in post.octothorpe %}
                     #{{tag}}{% if tag != post.octothorpe.last %}, {% endif %}
                 {% endfor %}
