@@ -5,6 +5,7 @@ tags: coding
 date: 2026-01-30
 category: essays
 image: heap-of-broken-images.png
+octothorpe: [accessibility, web-development]
 alt: Text that reads 'What are the roots that clutch, what branches grow out of this stony rubbish?' Underneath is a broken image.
 ---
 Accessibility is not an afterthought. You should be accommodating to the many, many people out there with disabilities who want or need to access your services. This is good business sense--more people can use you features with ease, raising user satisfaction and increasing your reach to a wider audience. Accessibility is also required by law in many situations.

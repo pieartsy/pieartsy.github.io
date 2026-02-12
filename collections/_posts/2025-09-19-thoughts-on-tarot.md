@@ -4,6 +4,7 @@ tags: tarot
 date: 2025-09-19
 category: essays
 image: "eighth-of-winter.jpg"
+octothorpe: [tarot]
 alt: "A black, white, and gold card depicting an elk skeleton with giant gold horns and trees around it. It is labeled, 'The Eighth of Winter'."
 ---
 I am not a spiritual person. While I recognize these are important to many people, spirituality, magic, "magick", and "metaphysics" are not practices I follow or believe in. When people talk about crystals, reiki, astrology,  things like that, the best they'll get from me is a polite nod and a tight smile while I hold back opinions that I know they won't like.

@@ -6,6 +6,7 @@ category: devlogs
 image: "promise.png"
 alt: "A fortune cookie fortune with the words 'You Promise' on it, and a series of numbers."
 layout: posts
+octothorpe: [interactive-fiction, gamedev]
 ---
 A postmortem about You promise. Full spoilers!
 <!--more-->

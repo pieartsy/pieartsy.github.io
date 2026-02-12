@@ -37,10 +37,18 @@ layout: wrapper
             {% if page.tags != empty %}
                 <p class="flex-centered subtitle">Tags:&nbsp;
                     {% for tag in page.tags %}
-                        <a href="{{site.url}}/blog/tags/{{tag | slugify}}">{{tag}}</a>
+                        <a href="{{site.url}}/blog/tags/{{tag | slugify}}">#{{tag}}</a>
                         {% if tag != page.tags.last %},&nbsp;{% endif %}
                     {% endfor %}
                 </p>
+            {% endif %}
+            {% if page.octothorpe.size > 0 %}
+                <div class="subtitle">
+                    <p class="flex-centered">Octothorpes&nbsp;<sup><a title="What the heck is an octothorpe" href="https://octothorp.es">?</a></sup>:&nbsp;</p>
+                    {% for tag in page.octothorpe %}
+                        <div class="flex-centered"><octo-thorpe>{{tag}}</octo-thorpe></div>
+                    {% endfor %}
+                </div>
             {% endif %}
         </footer>
     </div>
@@ -54,3 +62,10 @@ layout: wrapper
             <!-- end www.htmlcommentbox.com -->
     </section>
 </article>
+
+<script
+        async=""
+        defer=""
+        type="module"
+        data-register="https://octothorp.es/"
+        src="{{site.url}}/assets/js/tag.js"></script>
