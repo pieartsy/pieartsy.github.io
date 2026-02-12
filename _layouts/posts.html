@@ -43,12 +43,12 @@ layout: wrapper
                 </p>
             {% endif %}
             {% if page.octothorpe.size > 0 %}
-                <div class="subtitle">
-                    <p class="flex-centered">Octothorpes&nbsp;<sup><a title="What the heck is an octothorpe" href="https://octothorp.es">?</a></sup>:&nbsp;</p>
+                <p class="subtitle">
+                    <span class="flex-centered">Octothorpes&nbsp;<sup><a title="What the heck is an octothorpe" href="https://octothorp.es">?</a></sup>:&nbsp;</span>
                     {% for tag in page.octothorpe %}
-                        <div class="flex-centered"><octo-thorpe>{{tag}}</octo-thorpe></div>
+                        <span class="flex-centered"><octo-thorpe>{{tag}}</octo-thorpe></span>
                     {% endfor %}
-                </div>
+                </p>
             {% endif %}
         </footer>
     </div>
