@@ -33,6 +33,7 @@ feed:
     - essays
     - devlogs
     - meta
+    - poems
 
 tag_page_layout: tagpage
 tag_page_dir: blog/tag
