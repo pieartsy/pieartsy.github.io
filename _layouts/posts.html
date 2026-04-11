@@ -37,7 +37,7 @@ layout: wrapper
             {% if page.tags != empty %}
                 <p class="flex-centered subtitle">Tags:&nbsp;
                     {% for tag in page.tags %}
-                        <a href="{{site.url}}/blog/tags/{{tag | slugify}}">#{{tag}}</a>
+                        <a href="{{site.url}}/blog/tag/{{tag | slugify}}">#{{tag}}</a>
                         {% if tag != page.tags.last %},&nbsp;{% endif %}
                     {% endfor %}
                 </p>
