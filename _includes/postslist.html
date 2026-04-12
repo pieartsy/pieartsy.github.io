@@ -16,8 +16,8 @@
         {% if post.update_date %}
             <p class="flex-centered subtitle">Updated: {{ post.update_date | date: "%B %d, %Y" }}</p>
         {% endif %}
-        {% if page.original_date %}
-            <p class="flex-centered subtitle">Originally posted: {{ page.original_date | date: "%B %d, %Y" }}</p>
+        {% if post.original_date %}
+            <p class="flex-centered subtitle">Originally posted: {{ post.original_date | date: "%B %d, %Y" }}</p>
         {% endif %}
         {% if post.category %}
             <p class="flex-centered subtitle">Category:&nbsp;<a href="{{site.url}}/blog/categories/{{post.category | slugify}}">{{post.category}}</a></p>
@@ -38,5 +38,6 @@
             </p>
         {% endif %}
     </header>
-    {{ post.excerpt }}
+    <p>{{ post.excerpt }}</p>
+    <p><i>(more...)</i></p>
 </section>
