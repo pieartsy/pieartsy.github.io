@@ -7,6 +7,8 @@ game: compsim.html
 zip: compassionate-simulation.zip
 filename: compassionate-simulation
 description: —our company mission to provide grieving families with accurate, compassionate simulations of their deceased loved ones—
+date: 2020-07-31
+updated: 2022-08-01
 ---
 <blockquote><p><i>—our company mission to provide grieving families with accurate, compassionate simulations of their deceased loved ones—</i></p>
 <p>

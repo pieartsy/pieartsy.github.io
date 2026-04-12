@@ -7,5 +7,6 @@ game: burn.pdf
 zip: burn-and-again.zip
 filename: burn-and-again
 description: A lyric game involving your hand and a stovetop.
+date: 2025-06-18
 ---
-<p>A lyric game involving your hand and a stovetop. The plaintext version is available in the download. CW: self harm.</p>
+A lyric game involving your hand and a stovetop. The plaintext version is available in the download. CW: self harm.

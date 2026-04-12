@@ -1,0 +1,16 @@
+---
+slug: in-a-minute
+title: In a minute there is time
+image: /minute.png
+alt: A closeup of a clock.
+directory: /games/if/minute
+game: minute.html
+zip: in-a-minute-there-is-time.zip
+filename: in-a-minute-there-is-time
+description: A gamified Love Song to Prufrock and T.S. Eliot.
+date: 2023-02-17
+updated: 2025-04-25
+---
+A gamified Love Song to J. Alfred Prufrock and T.S. Eliot. Walk through half-deserted streets and muttering retreats, listen to odd conversations, and take in the evening. You only have 60 seconds, but don't worry— in a minute there is time for decisions and revisions which a minute will reverse.
+
+Submitted to [SeedComp 2023](https://itch.io/jam/seed-comp-1-growing) and won the Best Seed Subversion and Best Technical awards. This game is in a complete and playable form as is, but it is not in its ideal finished form. Keep an eye out for whenever that is!

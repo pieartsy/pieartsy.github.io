@@ -8,5 +8,6 @@ game: index.html
 zip: index.html
 filename: poem-to-hold-onto
 description: NaPoWriMo prompt 9
+date: 2026-04-09
 ---
 A poem for NaPoWriMo 2026.
