@@ -11,6 +11,10 @@ layout: page
             </button>
         </div>
         <div class="column col-12 col-mx-auto">
+            <p class="flex-centered subtitle">Published: {{ page.date | date: "%B %d, %Y" }}</p>
+            {% if page.updated %}
+            <p class="flex-centered subtitle">Updated: {{ page.updated | date: "%B %d, %Y" }}</p>
+            {% endif %}
             {{content}}
         </div>
     </div>

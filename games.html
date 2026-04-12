@@ -11,10 +11,12 @@ description: The interactive fiction and TTRPGs of Aster Fialla.
 <section id="ifgames" class="section2">
     <h2>Interactive Fiction games</h2>
     <div class="flex-centered columns col-sm-11 col-10 col-mx-auto">
-        {% for if in site.twine %}
+        {% assign sorted_twine = site.twine | sort: 'date' %}
+        {% for if in sorted_twine %}
         <div class="column col-4 col-md-12">
             <section class="card" id="{{if.directory}}">
                 <h3 class="card-header">{{if.title}}</h3>
+                <p class="flex-centered subtitle">Published: {{ if.date | date: "%B %d, %Y" }}</p>
                 <img src="{{site.url}}/assets{{if.directory}}{{if.image}}" class="img-responsive img-round card-image" alt="{{if.alt}}.">
                 <p class="card-body">{{if.description}}</p>
                 <footer class="card-footer p-centered"><a href="{{if.url}}">Play <i>{{if.title}}</i></a></footer>
@@ -28,10 +30,12 @@ description: The interactive fiction and TTRPGs of Aster Fialla.
 <section id="ttrpgs" class="section1">
     <h2>TTRPGS</h2>
     <div class="flex-centered columns col-sm-11 col-10 col-mx-auto">
-        {% for ttrpg in site.ttrpg %}
+        {% assign sorted_ttrpg = site.ttrpg | sort: 'date' %}
+        {% for ttrpg in sorted_ttrpg %}
         <div class="column col-4 col-md-12">
             <section class="card" id="{{ttrpg.directory}}">
                 <h3 class="card-header">{{ttrpg.title}}</h3>
+                <p class="flex-centered subtitle">Published: {{ ttrpg.date | date: "%B %d, %Y" }}</p>
                 <img src="{{site.url}}/assets{{ttrpg.directory}}{{ttrpg.image}}" class="img-responsive img-round card-img" alt="{{ttrpg.alt}}">
                 <p class="card-body">{{ttrpg.description}}</p>
                 <footer class="card-footer p-centered"><a href="{{ttrpg.url}}">Read <i>{{ttrpg.title}}</i></a></footer>
@@ -47,10 +51,12 @@ description: The interactive fiction and TTRPGs of Aster Fialla.
     <h2>Interactive pieces</h2>
     <div class="flex-centered columns col-sm-11 col-10 col-mx-auto">
             <p class="flex-centered columns col-10 col-mx-auto">Not really games, but they're definitely interactive!</p>
-        {% for piece in site.piece %}
+        {% assign sorted_piece = site.piece | sort: 'date' %}
+        {% for piece in sorted_piece %}
         <div class="column col-4 col-md-12">
             <section class="card" id="{{piece.directory}}">
                 <h3 class="card-header">{{piece.title}}</h3>
+                <p class="flex-centered subtitle">Published: {{ piece.date | date: "%B %d, %Y" }}</p>
                 <img src="{{site.url}}/assets{{piece.directory}}{{piece.image}}" class="img-responsive img-round card-img" alt="{{piece.alt}}">
                 <p class="card-body">{{ttrpg.description}}</p>
                 <footer class="card-footer p-centered"><a href="{{piece.url}}">Explore <i>{{piece.title}}</i></a></footer>
