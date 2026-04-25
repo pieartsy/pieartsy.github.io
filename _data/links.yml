@@ -7,31 +7,39 @@ extras:
     desc: The slides for my Thematic Puzzles presentation.
 
 outside:
+  - name: Dust n' Dread
+    link: https://dustndreadcomic.com/
+    desc: Weird West horror webcomic about a revenant and werewolf as guns-for-hire. Darkly funny.
+    logo-src: dustndreadicon.png
+    logo-height: 40
+
+  - name: Masonry of the Body
+    link: https://harpercrane.com/Masonry%20of%20the%20Body/
+    desc: Gothic horror webcomic. A woman runs from a heteronormative fate into a strange castle, tended to by a monstrous-looking but sweet servant, lorded over by an icy master, and haunted by his unseen wife. Has a lot of heart--figurative <i>and</i> literal!
+    logo-src: masonry.webp
+    logo-height: 40
+
   - name: Interactive Fiction Technology Foundation (IFTF)
     link: https://iftechfoundation.org
     desc: A foundation dedicated to maintaining, improving, and preserving interactive fiction.
-    logo-alt:
     logo-src: iftf.svg
     logo-height: 40
 
   - name: The Rosebush Magazine
     link: https://the-rosebush.com/
     desc: The interactive fiction literary magazine that I'm an editor on.
-    logo-alt:
     logo-src: rosebush.jpg
     logo-height: 40
 
   - name: Cartoonist Coop
     link: https://cartoonist.coop
     desc: A guild for cartoonists and comic creators to collectively organize <i>and</i> hang out.<br>
-    logo-alt:
     logo-src: coop_logo.svg
     logo-height: 50
 
   - name: Jekyll
     link: https://jekyllrb.com
     desc: The static site generator I used to make this website.
-    logo-alt:
     logo-src: jekyll.png
     logo-height: 40
 

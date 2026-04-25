@@ -30,7 +30,7 @@ description: Miscellaneous links within my website and to other websites.
 <div class="p-centered column col-sm-11 col-10 col-mx-auto">
     <ul>
         {% for item in site.data.links.outside %}
-        <li><span style="display:inline-block;vertical-align:middle;"><img alt="{{item.logo-alt}}" src="{{site.url}}/assets/images/{{item.logo-src}}" height="{{item.logo-height}}"></span> <a href="{{ item.link }}"> {{ item.name }}</a> - {{ item.desc }}</li>
+        <li><span style="display:inline-block;vertical-align:middle;"><img alt="" src="{{site.url}}/assets/images/{{item.logo-src}}" height="{{item.logo-height}}"></span> <a href="{{ item.link }}"> {{ item.name }}</a> - {{ item.desc }}</li>
         {% endfor %}
     </ul>
 </div>
