@@ -34,6 +34,8 @@ feed:
     - devlogs
     - meta
     - poems
+    - drawings
+    - micro
 
 tag_page_layout: tagpage
 tag_page_dir: blog/tag
