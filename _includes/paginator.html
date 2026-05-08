@@ -1,0 +1,48 @@
+<nav class="pagination flex-centered" id="#pagination">
+    <ul>
+        {% if paginator.previous_page %}
+            {% if paginator.previous_page == 1 %}
+                <li>
+                    <a href="/blog"><img alt="Left arrow" class="post-arrow arrow left-arrow" src="{{site_url}}/assets/images/arrow.svg"></a>
+                </li>
+            {% else %}
+                <li>
+                    <a href="/blog/page/{{paginator.previous_page}}"><img alt="Left arrow" class="post-arrow arrow left-arrow" src="{{site_url}}/assets/images/arrow.svg"></a>
+                </li>
+            {% endif %}
+        {% else %}
+            <li class="disabled">
+                <img alt="Left arrow" class="post-arrow arrow left-arrow" src="{{site_url}}/assets/images/arrow.svg">
+            </li>
+        {% endif %}
+        {% if paginator.page == 1 %}
+            <li class="active">
+                1
+            </li>
+        {% else %}
+            <li>
+                <a href="/blog">1</a>
+            </li>
+        {% endif %}
+        {% for count in (2..paginator.total_pages) %}
+                {% if count == paginator.page %}
+                    <li class="active">
+                        {{count}}
+                    </li>
+                {% else %}
+                    <li>
+                        <a href="/blog/page/{{count}}">{{count}}</a>
+                    </li>
+                {% endif %}
+            {% endfor %}
+            {% if paginator.next_page %}
+                <li>
+                    <a href="/blog/page/{{paginator.next_page}}"><img alt="Right arrow" class="post-arrow arrow right-arrow" src="{{site_url}}/assets/images/arrow.svg"></a>
+                </li>
+            {% else %}
+               <li class="disabled">
+                   <img alt="Right arrow" class="post-arrow arrow right-arrow" src="{{site_url}}/assets/images/arrow.svg">
+               </li>
+        {% endif %}
+    </ul>
+</nav>
