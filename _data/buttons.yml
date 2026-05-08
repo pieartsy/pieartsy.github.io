@@ -1,4 +1,6 @@
 art:
+    - artlink: feed
+      artname: Latest art
     - artlink: digital
       artname: Digital
    # - artlink: trad

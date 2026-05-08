@@ -2,10 +2,17 @@
 layout: page
 title: Aster's Art
 description: Aster Fialla art and comics portfolio
+image_path: /assets/images/posts/
 ---
 <p class="flex-centered columns col-sm-11 col-10 col-mx-auto">I'm a self-taught digital illustrator and comic creator, primarily focused on character art. My work has been published in several zines. Further examples of my art are on my various social media accounts @pieartsy; you can find links to those in the upper right corner of my website.</p>
 
-{% include artbuttons.html %}
+    {% include artbuttons.html %}
+    <section id="feed" class="section2">
+        <div class="flex-centered columns col-10 col-mx-auto">
+            {% include artfeed.html %}
+        </div>
+        {% include artbuttons.html %}
+    </section>
 
     <section id="digital" class="section1">
         <h2>Digital Illustrations</h2>
