@@ -2,6 +2,8 @@
 layout: wrapper
 title: Aster's Blog
 description: Just another body in the blogosphere.
+pagination:
+    enabled: true
 ---
 <div class="flex-centered columns col-sm-11 col-10 col-mx-auto">
     <hgroup>
@@ -9,7 +11,56 @@ description: Just another body in the blogosphere.
         <p class="subtitle flex-centered">{{ page.description }}</p>
     </hgroup>
     <p class="column col-12 flex-centered"><a href="{{site.url}}/feed.xml"><img src="{{site.url}}/assets/images/rss.png" alt="RSS icon"> Follow the feed for all my blogposts!</a></p>
-    {% for post in site.posts %}
+    {% for post in paginator.posts %}
         {% include postslist.html %}
     {% endfor %}
+</div>
+
+<div class="pagination">
+    <ul>
+        {% if paginator.previous_page %}
+        {% if paginator.previous_page == 1 %}
+        <li>
+            <a href="/blog/">&laquo;</a>
+        </li>
+        {% else %}
+        <li>
+            <a href="/blog/page/{{paginator.previous_page}}">&laquo;</a>
+        </li>
+        {% endif %}
+        {% else %}
+        <li class="disabled">
+            <a href="#">&laquo;</a>
+        </li>
+        {% endif %}
+        {% if paginator.page == 1 %}
+        <li class="active">
+            <a href="#">1</a>
+        </li>
+        {% else %}
+        <li>
+            <a href="/">1</a>
+        </li>
+        {% endif %}
+        {% for count in (2..paginator.total_pages) %}
+        {% if count == paginator.page %}
+        <li class="active">
+            <a href="#">{{count}}</a>
+        </li>
+        {% else %}
+        <li>
+            <a href="/blog/page/{{count}}">{{count}}</a>
+        </li>
+        {% endif %}
+        {% endfor %}
+        {% if paginator.next_page %}
+        <li>
+            <a href="/page{{paginator.next_page}}">&raquo;</a>
+        </li>
+        {% else %}
+        <li class="disabled">
+            <a href="#">&raquo;</a>
+        </li>
+        {% endif %}
+    </ul>
 </div>
