@@ -1,15 +1,15 @@
 {% assign sorted_piece = site.categories.drawings | sort: 'date' %}
-<div class="thumbnailgrid column col-12 col-mx-auto">
+<div class="thumbnailgrid column col-4 col-md-6 col-sm-12 col-mx-auto">
     {% for post in sorted_piece limit:12 %}
     <div class="flex-centered">
         {% assign image = post.image %}
         {% assign alt = post.alt %}
+        <h3 class="thumbnail column col-12">
         <a class="thumbnail btn-link" href="{{ post.url | relative_url }}">
+            {{post.title}}
             {% include img.html class="img-round" file=image alt=alt %}
-            <span class="overlay">
-                  <span class="text">Link to full image</span>
-            </span>
         </a>
+        </h3>
     </div>
     {% endfor %}
 </div>
