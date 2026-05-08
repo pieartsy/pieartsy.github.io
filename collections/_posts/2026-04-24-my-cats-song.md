@@ -3,7 +3,7 @@ title: My cat's song
 date: 2026-04-24
 original_date: 2026-04-12
 tags: napowrimo-2026 napowrimo interactive-fiction 
-category: poems
+category: games
 octothorpe: [napowrimo, poetry]
 ---
 
