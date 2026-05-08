@@ -524,7 +524,7 @@ ol li {
   margin-top: .4rem;
 }
 
-ul li::marker {
+ul:not(.pagination *) li::marker {
   content: "✿ ";
 }
 
@@ -1826,6 +1826,70 @@ div.webring a .arrow {
     transition: unset;
     &[open] {
       animation: unset;
+    }
+  }
+}
+/********************PAGINATION********************/
+
+
+nav.pagination {
+  ul {
+    display: flex;
+    margin: 0;
+    padding: 0;
+    border: 1px solid var(--brighttext);
+    align-items: center;
+    list-style-type: none !important;
+    li {
+      font-size: 1.25rem;
+      border-right: 1px solid var(--brighttext);
+      min-width: 2em;
+      margin: inherit;
+      padding: inherit;
+      white-space: normal;
+      :last-child {
+        border: none;
+      }
+      text-align: center;
+      &:hover {
+        color: var(--light);
+        background-color: var(--brighttext);
+        a {
+          color: var(--light);
+        }
+        .arrow {
+          filter: var(--light-filter);
+        }
+      }
+      .arrow {
+        height: .5em;
+        margin: .2em;
+        filter: var(--purble-filter);
+        &.left-arrow {
+          rotate: 180deg;
+          border-top: solid .05em var(--purble);
+        }
+        &.right-arrow {
+          border-bottom: solid .05em var(--purble);
+        }
+      }
+    }
+    .disabled, .active {
+      cursor: not-allowed;
+      color: var(--light);
+      background-color: var(--sectionone);
+      pointer-events: none;
+    }
+    .disabled .arrow {
+      height: .5em;
+      margin: .2em;
+      filter: var(--light-filter);
+      &.left-arrow {
+        rotate: 180deg;
+      }
+      &.right-arrow {
+        border-bottom: none;
+      }
     }
   }
 }
