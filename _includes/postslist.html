@@ -1,7 +1,7 @@
 <section class="column col-10 post">
     <header>
         {% if post.image and post.image != "/portraits.png" %}
-        <a href="{{post.url}}" tabindex="-1"><img class="img-responsive post-img" src="{{site.url}}/assets/{{post.directory}}/{{post.image}}" alt="{{post.alt}}"></a>
+        <a href="{{post.url}}" tabindex="-1"><img class="img-responsive post-img" src="{{site.url}}/assets/{{post.directory}}/posts/{{post.image}}" alt="{{post.alt}}"></a>
         {% endif %}
         <div class="flex-centered">
             {% if post.previous.url %}

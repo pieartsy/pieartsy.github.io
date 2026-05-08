@@ -76,3 +76,4 @@ defaults:
     values:
       type: "article"
       layout: "posts"
+      image_path: /assets/images/posts/
