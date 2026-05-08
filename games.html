@@ -11,6 +11,7 @@ description: The interactive fiction and TTRPGs of Aster Fialla.
 <section id="ifgames" class="section2">
     <h2>Interactive Fiction games</h2>
     <div class="flex-centered columns col-sm-11 col-10 col-mx-auto">
+        <p class="column col-12 flex-centered"><a href="{{site.url}}/feed/twine.xml"><img src="{{site.url}}/assets/images/rss.png" alt="RSS icon"> Follow the feed for my interactive fiction games!</a></p>
         {% assign sorted_twine = site.twine | sort: 'date' %}
         {% for if in sorted_twine %}
         <div class="column col-4 col-md-12">
@@ -28,8 +29,9 @@ description: The interactive fiction and TTRPGs of Aster Fialla.
 </section>
 
 <section id="ttrpgs" class="section1">
-    <h2>TTRPGS</h2>
+    <h2>TTRPGs</h2>
     <div class="flex-centered columns col-sm-11 col-10 col-mx-auto">
+        <p class="column col-12 flex-centered"><a href="{{site.url}}/feed/ttrpg.xml"><img src="{{site.url}}/assets/images/rss.png" alt="RSS icon"> Follow the feed for my TTRPGs!</a></p>
         {% assign sorted_ttrpg = site.ttrpg | sort: 'date' %}
         {% for ttrpg in sorted_ttrpg %}
         <div class="column col-4 col-md-12">
@@ -50,7 +52,8 @@ description: The interactive fiction and TTRPGs of Aster Fialla.
 <section id="pieces" class="section2">
     <h2>Interactive pieces</h2>
     <div class="flex-centered columns col-sm-11 col-10 col-mx-auto">
-            <p class="flex-centered columns col-10 col-mx-auto">Not really games, but they're definitely interactive!</p>
+        <p class="flex-centered columns col-10 col-mx-auto">Not really games, but they're definitely interactive!</p>
+        <p class="column col-12 flex-centered"><a href="{{site.url}}/feed/piece.xml"><img src="{{site.url}}/assets/images/rss.png" alt="RSS icon"> Follow the feed for my interactive pieces!</a></p>
         {% assign sorted_piece = site.piece | sort: 'date' %}
         {% for piece in sorted_piece %}
         <div class="column col-4 col-md-12">

@@ -36,10 +36,16 @@ feed:
     - poems
     - drawings
     - microblogs
-    - games
+  collections:
+    - twine
+    - ttrpg
+    - piece
 
 tag_page_layout: tagpage
 tag_page_dir: blog/tag
+tag_page_data:
+  sitemap: false
+
 
 defaults:
   - scope:

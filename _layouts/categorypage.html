@@ -6,6 +6,7 @@ layout: wrapper
         <h1>{{page.title}}</h1>
         <p class="subtitle flex-centered">{{ page.description }}</p>
     </hgroup>
+    <p class="column col-12 flex-centered"><a href="{{site.url}}/feed/{{page.category}}.xml"><img src="{{site.url}}/assets/images/rss.png" alt="RSS icon"> Follow the {{page.category}} feed!</a></p>
     {% for post in site.categories[page.category] %}
         {% include postslist.html %}
     {% endfor %}
