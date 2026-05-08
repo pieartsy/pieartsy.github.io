@@ -1,7 +1,7 @@
 ---
 title: Pluto Passing
 date: 2026-04-04
-tags: napowrimo-2026 napowrimo
+tags: [napowrimo-2026, napowrimo]
 category: poems
 octothorpe: [napowrimo, poetry]
 ---

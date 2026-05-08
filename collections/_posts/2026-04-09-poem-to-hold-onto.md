@@ -1,7 +1,7 @@
 ---
 title: poem to hold onto to keep from falling over
 date: 2026-04-09
-tags: napowrimo-2026 napowrimo interactive-fiction 
+tags: [napowrimo-2026, napowrimo, interactive-fiction ]
 category: games
 octothorpe: [napowrimo, poetry]
 ---

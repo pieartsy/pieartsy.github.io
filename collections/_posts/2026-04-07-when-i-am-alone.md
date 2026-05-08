@@ -1,7 +1,7 @@
 ---
 title: When I am alone I am
 date: 2026-04-01
-tags: napowrimo-2026 napowrimo
+tags: [napowrimo-2026, napowrimo]
 category: poems
 octothorpe: [napowrimo, poetry]
 ---

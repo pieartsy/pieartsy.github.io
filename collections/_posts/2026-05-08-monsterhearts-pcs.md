@@ -3,7 +3,7 @@ title: Monsterhearts PCs
 date: 2026-05-08
 image: monsterhearts.jpg
 alt: A collage of traditional illustrations of four teenagers.
-tags: ttrpgs
+tags: [ttrpgs]
 category: drawings
 octothorpe: [art]
 ---

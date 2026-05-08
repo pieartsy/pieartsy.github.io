@@ -1,7 +1,7 @@
 ---
 title: Accessibility is not an afterthought
 slug: accessibility is not an afterthought
-tags: coding
+tags: [coding]
 date: 2026-01-30
 category: essays
 image: heap-of-broken-images.png

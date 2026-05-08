@@ -1,7 +1,7 @@
 ---
 title: "You promise me a postmortem?"
 date: 2025-01-05
-tags: interactive-fiction you-promise
+tags: [interactive-fiction, you-promise]
 category: devlogs
 image: "promise.png"
 alt: "A fortune cookie fortune with the words 'You Promise' on it, and a series of numbers."
