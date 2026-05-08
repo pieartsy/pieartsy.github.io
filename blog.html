@@ -2,8 +2,6 @@
 layout: wrapper
 title: Aster's Blog
 description: Just another body in the blogosphere.
-pagination:
-    enabled: true
 ---
 <div class="flex-centered columns col-sm-11 col-10 col-mx-auto">
     <hgroup>
@@ -11,7 +9,7 @@ pagination:
         <p class="subtitle flex-centered">{{ page.description }}</p>
     </hgroup>
     <p class="column col-12 flex-centered"><a href="{{site.url}}/feed.xml"><img src="{{site.url}}/assets/images/rss.png" alt="RSS icon"> Follow the feed for all my blogposts!</a></p>
-    {% for post in paginator.posts %}
+    {% for post in site.posts %}
         {% include postslist.html %}
     {% endfor %}
 </div>
