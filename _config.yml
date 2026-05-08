@@ -6,7 +6,6 @@ url: https://asterfialla.com  # the base hostname and protocol for your site, e.
 layout: default
 excerpt_separator: <!--more-->
 collections_dir: collections
-image_path: /assets/images/posts/
 collections:
   twine:
     output: true
@@ -51,6 +50,7 @@ defaults:
       directory: /images
       image: /portraits.png
       alt: "Aster, a person with pink hair, surrounded by illustrations of erself in many different art styles."
+      image_path: /assets/images/posts/
   -
     scope:
       path: ""
