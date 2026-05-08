@@ -4,13 +4,7 @@
         <a href="{{post.url}}" tabindex="-1"><img class="img-responsive post-img" src="{{site.url}}/assets/{{post.directory}}/posts/{{post.image}}" alt="{{post.alt}}"></a>
         {% endif %}
         <div class="flex-centered">
-            {% if post.previous.url %}
-                <a class="h2" href="{{post.previous.url}}" title="{{post.previous.title}}"><img alt="Left arrow" class="post-arrow arrow left-arrow" src="{{site_url}}/assets/images/arrow.svg"></a>
-            {% endif %}
             <h2><a href="{{post.url}}">{{post.title}}</a></h2>
-            {% if post.next.url %}
-                <a class="h2" title="{{post.next.title}}" href="{{post.next.url}}"><img alt="Right arrow" class="post-arrow arrow right-arrow" src="{{site_url}}/assets/images/arrow.svg"></a>
-            {% endif %}
         </div>
         <p class="flex-centered subtitle">Posted: {{ post.date | date: "%B %d, %Y" }}</p>
         {% if post.update_date %}
