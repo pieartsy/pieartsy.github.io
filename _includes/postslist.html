@@ -39,5 +39,5 @@
         {% endif %}
     </header>
     <p>{{ post.excerpt }}</p>
-    <p><i>(more...)</i></p>
+    {% if post.excerpt != post.content %}<p><i>(more...)</i></p>{% endif %}
 </section>
