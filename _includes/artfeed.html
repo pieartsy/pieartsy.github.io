@@ -1,6 +1,6 @@
 {% assign sorted_piece = site.categories.drawings | sort: 'date' %}
 <div class="thumbnailgrid column col-4 col-md-6 col-sm-12 col-mx-auto">
-    {% for post in sorted_piece limit:12 %}
+    {% for post in sorted_piece limit:6 %}
     <div class="flex-centered">
         {% assign image = post.image %}
         {% assign alt = post.alt %}
