@@ -10,6 +10,7 @@ description: Just another body in the blogosphere.
     </hgroup>
     <p class="column col-12 flex-centered"><a href="{{site.url}}/feed/{{page.category}}.xml"><img src="{{site.url}}/assets/images/rss.png" alt="RSS icon"> Follow the feed for all my blogposts!</a></p>
     {% for post in site.posts %}
+    <p class="column col-12 flex-centered"><a href="{{site.url}}/feed.xml"><img src="{{site.url}}/assets/images/rss.png" alt="RSS icon"> Follow the feed for all my blogposts!</a></p>
         {% include postslist.html %}
     {% endfor %}
 </div>
