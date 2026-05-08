@@ -272,7 +272,7 @@ Alt text should be one or two sentences at most, and convey the necessary parts 
 - Adding non-useful alt text like “Dog” or “cup”. Having something is better than nothing, but it’s still better to describe something useful in context. If the image is really that unimportant, maybe it should be decorative instead.
 - Adding alt text for decorative images. If you could remove the image and not lose any information on the webpage, then it’s decorative. For example, there’s often stock images on websites for aesthetic effect – handshakes, people smiling, a random building, things like that. Or you might find icons or images with text right next to them that describe what they are. In that case, you don’t need to write out descriptive alt text. You should still have an attribute! It just needs to be empty, to signify the image is decorative only. Media with the attribute `alt=""` will be completely skipped over by screen readers. If you *don’t* have an empty `alt`, the screen reader will still mention the image, but just say “unlabeled graphic” or “image” or something similarly useless.
 - Adding overly-descriptive alt text. If you have an image like this:
-<img class="img-round img-responsive" alt="A filled coffee mug on a pile of coffee beans." src="{{site_url}}/assets/images/coffee.png">
+  {% include img.html file="coffee.png" alt="A filled coffee mug on a pile of coffee beans."%}
 
 This description is utterly unnecessary: “A white mug with a large handle, currently filled with coffee and resting on a large quantity of scattered coffee beans. The coffee beans and mug are on a darkly stained wooden table. There are wooden wall panels faintly visible in the background.”
 
@@ -337,17 +337,17 @@ No:
 Some users with low vision need a much larger font size than the default HTML root font, which is `16px`. While sometimes a zoom-in can be helpful, users can also modify the font size of webpages using their browser’s settings. This changes the appearance of the page in a different way than zooming in.
 
 <figure>
-<img class="img-responsive img-round" alt="The Wikipedia article for the poem The Waste Land, with the default medium font size." src="{{site_url}}/assets/images/wasteland normal.png">
+{% include img.html file="wasteland normal.png" alt="The Wikipedia article for the poem The Waste Land, with the default medium font size."%}
 <figcaption>At the default medium font size.</figcaption>
 </figure>
 
 <figure>
-<img class="img-responsive img-round" alt="The Wikipedia article for the poem The Waste Land, with the default medium font size and zoomed 150%." src="{{site_url}}/assets/images/wasteland zoomed in.png">
+{% include img.html file="wasteland zoomed in.png" alt="The Wikipedia article for the poem The Waste Land, with the default medium font size and zoomed 150%."%}
 <figcaption>At the default medium font size, zoomed in 150%. Note that the page starts formatting as if it were on mobile, collapsing the sidebars.</figcaption>
 </figure>
 
 <figure>
-<img class="img-responsive img-round" alt="The Wikipedia article for the poem The Waste Land with the font size set to 'very large'." src="{{site_url}}/assets/images/wasteland bigger text.png">
+{% include img.html file="wasteland bigger text.png" alt="The Wikipedia article for the poem The Waste Land with the font size set to 'very large'"%}
 <figcaption>At the “Very Large” font size. Note that the sidebars are still present, and the page looks somewhat squeezed. However, the padding between elements remains consistent.</figcaption>
 </figure>
 
