@@ -41,7 +41,7 @@ image_path: /assets/images/posts/
             <h3><a href="blog.html">Blogpost</a></h3>
                 <header>
                     <div class="flex-centered">
-                        <h4><a href="{{post.url | relative_url}}">{{site.posts.first.title}}</a></h4>
+                        <h4><a href="{{site.posts.first.url | relative_url}}">{{site.posts.first.title}}</a></h4>
                     </div>
                     <p class="subtitle">Posted: {{ site.posts.first.date | date: "%B %d, %Y" }}</p>
                     {% if site.posts.first.category %}
