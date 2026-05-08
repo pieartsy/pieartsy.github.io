@@ -56,15 +56,17 @@ description: The interactive fiction and TTRPGs of Aster Fialla.
         <p class="column col-12 flex-centered"><a href="{{site.url}}/feed/piece.xml"><img src="{{site.url}}/assets/images/rss.png" alt="RSS icon"> Follow the feed for my interactive pieces!</a></p>
         {% assign sorted_piece = site.piece | sort: 'date' %}
         {% for piece in sorted_piece %}
-        <div class="column col-4 col-md-12">
-            <section class="card" id="{{piece.directory}}">
-                <h3 class="card-header">{{piece.title}}</h3>
-                <p class="flex-centered subtitle">Published: {{ piece.date | date: "%B %d, %Y" }}</p>
-                <img src="{{site.url}}/assets{{piece.directory}}{{piece.image}}" class="img-responsive img-round card-img" alt="{{piece.alt}}">
-                <p class="card-body">{{ttrpg.description}}</p>
-                <footer class="card-footer p-centered"><a href="{{piece.url}}">Explore <i>{{piece.title}}</i></a></footer>
-            </section>
-        </div>
+            {% unless piece.tags contains 'secret' %}
+                <div class="column col-4 col-md-12">
+                    <section class="card" id="{{piece.directory}}">
+                        <h3 class="card-header">{{piece.title}}</h3>
+                        <p class="flex-centered subtitle">Published: {{ piece.date | date: "%B %d, %Y" }}</p>
+                        <img src="{{site.url}}/assets{{piece.directory}}{{piece.image}}" class="img-responsive img-round card-img" alt="{{piece.alt}}">
+                        <p class="card-body">{{piece.description}}</p>
+                        <footer class="card-footer p-centered"><a href="{{piece.url}}">Explore <i>{{piece.title}}</i></a></footer>
+                    </section>
+                </div>
+            {% endunless %}
         {% endfor %}
     </div>
     {% include gamesbuttons.html %}
