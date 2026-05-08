@@ -35,7 +35,8 @@ feed:
     - meta
     - poems
     - drawings
-    - micro
+    - microblogs
+    - games
 
 tag_page_layout: tagpage
 tag_page_dir: blog/tag
