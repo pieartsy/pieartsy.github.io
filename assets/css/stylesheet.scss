@@ -1537,8 +1537,9 @@ dialog[open] {
 
 /* index */
 .index.card {
-  max-height: 60vh;
+  height: 30em;
   overflow: scroll;
+  max-width: 30em;
 }
 
 /* blog posts styling */
