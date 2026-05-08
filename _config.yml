@@ -6,6 +6,7 @@ url: https://asterfialla.com  # the base hostname and protocol for your site, e.
 layout: default
 excerpt_separator: <!--more-->
 collections_dir: collections
+image_path: /assets/images/posts/
 collections:
   twine:
     output: true
@@ -77,4 +78,3 @@ defaults:
     values:
       type: "article"
       layout: "posts"
-      image_path: /assets/images/posts/
