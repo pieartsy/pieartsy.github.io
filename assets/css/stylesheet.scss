@@ -628,15 +628,12 @@ html:lang(ko),
 
 .btn.btn-link {
   background: var(--light);
-  border-color:transparent;
+  border: var(--sectiontwo) solid .1em;
   color: black;
   border-radius: 2em;
   margin: .2rem;
   white-space: normal;
-  font-weight: normal;
 }
-
-
 
 .btn.btn-link:focus,
 .btn.btn-link:hover,
@@ -644,11 +641,13 @@ html:lang(ko),
   background-color: var(--brighttext);
   color: var(--light);
   border: black solid .1em;
-  font-weight:bold;
 }
 
 .btn.btn-link.darker {
   background-color: var(--sectionone);
+  &:hover {
+    background-color: var(--brighttext);
+  }
 }
 
 .btn.btn-clear {
@@ -1510,6 +1509,20 @@ video.video-responsive::before {
   align-items: center;
   display: flex;
   justify-content: space-around;
+}
+
+.form
+
+.form-select {
+  background: white;
+  border: .1em solid var(--sectiontwo);
+  padding: .25rem .4rem;
+  vertical-align: middle;
+  width: 100%;
+  &:focus {
+    border-color: var(--purble);
+    box-shadow: 0 0 0 .1rem rgba(87, 85, 217, .2);
+  }
 }
 
 /*=========Custom IDs and classes==========*/
