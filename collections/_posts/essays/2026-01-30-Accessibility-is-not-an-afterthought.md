@@ -8,7 +8,7 @@ image: heap-of-broken-images.png
 octothorpe: [accessibility, web-development]
 alt: Text that reads 'What are the roots that clutch, what branches grow out of this stony rubbish?' Underneath is a broken image.
 ---
-Accessibility is not an afterthought. You should be accommodating to the many, many people out there with disabilities who want or need to access your services. This is good business sense--more people can use you features with ease, raising user satisfaction and increasing your reach to a wider audience. Accessibility is also required by law in many situations.
+Accessibility is not an afterthought. You should be accommodating to the many, many people out there with disabilities who want or need to access your services. It's a compassionate thing to do for your fellow humans, and that should be justification enough. Aside from that, it's good business sense--more people can use you features with ease, raising user satisfaction and increasing your reach to a wider audience. Accessibility is also required by law in many situations.
 
 As well, remember that disability is the only minority group you can join later in life--an accident, a repetitive stress injury, or simply aging can make you disabled. One day, one of the people who needs accessibility features to use your app may be you.
 
